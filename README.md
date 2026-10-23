@@ -73,5 +73,8 @@ Original code is MIT-licensed to Soumyadip Mal and Nagaiah Chamakuri. Existing t
 
 The production computations used the Padmanabha high-performance computing facility at IISER Thiruvananthapuram. No additional external grant funding supported this work.
 
-The data asset and its checksum accompany the versioned release. The manuscript's
-repository link is finalised after publication of that release.
+Repository: https://github.com/soumya1729/pinn-uq-scale-sensitivity
+
+The saved-data asset and its checksum accompany release `v1.0.0`. The manuscript
+includes the repository URL. Make the repository and release accessible to
+reviewers before submitting the manuscript.

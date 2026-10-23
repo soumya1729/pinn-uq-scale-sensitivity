@@ -15,7 +15,7 @@
     "CHECKED": 13,
     "PROVENANCE_MAPPED": 1983
   },
-  "exact_float_or_equation_pages": 1971,
+  "exact_float_or_equation_pages": 1979,
   "active_source_files": 26,
   "table_outputs": 18,
   "figure_outputs": 6,
@@ -29,7 +29,7 @@
   "unmatched_outputs": [],
   "source_hashes": {
     "paper/full_paper.tex": "568b2ead6bd7978d8e07633ee482fd391512fbee26e538348d756e565f376a1a",
-    "paper/j_abstract.tex": "d50367204444762bcf99ca76531402d6cdda6b1e952abae58f8cfd305ab66c7a",
+    "paper/j_abstract.tex": "9460c6906baf002c4b568b77a6c08558793e567382375c64408ca647733ab981",
     "paper/j_intro.tex": "e86f54fd7de0f8e782e99df6ea87307663960e38481b6eccfa8c381807b3c53c",
     "paper/j_setting.tex": "1431050d783113ad5057fb260db9cc6a8f9327ff20d679a4ef23bc28fd468273",
     "paper/j_ceiling.tex": "8d1e55d59e86e1bf1696b51a154df8ff3678b2ff0c11cab858c1590ed660fabc",
@@ -39,7 +39,7 @@
     "paper/generated/loading_table_values.tex": "09a34763d8f4bf238ded05f47ff5a5e5e964aaa573b01adf3224051f585383a2",
     "paper/generated/rms_bounds_macros.tex": "78bc9074bbfb2b863cc497e56659bc0d476a670253e27dc6f92846c600dd146b",
     "paper/j_robustness.tex": "d5df00430666639f02bbc9d29295b2dbb7863792016a4a00bf4f16dc3bed6062",
-    "paper/j_discussion.tex": "a50161fa1a171bfe53658708dbaf88e4a1edb26aa6064d355445695cc4c4c442",
+    "paper/j_discussion.tex": "e8d37d9084f0122b65962366f0e6f6130af10ae569e359660aa478c3d612524f",
     "paper/j_appendix.tex": "9ab939af71b9636a17a21fc48238253049e80e06d849b8a289b6be1655cd2d65",
     "paper/trim_aux_proofs.tex": "8d97a0d088a183cced464996bba1b568e4cbf0dedb31bc6bbf30d358a141f118",
     "paper/j_round2_appendix.tex": "285f6b2c6f18149a1f8142e938366d1f7afcebc63adedef6db1f2c987e70b94a",

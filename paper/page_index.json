@@ -1,15 +1,15 @@
 {
   "method": "SyncTeX source-line lookup; ambiguous multi-page results remain candidates",
-  "pdf_sha256": "5b464290331dae5383a859eb7d0afc9fbb06155fc5332b03049dd6ac37436cab",
+  "pdf_sha256": "577ff33b2bb6b2c52a358ae934a34eec290a014187f229f3a1716eed6470f67e",
   "sources": {
     "generated/round2_centre_table.tex": "f4df2a6502d175124b5b70b2aa3d8dc3ab28e7ba5561f55c01b55dd474c87b94",
     "generated/round2_limits_table.tex": "dd578cb07bf43217416fd9478667623cfb7713917321df5f87424729ce87b35a",
     "generated/round2_oracle_table.tex": "f9f3fae78b4c2adea3ccaca45db89423d6c17d20ce052688268dd7f587f178fb",
     "generated/round4_oracle_table.tex": "3a53b6c8fbf60a232bc2e952c839c2cf3346d0b87fcff02e5e4dca042869f12b",
-    "j_abstract.tex": "d50367204444762bcf99ca76531402d6cdda6b1e952abae58f8cfd305ab66c7a",
+    "j_abstract.tex": "9460c6906baf002c4b568b77a6c08558793e567382375c64408ca647733ab981",
     "j_appendix.tex": "9ab939af71b9636a17a21fc48238253049e80e06d849b8a289b6be1655cd2d65",
     "j_ceiling.tex": "8d1e55d59e86e1bf1696b51a154df8ff3678b2ff0c11cab858c1590ed660fabc",
-    "j_discussion.tex": "a50161fa1a171bfe53658708dbaf88e4a1edb26aa6064d355445695cc4c4c442",
+    "j_discussion.tex": "e8d37d9084f0122b65962366f0e6f6130af10ae569e359660aa478c3d612524f",
     "j_intro.tex": "e86f54fd7de0f8e782e99df6ea87307663960e38481b6eccfa8c381807b3c53c",
     "j_mechanism.tex": "7ce28bf3f0dfd6d2bb35b0131eacc6147f12bc6a84228267980b8f509fb7e2cb",
     "j_offmanifold.tex": "21edb51daa29ea3fa899c123c33d03fb6394689646221441559b582b4b918c8a",
@@ -225,18 +225,18 @@
     "paper/j_discussion.tex:49": 15,
     "paper/j_discussion.tex:50": 15,
     "paper/j_discussion.tex:59": 15,
-    "paper/j_intro.tex:55": 2,
-    "paper/j_intro.tex:62": 2,
-    "paper/j_intro.tex:65": 2,
+    "paper/j_intro.tex:56": 2,
+    "paper/j_intro.tex:63": 2,
     "paper/j_intro.tex:66": 2,
-    "paper/j_intro.tex:69": 2,
-    "paper/j_intro.tex:75": 3,
+    "paper/j_intro.tex:67": 2,
+    "paper/j_intro.tex:70": 2,
     "paper/j_intro.tex:76": 3,
-    "paper/j_intro.tex:93": 3,
+    "paper/j_intro.tex:77": 3,
     "paper/j_intro.tex:94": 3,
-    "paper/j_intro.tex:97": 3,
-    "paper/j_intro.tex:105": 3,
+    "paper/j_intro.tex:95": 3,
+    "paper/j_intro.tex:98": 3,
     "paper/j_intro.tex:106": 3,
+    "paper/j_intro.tex:107": 3,
     "paper/j_mechanism.tex:2": 13,
     "paper/j_mechanism.tex:3": 13,
     "paper/j_mechanism.tex:7": 13,
@@ -1304,40 +1304,40 @@
     "paper/j_discussion.tex:59": [
       15
     ],
-    "paper/j_intro.tex:55": [
+    "paper/j_intro.tex:56": [
       2
     ],
-    "paper/j_intro.tex:62": [
-      2
-    ],
-    "paper/j_intro.tex:65": [
+    "paper/j_intro.tex:63": [
       2
     ],
     "paper/j_intro.tex:66": [
       2
     ],
-    "paper/j_intro.tex:69": [
+    "paper/j_intro.tex:67": [
       2
     ],
-    "paper/j_intro.tex:75": [
-      3
+    "paper/j_intro.tex:70": [
+      2
     ],
     "paper/j_intro.tex:76": [
       3
     ],
-    "paper/j_intro.tex:93": [
+    "paper/j_intro.tex:77": [
       3
     ],
     "paper/j_intro.tex:94": [
       3
     ],
-    "paper/j_intro.tex:97": [
+    "paper/j_intro.tex:95": [
       3
     ],
-    "paper/j_intro.tex:105": [
+    "paper/j_intro.tex:98": [
       3
     ],
     "paper/j_intro.tex:106": [
+      3
+    ],
+    "paper/j_intro.tex:107": [
       3
     ],
     "paper/j_mechanism.tex:2": [

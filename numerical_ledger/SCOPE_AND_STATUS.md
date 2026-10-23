@@ -35,6 +35,6 @@ The public interface should distinguish a completed numerical check from this pr
 
 - Classifications: `{"numerical-result": 1576, "configuration": 212, "analytic": 208}`.
 - Statuses: `{"CHECKED": 13, "PROVENANCE_MAPPED": 1983}`.
-- Occurrences with resolved source-line or float/equation page anchors: 1971.
+- Occurrences with resolved source-line or float/equation page anchors: 1979.
 - Excluded document/reference/layout tokens: 28.
 - Unmatched documented outputs: `[]`.

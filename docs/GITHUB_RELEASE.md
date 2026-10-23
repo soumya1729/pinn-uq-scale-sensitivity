@@ -8,8 +8,9 @@ been made by the preparation scripts.
 2. Upload `pinn_uq_saved_data_20261022.zip` as a versioned release/data asset.
    Its exact checksum is recorded in `data/ASSET_SHA256.txt`. The source checkout
    contains the portable destination manifest and restoration utility.
-3. Add the final repository and asset URLs to the root README and data README.
-   Replace the pending repository sentence in the manuscript before submission.
+3. Before submission, confirm that the repository link in the manuscript and the
+   saved-data release assets are accessible to reviewers. Both URLs are recorded
+   in the source documentation; no pending manuscript URL remains.
 4. Keep the tagged source, the data asset, and `SOURCE_SHA256.json` together.
    Source and data versions must be identifiable independently of a moving branch.
 

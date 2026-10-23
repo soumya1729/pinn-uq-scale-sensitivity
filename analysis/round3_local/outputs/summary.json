@@ -1,0 +1,348 @@
+{
+  "protocol": {
+    "production_directory": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production",
+    "cohort_file": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\cohort.json",
+    "consumer_sha256": "090a644c0b7ce0a3fa3c6e9e192792c7a1bcb3a23a81b010f45dcd946dd99d19",
+    "numpy_version": "2.5.3",
+    "oracle_quantile_method": "higher",
+    "oracle_target": 0.68,
+    "root_selection": "observed full-grid trained Burgers-MLP sign-changing saved intervals only",
+    "root_relative_interval_tolerance": 1e-12,
+    "common_threshold": "original nonsharp admission error < 0.02",
+    "coverage_thresholds": [
+      1,
+      1.96
+    ],
+    "scope": "returned floating-point affine model; no directed-rounding certificate",
+    "performed": "saved-array summaries, scalar log-bisection and analytic envelopes only",
+    "unperformed": "new pointwise fields; theta-centred MLE/evidence predictions; nonlinear shifted network; new likelihood"
+  },
+  "aggregate": {
+    "cohort_count": 17,
+    "common2_count": 13,
+    "common2_tags": [
+      "burgers_mlp_seed0",
+      "burgers_mlp_seed1",
+      "burgers_mlp_seed2",
+      "burgers_mlp_seed3",
+      "burgers_mlp_seed4",
+      "burgers_mlp_seed5",
+      "burgers_mlp_seed6",
+      "burgers_mlp_seed7",
+      "burgers_fourier_seed0",
+      "burgers_fourier_seed2",
+      "burgers_fourier_seed6",
+      "allen_cahn_mlp_seed3",
+      "allen_cahn_fourier_seed1"
+    ],
+    "all_settings_total_relative_theta_range": [
+      0.9889322418283703,
+      31.170462612361955
+    ],
+    "baseline_total_relative_theta_range": [
+      0.9977752582748762,
+      0.9995764389573768
+    ],
+    "baseline_complement_relative_theta_range": [
+      0.9766745802681731,
+      0.9850866937498811
+    ],
+    "baseline_likelihood_norm_range": [
+      0.000913076145770231,
+      0.016041839000974438
+    ],
+    "baseline_likelihood_relative_theta_range": [
+      8.733499897645804e-06,
+      0.00015412623904661956
+    ],
+    "baseline_c_range": [
+      0.0074892404641358715,
+      0.09077405506702785
+    ],
+    "noise_mle_c_range": [
+      75.42843676643415,
+      79.9096395087034
+    ],
+    "theta_deficit_certified_count": 16,
+    "theta_deficit_unresolved": [
+      {
+        "tag": "burgers_mlp_seed4",
+        "rho_lower": 0.48778321894267185
+      }
+    ],
+    "affine_worsening_count": 14,
+    "prior_only_worsening_certified_count": 14,
+    "max_parameter_norm_relative_defect": 4.440892098500626e-16,
+    "normal_norm_reconstruction_count": 401,
+    "max_regional_variance_relative_defect": 6.727951529228449e-14,
+    "max_stored_envelope_relative_violation": 0.0,
+    "root_count": 5,
+    "refined_roots": [
+      {
+        "tag": "burgers_mlp_seed0",
+        "saved_bracket_low": 0.018215042035356364,
+        "saved_bracket_high": 0.0576010205074354,
+        "root_low": 0.021055146333462046,
+        "root_high": 0.021055146333473072,
+        "root_gamma": 0.02105514633346756,
+        "rho_low": 0.999999999999987,
+        "rho_high": 1.0000000000001552,
+        "relative_root_interval": 5.235811784132238e-13,
+        "iterations": 41,
+        "bulk_width_lower": 0.010999310167841449,
+        "bulk_width_upper": 0.011040422139477313,
+        "sharp_coverage68_lower": 0.323,
+        "sharp_coverage68_upper": 0.333,
+        "sharp_coverage95_lower": 0.7815,
+        "sharp_coverage95_upper": 0.78475
+      },
+      {
+        "tag": "burgers_mlp_seed4",
+        "saved_bracket_low": 0.5697667069305609,
+        "saved_bracket_high": 1.801760528834217,
+        "root_low": 0.7362697403919227,
+        "root_high": 0.7362697403923082,
+        "root_gamma": 0.7362697403921155,
+        "rho_low": 0.9999999999999818,
+        "rho_high": 1.0000000000000733,
+        "relative_root_interval": 5.235811784132238e-13,
+        "iterations": 41,
+        "bulk_width_lower": 0.01212308300498347,
+        "bulk_width_upper": 0.012232521955465208,
+        "sharp_coverage68_lower": 0.41975,
+        "sharp_coverage68_upper": 0.43375,
+        "sharp_coverage95_lower": 0.84525,
+        "sharp_coverage95_upper": 0.862
+      },
+      {
+        "tag": "burgers_mlp_seed5",
+        "saved_bracket_low": 1.7334452926186198e-05,
+        "saved_bracket_high": 5.481635323971901e-05,
+        "root_low": 2.04763847550152e-05,
+        "root_high": 2.047638475502592e-05,
+        "root_gamma": 2.047638475502056e-05,
+        "rho_low": 0.9999999999999164,
+        "rho_high": 1.0000000000000047,
+        "relative_root_interval": 5.235811784132238e-13,
+        "iterations": 41,
+        "bulk_width_lower": 0.005663697977283094,
+        "bulk_width_upper": 0.005677618158555225,
+        "sharp_coverage68_lower": 0.29775,
+        "sharp_coverage68_upper": 0.315,
+        "sharp_coverage95_lower": 0.6755,
+        "sharp_coverage95_upper": 0.67925
+      },
+      {
+        "tag": "burgers_mlp_seed6",
+        "saved_bracket_low": 0.0005619119229932127,
+        "saved_bracket_high": 0.0017769215210636912,
+        "root_low": 0.0016354097305251313,
+        "root_high": 0.0016354097305259876,
+        "root_gamma": 0.0016354097305255593,
+        "rho_low": 0.9999999999999317,
+        "rho_high": 1.000000000000133,
+        "relative_root_interval": 5.235811784132238e-13,
+        "iterations": 41,
+        "bulk_width_lower": 0.008538637781791474,
+        "bulk_width_upper": 0.008551767934947468,
+        "sharp_coverage68_lower": 0.5225,
+        "sharp_coverage68_upper": 0.526,
+        "sharp_coverage95_lower": 0.8465,
+        "sharp_coverage95_upper": 0.84775
+      },
+      {
+        "tag": "burgers_mlp_seed7",
+        "saved_bracket_low": 1.78416162733608e-05,
+        "saved_bracket_high": 5.642014456254548e-05,
+        "root_low": 3.059041865348611e-05,
+        "root_high": 3.059041865350212e-05,
+        "root_gamma": 3.059041865349411e-05,
+        "rho_low": 0.9999999999999754,
+        "rho_high": 1.0000000000000182,
+        "relative_root_interval": 5.233591338082988e-13,
+        "iterations": 41,
+        "bulk_width_lower": 0.0069570967316567945,
+        "bulk_width_upper": 0.006992158998960508,
+        "sharp_coverage68_lower": 0.554,
+        "sharp_coverage68_upper": 0.563,
+        "sharp_coverage95_lower": 0.82125,
+        "sharp_coverage95_upper": 0.82675
+      }
+    ],
+    "toy_envelope_check": {
+      "seed": 3103,
+      "points": 80,
+      "modes_including_null": 5,
+      "interior_precisions": 49,
+      "minimum_relative_margin": 0.0004121929958794052,
+      "bulk_calibrated_coverage_envelopes_checked": true
+    },
+    "theta_bulk_coverage68_min_lower": 0.9971964285714285,
+    "theta_bulk_coverage68_certified_over_count": 17,
+    "theta_bulk_coverage68_certified_under": [],
+    "theta_bulk_coverage95_min_lower": 1.0,
+    "theta_bulk_coverage95_certified_over_count": 17,
+    "theta_bulk_coverage95_certified_under": [],
+    "oracle_bulk_median_range": [
+      0.6551236243483993,
+      0.700483144098874
+    ],
+    "oracle_bulk_q99_range": [
+      3.0486826875454955,
+      4.6609999643570905
+    ],
+    "oracle_bulk_top1_energy_range": [
+      0.13087832095473617,
+      0.5720415875770524
+    ],
+    "oracle_bulk_spearman_range": [
+      0.1119699125856318,
+      0.293393530835448
+    ],
+    "theta_sharp_coverage68_min_lower": 0.7925,
+    "theta_sharp_coverage68_certified_over_count": 17,
+    "theta_sharp_coverage68_certified_under": [],
+    "theta_sharp_coverage95_min_lower": 0.86025,
+    "theta_sharp_coverage95_certified_over_count": 12,
+    "theta_sharp_coverage95_certified_under": [
+      {
+        "tag": "burgers_mlp_seed1",
+        "upper": 0.924
+      },
+      {
+        "tag": "burgers_mlp_seed2",
+        "upper": 0.883
+      },
+      {
+        "tag": "burgers_mlp_seed3",
+        "upper": 0.90875
+      },
+      {
+        "tag": "burgers_fourier_seed0",
+        "upper": 0.91225
+      },
+      {
+        "tag": "burgers_fourier_seed6",
+        "upper": 0.896
+      }
+    ],
+    "oracle_sharp_median_range": [
+      0.7248933294981561,
+      1.2725796264805103
+    ],
+    "oracle_sharp_q99_range": [
+      3.600083733979274,
+      8.697160503038205
+    ],
+    "oracle_sharp_top1_energy_range": [
+      0.15256582102038466,
+      0.23837377117348382
+    ],
+    "oracle_sharp_spearman_range": [
+      0.6934818174676135,
+      0.9358188459261777
+    ],
+    "strong1000_max_relative_limit_error": 0.00019310056537591436,
+    "strong1000_max_first_order_error": 3.426355945634896e-07,
+    "all17_affine_worsening_count": 14,
+    "all17_theta_deficit_certified_count": 16,
+    "all17_prior_sweep_rho_range": [
+      1.5832153525702792,
+      39.689958676550305
+    ],
+    "all17_prior_sweep_sharp_coverage68_range": [
+      0.8055,
+      1.0
+    ],
+    "all17_prior_sweep_sharp_coverage68_under_count": 0,
+    "all17_prior_sweep_sharp_coverage95_range": [
+      0.86975,
+      1.0
+    ],
+    "all17_prior_sweep_sharp_coverage95_under_count": 5,
+    "all17_prior_sweep_bulk_coverage68_range": [
+      0.9996607142857142,
+      1.0
+    ],
+    "all17_prior_sweep_bulk_coverage68_under_count": 0,
+    "all17_prior_sweep_bulk_coverage95_range": [
+      1.0,
+      1.0
+    ],
+    "all17_prior_sweep_bulk_coverage95_under_count": 0,
+    "all17_conditional_noise_mle_rho_range": [
+      0.06160256450335429,
+      7.642685214956547
+    ],
+    "all17_conditional_noise_mle_sharp_coverage68_range": [
+      0.016,
+      0.62425
+    ],
+    "all17_conditional_noise_mle_sharp_coverage68_under_count": 17,
+    "all17_conditional_noise_mle_sharp_coverage95_range": [
+      0.051,
+      0.768
+    ],
+    "all17_conditional_noise_mle_sharp_coverage95_under_count": 17,
+    "all17_conditional_noise_mle_bulk_coverage68_range": [
+      0.19758928571428572,
+      0.8429285714285715
+    ],
+    "all17_conditional_noise_mle_bulk_coverage68_under_count": 14,
+    "all17_conditional_noise_mle_bulk_coverage95_range": [
+      0.4124642857142857,
+      0.9845357142857143
+    ],
+    "all17_conditional_noise_mle_bulk_coverage95_under_count": 16,
+    "common13_affine_worsening_count": 10,
+    "common13_theta_deficit_certified_count": 12,
+    "common13_prior_sweep_rho_range": [
+      1.5832153525702792,
+      39.689958676550305
+    ],
+    "common13_prior_sweep_sharp_coverage68_range": [
+      0.8055,
+      1.0
+    ],
+    "common13_prior_sweep_sharp_coverage68_under_count": 0,
+    "common13_prior_sweep_sharp_coverage95_range": [
+      0.86975,
+      1.0
+    ],
+    "common13_prior_sweep_sharp_coverage95_under_count": 5,
+    "common13_prior_sweep_bulk_coverage68_range": [
+      0.9996607142857142,
+      1.0
+    ],
+    "common13_prior_sweep_bulk_coverage68_under_count": 0,
+    "common13_prior_sweep_bulk_coverage95_range": [
+      1.0,
+      1.0
+    ],
+    "common13_prior_sweep_bulk_coverage95_under_count": 0,
+    "common13_conditional_noise_mle_rho_range": [
+      0.06160256450335429,
+      5.515690552003727
+    ],
+    "common13_conditional_noise_mle_sharp_coverage68_range": [
+      0.018,
+      0.62425
+    ],
+    "common13_conditional_noise_mle_sharp_coverage68_under_count": 13,
+    "common13_conditional_noise_mle_sharp_coverage95_range": [
+      0.051,
+      0.768
+    ],
+    "common13_conditional_noise_mle_sharp_coverage95_under_count": 13,
+    "common13_conditional_noise_mle_bulk_coverage68_range": [
+      0.19758928571428572,
+      0.8429285714285715
+    ],
+    "common13_conditional_noise_mle_bulk_coverage68_under_count": 10,
+    "common13_conditional_noise_mle_bulk_coverage95_range": [
+      0.4124642857142857,
+      0.9845357142857143
+    ],
+    "common13_conditional_noise_mle_bulk_coverage95_under_count": 12
+  }
+}

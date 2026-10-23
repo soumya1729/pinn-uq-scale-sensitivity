@@ -1,0 +1,29 @@
+{
+  "schema": "loading_runtime/1",
+  "created_utc": "2026-08-29",
+  "purpose": "Exact local runtime for the loading_perpoint/3 producer used on the cluster",
+  "python": "3.12.5",
+  "artifact_producer_sha1": "5cdf648ff8ee6dcd934148efd3f2d0f08f481f93",
+  "files": {
+    "a3b.slurm": "add9459631c3b18627d504aca61ee734081e63f00c30c80b8f8ca79b8f2f5154",
+    "common.py": "2dedbba7a8b49e3a37bc228c1839c7b530b13d88152283374bd60b521dd06a9a",
+    "d_loading_cdf.py": "40799bb2ac20c143d578e27c011cf5a46a9c3ac7df192586f7fe809cfa166d7f",
+    "d_loading_perpoint.py": "11a78c431c3c1c0d61869b2bfeac9325f473e89759b59e9a080f3c5609b4acc7",
+    "laplace_core.py": "0fb311d11b4e2342f3eea92893ac51537ae27cf9e5d9e0d10e61690289ceb05b",
+    "loading_requirements_lock.txt": "341f79d724a855ddd98ab6951ae39137b365cfe0f71b97168ef8f3d9076e1de0",
+    "slurm/env.sh": "51759b4d38145f4b34af2f6d5f60885aa229e9dde349ba0d4c6ae3bdc47e0200",
+    "uq_metrics.py": "08b109a668de4215ac032f7c469b8f920fd0cca911785db29d7c2fcb0c664748"
+  },
+  "critical_packages": {
+    "jax": "0.10.1",
+    "jaxlib": "0.10.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "optax": "0.2.8"
+  },
+  "notes": [
+    "All eleven loading_perpoint/3 artifacts record the same producer SHA-1.",
+    "Fourier configurations additionally require the frozen B sidecar recorded and hashed in each artifact.",
+    "The complete pip freeze is loading_requirements_lock.txt; package pins were copied from the retained run provenance."
+  ]
+}

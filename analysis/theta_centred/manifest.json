@@ -1,0 +1,1644 @@
+{
+  "study": "pinn_theta_followup",
+  "created": "2026-10-14",
+  "runs": [
+    {
+      "tag": "burgers_mlp_seed0",
+      "group": 0,
+      "config": {
+        "pde": "burgers",
+        "seed": 0,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "cd_a": 1.0,
+        "cd_delta": 0.13,
+        "cd_nu": 0.003183098861837907,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed1",
+      "group": 1,
+      "config": {
+        "pde": "burgers",
+        "seed": 1,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "group": 0,
+      "config": {
+        "pde": "burgers",
+        "seed": 2,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed3",
+      "group": 0,
+      "config": {
+        "pde": "burgers",
+        "seed": 3,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "group": 1,
+      "config": {
+        "pde": "burgers",
+        "seed": 4,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "group": 2,
+      "config": {
+        "pde": "burgers",
+        "seed": 5,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "group": 1,
+      "config": {
+        "pde": "burgers",
+        "seed": 6,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "group": 2,
+      "config": {
+        "pde": "burgers",
+        "seed": 7,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_fourier_seed0",
+      "group": 0,
+      "config": {
+        "pde": "burgers",
+        "seed": 0,
+        "arch": "fourier",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_fourier_seed2",
+      "group": 1,
+      "config": {
+        "pde": "burgers",
+        "seed": 2,
+        "arch": "fourier",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "burgers_fourier_seed6",
+      "group": 2,
+      "config": {
+        "pde": "burgers",
+        "seed": 6,
+        "arch": "fourier",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 2.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 5000,
+        "lm_iters": 50,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "group": 0,
+      "config": {
+        "pde": "allen_cahn",
+        "seed": 0,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 1.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 15000,
+        "lm_iters": 200,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "allen_cahn_mlp_seed1",
+      "group": 1,
+      "config": {
+        "pde": "allen_cahn",
+        "seed": 1,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 1.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 15000,
+        "lm_iters": 200,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "allen_cahn_mlp_seed3",
+      "group": 2,
+      "config": {
+        "pde": "allen_cahn",
+        "seed": 3,
+        "arch": "mlp",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 1.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 15000,
+        "lm_iters": 200,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "allen_cahn_fourier_seed0",
+      "group": 0,
+      "config": {
+        "pde": "allen_cahn",
+        "seed": 0,
+        "arch": "fourier",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 1.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 15000,
+        "lm_iters": 200,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "allen_cahn_fourier_seed1",
+      "group": 1,
+      "config": {
+        "pde": "allen_cahn",
+        "seed": 1,
+        "arch": "fourier",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 1.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 15000,
+        "lm_iters": 200,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    },
+    {
+      "tag": "allen_cahn_fourier_seed3",
+      "group": 2,
+      "config": {
+        "pde": "allen_cahn",
+        "seed": 3,
+        "arch": "fourier",
+        "nu": 0.003183098861837907,
+        "eps2": 0.0001,
+        "reac": 5.0,
+        "fourier_scale": 1.0,
+        "fourier_dim": 16,
+        "Mx": 20,
+        "Mt": 20,
+        "hidden": 64,
+        "fusion": 128,
+        "N_f": 5000,
+        "N_u": 1000,
+        "N_b": 200,
+        "adam_lr": 0.001,
+        "adam_iters": 15000,
+        "lm_iters": 200,
+        "ic_weight": 10.0,
+        "bc_weight": 10.0,
+        "bcu_weight": 10.0,
+        "bcx_weight": 1.0,
+        "ks_L": 100.53096491487338,
+        "ks_T": 100.0,
+        "gh_n": 80,
+        "lm_cg": 100,
+        "lm_mu_init": 0.0001,
+        "lm_mu_min": 1e-12,
+        "lm_rho_accept": 0.25,
+        "lm_rho_good": 0.75,
+        "lm_mu_dec": 0.3333333333333333,
+        "lm_mu_inc": 4.0,
+        "lm_max_rej": 5,
+        "eval_nx": 400,
+        "eval_nt": 200,
+        "smoke": 0,
+        "d": 128,
+        "d_aug": 129
+      }
+    }
+  ],
+  "groups": [
+    [
+      "burgers_mlp_seed2",
+      "burgers_mlp_seed0",
+      "burgers_mlp_seed3",
+      "burgers_fourier_seed0",
+      "allen_cahn_fourier_seed0",
+      "allen_cahn_mlp_seed0"
+    ],
+    [
+      "burgers_mlp_seed1",
+      "burgers_mlp_seed4",
+      "burgers_mlp_seed6",
+      "burgers_fourier_seed2",
+      "allen_cahn_fourier_seed1",
+      "allen_cahn_mlp_seed1"
+    ],
+    [
+      "burgers_mlp_seed5",
+      "burgers_mlp_seed7",
+      "burgers_fourier_seed6",
+      "allen_cahn_fourier_seed3",
+      "allen_cahn_mlp_seed3"
+    ]
+  ],
+  "files": [
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed0/burgers_mlp_seed0_params.pkl",
+      "bytes": 1577814,
+      "sha256": "b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed0\\burgers_mlp_seed0_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed0/burgers_mlp_seed0_map.json",
+      "bytes": 10656,
+      "sha256": "89f9f8f095defb106739dccd56fea12986e3f990630cb7a7bddb899b6a453e1d",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed0\\burgers_mlp_seed0_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz",
+      "bytes": 2224277,
+      "sha256": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed0\\burgers_mlp_seed0_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "bytes": 685620,
+      "sha256": "eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed0_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed0_round2.json",
+      "bytes": 43021,
+      "sha256": "5108ddefa9a789d79b91217a41a3582a4ecd56a405e048a3b04a128cc12195b6",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed0_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed0_round2.csv",
+      "bytes": 139064,
+      "sha256": "7a3cc75c85ced98d16e3f5aa7c8bbd3203ccc4e603576305e3ea476e26975d1c",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed0_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed0_round2_fields.npz",
+      "bytes": 32405009,
+      "sha256": "c81af423465c1a482f23eeaabe3345e6a8b986e7464603a61e2c4ff53cd1551c",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed0_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed0_round2_spectral.npz",
+      "bytes": 846533,
+      "sha256": "00866a8fa13faf537c5455854b3caca6e8a87700b99b88367c33e7310890fc98",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed0_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed1/burgers_mlp_seed1_params.pkl",
+      "bytes": 1577814,
+      "sha256": "cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed1\\burgers_mlp_seed1_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed1/burgers_mlp_seed1_map.json",
+      "bytes": 10659,
+      "sha256": "c1697f259e512ef884d461a82665018429bf9995d7f7d17ffb83957eeae35b52",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed1\\burgers_mlp_seed1_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz",
+      "bytes": 2223698,
+      "sha256": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed1\\burgers_mlp_seed1_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "bytes": 684778,
+      "sha256": "4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed1_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed1_round2.json",
+      "bytes": 42203,
+      "sha256": "03f4cf7c571b5d5d663fd058d7b5690b80c6c33adafd3f601d4b00697a8295ed",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed1_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed1_round2.csv",
+      "bytes": 134611,
+      "sha256": "cab6e4d0f1dd76a7f1b57584841e1b1f0dcbd1a91416f86d637fa7f5263a8896",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed1_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed1_round2_fields.npz",
+      "bytes": 31201728,
+      "sha256": "0532b7e5da088b1f8e8043452f58cd3d0552b89b801fbf2032f205826a75917c",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed1_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed1_round2_spectral.npz",
+      "bytes": 839102,
+      "sha256": "bead016ab70bec2b92125058bbb8e186074bade4f1d16fc4d8ae018e86726d45",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed1_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed2/burgers_mlp_seed2_params.pkl",
+      "bytes": 1577814,
+      "sha256": "56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed2\\burgers_mlp_seed2_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed2/burgers_mlp_seed2_map.json",
+      "bytes": 10168,
+      "sha256": "5a23c215efc9d0741579322dce6275a9165f2f2cfa13b8bddf1a74ff3cd7dbac",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed2\\burgers_mlp_seed2_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz",
+      "bytes": 2226478,
+      "sha256": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed2\\burgers_mlp_seed2_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "bytes": 686289,
+      "sha256": "242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed2_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed2_round2.json",
+      "bytes": 42972,
+      "sha256": "f050042a327a40e71ebf6a4dbfb938c88ae2228f812fe77df10f45d64bb0f984",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed2_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed2_round2.csv",
+      "bytes": 138965,
+      "sha256": "a33fbc00d208e2f927063399a6ca1fc0c6406c351faaaaa2f84971bffd350fbc",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed2_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed2_round2_fields.npz",
+      "bytes": 32434013,
+      "sha256": "854b08ec3647a2365cae3d8cc09278b900f51dea0effa45d63e37bf89056ce86",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed2_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed2_round2_spectral.npz",
+      "bytes": 843396,
+      "sha256": "873254cb5c99db346a001c62185fa64c4ef02b4eed739a9f43222a583e3d279a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed2_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed3/burgers_mlp_seed3_params.pkl",
+      "bytes": 1577814,
+      "sha256": "de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed3\\burgers_mlp_seed3_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed3/burgers_mlp_seed3_map.json",
+      "bytes": 10689,
+      "sha256": "8ae498ebd56a7f1c4a43719f372d55636fcc84a6c7e5014a55ec1a293594803e",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed3\\burgers_mlp_seed3_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz",
+      "bytes": 2224880,
+      "sha256": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed3\\burgers_mlp_seed3_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "bytes": 684507,
+      "sha256": "c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed3_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed3_round2.json",
+      "bytes": 42138,
+      "sha256": "51f7a26af77d12edc3eb1784bd194bb837f0c29215552fd157728405829761a7",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed3_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed3_round2.csv",
+      "bytes": 135229,
+      "sha256": "c2e2e1b83ee6ac006081d2ee1db387e14d5ab1affc93953d1fa36b1700ba44da",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed3_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed3_round2_fields.npz",
+      "bytes": 31180179,
+      "sha256": "a182d3c7759aa7ba3da7e593c01bc3459782d0270d4541cda8cc23ee35860dc3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed3_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed3_round2_spectral.npz",
+      "bytes": 829306,
+      "sha256": "44f24a98ec53c5e2b362c4255cfd372586341e274de34d738affb4dfb8046f7e",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed3_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed4/burgers_mlp_seed4_params.pkl",
+      "bytes": 1577814,
+      "sha256": "09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed4\\burgers_mlp_seed4_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed4/burgers_mlp_seed4_map.json",
+      "bytes": 10686,
+      "sha256": "29e173f1ec939ecc126a2a55d6e05c7842b3641b45317fc1aaf779329e763464",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed4\\burgers_mlp_seed4_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz",
+      "bytes": 2225905,
+      "sha256": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed4\\burgers_mlp_seed4_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "bytes": 685519,
+      "sha256": "db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed4_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed4_round2.json",
+      "bytes": 42981,
+      "sha256": "083512e73b9292763faaf739e82ea625b9ad8499e62a88bb932ecd9a5e953bb3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed4_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed4_round2.csv",
+      "bytes": 139327,
+      "sha256": "72b4955530762d5185b17c8f4b6de439d6b220cec196a8a0aa59097f54ccf760",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed4_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed4_round2_fields.npz",
+      "bytes": 32423201,
+      "sha256": "0b361a0844add705c0291486dc404e9a7b11394a518559cd05624cc834b1d468",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed4_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed4_round2_spectral.npz",
+      "bytes": 858329,
+      "sha256": "fd3f76b873b60265c0fbfac05b3bf3fd3a08320bf7a0a7a55adbf19150cbf34a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed4_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed5/burgers_mlp_seed5_params.pkl",
+      "bytes": 1577814,
+      "sha256": "7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed5\\burgers_mlp_seed5_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed5/burgers_mlp_seed5_map.json",
+      "bytes": 10685,
+      "sha256": "8606bac91e0eaa0805cdecaf101e642238191e0f3579fe2eebeb2ff657dc7987",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed5\\burgers_mlp_seed5_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz",
+      "bytes": 2225283,
+      "sha256": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed5\\burgers_mlp_seed5_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "bytes": 685889,
+      "sha256": "9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed5_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed5_round2.json",
+      "bytes": 42171,
+      "sha256": "87c6eb2c9b3e0f66cad86a70f5505c60df64d439405b114f8d821758573f0bd8",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed5_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed5_round2.csv",
+      "bytes": 134878,
+      "sha256": "7f0437c7d392d8bfd08ad47e0440fcf9973296df76173812b2d035014d090140",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed5_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed5_round2_fields.npz",
+      "bytes": 31210090,
+      "sha256": "bcc92934a2146a1564a5e5f52a0b6f32e18c15eeeb7b14f0e785038897270bd3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed5_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed5_round2_spectral.npz",
+      "bytes": 838491,
+      "sha256": "4a7aab5b6994518434daab773bee0e7a064548d8869d00e3b73f2694a6c96670",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed5_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed6/burgers_mlp_seed6_params.pkl",
+      "bytes": 1577814,
+      "sha256": "22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed6\\burgers_mlp_seed6_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed6/burgers_mlp_seed6_map.json",
+      "bytes": 10187,
+      "sha256": "d0eada9d7a229a3b5602729fd27cd89831fe74a66b8b5bd16c98f9a486462185",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed6\\burgers_mlp_seed6_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz",
+      "bytes": 2225703,
+      "sha256": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed6\\burgers_mlp_seed6_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "bytes": 683282,
+      "sha256": "282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed6_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed6_round2.json",
+      "bytes": 42141,
+      "sha256": "31f7a07b73213d77b6540677290c3c2548e64292413e69b09a7cc360c7515118",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed6_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed6_round2.csv",
+      "bytes": 134763,
+      "sha256": "4d539c1889a946f8a0147ed249809d2edfa6cf9e424d2ea61ab1e05145fde2ab",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed6_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed6_round2_fields.npz",
+      "bytes": 31188020,
+      "sha256": "ee1f17568624a40697bfcb17248322ee3abfbd73977513fca184048cbddfbd50",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed6_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed6_round2_spectral.npz",
+      "bytes": 852872,
+      "sha256": "f64c2327c22aae2493053b0632fb95bb5927098980a252e0e8e9584d083acc91",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed6_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed7/burgers_mlp_seed7_params.pkl",
+      "bytes": 1577814,
+      "sha256": "c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed7\\burgers_mlp_seed7_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed7/burgers_mlp_seed7_map.json",
+      "bytes": 10671,
+      "sha256": "53b1536ba511c2fae941bbe118d0e92f2148730b864603950072ee9ff9651b62",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed7\\burgers_mlp_seed7_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz",
+      "bytes": 2224889,
+      "sha256": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_mlp_seed7\\burgers_mlp_seed7_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "bytes": 683256,
+      "sha256": "518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_mlp_seed7_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed7_round2.json",
+      "bytes": 42221,
+      "sha256": "803902ca7e2154d8f3f4eda53ff74720f6f80df4727a1b0704b6856a7603129b",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed7_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed7_round2.csv",
+      "bytes": 135226,
+      "sha256": "59e30d06be3c5b049f0fdb66f797e4fd1fb074b0b9256a658a0cddcb17eb7e31",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed7_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed7_round2_fields.npz",
+      "bytes": 31196046,
+      "sha256": "d9886b3ad4a1461abfe2e7fba29de137854cddee08624e5b6e97ca8f62c44521",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed7_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_mlp_seed7_round2_spectral.npz",
+      "bytes": 835152,
+      "sha256": "0d28945849af01c5eec9bf1a48ce5eba451f7d47aae9ed02823fb15b5fa952d0",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_mlp_seed7_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_params.pkl",
+      "bytes": 2212748,
+      "sha256": "06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed0\\burgers_fourier_seed0_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_map.json",
+      "bytes": 10684,
+      "sha256": "9063bf1f39342fbc18e6e8cf6802cd598b2a12e5c04127578305e9bea2ab1522",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed0\\burgers_fourier_seed0_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_fields.npz",
+      "bytes": 2227493,
+      "sha256": "ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed0\\burgers_fourier_seed0_fields.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_fourier_B.npz",
+      "bytes": 754,
+      "sha256": "eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed0\\burgers_fourier_seed0_fourier_B.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+      "bytes": 689214,
+      "sha256": "1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_fourier_seed0_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed0_round2.json",
+      "bytes": 41531,
+      "sha256": "b927c13999f26d4a36b298b07dd24b133b34aca6d9ddc2de97752f6f184d2888",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed0_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed0_round2.csv",
+      "bytes": 130599,
+      "sha256": "e467bad742a37186ba0b9384e7c07c3081f4845a09a06741228be7ad41d387fe",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed0_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed0_round2_fields.npz",
+      "bytes": 30106427,
+      "sha256": "476c02d1c587c5b559abf2c90e8aa7d678391fcc08867256959b8c1a35ea4e50",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed0_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed0_round2_spectral.npz",
+      "bytes": 953248,
+      "sha256": "a56bb0057256f3412d5214634c98e549a0e155717940e1e0b42a775947ab7ebf",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed0_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_params.pkl",
+      "bytes": 2212748,
+      "sha256": "ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed2\\burgers_fourier_seed2_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_map.json",
+      "bytes": 10171,
+      "sha256": "c48714269fa0fa45ce4cae40f5cc817ee83a0cf06ef570772d86f39f708f5f60",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed2\\burgers_fourier_seed2_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_fields.npz",
+      "bytes": 2226324,
+      "sha256": "3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed2\\burgers_fourier_seed2_fields.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_fourier_B.npz",
+      "bytes": 754,
+      "sha256": "bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed2\\burgers_fourier_seed2_fourier_B.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "bytes": 688462,
+      "sha256": "945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_fourier_seed2_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed2_round2.json",
+      "bytes": 42218,
+      "sha256": "a04ebb6ef488c3aac64bfb47a11ff9c80337e8352ed5b359fab306c8ad5c5b19",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed2_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed2_round2.csv",
+      "bytes": 134037,
+      "sha256": "acb2ac580a5ab3cd699ec8f8b262b3a990cdbb761586db1b67eb56a129a0fdfa",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed2_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed2_round2_fields.npz",
+      "bytes": 31290451,
+      "sha256": "b2d199104653ee963c2981ccaa516e771e372580c377e4483bea75751dd34042",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed2_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed2_round2_spectral.npz",
+      "bytes": 963948,
+      "sha256": "6fb67592448ce5903d758c003cd54a19d1fa90f0d2c920738db1aeb46cf23a48",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed2_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_params.pkl",
+      "bytes": 2212748,
+      "sha256": "ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed6\\burgers_fourier_seed6_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_map.json",
+      "bytes": 10141,
+      "sha256": "61bdf78c4acba9bc0e06e03334cac375e635ecdfc76cad90cbd99365ce242a0b",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed6\\burgers_fourier_seed6_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_fields.npz",
+      "bytes": 2226885,
+      "sha256": "4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed6\\burgers_fourier_seed6_fields.npz"
+    },
+    {
+      "path": "inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_fourier_B.npz",
+      "bytes": 754,
+      "sha256": "a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\burgers_fourier_seed6\\burgers_fourier_seed6_fourier_B.npz"
+    },
+    {
+      "path": "inputs/baseline/burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+      "bytes": 688504,
+      "sha256": "8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\burgers_fourier_seed6_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed6_round2.json",
+      "bytes": 41638,
+      "sha256": "732741823630550c913efa34a202fdb5bdcc1e2cf20a05da894e7238ef4c378e",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed6_round2.json"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed6_round2.csv",
+      "bytes": 130379,
+      "sha256": "994bd72a81b2140d6267dce5a16fc9bafccdffef8f67a07f2bcfff35c5be6a37",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed6_round2.csv"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed6_round2_fields.npz",
+      "bytes": 30108096,
+      "sha256": "e5207b37e3d6e2742aab5c31fb5e72d31ab8d4fe91e22be29fc4fc9ac310ad03",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed6_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/burgers_fourier_seed6_round2_spectral.npz",
+      "bytes": 946370,
+      "sha256": "899834dad628ed53b7b2ebdcde97bb429e24dc80c9d03bcf9cd3352eb419ea8f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\burgers_fourier_seed6_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_params.pkl",
+      "bytes": 1577814,
+      "sha256": "c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed0\\allen_cahn_mlp_seed0_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_map.json",
+      "bytes": 10670,
+      "sha256": "58ce55c004ddae7a745e80d938ac2e7b6eef1edce8238c4cb906cde20b6eb321",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed0\\allen_cahn_mlp_seed0_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fields.npz",
+      "bytes": 2284892,
+      "sha256": "baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed0\\allen_cahn_mlp_seed0_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "bytes": 696942,
+      "sha256": "020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed0_round2.json",
+      "bytes": 45689,
+      "sha256": "5e911c014e1f2cf424b3336a1a23fc9fdb7ef0fc770122e918f214dab99bd262",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed0_round2.json"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed0_round2.csv",
+      "bytes": 76004,
+      "sha256": "af0a61f65a0b591b2467b50222c743cf8af10a44a42c82065b08b971976e4a58",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed0_round2.csv"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed0_round2_fields.npz",
+      "bytes": 37615047,
+      "sha256": "f9e7d9c56d7a47e1b27ffe080adcf2a99392f35be797327da159b5dc2b38f772",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed0_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed0_round2_spectral.npz",
+      "bytes": 740765,
+      "sha256": "1a405061918308ef72f668b24844abdd0d862ebeb40e70438f849f4efee36ab2",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed0_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_params.pkl",
+      "bytes": 1577814,
+      "sha256": "b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed1\\allen_cahn_mlp_seed1_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_map.json",
+      "bytes": 10143,
+      "sha256": "096c0bb7913e0c63e047d4edb0aa6357f51be2276748b3475a4e2481d687242b",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed1\\allen_cahn_mlp_seed1_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fields.npz",
+      "bytes": 2287814,
+      "sha256": "8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed1\\allen_cahn_mlp_seed1_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+      "bytes": 697224,
+      "sha256": "87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed1_round2.json",
+      "bytes": 45667,
+      "sha256": "11c4bfcc7d00c6ce704e73229bebde960997a0939f0ab76ee4268e2356ac0f62",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed1_round2.json"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed1_round2.csv",
+      "bytes": 76068,
+      "sha256": "1a1079b8e87d807eb8bef3c240a93cb70fee1014738dc26879f12dc5fd36bb56",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed1_round2.csv"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed1_round2_fields.npz",
+      "bytes": 37621427,
+      "sha256": "5d5eb304994f09a231b6237f57576b15c5a373c3b299db9548beac1c531a7cca",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed1_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed1_round2_spectral.npz",
+      "bytes": 755514,
+      "sha256": "e92156f6d4f72febbc487f3c3f54b2143ad618f50eb33a5c0e2549f12815320f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed1_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_params.pkl",
+      "bytes": 1577814,
+      "sha256": "76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed3\\allen_cahn_mlp_seed3_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_map.json",
+      "bytes": 10170,
+      "sha256": "e7e6ac2775e38fb119dcb238579762eefcd46dc62a9e7ed78efeca60d58f120a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed3\\allen_cahn_mlp_seed3_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fields.npz",
+      "bytes": 2279129,
+      "sha256": "cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_mlp_seed3\\allen_cahn_mlp_seed3_fields.npz"
+    },
+    {
+      "path": "inputs/baseline/allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+      "bytes": 697127,
+      "sha256": "032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed3_round2.json",
+      "bytes": 45749,
+      "sha256": "384862d714a3923ba476a8e7e31181645a082d18073d7178bc17d5ddc72adaf9",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed3_round2.json"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed3_round2.csv",
+      "bytes": 76110,
+      "sha256": "b30ebd98ab811800d793a1133d9ba14b586df8e0d279f8b09f5787baac117fe7",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed3_round2.csv"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed3_round2_fields.npz",
+      "bytes": 37606582,
+      "sha256": "7a038f915315beecf6fe1c0da02b629739829d08564266001885787758629d61",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed3_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_mlp_seed3_round2_spectral.npz",
+      "bytes": 737263,
+      "sha256": "c170693117970e36405b15d0a369168552a69a2782e98ab9e510e71f74021d14",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_mlp_seed3_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_params.pkl",
+      "bytes": 2212748,
+      "sha256": "ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed0\\allen_cahn_fourier_seed0_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_map.json",
+      "bytes": 10255,
+      "sha256": "396ee17ebaa3e2bb8f7d4bdfef52593782c36e223e41d9f86546911d1580815c",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed0\\allen_cahn_fourier_seed0_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fields.npz",
+      "bytes": 2292379,
+      "sha256": "b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed0\\allen_cahn_fourier_seed0_fields.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fourier_B.npz",
+      "bytes": 754,
+      "sha256": "17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed0\\allen_cahn_fourier_seed0_fourier_B.npz"
+    },
+    {
+      "path": "inputs/baseline/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "bytes": 697287,
+      "sha256": "6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed0_round2.json",
+      "bytes": 40685,
+      "sha256": "158cbea27802dd81f2a929abba175c30945d714c8e85baf84ef5c67334001a91",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed0_round2.json"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed0_round2.csv",
+      "bytes": 62605,
+      "sha256": "0ad8c75e0de1e2c184ace602de3c1f354303fdf7ab33a03b6e020694dcdda2ed",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed0_round2.csv"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed0_round2_fields.npz",
+      "bytes": 28982808,
+      "sha256": "9ffc00c24925389dbb1bd79cffd66fc394927f0af1753afb44131ac539944e26",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed0_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed0_round2_spectral.npz",
+      "bytes": 799318,
+      "sha256": "bcbadb16873f8d05e29f8187ffcd50d3ef6310698bf330356bd69c77880fc511",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed0_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_params.pkl",
+      "bytes": 2212748,
+      "sha256": "48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed1\\allen_cahn_fourier_seed1_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_map.json",
+      "bytes": 10282,
+      "sha256": "a66ad051407bcad447054231195893996e5da730f358f3894b4fe983e61f56ee",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed1\\allen_cahn_fourier_seed1_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz",
+      "bytes": 2295198,
+      "sha256": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed1\\allen_cahn_fourier_seed1_fields.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fourier_B.npz",
+      "bytes": 754,
+      "sha256": "cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed1\\allen_cahn_fourier_seed1_fourier_B.npz"
+    },
+    {
+      "path": "inputs/baseline/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+      "bytes": 698379,
+      "sha256": "ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed1_round2.json",
+      "bytes": 40640,
+      "sha256": "bf8460d45b52675d634cf11894ca0dd71a9ff60d4e4b41d5f342936d458ab5a4",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed1_round2.json"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed1_round2.csv",
+      "bytes": 62734,
+      "sha256": "ec546bee6cac9981c9c48a1930c3a47468a77c0394f780aaf3103a318c39aca9",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed1_round2.csv"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed1_round2_fields.npz",
+      "bytes": 29017269,
+      "sha256": "061af23d68bf1ef4b0489dcaf69959379d4d60ee230df325b2abda59c7e57fd3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed1_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed1_round2_spectral.npz",
+      "bytes": 798122,
+      "sha256": "4ec11c0a2a5c70a67fa229f1cdc9cf431aa56e98205bb929c1effa63c25f7d1a",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed1_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_params.pkl",
+      "bytes": 2212748,
+      "sha256": "f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed3\\allen_cahn_fourier_seed3_params.pkl"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_map.json",
+      "bytes": 10163,
+      "sha256": "6dcb37b84e54e96695ad709f276e8cbdc8c7bbfd0ef512ef9c71908fcd750129",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed3\\allen_cahn_fourier_seed3_map.json"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fields.npz",
+      "bytes": 2293519,
+      "sha256": "9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed3\\allen_cahn_fourier_seed3_fields.npz"
+    },
+    {
+      "path": "inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fourier_B.npz",
+      "bytes": 754,
+      "sha256": "d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n5\\input\\allen_cahn_fourier_seed3\\allen_cahn_fourier_seed3_fourier_B.npz"
+    },
+    {
+      "path": "inputs/baseline/allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+      "bytes": 697512,
+      "sha256": "73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\baseline\\allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed3_round2.json",
+      "bytes": 40691,
+      "sha256": "90c45b231825ca65a94ac7ce3e26f2c4d6b268b69227933aca607ed00849a648",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed3_round2.json"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed3_round2.csv",
+      "bytes": 62762,
+      "sha256": "b6731a2c72bf3af3b902a6f243191f689c3b9a0195486d3cfd98feaa56317caa",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed3_round2.csv"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed3_round2_fields.npz",
+      "bytes": 28989614,
+      "sha256": "46392b390ae7df54b5013e4ae253b547d8fbac8d4f539245598cc75a44f41c44",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed3_round2_fields.npz"
+    },
+    {
+      "path": "inputs/round2/allen_cahn_fourier_seed3_round2_spectral.npz",
+      "bytes": 810123,
+      "sha256": "ae203ae06bf38771af001dcdbff4e7073a444d7c3d1c13dda8dcf80595f61e9c",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round2\\outputs\\production\\allen_cahn_fourier_seed3_round2_spectral.npz"
+    },
+    {
+      "path": "inputs/refined_roots.csv",
+      "bytes": 1534,
+      "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
+      "copied_from": "C:\\dev\\myshortened\\pinn_uq\\analysis\\round3_local\\outputs\\refined_roots.csv"
+    }
+  ],
+  "conventions": "Frozen checkpoints and original raw residual weights; copied inputs only.",
+  "source_model_sha256": "2600378f344fed3879c0f204ad7170de37d246f8afd6340c129be41efbe754d3"
+}

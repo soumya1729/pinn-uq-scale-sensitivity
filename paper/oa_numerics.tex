@@ -1,0 +1,135 @@
+This record details the numerical checks in Appendix~\ref{app:r2} for the
+working covariance, prior-centre comparison and nonlinear forward diagnostic of
+Section~\ref{sec:setting}.
+
+\subsection{Direct-J Evaluation and Consistency Checks}
+Appendix~\ref{app:r2:numerics} specifies the direct-$J$ factorisation and scale grids.
+Within each prior-centre model, shared $\gamma$ settings have identical affine means
+and unit-variance fields; widths scale by $\sqrt v$.
+
+At all $401$ zero-mean-prior settings, automatic differentiation of the frozen residual map checks
+the normal-equation residual independently of the QR/SVD factors:
+\begin{align*}
+ h_\gamma&=J^\top(r+J\delta_\gamma)+\gamma(\theta+\delta_\gamma),\\
+ \eta_{\rm back}&=\frac{\|h_\gamma\|}
+ { (\lambda_{\max}+\gamma)\|\delta_\gamma\|
+       +\|J^\top r+\gamma\theta\|}.
+\end{align*}
+All $401$ ratios are below the prescribed $10^{-7}$ tolerance, with maximum
+$6.19\times10^{-17}$; absolute residuals, denominators and shift norms are recorded.
+The complement shift $\delta_c=-Q_cQ_c^\top\theta$ is checked through $J\delta_c$,
+its norm, projection identity and output. All $17$ checkpoints pass, with maximum
+scaled defect $5.10\times10^{-16}$. Normwise residuals can miss weak-direction errors;
+null membership alone does not establish amplitude or completeness.
+
+The $\theta$-centred checks cover $95$ distinct checkpoint--precision pairs:
+baseline, conditional MLE, original and extended evidence selections under both
+priors, and five trained-centre roots, merging repeated precisions per checkpoint.
+For these checks, use
+$h^\theta_\gamma=J^\top(r+J\delta_L)+\gamma\delta_L$ and denominator
+$(\lambda_{\max}+\gamma)\|\delta_L\|+\|J^\top r\|$; the maximum ratio is
+$9.12\times10^{-17}$. Nonlinear evaluation at $\theta+\delta_L$ leaves $J$, $g$
+and covariance fixed. Independent NumPy predictions at nine points per setting
+agree within $4.72\times10^{-12}$ absolute. This is a deterministic forward check,
+not posterior sampling.
+
+Fields reproduce regional metrics, and spectral sums reproduce regional mean variances.
+All $34$ zero-mean-prior evidence selections and one-log-unit sets reproduce from saved
+surfaces; all $34$ $\theta$-centred selections reproduce from new factors.
+
+Saved arrays reproduce all $401$ displacement norms and regional variances
+(Appendix~\ref{app:r3:centres}). The envelopes enclose every tested stored
+intermediate variance field and a prescribed-spectrum example with a null mode
+at $49$ interior precisions. Direct fields at the five refined trained-centre roots
+also lie within their coverage envelopes. These checks do not certify the original
+Jacobian by interval arithmetic.
+
+
+\subsection{Evidence Sensitivity Protocol}
+The six zero-mean-prior sensitivity cases in Appendix~\ref{app:r2:evidence} keep
+singular vectors fixed and adjust the observation coherently:
+$z'=z+(s'-s)\theta_{\rm modes}$, with $z=V^\top(J\theta-r)$ and
+$\theta_{\rm modes}=U^\top Q_1^\top\theta$. For $\gamma=\alpha v$, an assumed
+singular-value budget gives
+\[
+ |\Delta\lambda_i|\le2s_i|\Delta s_i|+|\Delta s_i|^2.
+\]
+At $s_i=\sqrt\gamma$, the relative envelope is
+$2\delta s/\sqrt\gamma+\delta s^2/\gamma$; the $10\times$ case scales its two terms by
+$10$ and $100$. Table~\ref{tab:r2-evidence} shows why the extended Allen--Cahn MLP
+selections are especially exposed: the $1\times$ quadratic terms alone are
+$7.55$, $488.55$ and $228.65$ times $\gamma$. The formed-Gram roundoff scale in Table~\ref{tab:spectrum} is not an error bound for
+direct-$J$ QR/SVD.
+
+Every Allen--Cahn Fourier selected pair and the pairs for Burgers--Fourier seeds $0,6$
+are unchanged in all six cases. Burgers--Fourier seed $2$ moves its noise and $\gamma$
+up one quarter decade in the increase-$10\times$ case. Every Burgers--MLP run changes
+the selected pair in at least two cases, retaining its noise boundary; alpha ratios
+relative to its extended selection range from $0.562$ to $3.162$ across the cohort.
+Allen--Cahn MLP changes in all six cases per run: perturbed noise ratios reach
+$177.8$ (seed $0$) and $3162$ (seeds $1,3$), while $\gamma$ ratios reach $1000$ and
+$316{,}228$, respectively. Changes in log evidence evaluated at the fixed extended pair
+reach about $-1.05\times10^6$. Its extended scales therefore are not presented as robust
+scale estimates. Fields at the alternative selected scales use the original Jacobian,
+without recomputing a perturbed posterior.
+
+For the fixed-alpha derivative $D_v$ in \eqref{eq:r2-evidence-slope},
+the signed terms are grouped by $\lambda_i/\gamma<0.01$, $0.01$--$100$, and $>100$.
+Its weak-group energy ratios and counts are reported in Appendix~\ref{app:r2:evidence}.
+For a cluster with all $\lambda_i\ll\gamma$, the leading contribution is
+$-\tfrac12[m\log v+\sum_i z_i^2/v]$ apart from the constant; calculations retain the full
+formula. At fixed $\alpha$ and for this isolated cluster, the stationary variance is
+$v_*\approx m^{-1}\sum_i z_i^2$, provided all modes remain weak at $v_*$.
+For an exact-null cluster with positive projected energy this expression is exact.
+Decreasing $v$ can invalidate $\lambda_i\ll\alpha v$ for positive eigenvalues;
+other modes and changed cluster membership affect the full optimum. The expression
+therefore explains a local boundary tendency without settling the $v\to0$ limit.
+Grouped energies avoid interpreting arbitrary individual coordinates. Allen--Cahn Fourier has substantial
+positive transition-group contributions, partly offsetting its negative weak group.
+The ratios are descriptive, not goodness-of-fit tests.
+
+The fixed-alpha slope ranges are in Appendix~\ref{app:r2:evidence}; they do not
+describe an alpha-reoptimised path or settle the limit $v\to0$.
+The largest slope discrepancy against a local central log-noise finite difference is
+$4.43\times10^{-6}$ absolute, or $5.51\times10^{-9}$ after division by $1+|D_v|$.
+Modal and grouped sums verify the calculation, not evidence-model adequacy.
+
+% Summary of unchanged synthetic archives; no new simulation or tolerance change.
+\subsection{Synthetic Controls}
+The small $12\times20$ design compares QR/SVD posterior means, covariances and evidence
+with dense calculations, with maximum discrepancies $4.90\times10^{-12}$ and
+$3.01\times10^{-12}$ in relative norm and $1.42\times10^{-13}$ in absolute log evidence.
+In $1000$ correctly specified prior/noise draws, the affine posterior output mean gives
+one-sigma coverage $0.6870$ (draw-level SE $0.00544$) and $95\%$ coverage $0.9534$
+(SE $0.00249$). A separate full-column-rank least-squares example with $N=40,P=12$
+and generating noise variance $v=0.2$ gives a mean of $0.140411$ (SE $0.001198$)
+for the fitted-residual estimator $\|r_{\rm fit}\|^2/N$, consistent with
+$(N-P)v/N=0.14$. In a general linear fit the factor is
+$(N-\operatorname{rank}(X))/N$, reducing to $(N-P)/N$ only for full column rank.
+For a full-row-rank interpolating design it is zero; $P>N$ alone neither establishes
+that rank nor supplies a correction for nonlinear PINN fitting.
+Fitting can therefore reduce this estimator even under a correct
+noise model; this example is not an estimate of PINN discrepancy.
+
+The fixed $100$-draw overparameterised $16$-decade eigenvalue toy has
+$100/100$ interior selections agreeing with its prescribed-spectrum reference.
+At the $5,25,50,75,95$ percentiles, the selected log-scale ratios
+$\log_{10}(\widehat\alpha/\alpha)$ are $(0,0,0,0,0.25)$;
+$\log_{10}(\widehat v/v)$ and $\log_{10}(\widehat\gamma/\gamma)$ are
+$(-0.25,0,0,0,0.25)$. These quarter-decade-grid medians coincide with the generating
+pair without establishing exact scale recovery.
+
+A $21.2$-decade synthetic spectrum with $N=96,P=160$ has $79/96$ prescribed
+eigenvalues below $\varepsilon_{64}\lambda_{\max}$. Its generating
+$\gamma=10^{-8}$ is interior to the search grid. All $100$ selected pairs are
+interior and agree with the prescribed-spectrum reference. The same log-scale
+percentiles are $(-0.25,0,0,0,0.25)$ for $\alpha$ and $\gamma$, and
+$(0,0,0,0,0)$ for $v$. The maximum selected log-evidence discrepancy is
+$9.40\times10^{-8}$. Across the whole tested grid, however, the maximum absolute
+discrepancy is $0.01775$ and the maximum scaled discrepancy
+$|\ell_{\rm num}-\ell_{\rm ref}|/(1+|\ell_{\rm ref}|)$ is $4.55\times10^{-5}$,
+exceeding the prescribed $10^{-7}$ tolerance. Here $\ell_{\rm num}$ and
+$\ell_{\rm ref}$ include the Gaussian normalising constant. Near-best discrepancies are
+small. Cancellation and the additive constant affect this scaled error; the failed
+whole-grid check alone establishes neither an incorrect selector nor model inadequacy.
+These controls retain the original tolerance and do not establish PINN evidence stability.

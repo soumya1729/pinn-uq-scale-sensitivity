@@ -1,0 +1,161 @@
+{
+  "scope": "Saved-data interpretation only; original numerical results unchanged",
+  "sharp_count": 4000,
+  "alignment": [
+    {
+      "seed": 0,
+      "pearson": -0.30100498412174964,
+      "cosine": -0.3061059331023006,
+      "opposite_sign_fraction": 0.41875,
+      "own_error_rms": 0.01068676548937805,
+      "other_mean_error_rms": 0.10603115598670948
+    },
+    {
+      "seed": 1,
+      "pearson": 0.9846034493678852,
+      "cosine": 0.9873193676346432,
+      "opposite_sign_fraction": 0.19625,
+      "own_error_rms": 0.20021397072928487,
+      "other_mean_error_rms": 0.07723684786549866
+    },
+    {
+      "seed": 2,
+      "pearson": 0.9791177502193689,
+      "cosine": 0.9828010778833185,
+      "opposite_sign_fraction": 0.101,
+      "own_error_rms": 0.283147851615215,
+      "other_mean_error_rms": 0.06555524527105712
+    },
+    {
+      "seed": 3,
+      "pearson": 0.9887718371048224,
+      "cosine": 0.9902131125297677,
+      "opposite_sign_fraction": 0.12775,
+      "own_error_rms": 0.2058350759852895,
+      "other_mean_error_rms": 0.076376814290586
+    },
+    {
+      "seed": 4,
+      "pearson": 0.13626564604607627,
+      "cosine": 0.11291903971008288,
+      "opposite_sign_fraction": 0.4515,
+      "own_error_rms": 0.003617471969970451,
+      "other_mean_error_rms": 0.10551423140856935
+    },
+    {
+      "seed": 5,
+      "pearson": -0.7517101496687029,
+      "cosine": -0.7959091967249255,
+      "opposite_sign_fraction": 0.84675,
+      "own_error_rms": 0.07978312952403216,
+      "other_mean_error_rms": 0.11441953937028608
+    },
+    {
+      "seed": 6,
+      "pearson": 0.8568891734809566,
+      "cosine": 0.8753939372616124,
+      "opposite_sign_fraction": 0.38525,
+      "own_error_rms": 0.020404116162139326,
+      "other_mean_error_rms": 0.1030127679849959
+    },
+    {
+      "seed": 7,
+      "pearson": 0.8882670147542796,
+      "cosine": 0.9063431850434943,
+      "opposite_sign_fraction": 0.177,
+      "own_error_rms": 0.10642468109648556,
+      "other_mean_error_rms": 0.09159858806522342
+    }
+  ],
+  "oracle_nearest_sampled": [
+    {
+      "tag": "burgers_mlp_seed0",
+      "gamma": 0.018215042035356364,
+      "rho": 0.9543763996909189,
+      "near_agreement": true,
+      "bulk_mean_Z": 0.8281868118303332,
+      "sharp_mean_Z": 1.4032992174556393,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.34275
+    },
+    {
+      "tag": "burgers_mlp_seed1",
+      "gamma": 5.647474080882049e-06,
+      "rho": 1.8362544398977083,
+      "near_agreement": false,
+      "bulk_mean_Z": 0.833436823951752,
+      "sharp_mean_Z": 0.49240035345719924,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.8605
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "gamma": 0.00017652641714178374,
+      "rho": 2.587439301121245,
+      "near_agreement": false,
+      "bulk_mean_Z": 0.9474279240804845,
+      "sharp_mean_Z": 3.26972986309121,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.44675
+    },
+    {
+      "tag": "burgers_mlp_seed3",
+      "gamma": 5.5297990880677915e-06,
+      "rho": 1.9923559669033466,
+      "near_agreement": false,
+      "bulk_mean_Z": 0.8014552344889743,
+      "sharp_mean_Z": 0.6740488812377058,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.725
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "gamma": 0.5697667069305609,
+      "rho": 0.9548553798590887,
+      "near_agreement": true,
+      "bulk_mean_Z": 0.8400525692193858,
+      "sharp_mean_Z": 1.2174926558095116,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.437
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "gamma": 1.7334452926186198e-05,
+      "rho": 0.9733108901931612,
+      "near_agreement": true,
+      "bulk_mean_Z": 0.9840384607015281,
+      "sharp_mean_Z": 1.9762594948380827,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.35925
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "gamma": 0.0017769215210636912,
+      "rho": 1.0323280412659583,
+      "near_agreement": true,
+      "bulk_mean_Z": 0.8556415764101736,
+      "sharp_mean_Z": 1.0911899432944028,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.5165
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "gamma": 1.78416162733608e-05,
+      "rho": 0.9642169495352116,
+      "near_agreement": true,
+      "bulk_mean_Z": 0.9091073968928959,
+      "sharp_mean_Z": 1.1044026202855295,
+      "bulk_cov68": 0.6800178571428571,
+      "sharp_cov68": 0.65175
+    }
+  ],
+  "seed5_rho_change": 0.19173496512956922,
+  "seed5_sharp_error_rms": [
+    0.09237710527577621,
+    0.11441953937028608
+  ],
+  "seed5_sharp_sigma_rms": [
+    0.1186346088531334,
+    0.10879432449110749
+  ]
+}

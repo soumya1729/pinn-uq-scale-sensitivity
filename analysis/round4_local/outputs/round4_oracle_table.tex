@@ -1,0 +1,37 @@
+% Recomputed from frozen round-two fields by analysis/round4_local/review_round4.py.
+\begin{table}[!htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Burgers--MLP seed & $\rho$ & $C^{\mathcal B}_{\mathcal S}(1)$ & $C^{\mathcal B}_{\mathcal S}(1.96)$ & $C^{\mathcal S}_{\mathcal S}(1.96)$ & $\overline{|Z|}^{\mathcal S}$ & $\overline Z^{\mathcal S}$\\
+\midrule
+0 & 0.95438 & 0.34275 & 0.7885 & 0.92025 & 0.91339 & $-0.24502$ \\
+1 & 1.8363 & 0.8605 & 0.97425 & 0.865 & 0.94283 & $0.85765$ \\
+2 & 2.5874 & 0.44675 & 0.639 & 0.85025 & 1.3644 & $1.209$ \\
+3 & 1.9924 & 0.725 & 0.933 & 0.9175 & 0.77179 & $0.56348$ \\
+4 & 0.95486 & 0.437 & 0.86375 & 0.95775 & 0.83109 & $-0.069397$ \\
+5 & 0.97331 & 0.35925 & 0.69175 & 0.8345 & 1.0436 & $-1.0371$ \\
+6 & 1.0323 & 0.5165 & 0.8435 & 0.92825 & 0.85021 & $0.069544$ \\
+7 & 0.96422 & 0.65175 & 0.837 & 0.84675 & 1.034 & $0.79421$ \\
+\midrule
+\multicolumn{2}{l}{Family / subset ($n$)} & \multicolumn{2}{c}{$C^{\mathcal S}_{\mathcal S}(1.96)$} & $\overline{|Z|}^{\mathcal S}$ & \multicolumn{2}{c}{$\overline Z^{\mathcal S}$}\\
+\midrule
+\multicolumn{2}{l}{Burgers--MLP / full ($8$)} & \multicolumn{2}{c}{$[0.8345,\,0.95775]$} & $[0.77179,\,1.3644]$ & \multicolumn{2}{c}{$[-1.0371,\,1.209]$} \\
+\multicolumn{2}{l}{Burgers--Fourier / full ($3$)} & \multicolumn{2}{c}{$[0.82475,\,0.85075]$} & $[1.0792,\,1.3448]$ & \multicolumn{2}{c}{$[0.98518,\,1.3234]$} \\
+\multicolumn{2}{l}{Allen--Cahn--MLP / full ($3$)} & \multicolumn{2}{c}{$[0.921,\,0.959]$} & $[0.77708,\,0.86039]$ & \multicolumn{2}{c}{$[-0.29925,\,0.32371]$} \\
+\multicolumn{2}{l}{Allen--Cahn--Fourier / full ($3$)} & \multicolumn{2}{c}{$[0.98325,\,0.9995]$} & $[0.71247,\,0.81491]$ & \multicolumn{2}{c}{$[-0.36263,\,0.27285]$} \\
+\multicolumn{2}{l}{Burgers--MLP / post ($8$)} & \multicolumn{2}{c}{$[0.94454,\,1]$} & $[0.61868,\,0.98575]$ & \multicolumn{2}{c}{$[-0.87154,\,0.82267]$} \\
+\multicolumn{2}{l}{Burgers--Fourier / post ($3$)} & \multicolumn{2}{c}{$[0.8646,\,1]$} & $[0.82852,\,0.87527]$ & \multicolumn{2}{c}{$[0.7548,\,0.86578]$} \\
+\bottomrule
+\end{tabular}
+\caption{Trained-centre regional calibration at each run's closest saved contrast setting.
+The superscript $\mathcal B$ or $\mathcal S$ denotes the region whose higher empirical
+$0.68$ quantile supplies the width multiplier. The upper panel gives eight full-grid
+Burgers--MLP seeds; the lower panel gives observed ranges for all $17$ full-grid runs
+and the Burgers post-formation subsets. Each setting minimises $|\log\rho|$, with ties
+at the lowest saved precision. $\overline{|Z|}^{\mathcal S}$ and $\overline Z^{\mathcal S}$
+are absolute and signed means of sharp-calibrated standardised errors.
+Sharp one-standard-deviation coverage is fixed by construction, up to discreteness
+and ties. Displayed values are rounded; reference calibration does not define a training rule.}
+\label{tab:r4-oracles}
+\end{table}

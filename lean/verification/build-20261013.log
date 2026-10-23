@@ -1,0 +1,64 @@
+Source-clean project build; pinned existing Mathlib cache.
+Command: lean --version
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+Command: lake --version
+Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)
+Command: git -C .lake/packages/mathlib rev-parse HEAD
+c5ea00351c28e24afc9f0f84379aa41082b1188f
+Command: LEAN_NUM_THREADS=4 lake --no-cache --wfail build
+✔ [8475/8483] Built PaperReliability.ModalModel (103s)
+✔ [8476/8483] Built PaperReliability.CovarianceRepresentation (282s)
+✔ [8477/8483] Built PaperReliability.PredictiveCentres (282s)
+✔ [8478/8483] Built PaperReliability.RegionalLimits (282s)
+✔ [8479/8483] Built PaperReliability.CoarseSpectralBounds (292s)
+✔ [8480/8483] Built PaperReliability.VarianceEnvelopes (130s)
+✔ [8481/8483] Built PaperReliability.CoverageEnvelopes (78s)
+✔ [8482/8483] Built PaperReliability (42s)
+Build completed successfully (8483 jobs).
+Command: lake env lean Audit.lean
+'PaperReliability.spectral_covariance_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.two_subspace_contrast_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.regional_two_subspace_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.upper_envelope_arbitrary_energy_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.lower_envelope_arbitrary_energy_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.positive_modal_variance_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.variance_enclosure_on_precision_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.calibrated_modal_coverage_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.kernel_prediction_shift_attribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.likelihood_predictive_shift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.likelihood_regional_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.likelihood_centre_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.regional_contrast_strong_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.regional_contrast_weak_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.endpoint_limits_do_not_bound_contrast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PaperReliability.likelihood_regional_error_bounds : ∀ {X : Type u_1} {ι : Type u_2} [inst : Fintype X] [Nonempty X]
+  [inst_2 : Fintype ι] (error : X → ℝ) (tangent : X → ι → ℝ) (singular residual : ι → ℝ) {precision noise : ℝ},
+  0 < precision →
+    0 < noise →
+      have shift := fun x => PaperReliability.predictiveShift (tangent x) singular residual precision;
+      have width := fun x =>
+        √(noise * PaperReliability.modalVariance (fun i => singular i ^ 2) (fun i => tangent x i ^ 2) precision);
+      have c := √(PaperReliability.likelihoodEnergy singular residual precision / noise);
+      have B :=
+        min (c * PaperReliability.regionalRMS width)
+          (∑ i,
+            |PaperReliability.likelihoodShift singular residual precision i| *
+              PaperReliability.regionalRMS fun x => tangent x i);
+      (max 0 (PaperReliability.regionalRMS error - B) ≤ PaperReliability.regionalRMS fun x => error x + shift x) ∧
+        (PaperReliability.regionalRMS fun x => error x + shift x) ≤ PaperReliability.regionalRMS error + B
+@PaperReliability.likelihood_centre_coverage : ∀ {X : Type u_1} {ι : Type u_2} [inst : Fintype X] [Nonempty X]
+  [inst_2 : Fintype ι] (error : X → ℝ) (tangent : X → ι → ℝ) (singular residual : ι → ℝ)
+  {precision noise threshold : ℝ},
+  0 < precision →
+    0 < noise →
+      √(PaperReliability.likelihoodEnergy singular residual precision / noise) ≤ threshold →
+        have shift := fun x => PaperReliability.predictiveShift (tangent x) singular residual precision;
+        have width := fun x =>
+          √(noise * PaperReliability.modalVariance (fun i => singular i ^ 2) (fun i => tangent x i ^ 2) precision);
+        have c := √(PaperReliability.likelihoodEnergy singular residual precision / noise);
+        PaperReliability.centreCoverage error width (threshold - c) ≤
+            PaperReliability.centreCoverage (fun x => error x + shift x) width threshold ∧
+          PaperReliability.centreCoverage (fun x => error x + shift x) width threshold ≤
+            PaperReliability.centreCoverage error width (threshold + c)
+Command: lake --no-cache --wfail build (freshness)
+Build completed successfully (8483 jobs).

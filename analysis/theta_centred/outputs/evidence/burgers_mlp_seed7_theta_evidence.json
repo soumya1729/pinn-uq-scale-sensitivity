@@ -1,0 +1,175 @@
+{
+  "tag": "burgers_mlp_seed7",
+  "alpha0": 17.841616273360803,
+  "conditional_noise_mle": 1.0310549636150278e-05,
+  "residual_count": 6400,
+  "parameter_count": 196009,
+  "spectral_sha256": "0d28945849af01c5eec9bf1a48ce5eba451f7d47aae9ed02823fb15b5fa952d0",
+  "prior_centre": "trained theta",
+  "evidence_scope": "conditional frozen affine model, using no reference solution",
+  "grid_protocol": "the two archived grids, unchanged; no adaptive extension",
+  "old_numerical_status": "PASS",
+  "residual_energy_noise_check_relative_error": 1.4432899320127035e-15,
+  "theta_evidence_original": {
+    "alpha": 317.2737886073289,
+    "noise_variance": 1.0310549636150279e-09,
+    "effective_precision": 3.2712671456853157e-07,
+    "log_evidence": 54026.2976024765,
+    "alpha_index": 33,
+    "noise_index": 0,
+    "alpha_boundary": false,
+    "noise_boundary": true,
+    "within_one_log_unit_count": 1,
+    "within_one_log_unit_alpha_range": [
+      317.2737886073289,
+      317.2737886073289
+    ],
+    "within_one_log_unit_noise_range": [
+      1.0310549636150279e-09,
+      1.0310549636150279e-09
+    ],
+    "log_evidence_log_alpha_slope": -31.34097284039722,
+    "log_evidence_log_noise_slope": -2626.0305424269304,
+    "mean_regional_variance": {
+      "full/bulk": 3.2099619894024805e-10,
+      "full/transition": 1.1222461241779621e-09,
+      "full/sharp": 2.2192841140002204e-05,
+      "post_formation/bulk": 3.7237814452191475e-10,
+      "post_formation/transition": 3.344113093434094e-09,
+      "post_formation/sharp": 6.0578400831470305e-05
+    },
+    "affine_likelihood_shift_parameter_norm": 1.799355284517573
+  },
+  "reproduced_zero_evidence_original": {
+    "alpha": 10.03307813869941,
+    "noise_variance": 1.0310549636150279e-09,
+    "effective_precision": 1.0344655015243453e-08,
+    "log_evidence": 52055.128973436746,
+    "alpha_index": 27,
+    "noise_index": 0,
+    "alpha_boundary": false,
+    "noise_boundary": true,
+    "within_one_log_unit_count": 2,
+    "within_one_log_unit_alpha_range": [
+      5.642014456254548,
+      10.03307813869941
+    ],
+    "within_one_log_unit_noise_range": [
+      1.0310549636150279e-09,
+      1.0310549636150279e-09
+    ]
+  },
+  "old_original_surface_max_absolute_error": 0.0,
+  "theta_evidence_extended": {
+    "alpha": 100.3307813869941,
+    "noise_variance": 1.0310549636150278e-13,
+    "effective_precision": 1.0344655015243453e-11,
+    "log_evidence": 77037.87523336153,
+    "alpha_index": 31,
+    "noise_index": 0,
+    "alpha_boundary": false,
+    "noise_boundary": true,
+    "within_one_log_unit_count": 1,
+    "within_one_log_unit_alpha_range": [
+      100.3307813869941,
+      100.3307813869941
+    ],
+    "within_one_log_unit_noise_range": [
+      1.0310549636150278e-13,
+      1.0310549636150278e-13
+    ],
+    "log_evidence_log_alpha_slope": 107.41087505009658,
+    "log_evidence_log_noise_slope": -2344.172944720908,
+    "mean_regional_variance": {
+      "full/bulk": 6.520838977608888e-10,
+      "full/transition": 2.121751562919321e-09,
+      "full/sharp": 4.428918377535004e-05,
+      "post_formation/bulk": 7.568853977167761e-10,
+      "post_formation/transition": 6.807577213182094e-09,
+      "post_formation/sharp": 0.00012268273892195193
+    },
+    "affine_likelihood_shift_parameter_norm": 3.5586186273563545
+  },
+  "reproduced_zero_evidence_extended": {
+    "alpha": 10.03307813869941,
+    "noise_variance": 1.0310549636150278e-13,
+    "effective_precision": 1.0344655015243452e-12,
+    "log_evidence": 75021.55356332762,
+    "alpha_index": 27,
+    "noise_index": 0,
+    "alpha_boundary": false,
+    "noise_boundary": true,
+    "within_one_log_unit_count": 1,
+    "within_one_log_unit_alpha_range": [
+      10.03307813869941,
+      10.03307813869941
+    ],
+    "within_one_log_unit_noise_range": [
+      1.0310549636150278e-13,
+      1.0310549636150278e-13
+    ]
+  },
+  "old_extended_surface_max_absolute_error": 0.0,
+  "selections": {
+    "original": {
+      "alpha": 317.2737886073289,
+      "noise_variance": 1.0310549636150279e-09,
+      "effective_precision": 3.2712671456853157e-07,
+      "log_evidence": 54026.2976024765,
+      "alpha_index": 33,
+      "noise_index": 0,
+      "alpha_boundary": false,
+      "noise_boundary": true,
+      "within_one_log_unit_count": 1,
+      "within_one_log_unit_alpha_range": [
+        317.2737886073289,
+        317.2737886073289
+      ],
+      "within_one_log_unit_noise_range": [
+        1.0310549636150279e-09,
+        1.0310549636150279e-09
+      ],
+      "log_evidence_log_alpha_slope": -31.34097284039722,
+      "log_evidence_log_noise_slope": -2626.0305424269304,
+      "mean_regional_variance": {
+        "full/bulk": 3.2099619894024805e-10,
+        "full/transition": 1.1222461241779621e-09,
+        "full/sharp": 2.2192841140002204e-05,
+        "post_formation/bulk": 3.7237814452191475e-10,
+        "post_formation/transition": 3.344113093434094e-09,
+        "post_formation/sharp": 6.0578400831470305e-05
+      },
+      "affine_likelihood_shift_parameter_norm": 1.799355284517573
+    },
+    "extended": {
+      "alpha": 100.3307813869941,
+      "noise_variance": 1.0310549636150278e-13,
+      "effective_precision": 1.0344655015243453e-11,
+      "log_evidence": 77037.87523336153,
+      "alpha_index": 31,
+      "noise_index": 0,
+      "alpha_boundary": false,
+      "noise_boundary": true,
+      "within_one_log_unit_count": 1,
+      "within_one_log_unit_alpha_range": [
+        100.3307813869941,
+        100.3307813869941
+      ],
+      "within_one_log_unit_noise_range": [
+        1.0310549636150278e-13,
+        1.0310549636150278e-13
+      ],
+      "log_evidence_log_alpha_slope": 107.41087505009658,
+      "log_evidence_log_noise_slope": -2344.172944720908,
+      "mean_regional_variance": {
+        "full/bulk": 6.520838977608888e-10,
+        "full/transition": 2.121751562919321e-09,
+        "full/sharp": 4.428918377535004e-05,
+        "post_formation/bulk": 7.568853977167761e-10,
+        "post_formation/transition": 6.807577213182094e-09,
+        "post_formation/sharp": 0.00012268273892195193
+      },
+      "affine_likelihood_shift_parameter_norm": 3.5586186273563545
+    }
+  }
+}

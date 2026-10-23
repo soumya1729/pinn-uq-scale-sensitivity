@@ -1,0 +1,18 @@
+{
+  "tag": "convection_diffusion_mlp_seed0",
+  "alpha": 18.437681325776552,
+  "n_shock": 4000,
+  "n_smooth": 56000,
+  "whitened": {
+    "ratio_mean": 1.22,
+    "ratio_median": 1.2,
+    "frac_mean_from_top1pct": 0.013,
+    "shock_sigma_max_over_median": 1.4
+  },
+  "raw": {
+    "ratio_mean": 1.22,
+    "ratio_median": 1.2,
+    "frac_mean_from_top1pct": 0.013,
+    "shock_sigma_max_over_median": 1.4
+  }
+}

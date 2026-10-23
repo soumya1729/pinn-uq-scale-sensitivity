@@ -1,0 +1,127 @@
+[
+  {
+    "from": "full_paper.tex",
+    "line": 59,
+    "included": "j_abstract.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 60,
+    "included": "j_intro.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 61,
+    "included": "j_setting.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 62,
+    "included": "j_ceiling.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 63,
+    "included": "j_offmanifold.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 64,
+    "included": "j_theory.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 65,
+    "included": "j_mechanism.tex"
+  },
+  {
+    "from": "j_mechanism.tex",
+    "line": 13,
+    "included": "generated/loading_table_values.tex"
+  },
+  {
+    "from": "j_mechanism.tex",
+    "line": 14,
+    "included": "generated/rms_bounds_macros.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 66,
+    "included": "j_robustness.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 67,
+    "included": "j_discussion.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 80,
+    "included": "j_appendix.tex"
+  },
+  {
+    "from": "j_appendix.tex",
+    "line": 100,
+    "included": "trim_aux_proofs.tex"
+  },
+  {
+    "from": "j_appendix.tex",
+    "line": 102,
+    "included": "j_round2_appendix.tex"
+  },
+  {
+    "from": "j_round2_appendix.tex",
+    "line": 11,
+    "included": "short_seed_table.tex"
+  },
+  {
+    "from": "j_round2_appendix.tex",
+    "line": 53,
+    "included": "generated/round2_limits_table.tex"
+  },
+  {
+    "from": "j_round2_appendix.tex",
+    "line": 169,
+    "included": "generated/round2_centre_table.tex"
+  },
+  {
+    "from": "j_round2_appendix.tex",
+    "line": 206,
+    "included": "generated/round2_oracle_table.tex"
+  },
+  {
+    "from": "j_round2_appendix.tex",
+    "line": 217,
+    "included": "round3_math.tex"
+  },
+  {
+    "from": "round3_math.tex",
+    "line": 47,
+    "included": "round3_math_results.tex"
+  },
+  {
+    "from": "round3_math.tex",
+    "line": 91,
+    "included": "round3_math_root_table.tex"
+  },
+  {
+    "from": "j_round2_appendix.tex",
+    "line": 245,
+    "included": "generated/round4_oracle_table.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 84,
+    "included": "oa_empirical.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 86,
+    "included": "oa_numerics.tex"
+  },
+  {
+    "from": "full_paper.tex",
+    "line": 88,
+    "included": "oa_lean.tex"
+  }
+]

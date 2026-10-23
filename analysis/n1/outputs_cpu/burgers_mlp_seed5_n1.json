@@ -1,0 +1,233 @@
+{
+  "tag": "burgers_mlp_seed5",
+  "run_dir": "/home/soumya24/unified_suite/analysis/n5/input/burgers_mlp_seed5",
+  "baseline_sigma": "/home/soumya24/unified_suite/analysis/n1/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+  "config": {
+    "pde": "burgers",
+    "seed": 5,
+    "arch": "mlp",
+    "nu": 0.003183098861837907,
+    "eps2": 0.0001,
+    "reac": 5.0,
+    "fourier_scale": 2.0,
+    "fourier_dim": 16,
+    "Mx": 20,
+    "Mt": 20,
+    "hidden": 64,
+    "fusion": 128,
+    "N_f": 5000,
+    "N_u": 1000,
+    "N_b": 200,
+    "adam_lr": 0.001,
+    "adam_iters": 5000,
+    "lm_iters": 50,
+    "ic_weight": 10.0,
+    "bc_weight": 10.0,
+    "bcu_weight": 10.0,
+    "bcx_weight": 1.0,
+    "ks_L": 100.53096491487338,
+    "ks_T": 100.0,
+    "gh_n": 80,
+    "lm_cg": 100,
+    "lm_mu_init": 0.0001,
+    "lm_mu_min": 1e-12,
+    "lm_rho_accept": 0.25,
+    "lm_rho_good": 0.75,
+    "lm_mu_dec": 0.3333333333333333,
+    "lm_mu_inc": 4.0,
+    "lm_max_rej": 5,
+    "eval_nx": 400,
+    "eval_nt": 200,
+    "smoke": 0,
+    "d": 128,
+    "d_aug": 129
+  },
+  "covariance": "(alpha I + J.T J / noise_variance)^-1",
+  "centre": "saved trained prediction",
+  "residual_count": 6400,
+  "parameter_count": 196009,
+  "alpha0": 17.3344529261862,
+  "conditional_noise_mle": 1.0916269261560118e-05,
+  "rebuilt_loss": 5.458134630780059e-06,
+  "saved_loss": 5.458134630780427e-06,
+  "largest_fisher_eigenvalue": 14391236.868730195,
+  "smallest_jacobian_singular_value_squared": 2.36553260334065e-29,
+  "max_gradient_norm_relative_error": 7.260964502008486e-15,
+  "baseline_max_sigma_relative_error": 5.020472926275943e-11,
+  "matched_pair_checks": {
+    "conditional_noise_mle": {
+      "matched_alpha": 0.00018922755564408723,
+      "max_sigma_relative_difference": 1.7763568394002505e-15,
+      "contrast_relative_difference": 2.220446049250313e-16,
+      "rho_relative_difference": 1.1102230246251565e-16
+    },
+    "affine_evidence_grid_boundary": {
+      "matched_alpha": 1.0641047440342652e-08,
+      "max_sigma_relative_difference": 1.4432899320127035e-15,
+      "contrast_relative_difference": 2.220446049250313e-16,
+      "rho_relative_difference": 3.3306690738754696e-16
+    }
+  },
+  "affine_evidence": {
+    "alpha": 9.74787922996127,
+    "noise_variance": 1.0916269261560117e-09,
+    "log_evidence": 51847.21020915907,
+    "alpha_boundary": false,
+    "noise_boundary": true,
+    "within_one_log_unit_count": 1,
+    "within_one_log_unit_alpha_range": [
+      9.74787922996127,
+      9.74787922996127
+    ],
+    "within_one_log_unit_noise_range": [
+      1.0916269261560117e-09,
+      1.0916269261560117e-09
+    ]
+  },
+  "choices": [
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 6.138669322680389e-10,
+      "alpha": 1.0641047440342652e-08,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 1e-07,
+      "alpha": 1.7334452926186197e-06,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 3.162277660168379e-07,
+      "alpha": 5.4816353239719005e-06,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 1e-06,
+      "alpha": 1.7334452926186198e-05,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 3.162277660168379e-06,
+      "alpha": 5.481635323971901e-05,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 9.999999999999999e-06,
+      "alpha": 0.00017334452926186198,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 1.0916269261560118e-05,
+      "alpha": 0.00018922755564408723,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 3.1622776601683795e-05,
+      "alpha": 0.0005481635323971901,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.0001,
+      "alpha": 0.00173344529261862,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.00031622776601683794,
+      "alpha": 0.005481635323971901,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.001,
+      "alpha": 0.017334452926186197,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.0031622776601683794,
+      "alpha": 0.05481635323971901,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.01,
+      "alpha": 0.173344529261862,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.03162277660168379,
+      "alpha": 0.5481635323971901,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.1,
+      "alpha": 1.73344529261862,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 0.31622776601683794,
+      "alpha": 5.481635323971901,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 1.0,
+      "alpha": 17.3344529261862,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 3.1622776601683795,
+      "alpha": 54.816353239719014,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 10.0,
+      "alpha": 173.344529261862,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 31.622776601683793,
+      "alpha": 548.1635323971901,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "prior_sweep",
+      "alpha_multiplier": 100.0,
+      "alpha": 1733.4452926186198,
+      "noise_variance": 1.0
+    },
+    {
+      "setting": "conditional_noise_mle",
+      "alpha_multiplier": 1.0,
+      "alpha": 17.3344529261862,
+      "noise_variance": 1.0916269261560118e-05
+    },
+    {
+      "setting": "affine_evidence_grid_boundary",
+      "alpha_multiplier": 0.5623413251903491,
+      "alpha": 9.74787922996127,
+      "noise_variance": 1.0916269261560117e-09
+    }
+  ],
+  "elapsed_seconds": 6910.219338249,
+  "versions": {
+    "jax": "0.10.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

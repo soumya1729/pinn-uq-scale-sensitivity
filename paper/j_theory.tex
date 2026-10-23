@@ -1,0 +1,91 @@
+\subsection{Spectral Weighting of Regional Variance}\label{sec:theory}
+\label{sec:theory:bounds}\label{sec:mechanism}\label{sec:mechanism:loading}
+
+Covariance allocation is a weighted sum of tangent energies. Its modal quotient
+connects the scale curves to the trained features; coarse spectral bounds describe
+what remains identifiable after grouping those modes.
+
+\emph{Modal weights and limits.}
+Let $F=V\Lambda V^\top$, with eigenvalues $\lambda_i\ge0$, largest eigenvalue
+$\lambda_{\max}$ and orthonormal eigenvectors $v_i$, and write
+$c_i(x)=g(x)^\top v_i$. At unit noise,
+\begin{equation}\label{eq:sigma-sum}
+ \sigma^2(g)=g^\top(\alpha I+F)^{-1}g
+           =\sum_i\frac{c_i^2}{\lambda_i+\alpha}.
+\end{equation}
+For residual variance $v$, each term is $v c_i^2/(\lambda_i+\gamma)$,
+$\gamma=\alpha v$. Defining $a_{r,i}=\langle c_i(x)^2\rangle_r$ gives
+\begin{equation*}\tag{3a}\label{eq:modal-quotient}
+ (\Rrms(\gamma))^2=
+ \frac{\sum_i a_{\mathcal S,i}/(\lambda_i+\gamma)}
+      {\sum_i a_{\mathcal B,i}/(\lambda_i+\gamma)}.
+\end{equation*}
+For these finite sums,
+\[
+ \lim_{\gamma\to\infty}\Rrms=\sqrt{A_{\mathcal S}/A_{\mathcal B}},
+ \quad A_r=\langle\|g\|^2\rangle_r,
+ \qquad
+ \lim_{\gamma\downarrow0}\Rrms=\sqrt{K_{\mathcal S}/K_{\mathcal B}},
+ \quad K_r=\langle\|\Pi_{\ker J}g\|^2\rangle_r,
+\]
+provided $A_{\mathcal B}>0$ and $K_{\mathcal B}>0$, respectively. Multiplication
+by $\gamma$ gives both termwise limits. The QR-complement ratio equals the
+whole-kernel ratio when $J$ has full row rank. For $A_{\mathcal S},A_{\mathcal B}>0$,
+at strong precision, writing
+$\mu_r=\sum_i a_{r,i}\lambda_i/A_r$ gives the more precise expansion
+\begin{equation}\label{eq:r3-strong-expansion}
+ (\Rrms(\gamma))^2=\frac{A_{\mathcal S}}{A_{\mathcal B}}
+ \left[1-\frac{\mu_{\mathcal S}-\mu_{\mathcal B}}{\gamma}
+       +O\!\left(\frac{\lambda_{\max}^2}{\gamma^2}\right)\right].
+\end{equation}
+This follows by expanding each $(\lambda_i+\gamma)^{-1}$ and dividing the two
+sums. Neither endpoint bounds intermediate contrast, and monotonicity need not
+hold. For example,
+$\lambda=(0,1,100)$, $a_{\mathcal B}=(1,1,100)$ and
+$a_{\mathcal S}=(1,100,1)$ give both limits equal to $1$, but
+$\Rrms(1)=\sqrt{10304/503}\approx4.53$.
+The measured curves and strong-precision checks are in
+Appendix~\ref{app:r2:modal}. The conditional limits and counterexample are
+Lean-verified (Table~\ref{tab:lean}); expansion~\eqref{eq:r3-strong-expansion}
+remains outside verification.
+Figure~\ref{fig:n1-scales} changes the modal weights while holding the trained
+tangents fixed. The predictive centres share the covariance contrast but have different error targets.
+
+\emph{Two-subspace bounds.} We group the modes by a spectral cutoff.
+\begin{samepage}
+\begin{definition}[Spectral split and regional loadings]\label{def:split}
+At threshold $\epsilon>0$, let $\Pi_{\rm sl}$ project onto modes with
+$\lambda_i\le\epsilon$ and $\Pi_{\rm st}$ onto those with $\lambda_i>\epsilon$.
+Define
+\begin{equation*}
+ Q_{r,\rm sl}=\langle\|\Pi_{\rm sl}g\|^2\rangle_r,
+ \qquad Q_{r,\rm st}=\langle\|\Pi_{\rm st}g\|^2\rangle_r.
+\end{equation*}
+\end{definition}
+\end{samepage}
+For an individual vector, the lower and upper envelopes are
+\begin{equation}\label{eq:variance-envelopes}
+ \begin{aligned}
+ m_\epsilon(g)&=\frac{\|\Pisl g\|^2}{\alpha+\epsilon}
+              +\frac{\|\Pist g\|^2}{\alpha+\lambda_{\max}},\\
+ M_\epsilon(g)&=\frac{\|\Pisl g\|^2}{\alpha}
+              +\frac{\|\Pist g\|^2}{\alpha+\epsilon}.
+ \end{aligned}
+\end{equation}
+
+Theorem~\ref{thm:ceiling}, proved in Appendix~\ref{app:aggregation}, bounds each
+pointwise variance between these envelopes. Averaging its termwise inequalities
+gives the primary regional bound
+\begin{equation}\label{eq:regional-rms-sandwich}
+ L_{\rm reg}(\epsilon)\le(\Rrms)^2\le U_{\rm reg}(\epsilon).
+\end{equation}
+Here $L_{\rm reg}(\epsilon)=\langle m_\epsilon(g)\rangle_{\mathcal S}/\langle M_\epsilon(g)\rangle_{\mathcal B}$
+and $U_{\rm reg}(\epsilon)=\langle M_\epsilon(g)\rangle_{\mathcal S}/\langle m_\epsilon(g)\rangle_{\mathcal B}$,
+assuming positive total bulk energy. This is exact
+finite-sum aggregation, without a Jensen step. For common variance $v$, replace
+$\alpha$ by $\gamma$; the common factor cancels. The envelopes are sharp over
+spectra compatible with these summaries (Proposition~\ref{prop:sharp}, proved in
+Appendix~\ref{app:sharpness}), but they discard energy placement within each block.
+They can therefore remain wide even after intersecting thresholds.
+Appendix~\ref{app:aggregation} treats secondary aggregations; Appendix~\ref{oa:lean},
+Table~\ref{tab:lean}, records the formal verification scope.

@@ -1,0 +1,10 @@
+{
+  "figures_sha256": {
+    "calibration_figures/theorem_bounds.png": "a08479b00144bda27a5720178dbda3457cbc9d04016801d3cb7f6498aff39d11",
+    "submissions/jmlr_ceiling/figures/theorem_bounds.png": "a08479b00144bda27a5720178dbda3457cbc9d04016801d3cb7f6498aff39d11"
+  },
+  "legacy_loading_contract_sha256": "c728852c97896e0cfcf569de64f5a716f4f601912e8bf01908adcc6ead4f819a",
+  "producer_sha256": "9f7b95978ae28885d3c8efc2568db874be5452d4653f8f32a8b5e9e0896dec44",
+  "schema": "theorem_band_figure_contract/1",
+  "theorem_band_sha256": "316d2e550fbee8bb5bc725faaede306f72ab32364e17053fb314fc95db8b5755"
+}

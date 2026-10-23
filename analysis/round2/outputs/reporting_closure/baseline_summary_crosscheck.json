@@ -1,0 +1,230 @@
+{
+  "comparison_source": "C:\\dev\\pinn-uq-jmlr-ready\\calibration_figures\\ceiling_table.json",
+  "max_relative_defect": 8.75883758870365e-12,
+  "checks": [
+    {
+      "family": "burgers_mlp",
+      "metric": "R_sigma_rms",
+      "max_relative_defect": 8.758811809758298e-12,
+      "mean": 6.372170311523275,
+      "population_sd": 0.3768503632428043
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "R_sigma_mean",
+      "max_relative_defect": 5.3306589833608945e-12,
+      "mean": 3.8734547518420563,
+      "population_sd": 0.15277670104074673
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "R_tar",
+      "max_relative_defect": 0.0,
+      "mean": 130.55987695838883,
+      "population_sd": 82.43993132006511
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "rho",
+      "max_relative_defect": 8.75883758870365e-12,
+      "mean": 20.4695866352074,
+      "population_sd": 13.089877446603214
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "mean_Z_sharp",
+      "max_relative_defect": 5.069603469207569e-12,
+      "mean": 0.31861855152144886,
+      "population_sd": 0.2751255905032444
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "mean_Z_bulk",
+      "max_relative_defect": 4.586177422784406e-13,
+      "mean": 0.012313986619125607,
+      "population_sd": 0.002850395191638748
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "coverage68_sharp",
+      "max_relative_defect": 0.0,
+      "mean": 0.9229375000000001,
+      "population_sd": 0.08303808896373999
+    },
+    {
+      "family": "burgers_mlp",
+      "metric": "coverage68_bulk",
+      "max_relative_defect": 0.0,
+      "mean": 1.0,
+      "population_sd": 0.0
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "R_sigma_rms",
+      "max_relative_defect": 2.32781095561696e-13,
+      "mean": 3.919188552985849,
+      "population_sd": 0.04464006294010109
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "R_sigma_mean",
+      "max_relative_defect": 1.268539100320718e-13,
+      "mean": 2.679224909270277,
+      "population_sd": 0.08663840069736385
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "R_tar",
+      "max_relative_defect": 0.0,
+      "mean": 64.14250135744733,
+      "population_sd": 41.21131985716821
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "rho",
+      "max_relative_defect": 2.32798811759932e-13,
+      "mean": 16.279203290322414,
+      "population_sd": 10.421369083876522
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "mean_Z_sharp",
+      "max_relative_defect": 1.7512849346775117e-13,
+      "mean": 0.596052301616076,
+      "population_sd": 0.14104274222838642
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "mean_Z_bulk",
+      "max_relative_defect": 1.7488032262584484e-13,
+      "mean": 0.06413164545795132,
+      "population_sd": 0.04357435060095909
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "coverage68_sharp",
+      "max_relative_defect": 0.0,
+      "mean": 0.8480833333333333,
+      "population_sd": 0.03067662881666685
+    },
+    {
+      "family": "burgers_fourier",
+      "metric": "coverage68_bulk",
+      "max_relative_defect": 0.0,
+      "mean": 0.9998869047619047,
+      "population_sd": 0.00015994081955412353
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "R_sigma_rms",
+      "max_relative_defect": 2.915569648143289e-13,
+      "mean": 7.299150015073512,
+      "population_sd": 0.35111293109736774
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "R_sigma_mean",
+      "max_relative_defect": 2.694843673717077e-13,
+      "mean": 9.532509350549601,
+      "population_sd": 0.5681844503060908
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "R_tar",
+      "max_relative_defect": 0.0,
+      "mean": 28.861675194469125,
+      "population_sd": 5.223135958802363
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "rho",
+      "max_relative_defect": 2.9155952636416113e-13,
+      "mean": 3.970059797261213,
+      "population_sd": 0.7906506440236827
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "mean_Z_sharp",
+      "max_relative_defect": 1.8358214564111776e-14,
+      "mean": 0.27082019646757927,
+      "population_sd": 0.06238180057231463
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "mean_Z_bulk",
+      "max_relative_defect": 1.3793571670022066e-13,
+      "mean": 0.03007128326388586,
+      "population_sd": 0.0006307687415579758
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "coverage68_sharp",
+      "max_relative_defect": 0.0,
+      "mean": 0.99025,
+      "population_sd": 0.013788582233137676
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "metric": "coverage68_bulk",
+      "max_relative_defect": 0.0,
+      "mean": 1.0,
+      "population_sd": 0.0
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "R_sigma_rms",
+      "max_relative_defect": 5.5667423465795854e-14,
+      "mean": 5.862344810755876,
+      "population_sd": 0.04843438440453432
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "R_sigma_mean",
+      "max_relative_defect": 4.0167291627569044e-14,
+      "mean": 7.352704856868711,
+      "population_sd": 0.12765969272734715
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "R_tar",
+      "max_relative_defect": 0.0,
+      "mean": 15.12102692313457,
+      "population_sd": 1.9366433390931168
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "rho",
+      "max_relative_defect": 5.55796308137787e-14,
+      "mean": 2.57980855375694,
+      "population_sd": 0.3351133355335153
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "mean_Z_sharp",
+      "max_relative_defect": 1.2824179212405015e-14,
+      "mean": 0.26742186134117385,
+      "population_sd": 0.015661794751664907
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "mean_Z_bulk",
+      "max_relative_defect": 1.6818266330232988e-14,
+      "mean": 0.025313419918610792,
+      "population_sd": 0.0024668216095718536
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "coverage68_sharp",
+      "max_relative_defect": 0.0,
+      "mean": 0.9985833333333334,
+      "population_sd": 0.0020034692133618732
+    },
+    {
+      "family": "allen_cahn_fourier",
+      "metric": "coverage68_bulk",
+      "max_relative_defect": 0.0,
+      "mean": 1.0,
+      "population_sd": 0.0
+    }
+  ]
+}

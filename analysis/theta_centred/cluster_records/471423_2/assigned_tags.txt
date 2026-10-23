@@ -1,0 +1,5 @@
+burgers_mlp_seed5
+burgers_mlp_seed7
+burgers_fourier_seed6
+allen_cahn_fourier_seed3
+allen_cahn_mlp_seed3

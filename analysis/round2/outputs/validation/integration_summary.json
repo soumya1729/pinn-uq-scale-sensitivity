@@ -1,0 +1,358 @@
+{
+  "status": "PASS",
+  "dense_checks": [
+    {
+      "case": "full_row_rank",
+      "gamma": 0.01,
+      "shift_relative_error": 1.2022862876119458e-14,
+      "covariance_relative_error": 7.233092380760004e-15,
+      "output_shift_max_absolute_error": 8.759659664292485e-14,
+      "regional_variance_max_absolute_error": 1.4210854715202004e-14,
+      "normal_residual_absolute": 3.6990441030541755e-15,
+      "normal_residual_scaled": 1.5784013930546068e-15
+    },
+    {
+      "case": "full_row_rank",
+      "gamma": 1.0,
+      "shift_relative_error": 3.882447303893612e-16,
+      "covariance_relative_error": 6.326292305258142e-16,
+      "output_shift_max_absolute_error": 3.552713678800501e-15,
+      "regional_variance_max_absolute_error": 3.552713678800501e-15,
+      "normal_residual_absolute": 2.0964648163244025e-15,
+      "normal_residual_scaled": 1.8233551349453828e-16
+    },
+    {
+      "case": "full_row_rank",
+      "gamma": 100.0,
+      "shift_relative_error": 9.721009040929744e-16,
+      "covariance_relative_error": 8.750129092357839e-16,
+      "output_shift_max_absolute_error": 9.769962616701378e-15,
+      "regional_variance_max_absolute_error": 3.552713678800501e-15,
+      "normal_residual_absolute": 4.22980188273099e-13,
+      "normal_residual_scaled": 5.003030014309173e-16
+    },
+    {
+      "case": "full_row_rank",
+      "evidence_max_absolute_error": 7.105427357601002e-15,
+      "slope_finite_difference_absolute_error": 5.7487348215090606e-11,
+      "selected_pair": [
+        2,
+        2
+      ]
+    },
+    {
+      "case": "duplicate_row",
+      "gamma": 0.01,
+      "shift_relative_error": 1.0095108586196139e-14,
+      "covariance_relative_error": 8.899529282934695e-15,
+      "output_shift_max_absolute_error": 9.425793479067579e-14,
+      "regional_variance_max_absolute_error": 2.4868995751603507e-14,
+      "normal_residual_absolute": 2.1913336646057555e-15,
+      "normal_residual_scaled": 9.251282963138512e-16
+    },
+    {
+      "case": "duplicate_row",
+      "gamma": 1.0,
+      "shift_relative_error": 6.947036750863252e-16,
+      "covariance_relative_error": 6.6896801311584e-16,
+      "output_shift_max_absolute_error": 6.8833827526759706e-15,
+      "regional_variance_max_absolute_error": 1.7763568394002505e-15,
+      "normal_residual_absolute": 4.5155515175022134e-15,
+      "normal_residual_scaled": 3.850536358628701e-16
+    },
+    {
+      "case": "duplicate_row",
+      "gamma": 100.0,
+      "shift_relative_error": 7.525896886175316e-16,
+      "covariance_relative_error": 7.258532516180217e-16,
+      "output_shift_max_absolute_error": 7.771561172376096e-15,
+      "regional_variance_max_absolute_error": 7.105427357601002e-15,
+      "normal_residual_absolute": 3.2522588947127285e-13,
+      "normal_residual_scaled": 3.8429040352316157e-16
+    },
+    {
+      "case": "duplicate_row",
+      "evidence_max_absolute_error": 3.410605131648481e-13,
+      "slope_finite_difference_absolute_error": 9.310974213860845e-11,
+      "selected_pair": [
+        1,
+        1
+      ]
+    },
+    {
+      "case": "strongly_correlated",
+      "gamma": 0.01,
+      "shift_relative_error": 8.821747363167936e-15,
+      "covariance_relative_error": 1.2354610270201106e-14,
+      "output_shift_max_absolute_error": 6.750155989720952e-14,
+      "regional_variance_max_absolute_error": 1.5987211554602254e-14,
+      "normal_residual_absolute": 1.4378826769710732e-15,
+      "normal_residual_scaled": 2.2122586093125137e-15
+    },
+    {
+      "case": "strongly_correlated",
+      "gamma": 1.0,
+      "shift_relative_error": 7.920164896283732e-16,
+      "covariance_relative_error": 1.2004536871885774e-15,
+      "output_shift_max_absolute_error": 7.105427357601002e-15,
+      "regional_variance_max_absolute_error": 7.105427357601002e-15,
+      "normal_residual_absolute": 3.6628685168300545e-15,
+      "normal_residual_scaled": 3.70622015376375e-16
+    },
+    {
+      "case": "strongly_correlated",
+      "gamma": 100.0,
+      "shift_relative_error": 7.629980718258106e-16,
+      "covariance_relative_error": 1.1410336662216295e-15,
+      "output_shift_max_absolute_error": 5.329070518200751e-15,
+      "regional_variance_max_absolute_error": 8.881784197001252e-15,
+      "normal_residual_absolute": 3.071310398407838e-13,
+      "normal_residual_scaled": 3.6221250294332604e-16
+    },
+    {
+      "case": "strongly_correlated",
+      "evidence_max_absolute_error": 3.879563337250147e-12,
+      "slope_finite_difference_absolute_error": 2.105524643525314e-10,
+      "selected_pair": [
+        1,
+        1
+      ]
+    },
+    {
+      "case": "zero",
+      "gamma": 0.01,
+      "shift_relative_error": 5.936429742520373e-17,
+      "covariance_relative_error": 0.0,
+      "output_shift_max_absolute_error": 1.7763568394002505e-15,
+      "regional_variance_max_absolute_error": 1.7763568394002505e-15,
+      "normal_residual_absolute": 0.0,
+      "normal_residual_scaled": 0.0
+    },
+    {
+      "case": "zero",
+      "gamma": 1.0,
+      "shift_relative_error": 0.0,
+      "covariance_relative_error": 0.0,
+      "output_shift_max_absolute_error": 1.7763568394002505e-15,
+      "regional_variance_max_absolute_error": 1.7763568394002505e-15,
+      "normal_residual_absolute": 0.0,
+      "normal_residual_scaled": 0.0
+    },
+    {
+      "case": "zero",
+      "gamma": 100.0,
+      "shift_relative_error": 1.2671042256836877e-16,
+      "covariance_relative_error": 2.2204460492503128e-16,
+      "output_shift_max_absolute_error": 1.7763568394002505e-15,
+      "regional_variance_max_absolute_error": 3.552713678800501e-15,
+      "normal_residual_absolute": 2.220446049250313e-14,
+      "normal_residual_scaled": 2.6373959012511413e-17
+    },
+    {
+      "case": "zero",
+      "evidence_max_absolute_error": 2.842170943040401e-14,
+      "slope_finite_difference_absolute_error": 1.5876544523507619e-10,
+      "selected_pair": [
+        0,
+        1
+      ]
+    }
+  ],
+  "prescribed_spectrum": [
+    {
+      "gamma": 1e-10,
+      "variance_max_relative_error": 3.675526549784536e-11,
+      "shift_relative_error": 1.5547196181558942e-09
+    },
+    {
+      "gamma": 1e-06,
+      "variance_max_relative_error": 2.183808689437683e-13,
+      "shift_relative_error": 4.139228790875202e-10
+    },
+    {
+      "gamma": 1.0,
+      "variance_max_relative_error": 1.3322676295501878e-15,
+      "shift_relative_error": 5.948031927758271e-15
+    },
+    {
+      "gamma": 10000.0,
+      "variance_max_relative_error": 6.661338147750939e-16,
+      "shift_relative_error": 1.0437212164489106e-15
+    }
+  ],
+  "matrix_free": {
+    "nonlinear_residual_count": 7,
+    "parameter_count": 12,
+    "exact_dense_residual_norms": [
+      1.681847718040262e-13,
+      7.490786815503114e-15,
+      1.6167211817765002e-14
+    ],
+    "production_checks": [
+      {
+        "gamma": 0.001,
+        "normal_residual_absolute": 1.4899299173502634e-13,
+        "normal_residual_scaled": 1.424254406343405e-16,
+        "normal_residual_cancellation_scaled": 1.9701034058520836e-14,
+        "normal_residual_denominator": 1046.112204894259,
+        "normal_residual_cancellation_denominator": 7.562699058965681,
+        "stationarity_gradient_norm": 7.51854436827421,
+        "lambda_max": 47.65053686299857,
+        "delta_norm": 21.795596299695703
+      },
+      {
+        "gamma": 0.2,
+        "normal_residual_absolute": 7.177248274740897e-15,
+        "normal_residual_scaled": 1.7315018178540187e-16,
+        "normal_residual_cancellation_scaled": 9.04517515437646e-16,
+        "normal_residual_denominator": 41.45100051720537,
+        "normal_residual_cancellation_denominator": 7.934891422493044,
+        "stationarity_gradient_norm": 7.588371703602482,
+        "lambda_max": 47.65053686299857,
+        "delta_norm": 0.7076750029065583
+      },
+      {
+        "gamma": 20.0,
+        "normal_residual_absolute": 1.6352415909662036e-14,
+        "normal_residual_scaled": 2.4179564938875547e-16,
+        "normal_residual_cancellation_scaled": 4.3064783668499906e-16,
+        "normal_residual_denominator": 67.6290741830961,
+        "normal_residual_cancellation_denominator": 37.97166621232361,
+        "stationarity_gradient_norm": 19.301084476379845,
+        "lambda_max": 47.65053686299857,
+        "delta_norm": 0.7143770315465038
+      }
+    ],
+    "deliberately_inconsistent_shift_scaled_residual": 0.0005596889915045165,
+    "complement_check": {
+      "delta_c_norm": 0.4171363636323849,
+      "expected_coefficient_norm": 0.4171363636323848,
+      "norm_relative_defect": 1.3307674916632024e-16,
+      "projection_absolute_defect": 2.7755575615628914e-17,
+      "projection_scaled_defect": 9.137104386338182e-17,
+      "null_residual_absolute": 1.3077695798368243e-16,
+      "null_residual_denominator": 2.879465967167681,
+      "null_residual_scaled": 4.5417087569303034e-17,
+      "interpretation": "JVP checks null membership, not amplitude/completeness; norm, projection and field checks are separate consistency tests."
+    },
+    "doubled_complement_check": {
+      "delta_c_norm": 0.8342727272647698,
+      "expected_coefficient_norm": 0.4171363636323848,
+      "norm_relative_defect": 1.0000000000000002,
+      "projection_absolute_defect": 0.17400274586444922,
+      "projection_scaled_defect": 0.5728150892960402,
+      "null_residual_absolute": 2.6155391596736486e-16,
+      "null_residual_denominator": 5.758931934335362,
+      "null_residual_scaled": 4.5417087569303034e-17,
+      "interpretation": "JVP checks null membership, not amplitude/completeness; norm, projection and field checks are separate consistency tests."
+    },
+    "omitted_complement_check": {
+      "delta_c_norm": 0.0,
+      "expected_coefficient_norm": 0.4171363636323848,
+      "norm_relative_defect": 1.0,
+      "projection_absolute_defect": 0.17400274586444917,
+      "projection_scaled_defect": 0.57281508929604,
+      "null_residual_absolute": 0.0,
+      "null_residual_denominator": 0.0,
+      "null_residual_scaled": null,
+      "interpretation": "JVP checks null membership, not amplitude/completeness; norm, projection and field checks are separate consistency tests."
+    },
+    "correct_complement_field_scaled_defect": 9.859482731048742e-17,
+    "doubled_complement_field_scaled_defect": 0.20877933160232962,
+    "production_grid_check": {
+      "point_count": 18,
+      "region_labels": [
+        "full/bulk",
+        "full/transition",
+        "full/sharp",
+        "post_formation/bulk",
+        "post_formation/transition",
+        "post_formation/sharp"
+      ],
+      "point_counts": [
+        12,
+        5,
+        1,
+        6,
+        5,
+        1
+      ],
+      "metric_row_count": 36,
+      "variance_max_relative_error": 4.035660694512444e-13
+    },
+    "scope": "small nonlinear toy; operator path does not use QR/SVD factors"
+  },
+  "end_to_end": {
+    "output_files": [
+      "synthetic_fixture_round2.csv",
+      "synthetic_fixture_round2.json",
+      "synthetic_fixture_round2_fields.npz",
+      "synthetic_fixture_round2_spectral.npz"
+    ],
+    "output_dir": "outputs\\preparation\\end_to_end\\output",
+    "parameter_count": 10,
+    "residual_count": 6,
+    "grid_point_count": 18,
+    "distinct_gammas": 21,
+    "matched_aliases_checked": 9,
+    "numerical_status": "PASS",
+    "early_checks": {
+      "prediction_samples": 5,
+      "max_prediction_absolute_defect": 0.0,
+      "residual_count": 6,
+      "residual_only_loss": 0.2103361741862438
+    },
+    "early_failures": {
+      "cases": [
+        "prediction_mismatch_before_jacobian",
+        "loss_mismatch_before_jacobian"
+      ],
+      "jacobian_calls": 0
+    },
+    "resume_checks": {
+      "compatible_status": "PASS",
+      "cases": [
+        "review_required_retained_without_rewrite",
+        "incompatible_record_refused_without_rewrite",
+        "missing_companion_refused_without_rewrite",
+        "absent_marker_requires_computation"
+      ]
+    },
+    "complement_checks": {
+      "delta_c_norm": 0.40799125348736426,
+      "expected_coefficient_norm": 0.4079912534873643,
+      "norm_relative_defect": 1.3605965999704216e-16,
+      "projection_absolute_defect": 2.7755575615628914e-17,
+      "projection_scaled_defect": 9.366733278748607e-17,
+      "null_residual_absolute": 1.497137689253023e-16,
+      "null_residual_denominator": 2.4446937858372513,
+      "null_residual_scaled": 6.12402951210631e-17,
+      "interpretation": "JVP checks null membership, not amplitude/completeness; norm, projection and field checks are separate consistency tests.",
+      "field_absolute_defect": 1.3877787807814457e-16,
+      "field_scaled_defect": 1.515088622582397e-16,
+      "review_required": false
+    },
+    "baseline_max_sigma_relative_error": 5.551115123125783e-16,
+    "scope": "synthetic model hooks only; actual Jacobian, analyse, evidence, mean, fields, normal checks and file writes"
+  },
+  "failure_continuation": {
+    "processed_tags": [
+      "fails",
+      "later_a",
+      "later_b"
+    ],
+    "exit_message": "Failed checkpoints: fails",
+    "scope": "CLI orchestration with synthetic callback; no scientific computation"
+  },
+  "scope": "synthetic integration checks only; no PINN production pass",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "integration_checks.py": "4f550e3e684078e2b90e0373e49ece53fa2ee753419385eff0eb03a9a02931aa",
+    "round2_linalg.py": "ecd81832d43c0a7ff7ccd229add415874040a9f6f784e04d42221c9617cd222b",
+    "round2_pass.py": "7c59c863e524c5988f8c2380b5f5787c80e31279ea8bbbf44dda46301cd84b1d"
+  }
+}

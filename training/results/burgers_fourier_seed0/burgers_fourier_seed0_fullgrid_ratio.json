@@ -1,0 +1,18 @@
+{
+  "tag": "burgers_fourier_seed0",
+  "alpha": 25.38964659747599,
+  "n_shock": 4000,
+  "n_smooth": 56000,
+  "whitened": {
+    "ratio_mean": 16.67,
+    "ratio_median": 2.85,
+    "frac_mean_from_top1pct": 0.083,
+    "shock_sigma_max_over_median": 57.2
+  },
+  "raw": {
+    "ratio_mean": 2.56,
+    "ratio_median": 1.32,
+    "frac_mean_from_top1pct": 0.06,
+    "shock_sigma_max_over_median": 11.6
+  }
+}

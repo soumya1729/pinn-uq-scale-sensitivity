@@ -1,0 +1,3 @@
+# Preserve the exact bytes recorded in scientific source/data hash contracts.
+# Text remains readable/diffable; only Git's automatic newline conversion is disabled.
+* -text

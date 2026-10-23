@@ -1,0 +1,62 @@
+\section{Discussion and Conclusion}\label{sec:discussion}
+
+Regional allocation and coverage are distinct properties of this post-hoc
+Gaussian. Likelihood and scales determine covariance allocation; the predictive
+centre also changes the error target and coverage. The tested training-only
+choices do not consistently calibrate both regions.
+
+\emph{Predictive centre and linearisation.}
+The baseline mismatch survives removal of zero-mean prior shrinkage. At weaker
+precision, affine prediction can improve without regional calibration, and a
+modest relative parameter shift can produce a large nonlinear remainder.
+
+Held-out refits demonstrate feature expressivity, separately from coefficient
+selection. Spectral weights explain scale dependence, but the conditional limits
+do not bound intermediate contrast, and coarse envelopes cannot certify the
+baseline deficit. Evidence boundaries and perturbation sensitivity leave
+weak-precision scale selection unresolved.
+
+\emph{Residual-informed likelihoods.}
+Residual-informed or block-wise variances $D$ replace $F$ by $J^\top D^{-1}J$,
+after factoring out global noise variance, changing spectral directions and
+within-region allocation. The common-scale oracle does not test this model. The
+rejected Kuramoto--Sivashinsky example links small aggregate residuals to large
+solution errors, without ruling out useful local residual information. Such
+likelihood design remains untested.
+
+\emph{Limitations.}
+The study covers two $1{+}1$-dimensional nonlinear equations and two architectures with
+a shared sub-network/fusion-head design. Only Burgers--MLP supplies eight fully
+admitted seeds; the remaining families are small selected samples. Admission thresholds,
+raw residual weights and reference-based regions are experimental conventions.
+Root-coverage envelopes concern the five observed trained-centre crossings and
+the stated bulk calibration, rather than optimal joint calibration.
+
+The $\theta$-centred prior is conditional on fitted parameters. Nonlinear forward
+checks retain covariance at the original checkpoint; they do not establish a nonlinear
+posterior approximation. Spectral calculations do not certify weak-mode forward accuracy
+or exact rank. The synthetic
+stress test exceeds its whole-grid evidence tolerance, despite agreement at selected
+settings (Appendix~\ref{app:r2}). Held-out expressivity is last-layer and within-grid;
+it does not establish off-grid or full-network held-out approximation. Transfer to
+higher dimensions, other architectures and training objectives is untested.
+
+\emph{Implications.}
+Assess accuracy, regional contrast and coverage for each predictive centre;
+ensemble sensitivity likewise warrants assessment of the particular ensemble.
+The trained-centre Gaussian is a covariance diagnostic.
+An archived random half-grid split-conformal illustration \citep{lei2018conformal} on the reference run,
+using absolute-error scores at target $0.95$, gives marginal coverage $0.950$ but
+bulk, transition and sharp coverage $0.98$, $0.99$ and $0.31$. This descriptive
+finite-grid example shows how marginal coverage can conceal regional imbalance.
+
+\emph{Code and data availability.}
+Code, trained parameters, saved results, the Lean development and the preserved full
+experimental record will be deposited in a public repository. Its URL will be supplied
+before submission.
+
+\emph{Conclusion.}
+Under the specified likelihood, sharp intervals under-cover at all five trained-centre
+roots despite bulk calibration and regional RMS contrast agreement. Allocation
+and coverage therefore require separate regional checks for each run and
+predictive centre.

@@ -1,0 +1,108 @@
+Completed Burgers-MLP summaries found: 8
+Input directory: C:\dev\myshortened\pinn_uq\analysis\n1\outputs_cpu
+sweep-max is the best sampled curve point, including matched MLE/evidence points.
+Coverage uses intervals centred on the saved trained prediction.
+
+burgers_mlp_seed0 | R_tar = 28.2
+   operating eff= 1.8e+01  R_rms=  6.06  rho=  4.66  Z_S=0.045  Z_B=0.012
+   noise-MLE eff= 2.1e-04  R_rms=142.76  rho=  0.20  Z_S=2.296  Z_B=2.433
+   evidence  eff= 6.6e-09  R_rms=492.74  rho=  0.06  Z_S=34.901  Z_B=201.822
+   sweep-max eff= 6.6e-09  R_rms=492.74  rho=  0.06  Z_S=0.001  Z_B=0.007
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [1.15192745e-09 2.04844886e-09 3.64271443e-09 6.47776406e-09]
+   Evidence at four smallest tested variances, fixed alpha=5.7601021; relative to the smallest: [    0.   -1512.26 -3032.55 -4560.86]
+   operating bulk  meanZ= 0.012  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.045  cov68=1.000  cov95=1.000
+   noise-MLE bulk  meanZ= 2.433  cov68=0.261  cov95=0.501
+   noise-MLE sharp meanZ= 2.296  cov68=0.516  cov95=0.684
+
+burgers_mlp_seed1 | R_tar = 176.0
+   operating eff= 1.8e+01  R_rms=  6.10  rho= 28.83  Z_S=0.565  Z_B=0.019
+   noise-MLE eff= 2.8e-04  R_rms= 91.89  rho=  1.91  Z_S=4.910  Z_B=2.960
+   evidence  eff= 1.6e-08  R_rms= 95.03  rho=  1.85  Z_S=29.061  Z_B=215.203
+   sweep-max eff= 5.6e-06  R_rms= 95.83  rho=  1.84  Z_S=0.006  Z_B=0.011
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [1.58467219e-09 2.81798993e-09 5.01117348e-09 8.91126661e-09]
+   Evidence at four smallest tested variances, fixed alpha=10.042787; relative to the smallest: [    0.   -1495.25 -2998.96 -4511.15]
+   operating bulk  meanZ= 0.019  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.565  cov68=0.824  cov95=0.918
+   noise-MLE bulk  meanZ= 2.960  cov68=0.274  cov95=0.455
+   noise-MLE sharp meanZ= 4.910  cov68=0.095  cov95=0.273
+
+burgers_mlp_seed2 | R_tar = 118.6
+   operating eff= 1.8e+01  R_rms=  6.47  rho= 18.33  Z_S=0.832  Z_B=0.014
+   noise-MLE eff= 2.2e-04  R_rms= 45.80  rho=  2.59  Z_S=8.451  Z_B=2.274
+   evidence  eff= 7.0e-09  R_rms= 44.26  rho=  2.68  Z_S=39.929  Z_B=183.077
+   sweep-max eff= 1.8e-04  R_rms= 45.83  rho=  2.59  Z_S=0.028  Z_B=0.008
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [1.24717910e-09 2.21783291e-09 3.94392660e-09 7.01340347e-09]
+   Evidence at four smallest tested variances, fixed alpha=5.5822555; relative to the smallest: [    0.   -1510.5  -3029.08 -4555.68]
+   operating bulk  meanZ= 0.014  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.832  cov68=0.805  cov95=0.870
+   noise-MLE bulk  meanZ= 2.274  cov68=0.380  cov95=0.598
+   noise-MLE sharp meanZ= 8.451  cov68=0.137  cov95=0.349
+
+burgers_mlp_seed3 | R_tar = 200.8
+   operating eff= 1.7e+01  R_rms=  6.26  rho= 32.10  Z_S=0.485  Z_B=0.012
+   noise-MLE eff= 1.4e-04  R_rms= 98.36  rho=  2.04  Z_S=4.808  Z_B=2.659
+   evidence  eff= 7.9e-09  R_rms= 99.55  rho=  2.02  Z_S=78.431  Z_B=222.679
+   sweep-max eff= 5.5e-06  R_rms=100.78  rho=  1.99  Z_S=0.006  Z_B=0.007
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [8.00527696e-10 1.42356192e-09 2.53149085e-09 4.50169805e-09]
+   Evidence at four smallest tested variances, fixed alpha=9.8335279; relative to the smallest: [    0.   -1519.69 -3047.14 -4582.15]
+   operating bulk  meanZ= 0.012  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.485  cov68=0.834  cov95=0.904
+   noise-MLE bulk  meanZ= 2.659  cov68=0.198  cov95=0.412
+   noise-MLE sharp meanZ= 4.808  cov68=0.143  cov95=0.339
+
+burgers_mlp_seed4 | R_tar = 10.0
+   operating eff= 1.8e+01  R_rms=  6.29  rho=  1.58  Z_S=0.022  Z_B=0.012
+   noise-MLE eff= 1.6e-04  R_rms=161.76  rho=  0.06  Z_S=1.814  Z_B=2.755
+   evidence  eff= 5.0e-09  R_rms=516.83  rho=  0.02  Z_S=46.852  Z_B=225.265
+   sweep-max eff= 5.0e-09  R_rms=516.83  rho=  0.02  Z_S=0.001  Z_B=0.007
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [8.69561337e-10 1.54632302e-09 2.74979439e-09 4.88990274e-09]
+   Evidence at four smallest tested variances, fixed alpha=5.6976671; relative to the smallest: [    0.   -1496.3  -3001.56 -4515.59]
+   operating bulk  meanZ= 0.012  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.022  cov68=1.000  cov95=1.000
+   noise-MLE bulk  meanZ= 2.755  cov68=0.233  cov95=0.449
+   noise-MLE sharp meanZ= 1.814  cov68=0.531  cov95=0.630
+
+burgers_mlp_seed5 | R_tar = 209.0
+   operating eff= 1.7e+01  R_rms=  7.25  rho= 28.82  Z_S=0.191  Z_B=0.009
+   noise-MLE eff= 1.9e-04  R_rms=123.31  rho=  1.70  Z_S=5.611  Z_B=1.779
+   evidence  eff= 1.1e-08  R_rms=272.27  rho=  0.77  Z_S=99.829  Z_B=143.556
+   sweep-max eff= 1.1e-08  R_rms=272.27  rho=  0.77  Z_S=0.003  Z_B=0.005
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [1.09162693e-09 1.94121769e-09 3.45202744e-09 6.13866932e-09]
+   Evidence at four smallest tested variances, fixed alpha=9.7478792; relative to the smallest: [    0.   -1500.27 -3008.76 -4525.32]
+   operating bulk  meanZ= 0.009  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.191  cov68=1.000  cov95=1.000
+   noise-MLE bulk  meanZ= 1.779  cov68=0.416  cov95=0.721
+   noise-MLE sharp meanZ= 5.611  cov68=0.018  cov95=0.051
+
+burgers_mlp_seed6 | R_tar = 63.7
+   operating eff= 1.8e+01  R_rms=  6.54  rho=  9.74  Z_S=0.049  Z_B=0.010
+   noise-MLE eff= 1.2e-04  R_rms=173.87  rho=  0.37  Z_S=2.308  Z_B=2.623
+   evidence  eff= 7.0e-09  R_rms=477.14  rho=  0.13  Z_S=75.596  Z_B=220.523
+   sweep-max eff= 7.0e-09  R_rms=477.14  rho=  0.13  Z_S=0.002  Z_B=0.006
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [6.99456994e-10 1.24382997e-09 2.21187723e-09 3.93333573e-09]
+   Evidence at four smallest tested variances, fixed alpha=9.992364; relative to the smallest: [    0.   -1478.89 -2966.6  -4463.1 ]
+   operating bulk  meanZ= 0.010  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.049  cov68=1.000  cov95=1.000
+   noise-MLE bulk  meanZ= 2.623  cov68=0.247  cov95=0.459
+   noise-MLE sharp meanZ= 2.308  cov68=0.363  cov95=0.698
+
+burgers_mlp_seed7 | R_tar = 238.2
+   operating eff= 1.8e+01  R_rms=  6.00  rho= 39.69  Z_S=0.359  Z_B=0.010
+   noise-MLE eff= 1.8e-04  R_rms=183.42  rho=  1.30  Z_S=4.238  Z_B=2.057
+   evidence  eff= 1.0e-08  R_rms=262.85  rho=  0.91  Z_S=60.921  Z_B=168.439
+   sweep-max eff= 1.0e-08  R_rms=262.85  rho=  0.91  Z_S=0.002  Z_B=0.005
+   Evidence candidate: affine_evidence_grid_boundary
+   Four smallest tested noise variances: [1.03105496e-09 1.83350381e-09 3.26048208e-09 5.79804815e-09]
+   Evidence at four smallest tested variances, fixed alpha=10.033078; relative to the smallest: [    0.   -1509.11 -3026.69 -4552.52]
+   operating bulk  meanZ= 0.010  cov68=1.000  cov95=1.000
+   operating sharp meanZ= 0.359  cov68=0.919  cov95=1.000
+   noise-MLE bulk  meanZ= 2.057  cov68=0.356  cov95=0.617
+   noise-MLE sharp meanZ= 4.238  cov68=0.060  cov95=0.161

@@ -1,0 +1,421 @@
+{
+  "source": "Final LaTeX auxiliary file; no label values manually assigned",
+  "pdf_sha256": "5b464290331dae5383a859eb7d0afc9fbb06155fc5332b03049dd6ac37436cab",
+  "labels": {
+    "sec:intro": {
+      "number": "1",
+      "page": "1",
+      "anchor": "section.1"
+    },
+    "fig:burgers-slice": {
+      "number": "1",
+      "page": "3",
+      "anchor": "figure.1"
+    },
+    "sec:setting": {
+      "number": "2",
+      "page": "4",
+      "anchor": "section.2"
+    },
+    "def:regions": {
+      "number": "1",
+      "page": "4",
+      "anchor": "theorem.1"
+    },
+    "def:gate": {
+      "number": "2",
+      "page": "4",
+      "anchor": "theorem.2"
+    },
+    "tab:rejected": {
+      "number": "1",
+      "page": "5",
+      "anchor": "table.1"
+    },
+    "eq:affine-mean": {
+      "number": "1",
+      "page": "5",
+      "anchor": "equation.2.1"
+    },
+    "def:metrics": {
+      "number": "3",
+      "page": "6",
+      "anchor": "theorem.3"
+    },
+    "sec:results": {
+      "number": "3",
+      "page": "6",
+      "anchor": "section.3"
+    },
+    "tab:ceiling": {
+      "number": "2",
+      "page": "7",
+      "anchor": "table.2"
+    },
+    "tab:absolute": {
+      "number": "2",
+      "page": "7",
+      "anchor": "table.2"
+    },
+    "tab:temporal": {
+      "number": "3",
+      "page": "7",
+      "anchor": "table.3"
+    },
+    "sec:ceiling": {
+      "number": "3.1",
+      "page": "7",
+      "anchor": "subsection.3.1"
+    },
+    "fig:n1-scales": {
+      "number": "2",
+      "page": "8",
+      "anchor": "figure.2"
+    },
+    "sec:offmanifold": {
+      "number": "3.2",
+      "page": "10",
+      "anchor": "subsection.3.2"
+    },
+    "def:diagnostics": {
+      "number": "4",
+      "page": "10",
+      "anchor": "theorem.4"
+    },
+    "eq:fperregion": {
+      "number": "2",
+      "page": "11",
+      "anchor": "equation.3.2"
+    },
+    "prop:wellposed": {
+      "number": "5",
+      "page": "11",
+      "anchor": "theorem.5"
+    },
+    "prop:illposed": {
+      "number": "6",
+      "page": "11",
+      "anchor": "theorem.6"
+    },
+    "tab:offmanifold": {
+      "number": "4",
+      "page": "12",
+      "anchor": "table.4"
+    },
+    "sec:theory": {
+      "number": "3.3",
+      "page": "12",
+      "anchor": "subsection.3.3"
+    },
+    "sec:theory:bounds": {
+      "number": "3.3",
+      "page": "12",
+      "anchor": "subsection.3.3"
+    },
+    "sec:mechanism": {
+      "number": "3.3",
+      "page": "12",
+      "anchor": "subsection.3.3"
+    },
+    "sec:mechanism:loading": {
+      "number": "3.3",
+      "page": "12",
+      "anchor": "subsection.3.3"
+    },
+    "eq:sigma-sum": {
+      "number": "3",
+      "page": "12",
+      "anchor": "equation.3.3"
+    },
+    "eq:modal-quotient": {
+      "number": "{3a}",
+      "page": "12",
+      "anchor": "AMS.1"
+    },
+    "eq:r3-strong-expansion": {
+      "number": "4",
+      "page": "12",
+      "anchor": "equation.3.4"
+    },
+    "def:split": {
+      "number": "7",
+      "page": "13",
+      "anchor": "theorem.7"
+    },
+    "eq:variance-envelopes": {
+      "number": "5",
+      "page": "13",
+      "anchor": "equation.3.5"
+    },
+    "eq:regional-rms-sandwich": {
+      "number": "6",
+      "page": "13",
+      "anchor": "equation.3.6"
+    },
+    "tab:spectrum": {
+      "number": "5",
+      "page": "14",
+      "anchor": "table.5"
+    },
+    "tab:loading": {
+      "number": "5",
+      "page": "14",
+      "anchor": "table.5"
+    },
+    "sec:discussion": {
+      "number": "4",
+      "page": "14",
+      "anchor": "section.4"
+    },
+    "app:training": {
+      "number": "A",
+      "page": "15",
+      "anchor": "appendix.A"
+    },
+    "app:conventions": {
+      "number": "A",
+      "page": "15",
+      "anchor": "appendix.A"
+    },
+    "app:grid": {
+      "number": "A",
+      "page": "16",
+      "anchor": "appendix.A"
+    },
+    "app:spectralchecks": {
+      "number": "A",
+      "page": "16",
+      "anchor": "appendix.A"
+    },
+    "app:aggregation": {
+      "number": "B",
+      "page": "16",
+      "anchor": "appendix.B"
+    },
+    "thm:ceiling": {
+      "number": "8",
+      "page": "16",
+      "anchor": "theorem.8"
+    },
+    "eq:sandwich": {
+      "number": "7",
+      "page": "16",
+      "anchor": "equation.B.7"
+    },
+    "eq:ratio-identity": {
+      "number": "8",
+      "page": "17",
+      "anchor": "equation.B.8"
+    },
+    "app:sharpness": {
+      "number": "B",
+      "page": "17",
+      "anchor": "equation.B.8"
+    },
+    "prop:sharp": {
+      "number": "9",
+      "page": "17",
+      "anchor": "theorem.9"
+    },
+    "app:r2": {
+      "number": "C",
+      "page": "17",
+      "anchor": "appendix.C"
+    },
+    "app:n1": {
+      "number": "C",
+      "page": "17",
+      "anchor": "appendix.C"
+    },
+    "tab:n1-scales": {
+      "number": "6",
+      "page": "18",
+      "anchor": "table.6"
+    },
+    "app:r2:numerics": {
+      "number": "C",
+      "page": "18",
+      "anchor": "table.6"
+    },
+    "app:r2:modal": {
+      "number": "C",
+      "page": "18",
+      "anchor": "table.6"
+    },
+    "eq:r2-regional-modal": {
+      "number": "9",
+      "page": "18",
+      "anchor": "equation.C.9"
+    },
+    "tab:r2-limits": {
+      "number": "7",
+      "page": "19",
+      "anchor": "table.7"
+    },
+    "app:r2:evidence": {
+      "number": "C",
+      "page": "19",
+      "anchor": "table.7"
+    },
+    "eq:r2-evidence-slope": {
+      "number": "10",
+      "page": "19",
+      "anchor": "equation.C.10"
+    },
+    "tab:r2-evidence-summary": {
+      "number": "8",
+      "page": "20",
+      "anchor": "table.8"
+    },
+    "fig:r2-evidence-energy": {
+      "number": "3",
+      "page": "20",
+      "anchor": "figure.3"
+    },
+    "tab:r2-centres": {
+      "number": "9",
+      "page": "21",
+      "anchor": "table.9"
+    },
+    "tab:r2-relative-shift": {
+      "number": "10",
+      "page": "21",
+      "anchor": "table.10"
+    },
+    "app:r2:centres": {
+      "number": "C",
+      "page": "21",
+      "anchor": "figure.3"
+    },
+    "tab:r2-oracle": {
+      "number": "11",
+      "page": "22",
+      "anchor": "table.11"
+    },
+    "app:r3:centres": {
+      "number": "C",
+      "page": "22",
+      "anchor": "table.11"
+    },
+    "eq:r3:centre-bound": {
+      "number": "11",
+      "page": "22",
+      "anchor": "equation.C.11"
+    },
+    "eq:r3:regional-bound": {
+      "number": "12",
+      "page": "22",
+      "anchor": "equation.C.12"
+    },
+    "app:r3:root-envelope": {
+      "number": "C",
+      "page": "23",
+      "anchor": "equation.C.12"
+    },
+    "eq:r3:variance-envelope": {
+      "number": "13",
+      "page": "23",
+      "anchor": "equation.C.13"
+    },
+    "eq:r3:coverage-envelope": {
+      "number": "14",
+      "page": "23",
+      "anchor": "equation.C.14"
+    },
+    "tab:r3-roots": {
+      "number": "12",
+      "page": "24",
+      "anchor": "table.12"
+    },
+    "app:r4-oracles": {
+      "number": "C",
+      "page": "24",
+      "anchor": "table.12"
+    },
+    "oa:empirical": {
+      "number": "D",
+      "page": "24",
+      "anchor": "appendix.D"
+    },
+    "tab:r4-oracles": {
+      "number": "13",
+      "page": "25",
+      "anchor": "table.13"
+    },
+    "fig:r2-coverage-scale": {
+      "number": "4",
+      "page": "26",
+      "anchor": "figure.4"
+    },
+    "tab:r2-evidence": {
+      "number": "14",
+      "page": "27",
+      "anchor": "table.14"
+    },
+    "tab:r2-changed-bounds": {
+      "number": "15",
+      "page": "27",
+      "anchor": "table.15"
+    },
+    "tab:r2-scale-loadings": {
+      "number": "16",
+      "page": "28",
+      "anchor": "table.16"
+    },
+    "tab:oa-relative-shift": {
+      "number": "17",
+      "page": "28",
+      "anchor": "table.17"
+    },
+    "fig:r2-full-burgers": {
+      "number": "5",
+      "page": "29",
+      "anchor": "figure.5"
+    },
+    "fig:r2-full-bf": {
+      "number": "5",
+      "page": "29",
+      "anchor": "figure.5"
+    },
+    "fig:r2-post-bm": {
+      "number": "5",
+      "page": "29",
+      "anchor": "figure.5"
+    },
+    "fig:r2-post": {
+      "number": "5",
+      "page": "29",
+      "anchor": "figure.5"
+    },
+    "fig:r2-full-ac": {
+      "number": "6",
+      "page": "30",
+      "anchor": "figure.6"
+    },
+    "fig:r2-full-af": {
+      "number": "6",
+      "page": "30",
+      "anchor": "figure.6"
+    },
+    "oa:numerics": {
+      "number": "E",
+      "page": "30",
+      "anchor": "appendix.E"
+    },
+    "oa:lean": {
+      "number": "F",
+      "page": "32",
+      "anchor": "appendix.F"
+    },
+    "tab:lean": {
+      "number": "18",
+      "page": "33",
+      "anchor": "table.18"
+    },
+    "LastPage": {
+      "number": "F",
+      "page": "35",
+      "anchor": "page.35"
+    }
+  }
+}

@@ -1,0 +1,2328 @@
+{
+  "schema_version": 1,
+  "release": "2026-10-22",
+  "archive_name": "pinn_uq_saved_data_20261022.zip",
+  "entries": [
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed0_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13749620,
+      "sha256": "b100223651a18376551ba86ee1cf1e6b99c383eef2e7ac2eb7ba79a5e8d876ed",
+      "object": "objects/b100223651a18376551ba86ee1cf1e6b99c383eef2e7ac2eb7ba79a5e8d876ed"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed1_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13756385,
+      "sha256": "39828ffd0b65fd840acf77b1a87313d81ad5bc229d9e7ef78676c24c03e95e8f",
+      "object": "objects/39828ffd0b65fd840acf77b1a87313d81ad5bc229d9e7ef78676c24c03e95e8f"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed2_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13755627,
+      "sha256": "6e07a3724a9e516fd8a3498445f22ddf94d78066e9b4ae83241ff2b25162c13f",
+      "object": "objects/6e07a3724a9e516fd8a3498445f22ddf94d78066e9b4ae83241ff2b25162c13f"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed3_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13742214,
+      "sha256": "8e93bf86fb2ea11fad123f23feb426d7d495f480838159e126926b949a6eafd2",
+      "object": "objects/8e93bf86fb2ea11fad123f23feb426d7d495f480838159e126926b949a6eafd2"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed4_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13753465,
+      "sha256": "a20f9179ad9dc18db4481b0b5f72cf44791b286915aa8417d91a415df9ec2ae6",
+      "object": "objects/a20f9179ad9dc18db4481b0b5f72cf44791b286915aa8417d91a415df9ec2ae6"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed5_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13760145,
+      "sha256": "324a598e6b05418150d37a4ff6e3863527dbd9b003b9815ceb7f31cdb72ace4f",
+      "object": "objects/324a598e6b05418150d37a4ff6e3863527dbd9b003b9815ceb7f31cdb72ace4f"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed6_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13732215,
+      "sha256": "d6ce1e62b16936d35233676c56a614275b30fbab0bbcca42e67ba46888b0fa90",
+      "object": "objects/d6ce1e62b16936d35233676c56a614275b30fbab0bbcca42e67ba46888b0fa90"
+    },
+    {
+      "path": "analysis/n1/outputs_cpu/burgers_mlp_seed7_n1.npz",
+      "group": "saved outputs: n1",
+      "bytes": 13739659,
+      "sha256": "65c72b41cfe80c0d9098e2d258fa96ca5f95da7a02962b87ba4e093480520b46",
+      "object": "objects/65c72b41cfe80c0d9098e2d258fa96ca5f95da7a02962b87ba4e093480520b46"
+    },
+    {
+      "path": "analysis/round2/outputs/preparation/end_to_end/baseline/synthetic_fixture_fullgrid_sigma_raw.npz",
+      "group": "saved outputs: round2",
+      "bytes": 749,
+      "sha256": "15771c6fa845bd9e253372144bdc0deeb7ce1332f912043259ad0e7ff7ba96c5",
+      "object": "objects/15771c6fa845bd9e253372144bdc0deeb7ce1332f912043259ad0e7ff7ba96c5"
+    },
+    {
+      "path": "analysis/round2/outputs/preparation/end_to_end/input/synthetic_fixture/synthetic_fixture_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 2084,
+      "sha256": "ae408c43770f826accbf2c0d5eb80c8555572f1fb66671d6118172de3b24ec2a",
+      "object": "objects/ae408c43770f826accbf2c0d5eb80c8555572f1fb66671d6118172de3b24ec2a"
+    },
+    {
+      "path": "analysis/round2/outputs/preparation/end_to_end/input/synthetic_fixture/synthetic_fixture_params.pkl",
+      "group": "saved outputs: round2",
+      "bytes": 239,
+      "sha256": "e2a7e556bff23acdc2d1f5f3610b38f866d4b179338eae8e6ec079e1c56f35fc",
+      "object": "objects/e2a7e556bff23acdc2d1f5f3610b38f866d4b179338eae8e6ec079e1c56f35fc"
+    },
+    {
+      "path": "analysis/round2/outputs/preparation/end_to_end/output/synthetic_fixture_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 8935,
+      "sha256": "7419b5fb740d300a81734f7e6894bbcd43a5909e0526f4c80b77f127f8468feb",
+      "object": "objects/7419b5fb740d300a81734f7e6894bbcd43a5909e0526f4c80b77f127f8468feb"
+    },
+    {
+      "path": "analysis/round2/outputs/preparation/end_to_end/output/synthetic_fixture_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 46680,
+      "sha256": "559b45be21c971535f5828cc9362255a2db6e126aa3c62a73864e83ec1ec9417",
+      "object": "objects/559b45be21c971535f5828cc9362255a2db6e126aa3c62a73864e83ec1ec9417"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_fourier_seed0_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 28982808,
+      "sha256": "9ffc00c24925389dbb1bd79cffd66fc394927f0af1753afb44131ac539944e26",
+      "object": "objects/9ffc00c24925389dbb1bd79cffd66fc394927f0af1753afb44131ac539944e26"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_fourier_seed0_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 799318,
+      "sha256": "bcbadb16873f8d05e29f8187ffcd50d3ef6310698bf330356bd69c77880fc511",
+      "object": "objects/bcbadb16873f8d05e29f8187ffcd50d3ef6310698bf330356bd69c77880fc511"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_fourier_seed1_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 29017269,
+      "sha256": "061af23d68bf1ef4b0489dcaf69959379d4d60ee230df325b2abda59c7e57fd3",
+      "object": "objects/061af23d68bf1ef4b0489dcaf69959379d4d60ee230df325b2abda59c7e57fd3"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_fourier_seed1_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 798122,
+      "sha256": "4ec11c0a2a5c70a67fa229f1cdc9cf431aa56e98205bb929c1effa63c25f7d1a",
+      "object": "objects/4ec11c0a2a5c70a67fa229f1cdc9cf431aa56e98205bb929c1effa63c25f7d1a"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_fourier_seed3_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 28989614,
+      "sha256": "46392b390ae7df54b5013e4ae253b547d8fbac8d4f539245598cc75a44f41c44",
+      "object": "objects/46392b390ae7df54b5013e4ae253b547d8fbac8d4f539245598cc75a44f41c44"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_fourier_seed3_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 810123,
+      "sha256": "ae203ae06bf38771af001dcdbff4e7073a444d7c3d1c13dda8dcf80595f61e9c",
+      "object": "objects/ae203ae06bf38771af001dcdbff4e7073a444d7c3d1c13dda8dcf80595f61e9c"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_mlp_seed0_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 37615047,
+      "sha256": "f9e7d9c56d7a47e1b27ffe080adcf2a99392f35be797327da159b5dc2b38f772",
+      "object": "objects/f9e7d9c56d7a47e1b27ffe080adcf2a99392f35be797327da159b5dc2b38f772"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_mlp_seed0_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 740765,
+      "sha256": "1a405061918308ef72f668b24844abdd0d862ebeb40e70438f849f4efee36ab2",
+      "object": "objects/1a405061918308ef72f668b24844abdd0d862ebeb40e70438f849f4efee36ab2"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_mlp_seed1_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 37621427,
+      "sha256": "5d5eb304994f09a231b6237f57576b15c5a373c3b299db9548beac1c531a7cca",
+      "object": "objects/5d5eb304994f09a231b6237f57576b15c5a373c3b299db9548beac1c531a7cca"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_mlp_seed1_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 755514,
+      "sha256": "e92156f6d4f72febbc487f3c3f54b2143ad618f50eb33a5c0e2549f12815320f",
+      "object": "objects/e92156f6d4f72febbc487f3c3f54b2143ad618f50eb33a5c0e2549f12815320f"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_mlp_seed3_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 37606582,
+      "sha256": "7a038f915315beecf6fe1c0da02b629739829d08564266001885787758629d61",
+      "object": "objects/7a038f915315beecf6fe1c0da02b629739829d08564266001885787758629d61"
+    },
+    {
+      "path": "analysis/round2/outputs/production/allen_cahn_mlp_seed3_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 737263,
+      "sha256": "c170693117970e36405b15d0a369168552a69a2782e98ab9e510e71f74021d14",
+      "object": "objects/c170693117970e36405b15d0a369168552a69a2782e98ab9e510e71f74021d14"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_fourier_seed0_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 30106427,
+      "sha256": "476c02d1c587c5b559abf2c90e8aa7d678391fcc08867256959b8c1a35ea4e50",
+      "object": "objects/476c02d1c587c5b559abf2c90e8aa7d678391fcc08867256959b8c1a35ea4e50"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_fourier_seed0_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 953248,
+      "sha256": "a56bb0057256f3412d5214634c98e549a0e155717940e1e0b42a775947ab7ebf",
+      "object": "objects/a56bb0057256f3412d5214634c98e549a0e155717940e1e0b42a775947ab7ebf"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_fourier_seed2_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 31290451,
+      "sha256": "b2d199104653ee963c2981ccaa516e771e372580c377e4483bea75751dd34042",
+      "object": "objects/b2d199104653ee963c2981ccaa516e771e372580c377e4483bea75751dd34042"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_fourier_seed2_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 963948,
+      "sha256": "6fb67592448ce5903d758c003cd54a19d1fa90f0d2c920738db1aeb46cf23a48",
+      "object": "objects/6fb67592448ce5903d758c003cd54a19d1fa90f0d2c920738db1aeb46cf23a48"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_fourier_seed6_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 30108096,
+      "sha256": "e5207b37e3d6e2742aab5c31fb5e72d31ab8d4fe91e22be29fc4fc9ac310ad03",
+      "object": "objects/e5207b37e3d6e2742aab5c31fb5e72d31ab8d4fe91e22be29fc4fc9ac310ad03"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_fourier_seed6_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 946370,
+      "sha256": "899834dad628ed53b7b2ebdcde97bb429e24dc80c9d03bcf9cd3352eb419ea8f",
+      "object": "objects/899834dad628ed53b7b2ebdcde97bb429e24dc80c9d03bcf9cd3352eb419ea8f"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed0_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 32405009,
+      "sha256": "c81af423465c1a482f23eeaabe3345e6a8b986e7464603a61e2c4ff53cd1551c",
+      "object": "objects/c81af423465c1a482f23eeaabe3345e6a8b986e7464603a61e2c4ff53cd1551c"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed0_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 846533,
+      "sha256": "00866a8fa13faf537c5455854b3caca6e8a87700b99b88367c33e7310890fc98",
+      "object": "objects/00866a8fa13faf537c5455854b3caca6e8a87700b99b88367c33e7310890fc98"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed1_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 31201728,
+      "sha256": "0532b7e5da088b1f8e8043452f58cd3d0552b89b801fbf2032f205826a75917c",
+      "object": "objects/0532b7e5da088b1f8e8043452f58cd3d0552b89b801fbf2032f205826a75917c"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed1_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 839102,
+      "sha256": "bead016ab70bec2b92125058bbb8e186074bade4f1d16fc4d8ae018e86726d45",
+      "object": "objects/bead016ab70bec2b92125058bbb8e186074bade4f1d16fc4d8ae018e86726d45"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed2_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 32434013,
+      "sha256": "854b08ec3647a2365cae3d8cc09278b900f51dea0effa45d63e37bf89056ce86",
+      "object": "objects/854b08ec3647a2365cae3d8cc09278b900f51dea0effa45d63e37bf89056ce86"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed2_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 843396,
+      "sha256": "873254cb5c99db346a001c62185fa64c4ef02b4eed739a9f43222a583e3d279a",
+      "object": "objects/873254cb5c99db346a001c62185fa64c4ef02b4eed739a9f43222a583e3d279a"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed3_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 31180179,
+      "sha256": "a182d3c7759aa7ba3da7e593c01bc3459782d0270d4541cda8cc23ee35860dc3",
+      "object": "objects/a182d3c7759aa7ba3da7e593c01bc3459782d0270d4541cda8cc23ee35860dc3"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed3_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 829306,
+      "sha256": "44f24a98ec53c5e2b362c4255cfd372586341e274de34d738affb4dfb8046f7e",
+      "object": "objects/44f24a98ec53c5e2b362c4255cfd372586341e274de34d738affb4dfb8046f7e"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed4_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 32423201,
+      "sha256": "0b361a0844add705c0291486dc404e9a7b11394a518559cd05624cc834b1d468",
+      "object": "objects/0b361a0844add705c0291486dc404e9a7b11394a518559cd05624cc834b1d468"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed4_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 858329,
+      "sha256": "fd3f76b873b60265c0fbfac05b3bf3fd3a08320bf7a0a7a55adbf19150cbf34a",
+      "object": "objects/fd3f76b873b60265c0fbfac05b3bf3fd3a08320bf7a0a7a55adbf19150cbf34a"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed5_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 31210090,
+      "sha256": "bcc92934a2146a1564a5e5f52a0b6f32e18c15eeeb7b14f0e785038897270bd3",
+      "object": "objects/bcc92934a2146a1564a5e5f52a0b6f32e18c15eeeb7b14f0e785038897270bd3"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed5_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 838491,
+      "sha256": "4a7aab5b6994518434daab773bee0e7a064548d8869d00e3b73f2694a6c96670",
+      "object": "objects/4a7aab5b6994518434daab773bee0e7a064548d8869d00e3b73f2694a6c96670"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed6_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 31188020,
+      "sha256": "ee1f17568624a40697bfcb17248322ee3abfbd73977513fca184048cbddfbd50",
+      "object": "objects/ee1f17568624a40697bfcb17248322ee3abfbd73977513fca184048cbddfbd50"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed6_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 852872,
+      "sha256": "f64c2327c22aae2493053b0632fb95bb5927098980a252e0e8e9584d083acc91",
+      "object": "objects/f64c2327c22aae2493053b0632fb95bb5927098980a252e0e8e9584d083acc91"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed7_round2_fields.npz",
+      "group": "saved outputs: round2",
+      "bytes": 31196046,
+      "sha256": "d9886b3ad4a1461abfe2e7fba29de137854cddee08624e5b6e97ca8f62c44521",
+      "object": "objects/d9886b3ad4a1461abfe2e7fba29de137854cddee08624e5b6e97ca8f62c44521"
+    },
+    {
+      "path": "analysis/round2/outputs/production/burgers_mlp_seed7_round2_spectral.npz",
+      "group": "saved outputs: round2",
+      "bytes": 835152,
+      "sha256": "0d28945849af01c5eec9bf1a48ce5eba451f7d47aae9ed02823fb15b5fa952d0",
+      "object": "objects/0d28945849af01c5eec9bf1a48ce5eba451f7d47aae9ed02823fb15b5fa952d0"
+    },
+    {
+      "path": "analysis/round2/outputs/validation/gram_floor_stress/toy.npz",
+      "group": "saved outputs: round2",
+      "bytes": 1602743,
+      "sha256": "5c727cd634be19778abb29a89eeb3d90bf5313c25c3e91f3bb10969a10725e0a",
+      "object": "objects/5c727cd634be19778abb29a89eeb3d90bf5313c25c3e91f3bb10969a10725e0a"
+    },
+    {
+      "path": "analysis/round2/outputs/validation/weak_spectrum_toy.npz",
+      "group": "saved outputs: round2",
+      "bytes": 1598474,
+      "sha256": "2f57ce534212b0ed5d022018494eccd97ffada21b3a4acb7e3d343fd0b3d3e08",
+      "object": "objects/2f57ce534212b0ed5d022018494eccd97ffada21b3a4acb7e3d343fd0b3d3e08"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2292379,
+      "sha256": "b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64",
+      "object": "objects/b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fourier_B.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 754,
+      "sha256": "17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa",
+      "object": "objects/17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2212748,
+      "sha256": "ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a",
+      "object": "objects/ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2295198,
+      "sha256": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765",
+      "object": "objects/5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fourier_B.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 754,
+      "sha256": "cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba",
+      "object": "objects/cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2212748,
+      "sha256": "48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f",
+      "object": "objects/48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2293519,
+      "sha256": "9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3",
+      "object": "objects/9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fourier_B.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 754,
+      "sha256": "d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6",
+      "object": "objects/d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2212748,
+      "sha256": "f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa",
+      "object": "objects/f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2284892,
+      "sha256": "baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a",
+      "object": "objects/baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a",
+      "object": "objects/c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2287814,
+      "sha256": "8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f",
+      "object": "objects/8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6",
+      "object": "objects/b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2279129,
+      "sha256": "cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb",
+      "object": "objects/cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb"
+    },
+    {
+      "path": "analysis/n5/input/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4",
+      "object": "objects/76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2227493,
+      "sha256": "ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9",
+      "object": "objects/ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_fourier_B.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 754,
+      "sha256": "eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3",
+      "object": "objects/eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2212748,
+      "sha256": "06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73",
+      "object": "objects/06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2226324,
+      "sha256": "3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0",
+      "object": "objects/3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_fourier_B.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 754,
+      "sha256": "bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2",
+      "object": "objects/bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2212748,
+      "sha256": "ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf",
+      "object": "objects/ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2226885,
+      "sha256": "4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564",
+      "object": "objects/4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_fourier_B.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 754,
+      "sha256": "a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588",
+      "object": "objects/a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588"
+    },
+    {
+      "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2212748,
+      "sha256": "ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83",
+      "object": "objects/ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2224277,
+      "sha256": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b",
+      "object": "objects/ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed0/burgers_mlp_seed0_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975",
+      "object": "objects/b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2223698,
+      "sha256": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6",
+      "object": "objects/28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed1/burgers_mlp_seed1_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa",
+      "object": "objects/cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2226478,
+      "sha256": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800",
+      "object": "objects/b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed2/burgers_mlp_seed2_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51",
+      "object": "objects/56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2224880,
+      "sha256": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5",
+      "object": "objects/4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed3/burgers_mlp_seed3_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5",
+      "object": "objects/de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2225905,
+      "sha256": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a",
+      "object": "objects/d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed4/burgers_mlp_seed4_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3",
+      "object": "objects/09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2225283,
+      "sha256": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f",
+      "object": "objects/d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed5/burgers_mlp_seed5_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc",
+      "object": "objects/7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2225703,
+      "sha256": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f",
+      "object": "objects/7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed6/burgers_mlp_seed6_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86",
+      "object": "objects/22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 2224889,
+      "sha256": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0",
+      "object": "objects/4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0"
+    },
+    {
+      "path": "analysis/n5/input/burgers_mlp_seed7/burgers_mlp_seed7_params.pkl",
+      "group": "17 frozen checkpoints and fields",
+      "bytes": 1577814,
+      "sha256": "c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d",
+      "object": "objects/c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d"
+    },
+    {
+      "path": "analysis/n1/baseline/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 697287,
+      "sha256": "6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1",
+      "object": "objects/6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1"
+    },
+    {
+      "path": "analysis/n1/baseline/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 696942,
+      "sha256": "020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1",
+      "object": "objects/020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 688462,
+      "sha256": "945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2",
+      "object": "objects/945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 685620,
+      "sha256": "eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e",
+      "object": "objects/eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 684778,
+      "sha256": "4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591",
+      "object": "objects/4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 686289,
+      "sha256": "242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0",
+      "object": "objects/242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 684507,
+      "sha256": "c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd",
+      "object": "objects/c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 685519,
+      "sha256": "db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6",
+      "object": "objects/db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 685889,
+      "sha256": "9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f",
+      "object": "objects/9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 683282,
+      "sha256": "282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a",
+      "object": "objects/282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a"
+    },
+    {
+      "path": "analysis/n1/baseline/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: n1",
+      "bytes": 683256,
+      "sha256": "518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3",
+      "object": "objects/518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3"
+    },
+    {
+      "path": "analysis/round2/baseline/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 697287,
+      "sha256": "6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1",
+      "object": "objects/6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1"
+    },
+    {
+      "path": "analysis/round2/baseline/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 698379,
+      "sha256": "ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324",
+      "object": "objects/ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324"
+    },
+    {
+      "path": "analysis/round2/baseline/allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 697512,
+      "sha256": "73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42",
+      "object": "objects/73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42"
+    },
+    {
+      "path": "analysis/round2/baseline/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 696942,
+      "sha256": "020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1",
+      "object": "objects/020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1"
+    },
+    {
+      "path": "analysis/round2/baseline/allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 697224,
+      "sha256": "87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2",
+      "object": "objects/87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2"
+    },
+    {
+      "path": "analysis/round2/baseline/allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 697127,
+      "sha256": "032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d",
+      "object": "objects/032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 689214,
+      "sha256": "1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf",
+      "object": "objects/1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 688462,
+      "sha256": "945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2",
+      "object": "objects/945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 688504,
+      "sha256": "8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc",
+      "object": "objects/8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 685620,
+      "sha256": "eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e",
+      "object": "objects/eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 684778,
+      "sha256": "4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591",
+      "object": "objects/4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 686289,
+      "sha256": "242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0",
+      "object": "objects/242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 684507,
+      "sha256": "c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd",
+      "object": "objects/c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 685519,
+      "sha256": "db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6",
+      "object": "objects/db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 685889,
+      "sha256": "9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f",
+      "object": "objects/9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 683282,
+      "sha256": "282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a",
+      "object": "objects/282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a"
+    },
+    {
+      "path": "analysis/round2/baseline/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "group": "raw baseline covariance fields: round2",
+      "bytes": 683256,
+      "sha256": "518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3",
+      "object": "objects/518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2292379,
+      "sha256": "b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64",
+      "object": "objects/b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fourier_B.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 754,
+      "sha256": "17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa",
+      "object": "objects/17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 697287,
+      "sha256": "6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1",
+      "object": "objects/6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1778053,
+      "sha256": "0b0b1e850df3e4cf2409e312a6b0b06a7c52fe3706ad57e7c45e3b5c1a4dd9b6",
+      "object": "objects/0b0b1e850df3e4cf2409e312a6b0b06a7c52fe3706ad57e7c45e3b5c1a4dd9b6"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 2212748,
+      "sha256": "ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a",
+      "object": "objects/ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2295198,
+      "sha256": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765",
+      "object": "objects/5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fourier_B.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 754,
+      "sha256": "cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba",
+      "object": "objects/cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 698379,
+      "sha256": "ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324",
+      "object": "objects/ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1742855,
+      "sha256": "e1e6af5e2add81ce5e407bd214b54bb246684edaf0c9e0caa69e4cfb3d8cf4b5",
+      "object": "objects/e1e6af5e2add81ce5e407bd214b54bb246684edaf0c9e0caa69e4cfb3d8cf4b5"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 2212748,
+      "sha256": "48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f",
+      "object": "objects/48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2293519,
+      "sha256": "9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3",
+      "object": "objects/9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fourier_B.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 754,
+      "sha256": "d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6",
+      "object": "objects/d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 697512,
+      "sha256": "73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42",
+      "object": "objects/73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1750428,
+      "sha256": "3d839c31e73acdc4be82bb444cc3af95e37fc7a3dfd3c61f6f132d8baf9d4e03",
+      "object": "objects/3d839c31e73acdc4be82bb444cc3af95e37fc7a3dfd3c61f6f132d8baf9d4e03"
+    },
+    {
+      "path": "training/results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 2212748,
+      "sha256": "f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa",
+      "object": "objects/f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2284892,
+      "sha256": "baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a",
+      "object": "objects/baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 696942,
+      "sha256": "020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1",
+      "object": "objects/020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1754004,
+      "sha256": "d9b74100b2126e8115cd6ed4370828bf585feab4353f1cab9c46c10026d8ca67",
+      "object": "objects/d9b74100b2126e8115cd6ed4370828bf585feab4353f1cab9c46c10026d8ca67"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a",
+      "object": "objects/c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2287814,
+      "sha256": "8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f",
+      "object": "objects/8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 697224,
+      "sha256": "87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2",
+      "object": "objects/87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1754445,
+      "sha256": "746f2c6c12723bf59b999d09dcc221b4761ea680a556b66c75e501b1412f05d3",
+      "object": "objects/746f2c6c12723bf59b999d09dcc221b4761ea680a556b66c75e501b1412f05d3"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6",
+      "object": "objects/b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2279129,
+      "sha256": "cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb",
+      "object": "objects/cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 697127,
+      "sha256": "032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d",
+      "object": "objects/032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1763124,
+      "sha256": "e5cea2e7140d73e6e2976aee21b419f855261492eced6bea5a45b000a4bbf8dd",
+      "object": "objects/e5cea2e7140d73e6e2976aee21b419f855261492eced6bea5a45b000a4bbf8dd"
+    },
+    {
+      "path": "training/results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4",
+      "object": "objects/76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed0/burgers_fourier_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2227493,
+      "sha256": "ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9",
+      "object": "objects/ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed0/burgers_fourier_seed0_fourier_B.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 754,
+      "sha256": "eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3",
+      "object": "objects/eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed0/burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 689214,
+      "sha256": "1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf",
+      "object": "objects/1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed0/burgers_fourier_seed0_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1773154,
+      "sha256": "fcfd2d3b7ba45a3a238addb9736be5853bad29e8443b94a12248537a0f6c5312",
+      "object": "objects/fcfd2d3b7ba45a3a238addb9736be5853bad29e8443b94a12248537a0f6c5312"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed0/burgers_fourier_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 2212748,
+      "sha256": "06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73",
+      "object": "objects/06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed2/burgers_fourier_seed2_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2226324,
+      "sha256": "3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0",
+      "object": "objects/3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed2/burgers_fourier_seed2_fourier_B.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 754,
+      "sha256": "bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2",
+      "object": "objects/bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed2/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 688462,
+      "sha256": "945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2",
+      "object": "objects/945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed2/burgers_fourier_seed2_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1787934,
+      "sha256": "e30d26352e6e45695a12099d7d64b05f747a8f87e112f7b7d19dd12389d358a5",
+      "object": "objects/e30d26352e6e45695a12099d7d64b05f747a8f87e112f7b7d19dd12389d358a5"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed2/burgers_fourier_seed2_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 2212748,
+      "sha256": "ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf",
+      "object": "objects/ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed6/burgers_fourier_seed6_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2226885,
+      "sha256": "4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564",
+      "object": "objects/4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed6/burgers_fourier_seed6_fourier_B.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 754,
+      "sha256": "a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588",
+      "object": "objects/a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed6/burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 688504,
+      "sha256": "8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc",
+      "object": "objects/8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed6/burgers_fourier_seed6_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1784139,
+      "sha256": "4819083c62ed4e41e4867896ccabe07b1778dd5d681ac335c4ea605352f7eee0",
+      "object": "objects/4819083c62ed4e41e4867896ccabe07b1778dd5d681ac335c4ea605352f7eee0"
+    },
+    {
+      "path": "training/results/burgers_fourier_seed6/burgers_fourier_seed6_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 2212748,
+      "sha256": "ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83",
+      "object": "objects/ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2224277,
+      "sha256": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b",
+      "object": "objects/ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed0/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 685620,
+      "sha256": "eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e",
+      "object": "objects/eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed0/burgers_mlp_seed0_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1671725,
+      "sha256": "1ba8389a34e336b54c500cdc5d50fe11fe58d0759916d41333cd727ccd255af1",
+      "object": "objects/1ba8389a34e336b54c500cdc5d50fe11fe58d0759916d41333cd727ccd255af1"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed0/burgers_mlp_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975",
+      "object": "objects/b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2223698,
+      "sha256": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6",
+      "object": "objects/28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed1/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 684778,
+      "sha256": "4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591",
+      "object": "objects/4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed1/burgers_mlp_seed1_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1688924,
+      "sha256": "76bb516aeacc9a0c5711df174f5389dce3ce849c6cc96146ce91e20cad646443",
+      "object": "objects/76bb516aeacc9a0c5711df174f5389dce3ce849c6cc96146ce91e20cad646443"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed1/burgers_mlp_seed1_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa",
+      "object": "objects/cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2226478,
+      "sha256": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800",
+      "object": "objects/b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed2/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 686289,
+      "sha256": "242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0",
+      "object": "objects/242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed2/burgers_mlp_seed2_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1660743,
+      "sha256": "373e4b8c4e9c1ccfa9a1496dcf3047a273a5dc374d144761a06c1e0d9543f337",
+      "object": "objects/373e4b8c4e9c1ccfa9a1496dcf3047a273a5dc374d144761a06c1e0d9543f337"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed2/burgers_mlp_seed2_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51",
+      "object": "objects/56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2224880,
+      "sha256": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5",
+      "object": "objects/4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed3/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 684507,
+      "sha256": "c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd",
+      "object": "objects/c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed3/burgers_mlp_seed3_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1663530,
+      "sha256": "4d33987fcc3eeceab0ebcc074edec5b127330e60d242f739c15d187fa15105dc",
+      "object": "objects/4d33987fcc3eeceab0ebcc074edec5b127330e60d242f739c15d187fa15105dc"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed3/burgers_mlp_seed3_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5",
+      "object": "objects/de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2225905,
+      "sha256": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a",
+      "object": "objects/d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed4/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 685519,
+      "sha256": "db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6",
+      "object": "objects/db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed4/burgers_mlp_seed4_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1677600,
+      "sha256": "5b803ea4a4c71243a227d98b038b9742d8c6ded289c791353da202e9d086b544",
+      "object": "objects/5b803ea4a4c71243a227d98b038b9742d8c6ded289c791353da202e9d086b544"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed4/burgers_mlp_seed4_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3",
+      "object": "objects/09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2225283,
+      "sha256": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f",
+      "object": "objects/d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed5/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 685889,
+      "sha256": "9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f",
+      "object": "objects/9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed5/burgers_mlp_seed5_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1671917,
+      "sha256": "d15c67dbfc3381915d650a511a27ac5ab8927bcc5e22dfe22fa418a649edb03a",
+      "object": "objects/d15c67dbfc3381915d650a511a27ac5ab8927bcc5e22dfe22fa418a649edb03a"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed5/burgers_mlp_seed5_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc",
+      "object": "objects/7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2225703,
+      "sha256": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f",
+      "object": "objects/7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed6/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 683282,
+      "sha256": "282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a",
+      "object": "objects/282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed6/burgers_mlp_seed6_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1687640,
+      "sha256": "4b366c3568650581ec596140da38f4032ec6e6a99058a81d292077422f022677",
+      "object": "objects/4b366c3568650581ec596140da38f4032ec6e6a99058a81d292077422f022677"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed6/burgers_mlp_seed6_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86",
+      "object": "objects/22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2224889,
+      "sha256": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0",
+      "object": "objects/4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed7/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 683256,
+      "sha256": "518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3",
+      "object": "objects/518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed7/burgers_mlp_seed7_manifold_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 1680991,
+      "sha256": "7c35f0f9f2f38140bb2a8047875b304cf52966ce098b5960e8f9c6c486a3ee5e",
+      "object": "objects/7c35f0f9f2f38140bb2a8047875b304cf52966ce098b5960e8f9c6c486a3ee5e"
+    },
+    {
+      "path": "training/results/burgers_mlp_seed7/burgers_mlp_seed7_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d",
+      "object": "objects/c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d09_n06/convection_diffusion_mlp_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2365335,
+      "sha256": "8ba07d5ae16bbbbd7d556b22c02f8cc9f27fd6bbfe8a6bf92416c1d340cd7e78",
+      "object": "objects/8ba07d5ae16bbbbd7d556b22c02f8cc9f27fd6bbfe8a6bf92416c1d340cd7e78"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d09_n06/convection_diffusion_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 689016,
+      "sha256": "d4109d19c6497339a7ab38f6c4e09fdf909b5a238b5dcd0406e14a52aeeb625d",
+      "object": "objects/d4109d19c6497339a7ab38f6c4e09fdf909b5a238b5dcd0406e14a52aeeb625d"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d09_n06/convection_diffusion_mlp_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "1cda14398aa0b7817d97fd94a59808b867e212bcb54baceb94aa32aaf84828b5",
+      "object": "objects/1cda14398aa0b7817d97fd94a59808b867e212bcb54baceb94aa32aaf84828b5"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d11_n08/convection_diffusion_mlp_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2392050,
+      "sha256": "fbcfaa901761edd7f7bbcf1d00a6a5672eb849be0526588cf9314eb2d5a75757",
+      "object": "objects/fbcfaa901761edd7f7bbcf1d00a6a5672eb849be0526588cf9314eb2d5a75757"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d11_n08/convection_diffusion_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 686684,
+      "sha256": "cb1d5a014409f7ee9caa80ae7136015cb5aa51615661a51faa8c4a70328c2314",
+      "object": "objects/cb1d5a014409f7ee9caa80ae7136015cb5aa51615661a51faa8c4a70328c2314"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d11_n08/convection_diffusion_mlp_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "3ad04a58347b8d3cdf9ee483ad4d90a6a1633ee25cbaf89061ad4bd2085ebd1d",
+      "object": "objects/3ad04a58347b8d3cdf9ee483ad4d90a6a1633ee25cbaf89061ad4bd2085ebd1d"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d13_n10/convection_diffusion_mlp_seed0_fields.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 2440422,
+      "sha256": "f3c11cf41dd16d2b8b8c7bcbd173c6615f0954ee0701b9c9f622bc8bf9c0b8a8",
+      "object": "objects/f3c11cf41dd16d2b8b8c7bcbd173c6615f0954ee0701b9c9f622bc8bf9c0b8a8"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d13_n10/convection_diffusion_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "original baseline and reference inputs",
+      "bytes": 686275,
+      "sha256": "127100bbd563c354366cccd6c30ac5efc85d3283592474405e03598c4157eea5",
+      "object": "objects/127100bbd563c354366cccd6c30ac5efc85d3283592474405e03598c4157eea5"
+    },
+    {
+      "path": "training/results/cd_sweep/mlp_d13_n10/convection_diffusion_mlp_seed0_params.pkl",
+      "group": "original baseline and reference inputs",
+      "bytes": 1577814,
+      "sha256": "2823f11a00deba18f18206b011b461c155f76be515bab86aac9b964a58a53a6f",
+      "object": "objects/2823f11a00deba18f18206b011b461c155f76be515bab86aac9b964a58a53a6f"
+    },
+    {
+      "path": "training/analysis/sweep_results/burgers/NU_0.002/mlp_seed0/burgers_mlp_seed0_fields.npz",
+      "group": "retained grid-resolution check inputs",
+      "bytes": 2226448,
+      "sha256": "a48431299178e2e91ab890d03c5f152b8138f45eb26468f06d6b30349983cab2",
+      "object": "objects/a48431299178e2e91ab890d03c5f152b8138f45eb26468f06d6b30349983cab2"
+    },
+    {
+      "path": "training/analysis/sweep_results/allen_cahn/EPS2_5e-05/mlp_seed0/allen_cahn_mlp_seed0_fields.npz",
+      "group": "retained grid-resolution check inputs",
+      "bytes": 2285959,
+      "sha256": "68f736b5786d439815782aefc4912adc2dc024a360a3f9110db6590799359d0b",
+      "object": "objects/68f736b5786d439815782aefc4912adc2dc024a360a3f9110db6590799359d0b"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 697287,
+      "sha256": "6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1",
+      "object": "objects/6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 698379,
+      "sha256": "ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324",
+      "object": "objects/ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 697512,
+      "sha256": "73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42",
+      "object": "objects/73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 696942,
+      "sha256": "020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1",
+      "object": "objects/020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 697224,
+      "sha256": "87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2",
+      "object": "objects/87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 697127,
+      "sha256": "032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d",
+      "object": "objects/032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 689214,
+      "sha256": "1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf",
+      "object": "objects/1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 688462,
+      "sha256": "945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2",
+      "object": "objects/945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 688504,
+      "sha256": "8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc",
+      "object": "objects/8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 685620,
+      "sha256": "eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e",
+      "object": "objects/eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 684778,
+      "sha256": "4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591",
+      "object": "objects/4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 686289,
+      "sha256": "242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0",
+      "object": "objects/242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 684507,
+      "sha256": "c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd",
+      "object": "objects/c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 685519,
+      "sha256": "db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6",
+      "object": "objects/db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 685889,
+      "sha256": "9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f",
+      "object": "objects/9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 683282,
+      "sha256": "282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a",
+      "object": "objects/282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/baseline/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 683256,
+      "sha256": "518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3",
+      "object": "objects/518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2292379,
+      "sha256": "b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64",
+      "object": "objects/b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fourier_B.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 754,
+      "sha256": "17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa",
+      "object": "objects/17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2212748,
+      "sha256": "ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a",
+      "object": "objects/ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2295198,
+      "sha256": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765",
+      "object": "objects/5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fourier_B.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 754,
+      "sha256": "cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba",
+      "object": "objects/cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2212748,
+      "sha256": "48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f",
+      "object": "objects/48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2293519,
+      "sha256": "9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3",
+      "object": "objects/9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fourier_B.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 754,
+      "sha256": "d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6",
+      "object": "objects/d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2212748,
+      "sha256": "f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa",
+      "object": "objects/f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2284892,
+      "sha256": "baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a",
+      "object": "objects/baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a",
+      "object": "objects/c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2287814,
+      "sha256": "8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f",
+      "object": "objects/8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6",
+      "object": "objects/b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2279129,
+      "sha256": "cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb",
+      "object": "objects/cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4",
+      "object": "objects/76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2227493,
+      "sha256": "ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9",
+      "object": "objects/ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_fourier_B.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 754,
+      "sha256": "eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3",
+      "object": "objects/eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed0/burgers_fourier_seed0_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2212748,
+      "sha256": "06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73",
+      "object": "objects/06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2226324,
+      "sha256": "3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0",
+      "object": "objects/3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_fourier_B.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 754,
+      "sha256": "bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2",
+      "object": "objects/bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed2/burgers_fourier_seed2_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2212748,
+      "sha256": "ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf",
+      "object": "objects/ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2226885,
+      "sha256": "4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564",
+      "object": "objects/4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_fourier_B.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 754,
+      "sha256": "a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588",
+      "object": "objects/a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_fourier_seed6/burgers_fourier_seed6_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2212748,
+      "sha256": "ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83",
+      "object": "objects/ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2224277,
+      "sha256": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b",
+      "object": "objects/ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed0/burgers_mlp_seed0_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975",
+      "object": "objects/b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2223698,
+      "sha256": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6",
+      "object": "objects/28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed1/burgers_mlp_seed1_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa",
+      "object": "objects/cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2226478,
+      "sha256": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800",
+      "object": "objects/b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed2/burgers_mlp_seed2_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51",
+      "object": "objects/56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2224880,
+      "sha256": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5",
+      "object": "objects/4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed3/burgers_mlp_seed3_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5",
+      "object": "objects/de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2225905,
+      "sha256": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a",
+      "object": "objects/d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed4/burgers_mlp_seed4_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3",
+      "object": "objects/09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2225283,
+      "sha256": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f",
+      "object": "objects/d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed5/burgers_mlp_seed5_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc",
+      "object": "objects/7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2225703,
+      "sha256": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f",
+      "object": "objects/7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed6/burgers_mlp_seed6_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86",
+      "object": "objects/22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 2224889,
+      "sha256": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0",
+      "object": "objects/4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/checkpoints/burgers_mlp_seed7/burgers_mlp_seed7_params.pkl",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 1577814,
+      "sha256": "c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d",
+      "object": "objects/c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_fourier_seed0_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 28982808,
+      "sha256": "9ffc00c24925389dbb1bd79cffd66fc394927f0af1753afb44131ac539944e26",
+      "object": "objects/9ffc00c24925389dbb1bd79cffd66fc394927f0af1753afb44131ac539944e26"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_fourier_seed0_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 799318,
+      "sha256": "bcbadb16873f8d05e29f8187ffcd50d3ef6310698bf330356bd69c77880fc511",
+      "object": "objects/bcbadb16873f8d05e29f8187ffcd50d3ef6310698bf330356bd69c77880fc511"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_fourier_seed1_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 29017269,
+      "sha256": "061af23d68bf1ef4b0489dcaf69959379d4d60ee230df325b2abda59c7e57fd3",
+      "object": "objects/061af23d68bf1ef4b0489dcaf69959379d4d60ee230df325b2abda59c7e57fd3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_fourier_seed1_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 798122,
+      "sha256": "4ec11c0a2a5c70a67fa229f1cdc9cf431aa56e98205bb929c1effa63c25f7d1a",
+      "object": "objects/4ec11c0a2a5c70a67fa229f1cdc9cf431aa56e98205bb929c1effa63c25f7d1a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_fourier_seed3_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 28989614,
+      "sha256": "46392b390ae7df54b5013e4ae253b547d8fbac8d4f539245598cc75a44f41c44",
+      "object": "objects/46392b390ae7df54b5013e4ae253b547d8fbac8d4f539245598cc75a44f41c44"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_fourier_seed3_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 810123,
+      "sha256": "ae203ae06bf38771af001dcdbff4e7073a444d7c3d1c13dda8dcf80595f61e9c",
+      "object": "objects/ae203ae06bf38771af001dcdbff4e7073a444d7c3d1c13dda8dcf80595f61e9c"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_mlp_seed0_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 37615047,
+      "sha256": "f9e7d9c56d7a47e1b27ffe080adcf2a99392f35be797327da159b5dc2b38f772",
+      "object": "objects/f9e7d9c56d7a47e1b27ffe080adcf2a99392f35be797327da159b5dc2b38f772"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_mlp_seed0_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 740765,
+      "sha256": "1a405061918308ef72f668b24844abdd0d862ebeb40e70438f849f4efee36ab2",
+      "object": "objects/1a405061918308ef72f668b24844abdd0d862ebeb40e70438f849f4efee36ab2"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_mlp_seed1_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 37621427,
+      "sha256": "5d5eb304994f09a231b6237f57576b15c5a373c3b299db9548beac1c531a7cca",
+      "object": "objects/5d5eb304994f09a231b6237f57576b15c5a373c3b299db9548beac1c531a7cca"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_mlp_seed1_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 755514,
+      "sha256": "e92156f6d4f72febbc487f3c3f54b2143ad618f50eb33a5c0e2549f12815320f",
+      "object": "objects/e92156f6d4f72febbc487f3c3f54b2143ad618f50eb33a5c0e2549f12815320f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_mlp_seed3_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 37606582,
+      "sha256": "7a038f915315beecf6fe1c0da02b629739829d08564266001885787758629d61",
+      "object": "objects/7a038f915315beecf6fe1c0da02b629739829d08564266001885787758629d61"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/allen_cahn_mlp_seed3_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 737263,
+      "sha256": "c170693117970e36405b15d0a369168552a69a2782e98ab9e510e71f74021d14",
+      "object": "objects/c170693117970e36405b15d0a369168552a69a2782e98ab9e510e71f74021d14"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_fourier_seed0_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 30106427,
+      "sha256": "476c02d1c587c5b559abf2c90e8aa7d678391fcc08867256959b8c1a35ea4e50",
+      "object": "objects/476c02d1c587c5b559abf2c90e8aa7d678391fcc08867256959b8c1a35ea4e50"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_fourier_seed0_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 953248,
+      "sha256": "a56bb0057256f3412d5214634c98e549a0e155717940e1e0b42a775947ab7ebf",
+      "object": "objects/a56bb0057256f3412d5214634c98e549a0e155717940e1e0b42a775947ab7ebf"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_fourier_seed2_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 31290451,
+      "sha256": "b2d199104653ee963c2981ccaa516e771e372580c377e4483bea75751dd34042",
+      "object": "objects/b2d199104653ee963c2981ccaa516e771e372580c377e4483bea75751dd34042"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_fourier_seed2_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 963948,
+      "sha256": "6fb67592448ce5903d758c003cd54a19d1fa90f0d2c920738db1aeb46cf23a48",
+      "object": "objects/6fb67592448ce5903d758c003cd54a19d1fa90f0d2c920738db1aeb46cf23a48"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_fourier_seed6_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 30108096,
+      "sha256": "e5207b37e3d6e2742aab5c31fb5e72d31ab8d4fe91e22be29fc4fc9ac310ad03",
+      "object": "objects/e5207b37e3d6e2742aab5c31fb5e72d31ab8d4fe91e22be29fc4fc9ac310ad03"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_fourier_seed6_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 946370,
+      "sha256": "899834dad628ed53b7b2ebdcde97bb429e24dc80c9d03bcf9cd3352eb419ea8f",
+      "object": "objects/899834dad628ed53b7b2ebdcde97bb429e24dc80c9d03bcf9cd3352eb419ea8f"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed0_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 32405009,
+      "sha256": "c81af423465c1a482f23eeaabe3345e6a8b986e7464603a61e2c4ff53cd1551c",
+      "object": "objects/c81af423465c1a482f23eeaabe3345e6a8b986e7464603a61e2c4ff53cd1551c"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed0_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 846533,
+      "sha256": "00866a8fa13faf537c5455854b3caca6e8a87700b99b88367c33e7310890fc98",
+      "object": "objects/00866a8fa13faf537c5455854b3caca6e8a87700b99b88367c33e7310890fc98"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed1_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 31201728,
+      "sha256": "0532b7e5da088b1f8e8043452f58cd3d0552b89b801fbf2032f205826a75917c",
+      "object": "objects/0532b7e5da088b1f8e8043452f58cd3d0552b89b801fbf2032f205826a75917c"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed1_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 839102,
+      "sha256": "bead016ab70bec2b92125058bbb8e186074bade4f1d16fc4d8ae018e86726d45",
+      "object": "objects/bead016ab70bec2b92125058bbb8e186074bade4f1d16fc4d8ae018e86726d45"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed2_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 32434013,
+      "sha256": "854b08ec3647a2365cae3d8cc09278b900f51dea0effa45d63e37bf89056ce86",
+      "object": "objects/854b08ec3647a2365cae3d8cc09278b900f51dea0effa45d63e37bf89056ce86"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed2_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 843396,
+      "sha256": "873254cb5c99db346a001c62185fa64c4ef02b4eed739a9f43222a583e3d279a",
+      "object": "objects/873254cb5c99db346a001c62185fa64c4ef02b4eed739a9f43222a583e3d279a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed3_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 31180179,
+      "sha256": "a182d3c7759aa7ba3da7e593c01bc3459782d0270d4541cda8cc23ee35860dc3",
+      "object": "objects/a182d3c7759aa7ba3da7e593c01bc3459782d0270d4541cda8cc23ee35860dc3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed3_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 829306,
+      "sha256": "44f24a98ec53c5e2b362c4255cfd372586341e274de34d738affb4dfb8046f7e",
+      "object": "objects/44f24a98ec53c5e2b362c4255cfd372586341e274de34d738affb4dfb8046f7e"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed4_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 32423201,
+      "sha256": "0b361a0844add705c0291486dc404e9a7b11394a518559cd05624cc834b1d468",
+      "object": "objects/0b361a0844add705c0291486dc404e9a7b11394a518559cd05624cc834b1d468"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed4_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 858329,
+      "sha256": "fd3f76b873b60265c0fbfac05b3bf3fd3a08320bf7a0a7a55adbf19150cbf34a",
+      "object": "objects/fd3f76b873b60265c0fbfac05b3bf3fd3a08320bf7a0a7a55adbf19150cbf34a"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed5_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 31210090,
+      "sha256": "bcc92934a2146a1564a5e5f52a0b6f32e18c15eeeb7b14f0e785038897270bd3",
+      "object": "objects/bcc92934a2146a1564a5e5f52a0b6f32e18c15eeeb7b14f0e785038897270bd3"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed5_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 838491,
+      "sha256": "4a7aab5b6994518434daab773bee0e7a064548d8869d00e3b73f2694a6c96670",
+      "object": "objects/4a7aab5b6994518434daab773bee0e7a064548d8869d00e3b73f2694a6c96670"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed6_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 31188020,
+      "sha256": "ee1f17568624a40697bfcb17248322ee3abfbd73977513fca184048cbddfbd50",
+      "object": "objects/ee1f17568624a40697bfcb17248322ee3abfbd73977513fca184048cbddfbd50"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed6_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 852872,
+      "sha256": "f64c2327c22aae2493053b0632fb95bb5927098980a252e0e8e9584d083acc91",
+      "object": "objects/f64c2327c22aae2493053b0632fb95bb5927098980a252e0e8e9584d083acc91"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed7_round2_fields.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 31196046,
+      "sha256": "d9886b3ad4a1461abfe2e7fba29de137854cddee08624e5b6e97ca8f62c44521",
+      "object": "objects/d9886b3ad4a1461abfe2e7fba29de137854cddee08624e5b6e97ca8f62c44521"
+    },
+    {
+      "path": "analysis/theta_centred/inputs/round2/burgers_mlp_seed7_round2_spectral.npz",
+      "group": "theta-centred: frozen inputs",
+      "bytes": 835152,
+      "sha256": "0d28945849af01c5eec9bf1a48ce5eba451f7d47aae9ed02823fb15b5fa952d0",
+      "object": "objects/0d28945849af01c5eec9bf1a48ce5eba451f7d47aae9ed02823fb15b5fa952d0"
+    },
+    {
+      "path": "analysis/theta_centred/logs/pilot-471403_0.out",
+      "group": "theta-centred: execution logs",
+      "bytes": 2551,
+      "sha256": "07910cc3acd8cc5a1b1ef495e6735eb8429a8f7d5bab9265f5cb6c9b081caf00",
+      "object": "objects/07910cc3acd8cc5a1b1ef495e6735eb8429a8f7d5bab9265f5cb6c9b081caf00"
+    },
+    {
+      "path": "analysis/theta_centred/logs/theta-471423_0.out",
+      "group": "theta-centred: execution logs",
+      "bytes": 11996,
+      "sha256": "92ee86de6dc2e87bd07f6382459e518a0d3da3f6c33f88a1449a2f9cafc9e9e2",
+      "object": "objects/92ee86de6dc2e87bd07f6382459e518a0d3da3f6c33f88a1449a2f9cafc9e9e2"
+    },
+    {
+      "path": "analysis/theta_centred/logs/theta-471423_1.out",
+      "group": "theta-centred: execution logs",
+      "bytes": 14191,
+      "sha256": "3dedf05ec05111c8d2e3fc46ea291fb770b58430661da3951a060e3738500fac",
+      "object": "objects/3dedf05ec05111c8d2e3fc46ea291fb770b58430661da3951a060e3738500fac"
+    },
+    {
+      "path": "analysis/theta_centred/logs/theta-471423_2.out",
+      "group": "theta-centred: execution logs",
+      "bytes": 11889,
+      "sha256": "4f22264e19dcc0f41b2ba22feb82431321cfc4169fe87e7fd767a859b2750306",
+      "object": "objects/4f22264e19dcc0f41b2ba22feb82431321cfc4169fe87e7fd767a859b2750306"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_fourier_seed0_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 11874720,
+      "sha256": "a1a82116d659fd03aea88dc02cdcf03cab3db8c9380256108a761c4e4357d66a",
+      "object": "objects/a1a82116d659fd03aea88dc02cdcf03cab3db8c9380256108a761c4e4357d66a"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_fourier_seed0_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 32151837,
+      "sha256": "a97162a66540cca6ccddc8afd44aaaa5883d0e2f0f7560a2f0e75a8c3804a9d8",
+      "object": "objects/a97162a66540cca6ccddc8afd44aaaa5883d0e2f0f7560a2f0e75a8c3804a9d8"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_fourier_seed1_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 11904832,
+      "sha256": "a34a197a0c843ba514a9d33d70a25b6b5fa6b0e32c6faf86a0acb70693893a4e",
+      "object": "objects/a34a197a0c843ba514a9d33d70a25b6b5fa6b0e32c6faf86a0acb70693893a4e"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_fourier_seed1_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 32158206,
+      "sha256": "8003ec4bc137bc0d86bd6c086f8d9bb211307cfe7bc2edc753869c8e3cb95ffb",
+      "object": "objects/8003ec4bc137bc0d86bd6c086f8d9bb211307cfe7bc2edc753869c8e3cb95ffb"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_fourier_seed3_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 11875544,
+      "sha256": "44421a91d2b87685f396b498670aa5b98655796e92b5e4a3b0345aa2f939fced",
+      "object": "objects/44421a91d2b87685f396b498670aa5b98655796e92b5e4a3b0345aa2f939fced"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_fourier_seed3_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 32152211,
+      "sha256": "6ec99faea2a7eb35a1b5f4b0eaef133a590a6e92a0a0ae6f1b6c25e441fee8b8",
+      "object": "objects/6ec99faea2a7eb35a1b5f4b0eaef133a590a6e92a0a0ae6f1b6c25e441fee8b8"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_mlp_seed0_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 11891137,
+      "sha256": "d144fc012af5fb0374bfd4e2e5a33ff2e040e93772791507be36518a1343b664",
+      "object": "objects/d144fc012af5fb0374bfd4e2e5a33ff2e040e93772791507be36518a1343b664"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_mlp_seed0_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 23029123,
+      "sha256": "7b7ca3daba095676e581f4262fd161901833d0018c33340e1b460804cc612d84",
+      "object": "objects/7b7ca3daba095676e581f4262fd161901833d0018c33340e1b460804cc612d84"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_mlp_seed1_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 11387667,
+      "sha256": "d7d483b3c984e4ddcfb4d1a1d8e2090b67427091217a6b63621ac83aab73b3e2",
+      "object": "objects/d7d483b3c984e4ddcfb4d1a1d8e2090b67427091217a6b63621ac83aab73b3e2"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_mlp_seed1_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 23030902,
+      "sha256": "c5745b4d901e7e10643f1ac035a83d95bcdb28519aef258d7a0a6ec6e092fc6d",
+      "object": "objects/c5745b4d901e7e10643f1ac035a83d95bcdb28519aef258d7a0a6ec6e092fc6d"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_mlp_seed3_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 11460650,
+      "sha256": "1e787acc244aa9db33e89d7a61e4228025a522f9403f83504c6be0eb9a1d6ff1",
+      "object": "objects/1e787acc244aa9db33e89d7a61e4228025a522f9403f83504c6be0eb9a1d6ff1"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/allen_cahn_mlp_seed3_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 23031633,
+      "sha256": "a1586fc6b318fad265efbc828aa7a5a36895f017ae1ac5fe8cfb319ee44ec149",
+      "object": "objects/a1586fc6b318fad265efbc828aa7a5a36895f017ae1ac5fe8cfb319ee44ec149"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_fourier_seed0_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 16796393,
+      "sha256": "53a8dad4643752a8170db0c7b48afa854026721a0c72c44fb8a462908a019a04",
+      "object": "objects/53a8dad4643752a8170db0c7b48afa854026721a0c72c44fb8a462908a019a04"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_fourier_seed0_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 45046215,
+      "sha256": "c1842849afbe1bc6fcc77e35d26c2ae04f3cdd76dea1e3259028a8c5434fbc78",
+      "object": "objects/c1842849afbe1bc6fcc77e35d26c2ae04f3cdd76dea1e3259028a8c5434fbc78"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_fourier_seed2_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 16770907,
+      "sha256": "321584955c7eacc8545dab34c38e38441955ac39efdb5c97d6e3e17e7f5128ad",
+      "object": "objects/321584955c7eacc8545dab34c38e38441955ac39efdb5c97d6e3e17e7f5128ad"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_fourier_seed2_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 45041335,
+      "sha256": "185dba12c02ada64d274d0b99860533909a5e5efde8c30b246bb06b570dd0b11",
+      "object": "objects/185dba12c02ada64d274d0b99860533909a5e5efde8c30b246bb06b570dd0b11"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_fourier_seed6_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 16796990,
+      "sha256": "f8f4ead10105bb5f491a62c3efa2abbc387816a848d04ecb3a74cc4703c5b4a5",
+      "object": "objects/f8f4ead10105bb5f491a62c3efa2abbc387816a848d04ecb3a74cc4703c5b4a5"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_fourier_seed6_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 45046773,
+      "sha256": "4b0056fb2349906de7977f4501e76b4f57343a0beadb07d1ca13b16661ed49e5",
+      "object": "objects/4b0056fb2349906de7977f4501e76b4f57343a0beadb07d1ca13b16661ed49e5"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed0_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 19194502,
+      "sha256": "16859b7d6b31878dc69f55ab5e8627b3124e5fce2da3d502a902df3a38bb92e6",
+      "object": "objects/16859b7d6b31878dc69f55ab5e8627b3124e5fce2da3d502a902df3a38bb92e6"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed0_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 36885654,
+      "sha256": "d9fdf503ab081852b82c537817eaa8592833b5ab1b9a63e4604019105575ae3d",
+      "object": "objects/d9fdf503ab081852b82c537817eaa8592833b5ab1b9a63e4604019105575ae3d"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed1_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 16786080,
+      "sha256": "b8e535cad0ae8cd0e8658ba5b339aa8c29999218c9a8d1a03b0afd90ba31c56d",
+      "object": "objects/b8e535cad0ae8cd0e8658ba5b339aa8c29999218c9a8d1a03b0afd90ba31c56d"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed1_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 32265728,
+      "sha256": "a07dd64894ad8c66ab908e05b8574841cc3d035cff61840cae306c56453f9693",
+      "object": "objects/a07dd64894ad8c66ab908e05b8574841cc3d035cff61840cae306c56453f9693"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed2_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 16787104,
+      "sha256": "31a514463283ccd7bc653b5243b74ceec2537f70d7491d19b0649afb7e5f377f",
+      "object": "objects/31a514463283ccd7bc653b5243b74ceec2537f70d7491d19b0649afb7e5f377f"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed2_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 32260727,
+      "sha256": "99f89c9d75d3f346ba24fcaf2db1e65e60e226078dde542a938c1aba6b03776e",
+      "object": "objects/99f89c9d75d3f346ba24fcaf2db1e65e60e226078dde542a938c1aba6b03776e"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed3_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 16752759,
+      "sha256": "4a4c3143a518f61e1a9d333fb754a145d6aca4e51d321b5a724f5b77e524c6a0",
+      "object": "objects/4a4c3143a518f61e1a9d333fb754a145d6aca4e51d321b5a724f5b77e524c6a0"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed3_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 32266573,
+      "sha256": "79a4238f7220fd05e475e6a896baa80fcbc0fd27ded23fd879b07d3e1eeb28ab",
+      "object": "objects/79a4238f7220fd05e475e6a896baa80fcbc0fd27ded23fd879b07d3e1eeb28ab"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed4_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 19208756,
+      "sha256": "f071cebd6f71f592560950b7e1c18b2c8d3bb271bc5e775f24fd67b845b36954",
+      "object": "objects/f071cebd6f71f592560950b7e1c18b2c8d3bb271bc5e775f24fd67b845b36954"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed4_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 36883664,
+      "sha256": "f190b435e7264c44faa9e55e2f10b9d6e20f3390597b8f5cb35e94f528c9c05d",
+      "object": "objects/f190b435e7264c44faa9e55e2f10b9d6e20f3390597b8f5cb35e94f528c9c05d"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed5_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 19224023,
+      "sha256": "7cd55f37307d627ed7be3c06cd401acbf1ae58d3bb8f277b04a23e5965659d21",
+      "object": "objects/7cd55f37307d627ed7be3c06cd401acbf1ae58d3bb8f277b04a23e5965659d21"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed5_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 36888960,
+      "sha256": "39050c1c3067141910a3f848c97482d170609ed66676ce7841f598bd20fffddf",
+      "object": "objects/39050c1c3067141910a3f848c97482d170609ed66676ce7841f598bd20fffddf"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed6_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 19215965,
+      "sha256": "f6c1e40e92f7b8d89f8d8ccf23959f77ca4967cff5ce57e255cb15774dfb4cc6",
+      "object": "objects/f6c1e40e92f7b8d89f8d8ccf23959f77ca4967cff5ce57e255cb15774dfb4cc6"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed6_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 36887515,
+      "sha256": "516c742560c709fd3ec18a5ca37828db633824a373b17fbd903ccda410a58471",
+      "object": "objects/516c742560c709fd3ec18a5ca37828db633824a373b17fbd903ccda410a58471"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed7_theta_fields.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 19217257,
+      "sha256": "ffd700343887a3743b28959c4ef93ada67b19a2c307fffe47dd89950060152db",
+      "object": "objects/ffd700343887a3743b28959c4ef93ada67b19a2c307fffe47dd89950060152db"
+    },
+    {
+      "path": "analysis/theta_centred/outputs/production/burgers_mlp_seed7_theta_shifts.npz",
+      "group": "theta-centred: production fields and shifts",
+      "bytes": 36883232,
+      "sha256": "2098f9edc1e22cff6a816b9fe58586f38bcce0cd96a026ff69453ded36abd54a",
+      "object": "objects/2098f9edc1e22cff6a816b9fe58586f38bcce0cd96a026ff69453ded36abd54a"
+    }
+  ],
+  "destination_files": 331,
+  "unique_objects": 172,
+  "destination_bytes": 2377096330,
+  "unique_object_bytes": 1649547634
+}

@@ -1,0 +1,18 @@
+burgers_mlp_seed0: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed1: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed2: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed3: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed4: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed5: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed6: CSV and sampled NumPy nonlinear predictions agree.
+burgers_mlp_seed7: CSV and sampled NumPy nonlinear predictions agree.
+burgers_fourier_seed0: CSV and sampled NumPy nonlinear predictions agree.
+burgers_fourier_seed2: CSV and sampled NumPy nonlinear predictions agree.
+burgers_fourier_seed6: CSV and sampled NumPy nonlinear predictions agree.
+allen_cahn_mlp_seed0: CSV and sampled NumPy nonlinear predictions agree.
+allen_cahn_mlp_seed1: CSV and sampled NumPy nonlinear predictions agree.
+allen_cahn_mlp_seed3: CSV and sampled NumPy nonlinear predictions agree.
+allen_cahn_fourier_seed0: CSV and sampled NumPy nonlinear predictions agree.
+allen_cahn_fourier_seed1: CSV and sampled NumPy nonlinear predictions agree.
+allen_cahn_fourier_seed3: CSV and sampled NumPy nonlinear predictions agree.
+Reviewed 17 checkpoints; outputs in C:\dev\shortened_astra\github_release_audit_20261023\reproduced_saved\theta

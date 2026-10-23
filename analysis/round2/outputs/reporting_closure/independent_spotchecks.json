@@ -1,0 +1,311 @@
+{
+  "spotcheck_tags": [
+    "burgers_mlp_seed2",
+    "allen_cahn_mlp_seed0"
+  ],
+  "direct_field_and_compensated_sum_checks": 48,
+  "max_relative_defect": 4.939793442878138e-16,
+  "control_source_field_checks": 12,
+  "checks": [
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "baseline",
+      "region": "bulk",
+      "relative_defect": 1.1771789796045791e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "conditional_mle",
+      "region": "bulk",
+      "relative_defect": 2.0997714072801442e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "original_evidence",
+      "region": "bulk",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "extended_evidence",
+      "region": "bulk",
+      "relative_defect": 1.3911281855947443e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "baseline",
+      "region": "transition",
+      "relative_defect": 3.9178266010325907e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "conditional_mle",
+      "region": "transition",
+      "relative_defect": 3.5666654717463986e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "original_evidence",
+      "region": "transition",
+      "relative_defect": 1.9843771675247942e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "extended_evidence",
+      "region": "transition",
+      "relative_defect": 3.8999349714891855e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "baseline",
+      "region": "sharp",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "conditional_mle",
+      "region": "sharp",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "original_evidence",
+      "region": "sharp",
+      "relative_defect": 2.433599533028069e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "regional_relative_shift",
+      "setting": "extended_evidence",
+      "region": "sharp",
+      "relative_defect": 1.5222234059918128e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "weak_sharp_bulk_ratio",
+      "setting": "conditional_mle",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "stiff_sharp_bulk_ratio",
+      "setting": "conditional_mle",
+      "relative_defect": 2.121317315627252e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "weak_sharp_bulk_ratio",
+      "setting": "original_evidence",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "stiff_sharp_bulk_ratio",
+      "setting": "original_evidence",
+      "relative_defect": 2.1211754393212763e-16
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "weak_sharp_bulk_ratio",
+      "setting": "extended_evidence",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "quantity": "stiff_sharp_bulk_ratio",
+      "setting": "extended_evidence",
+      "relative_defect": 2.1211360838583319e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "baseline",
+      "region": "bulk",
+      "relative_defect": 1.8818931695944044e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "conditional_mle",
+      "region": "bulk",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "original_evidence",
+      "region": "bulk",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "extended_evidence",
+      "region": "bulk",
+      "relative_defect": 3.2618975471260656e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "baseline",
+      "region": "transition",
+      "relative_defect": 1.6404191988238212e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "conditional_mle",
+      "region": "transition",
+      "relative_defect": 1.9978128728112024e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "original_evidence",
+      "region": "transition",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "extended_evidence",
+      "region": "transition",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "baseline",
+      "region": "sharp",
+      "relative_defect": 1.4786748154816633e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "conditional_mle",
+      "region": "sharp",
+      "relative_defect": 2.1409643031045263e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "original_evidence",
+      "region": "sharp",
+      "relative_defect": 1.7748573019012638e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "regional_relative_shift",
+      "setting": "extended_evidence",
+      "region": "sharp",
+      "relative_defect": 1.7721420171657608e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "weak_sharp_bulk_ratio",
+      "setting": "conditional_mle",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "stiff_sharp_bulk_ratio",
+      "setting": "conditional_mle",
+      "relative_defect": 2.0920193111141094e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "weak_sharp_bulk_ratio",
+      "setting": "original_evidence",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "stiff_sharp_bulk_ratio",
+      "setting": "original_evidence",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "weak_sharp_bulk_ratio",
+      "setting": "extended_evidence",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "quantity": "stiff_sharp_bulk_ratio",
+      "setting": "extended_evidence",
+      "relative_defect": 2.0919166540815074e-16
+    },
+    {
+      "tag": "mlp_d09_n06",
+      "quantity": "R_sigma_rms",
+      "relative_defect": 1.6684604398837687e-16
+    },
+    {
+      "tag": "mlp_d09_n06",
+      "quantity": "R_sigma_mean",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "mlp_d09_n06",
+      "quantity": "R_tar",
+      "relative_defect": 1.1117644255718812e-16
+    },
+    {
+      "tag": "mlp_d09_n06",
+      "quantity": "rho",
+      "relative_defect": 1.4795753423018532e-16
+    },
+    {
+      "tag": "mlp_d11_n08",
+      "quantity": "R_sigma_rms",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "mlp_d11_n08",
+      "quantity": "R_sigma_mean",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "mlp_d11_n08",
+      "quantity": "R_tar",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "mlp_d11_n08",
+      "quantity": "rho",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "mlp_d13_n10",
+      "quantity": "R_sigma_rms",
+      "relative_defect": 2.045339244092207e-16
+    },
+    {
+      "tag": "mlp_d13_n10",
+      "quantity": "R_sigma_mean",
+      "relative_defect": 0.0
+    },
+    {
+      "tag": "mlp_d13_n10",
+      "quantity": "R_tar",
+      "relative_defect": 3.4126769449676324e-16
+    },
+    {
+      "tag": "mlp_d13_n10",
+      "quantity": "rho",
+      "relative_defect": 4.939793442878138e-16
+    }
+  ]
+}

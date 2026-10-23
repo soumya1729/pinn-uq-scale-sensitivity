@@ -1,0 +1,23 @@
+% Derived from round3_local/outputs/summary.json, 12 October 2026.
+The saved-array calculation reproduces all $401$ total displacement norms to
+$4.44\times10^{-16}$ relative and regional variances to $6.73\times10^{-14}$.
+Across those settings, $\|\delta_\gamma\|/\|\theta\|$ ranges from approximately
+$0.9889$ to $31.17$; these displacements do not validate a nonlinear first-order approximation.
+At the baseline, $\|\delta\|/\|\theta\|$ is $[0.997775,0.999576]$, whereas
+$\|\delta_L\|/\|\theta\|$ is $[8.73\times10^{-6},1.5413\times10^{-4}]$;
+the QR-complement norm alone is $[0.976675,0.985087]\|\theta\|$.
+Using \eqref{eq:r3:centre-bound} and \eqref{eq:r3:regional-bound} gives
+$c_\gamma\in[0.007489,0.090775]$ and, after the
+regional refinement, establishes a $\theta$-centred allocation deficit in $16/17$
+runs from bounds alone. Its seed-$4$ lower bound $0.4878$ is inconclusive;
+direct predictions establish the deficit in all $17$ (Section~\ref{sec:ceiling}).
+The prior-only prediction is worse in all $14$ baseline cases where the
+zero-mean affine prediction worsens.
+The $\theta$-centred one-sigma coverage lower bounds are $0.7925$ in sharp and
+$0.997196$ in bulk, so both regions overcover in all $17$ runs. Bulk $1.96$-sigma
+coverage is $1$; sharp $1.96$-sigma coverage is above nominal in $12$ runs and
+below nominal in the other $5$. Their upper bounds are $0.924$, $0.883$,
+$0.90875$, $0.91225$ and $0.896$ for Burgers--MLP seeds $1,2,3$ and
+Burgers--Fourier seeds $0,6$, respectively. At the conditional MLE,
+$c_\gamma\in[75.428,79.910]$ is uninformative; Table~\ref{tab:r2-centres} instead
+reports the directly evaluated alternative centre.

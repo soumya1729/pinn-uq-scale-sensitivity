@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "point_count": 40,
+  "reload_checks": {
+    "theta_modal_relative_defect": 0.0,
+    "theta_complement_relative_defect": 0.0,
+    "residual_modal_relative_defect": 0.0,
+    "sample_gradient_modal_scaled_defect": 0.0,
+    "sample_gradient_complement_energy_scaled_defect": 0.0,
+    "sample_gradient_complement_shift_scaled_defect": 0.0,
+    "full_variance_relative_defect": 2.220446049250313e-16,
+    "full_zero_shift_scaled_defect": 3.1516995579449836e-16,
+    "gradient_sample_indices": [
+      0,
+      1,
+      2
+    ],
+    "gamma": 2.0,
+    "tolerance": 1e-10,
+    "interpretation": "Reload/layout consistency; not a weak-mode forward-error certificate."
+  }
+}

@@ -1,0 +1,102 @@
+\section{Experimental and Reporting Details}\label{app:training}\label{app:conventions}
+
+The following details supplement the model and admission rule in Section~\ref{sec:setting}.
+Training uses float64 throughout. Each architecture has $20$ spatial and $20$ temporal
+sub-networks of widths $[\,\cdot\,,64,64,1]$ feeding a $[40,128,128,1]$ fusion head.
+Activations are $\tanh$, biases are zero and weights are drawn from
+$\mathcal N(0,2/d_{\rm in})$. Fourier models use $16$ random features per axis, with
+bandwidth $2$ for Burgers and $1$ for Allen--Cahn. Adam has learning rate $10^{-3}$,
+with $5000$ Burgers steps and $15{,}000$ Allen--Cahn steps, followed by $50$ and $200$
+Levenberg--Marquardt steps. Each LM step uses at most $100$ CG iterations, initial
+damping $10^{-4}$ and minimum $10^{-12}$; it accepts at $\rho_{\rm LM}>0.25$, decreases
+damping by $3$ at $\rho_{\rm LM}>0.75$ and multiplies it by $4$ on rejection, allowing
+at most $5$ consecutive rejections. Residual row counts and weights are given in
+Section~\ref{sec:setting}; complete implementation settings are preserved with the code.
+
+Reported multi-run means average per-run quantities. Every $\pm$ denotes the population
+standard deviation with divisor $n$; ranges give observed minima and maxima.
+The three-run control varies paired pulse-width/diffusivity settings at seed $0$.
+Mean gaps are means of ratios, not ratios of mean contrasts: on Burgers--MLP they are
+$20.47$ and $20.49$, respectively. Reference-error oracles are evaluation devices,
+not training-based tuning rules.
+
+A common $2\%$ admission cutoff retains $13/17$ of the original cohort:
+$8/8$ Burgers--MLP, $3/3$ Burgers--Fourier, Allen--Cahn MLP seed $3$ and
+Allen--Cahn Fourier seed $1$. The original $3\%$ Allen--Cahn cutoff remains a
+convention, not a PDE-derived tolerance. The unchanged masks and saved fields
+permit the subset comparison below; its two Allen--Cahn results are single-run
+descriptions. In this subset, the baseline zero-mean affine error increases in
+$10/13$ runs; direct $\theta$-centred baseline predictions give $\rho^\theta>1$ in
+all $13$, including the one case unresolved by the $12/13$ bound.
+With trained centres, conditional-MLE sharp coverage is below nominal in all $13$ runs:
+$[0.018,0.62425]$ at one sigma and $[0.051,0.768]$ at $1.96$ sigma. Bulk
+coverage is below nominal in $10/13$ and $12/13$ runs at those thresholds,
+respectively. All eight Burgers--MLP findings and the five refined trained-centre
+crossings remain in this subset by construction.
+
+\emph{Linear-control context.}
+The contextual linear control solves $u_t+a u_x=\nu u_{xx}$ with $a=1$ and a
+periodic Gaussian pulse. Three of four MLP attempts pass admission; the admitted
+seed-$0$ runs vary paired pulse-width/diffusivity settings. At the baseline their
+uncertainty contrasts are $[1.086,1.331]$, error contrasts $[0.7816,0.9986]$ and
+gaps $[0.6521,0.899]$. They are not part of the nonlinear $17$-run scale study.
+
+\emph{Grid and spectral checks.}\label{app:grid}\label{app:spectralchecks}
+The top-$5\%$ region rule alone does not establish feature resolution. For the sharpest
+slice, the discrete integral width in cells is
+\[
+ W_{\rm cells}=\frac{\sum_j|\partial_xu^\ast(x_j,t)|}{\max_j|\partial_xu^\ast(x_j,t)|}.
+\]
+This separates a one-cell spike from a resolved layer, whereas half-maximum crossing
+counts have a discrete floor. The width exceeds one cell at the tested finest grids;
+primary RMS and secondary mean-width contrasts change by at most $1.1\%$ between
+$n_x=400$ and $200$. The canonical Gram spectral projectors were checked for
+orthonormality, separation at the cutoff and eigenpair backward error; independent
+Woodbury evaluations checked variances. The all-17 direct-$J$ checks are summarised
+in Appendix~\ref{app:r2:numerics}, with numerical protocols in Appendix~\ref{oa:numerics}.
+
+\section{Spectral Bounds and Aggregation}\label{app:aggregation}
+
+The following statements retain the proofs supporting the two-subspace summaries
+in Section~\ref{sec:theory} and their aggregation to regional statistics.
+
+\begin{theorem}[Two-sided spectral sandwich]\label{thm:ceiling}
+For $F\succeq0$, $\alpha,\epsilon>0$ and $g_\bk\ne0$,
+\begin{equation}\label{eq:sandwich}
+ L(\epsilon):=\frac{m_\epsilon(g_\sh)}{M_\epsilon(g_\bk)}
+ \le\frac{\sigma^2(g_\sh)}{\sigma^2(g_\bk)}
+ \le\frac{M_\epsilon(g_\sh)}{m_\epsilon(g_\bk)}=:U(\epsilon).
+\end{equation}
+Consequently, the ratio lies between $\sup_{\epsilon>0}L(\epsilon)$ and
+$\inf_{\epsilon>0}U(\epsilon)$.
+\end{theorem}
+\begin{proof}
+In the weak block, $\alpha\le\alpha+\lambda_i\le\alpha+\epsilon$; in the strong
+block, $\alpha+\epsilon<\alpha+\lambda_i\le\alpha+\lambda_{\max}$.
+Applying reciprocal bounds to \eqref{eq:sigma-sum} gives
+$m_\epsilon(g)\le\sigma^2(g)\le M_\epsilon(g)$.
+Both bulk envelopes are positive, so division in opposite directions gives the result.
+\end{proof}
+
+The primary statistic averages variance before taking square roots. The secondary
+mean-width ratio is $\achratio=\langle\sigma(g)\rangle_{\mathcal S}/
+\langle\sigma(g)\rangle_{\mathcal B}$. Uniform pairwise bounds also transfer to it:
+if $\ell\sigma(g_b)\le\sigma(g_s)\le u\sigma(g_b)$ for every sharp--bulk pair, averaging
+over both finite regions and dividing by positive bulk mean width gives
+$\ell\le\achratio\le u$. This differs from evaluating variance at a region-mean tangent.
+
+For regions with positive mean width, define
+$\kappa_r=\sigma(\langle g\rangle_r)/\langle\sigma(g)\rangle_r$.
+The covariance norm triangle inequality gives $0\le\kappa_r\le1$, and cancellation
+of the two mean widths gives, when $\kappa_{\mathcal B}>0$,
+\begin{equation}\label{eq:ratio-identity}
+ \frac{\sigma(\langle g\rangle_{\mathcal S})}{\sigma(\langle g\rangle_{\mathcal B})}
+ =\frac{\kappa_{\mathcal S}}{\kappa_{\mathcal B}}\achratio.
+\end{equation}
+Equation~\eqref{eq:ratio-identity} shows why mean-tangent loadings cannot replace
+the primary pointwise energies. The following sharpness result concerns the
+information in those energies.
+
+\input{trim_aux_proofs}
+
+\input{j_round2_appendix}

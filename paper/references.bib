@@ -1,0 +1,381 @@
+% -------------------------------------------------------------------------
+% Bibliography for "The geometric ceiling of PINN uncertainty"
+% -------------------------------------------------------------------------
+
+% ---- Core PINNs + failure modes ----
+@article{raissi2019pinns,
+  title   = {Physics-informed neural networks: A deep learning framework for solving
+             forward and inverse problems involving nonlinear partial differential equations},
+  author  = {Raissi, M. and Perdikaris, P. and Karniadakis, G. E.},
+  journal = {Journal of Computational Physics},
+  volume  = {378},
+  pages   = {686--707},
+  year    = {2019},
+}
+
+@inproceedings{krishnapriyan2021failure,
+  title     = {Characterizing possible failure modes in physics-informed neural networks},
+  author    = {Krishnapriyan, Aditi S. and Gholami, Amir and Zhe, Shandian and Kirby, Robert M. and Mahoney, Michael W.},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {34},
+  pages     = {26548--26560},
+  year      = {2021},
+}
+
+@article{wang2022ntk,
+  title   = {When and why {PINNs} fail to train: A neural tangent kernel perspective},
+  author  = {Wang, Sifan and Yu, Xinling and Perdikaris, Paris},
+  journal = {Journal of Computational Physics},
+  volume  = {449},
+  pages   = {110768},
+  year    = {2022},
+}
+
+@article{wang2021understanding,
+  title   = {Understanding and mitigating gradient flow pathologies in physics-informed neural networks},
+  author  = {Wang, Sifan and Teng, Yujun and Perdikaris, Paris},
+  journal = {SIAM Journal on Scientific Computing},
+  volume  = {43}, number = {5}, pages = {A3055--A3081}, year = {2021},
+}
+
+@article{xiang2022selfadaptive,
+  title   = {Self-adaptive loss balanced physics-informed neural networks},
+  author  = {Xiang, Zixue and Peng, Wei and Liu, Xu and Yao, Wen},
+  journal = {Neurocomputing}, volume = {496}, pages = {11--34}, year = {2022},
+}
+
+@article{wang2024causality,
+  title   = {Respecting causality for training physics-informed neural networks},
+  author  = {Wang, Sifan and Sankaran, Shyam and Perdikaris, Paris},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume  = {421},
+  pages   = {116813},
+  year    = {2024},
+  doi     = {10.1016/j.cma.2024.116813},
+}
+
+@article{jagtap2020xpinn,
+  title   = {Extended Physics-Informed Neural Networks ({XPINNs}): A Generalized Space-Time
+             Domain Decomposition Based Deep Learning Framework for Nonlinear Partial
+             Differential Equations},
+  author  = {Jagtap, Ameya D. and Karniadakis, George Em},
+  journal = {Communications in Computational Physics},
+  volume  = {28},
+  number  = {5},
+  pages   = {2002--2041},
+  year    = {2020},
+  doi     = {10.4208/cicp.OA-2020-0164},
+}
+
+% ---- UQ for SciML / PINNs ----
+@article{psaros2023uq,
+  title   = {Uncertainty quantification in scientific machine learning: Methods, metrics, and comparisons},
+  author  = {Psaros, Apostolos F. and Meng, Xuhui and Zou, Zongren and Guo, Ling and Karniadakis, George Em},
+  journal = {Journal of Computational Physics},
+  volume  = {477},
+  pages   = {111902},
+  year    = {2023},
+}
+
+@article{yang2021bpinns,
+  title   = {{B-PINNs}: {Bayesian} physics-informed neural networks for forward and inverse
+             {PDE} problems with noisy data},
+  author  = {Yang, Liu and Meng, Xuhui and Karniadakis, George Em},
+  journal = {Journal of Computational Physics},
+  volume  = {425},
+  pages   = {109913},
+  year    = {2021},
+}
+
+% ---- Bayesian deep learning: Laplace, ensembles, dropout ----
+@inproceedings{daxberger2021laplace,
+  title     = {Laplace {Redux} -- Effortless {Bayesian} Deep Learning},
+  author    = {Daxberger, Erik and Kristiadi, Agustinus and Immer, Alexander and Eschenhagen, Runa and Bauer, Matthias and Hennig, Philipp},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {34},
+  pages     = {20089--20103},
+  year      = {2021},
+}
+
+@inproceedings{immer2021linearized,
+  title     = {Improving predictions of {Bayesian} neural nets via local linearization},
+  author    = {Immer, Alexander and Korzepa, Maciej and Bauer, Matthias},
+  booktitle = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {130},
+  pages     = {703--711},
+  year      = {2021},
+}
+
+@inproceedings{khan2019approximate,
+  title     = {Approximate inference turns deep networks into {Gaussian} processes},
+  author    = {Khan, Mohammad Emtiyaz and Immer, Alexander and Abedi, Ehsan and Korzepa, Maciej},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2019},
+}
+
+@inproceedings{lakshminarayanan2017ensembles,
+  title     = {Simple and scalable predictive uncertainty estimation using deep ensembles},
+  author    = {Lakshminarayanan, Balaji and Pritzel, Alexander and Blundell, Charles},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {30},
+  year      = {2017},
+  url       = {https://proceedings.neurips.cc/paper/2017/hash/9ef2ed4b7fd2c810847ffa5fa85bce38-Abstract.html},
+}
+
+@inproceedings{gal2016dropout,
+  title     = {Dropout as a {Bayesian} approximation: Representing model uncertainty in deep learning},
+  author    = {Gal, Yarin and Ghahramani, Zoubin},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2016},
+}
+
+% ---- Off-manifold / span-confinement mechanism, function-space priors ----
+@inproceedings{cinquin2024fsplaplace,
+  title     = {{FSP-Laplace}: Function-Space Priors for the Laplace Approximation in Bayesian Deep Learning},
+  author    = {Cinquin, Tristan and Pf\"ortner, Marvin and Fortuin, Vincent and Hennig, Philipp and Bamler, Robert},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2024},
+  note      = {arXiv:2407.13711},
+}
+
+@article{chen2024generalized,
+  title   = {Addressing the Inconsistency in {Bayesian} Deep Learning via Generalized Laplace Approximation},
+  author  = {Chen, Yinsong and Yu, Samson S. and Li, Zhong and Lim, Chee Peng},
+  journal = {arXiv:2405.13535},
+  year    = {2024},
+}
+
+% ---- Fourier features ----
+@inproceedings{tancik2020fourier,
+  title     = {Fourier features let networks learn high frequency functions in low dimensional domains},
+  author    = {Tancik, Matthew and Srinivasan, Pratul P. and Mildenhall, Ben and Fridovich-Keil, Sara and Raghavan, Nithin and Singhal, Utkarsh and Ramamoorthi, Ravi and Barron, Jonathan T. and Ng, Ren},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {33},
+  pages     = {7537--7547},
+  year      = {2020},
+}
+
+@inproceedings{rahaman2019spectral,
+  title     = {On the Spectral Bias of Neural Networks},
+  author    = {Rahaman, Nasim and Baratin, Aristide and Arpit, Devansh and Draxler, Felix and
+               Lin, Min and Hamprecht, Fred and Bengio, Yoshua and Courville, Aaron},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {97},
+  pages     = {5301--5310},
+  year      = {2019},
+}
+
+@article{xu2020frequency,
+  title   = {Frequency Principle: Fourier Analysis Sheds Light on Deep Neural Networks},
+  author  = {Xu, Zhi-Qin John and Zhang, Yaoyu and Luo, Tao and Xiao, Yanyang and Ma, Zheng},
+  journal = {Communications in Computational Physics},
+  volume  = {28},
+  number  = {5},
+  pages   = {1746--1767},
+  year    = {2020},
+  doi     = {10.4208/cicp.OA-2020-0085},
+}
+
+% ---- Information geometry / sloppy models / Fisher spectra ----
+@article{transtrum2011geometry,
+  title   = {Geometry of nonlinear least squares with applications to sloppy models and optimization},
+  author  = {Transtrum, Mark K. and Machta, Benjamin B. and Sethna, James P.},
+  journal = {Physical Review E},
+  volume  = {83}, number = {3}, pages = {036701}, year = {2011},
+}
+
+@article{transtrum2014mbam,
+  title   = {Model reduction by manifold boundaries},
+  author  = {Transtrum, Mark K. and Qiu, Peng},
+  journal = {Physical Review Letters},
+  volume  = {113}, number = {9}, pages = {098701}, year = {2014},
+}
+
+@inproceedings{karakida2019fisher,
+  title     = {Universal statistics of {Fisher} information in deep neural networks: Mean field approach},
+  author    = {Karakida, Ryo and Akaho, Shotaro and Amari, Shun-ichi},
+  booktitle = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year      = {2019},
+}
+
+% ---- Loss-landscape mode connectivity + permutation symmetry (basin barrier) ----
+@inproceedings{garipov2018modeconnectivity,
+  title     = {Loss surfaces, mode connectivity, and fast ensembling of {DNNs}},
+  author    = {Garipov, Timur and Izmailov, Pavel and Podoprikhin, Dmitrii and Vetrov, Dmitry P. and Wilson, Andrew Gordon},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2018},
+}
+
+@inproceedings{ainsworth2023gitrebasin,
+  title     = {Git Re-Basin: Merging models modulo permutation symmetries},
+  author    = {Ainsworth, Samuel K. and Hayase, Jonathan and Srinivasa, Siddhartha},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+}
+
+% ---- Conformal prediction ----
+@article{angelopoulos2023conformal,
+  title   = {Conformal prediction: A gentle introduction},
+  author  = {Angelopoulos, Anastasios N. and Bates, Stephen},
+  journal = {Foundations and Trends in Machine Learning},
+  volume  = {16}, number = {4}, pages = {494--591}, year = {2023},
+}
+
+% ---- Stiff-PDE reference integrator ----
+@article{kassam2005etdrk4,
+  title   = {Fourth-order time-stepping for stiff {PDEs}},
+  author  = {Kassam, Aly-Khan and Trefethen, Lloyd N.},
+  journal = {SIAM Journal on Scientific Computing},
+  volume  = {26}, number = {4}, pages = {1214--1233}, year = {2005},
+}
+
+@article{andersen2026overfitting,
+  title   = {{PINNs} Failure Modes are Overfitting},
+  author  = {Andersen, Nigel T. and Matsubara, Takashi},
+  journal = {arXiv preprint arXiv:2605.30910},
+  year    = {2026}
+}
+
+@inproceedings{daw2023r3,
+  title     = {Mitigating Propagation Failures in Physics-informed Neural Networks using Retain-Resample-Release ({R3}) Sampling},
+  author    = {Daw, Arka and Bu, Jie and Wang, Sifan and Perdikaris, Paris and Karpatne, Anuj},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  pages     = {7264--7302},
+  year      = {2023},
+}
+
+% ---- Literature positioning for regional uncertainty ----
+@inproceedings{rathore2024challenges,
+  title = {Challenges in Training {PINNs}: A Loss Landscape Perspective},
+  author = {Rathore, Pratik and Lei, Weimu and Frangella, Zachary and Lu, Lu and Udell, Madeleine},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {235}, pages = {42159--42191}, year = {2024},
+}
+
+@article{mishra2023generalization,
+  title = {Estimates on the generalization error of physics-informed neural networks for approximating {PDEs}},
+  author = {Mishra, Siddhartha and Molinaro, Roberto},
+  journal = {IMA Journal of Numerical Analysis},
+  volume = {43}, number = {1}, pages = {1--43}, year = {2023},
+  doi = {10.1093/imanum/drab093}
+}
+
+@article{izzatullah2022hypopinn,
+  title = {Laplace {HypoPINN}: Physics-informed neural network for hypocenter localization and its predictive uncertainty},
+  author = {Izzatullah, Muhammad and Yildirim, Isa Eren and Waheed, Umair Bin and Alkhalifah, Tariq},
+  journal = {Machine Learning: Science and Technology},
+  volume = {3}, number = {4}, pages = {045001}, year = {2022},
+  doi = {10.1088/2632-2153/ac94b3}
+}
+
+@article{graczyk2026bayesian,
+  title = {Bayesian reasoning for physics-informed neural networks},
+  author = {Graczyk, Krzysztof M. and Witkowski, Kornel},
+  journal = {Physical Review E}, volume = {113}, pages = {055307}, year = {2026},
+  doi = {10.1103/29bd-jfhz}
+}
+
+@inproceedings{flores2025errorbounds,
+  title = {Improved Uncertainty Quantification in Physics-Informed Neural Networks Using Error Bounds and Solution Bundles},
+  author = {Flores, Pablo and Graf, Olga and Protopapas, Pavlos and Pichara, Karim},
+  booktitle = {Conference on Uncertainty in Artificial Intelligence (UAI)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {286}, pages = {1289--1336}, year = {2025},
+}
+
+@inproceedings{gopakumar2025calibrated,
+  title = {Calibrated Physics-Informed Uncertainty Quantification},
+  author = {Gopakumar, Vignesh and Gray, Ander and Zanisi, Lorenzo and Nunn, Timothy and Giles, Daniel and Kusner, Matt and Pamela, Stanislas and Deisenroth, Marc Peter},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {267}, pages = {20103--20141}, year = {2025},
+}
+
+@article{yu2026conformal,
+  title = {A conformal prediction framework for uncertainty quantification in physics-informed neural networks},
+  author = {Yu, Yifan and Ho, Cheuk Hin and Wang, Yangshuai},
+  journal = {Journal of Computational Physics},
+  volume = {561}, pages = {114979}, year = {2026},
+  doi = {10.1016/j.jcp.2026.114979}
+}
+
+
+% Methods and formal infrastructure used by the present paper.
+@inproceedings{kingma2015adam,
+  author = {Kingma, Diederik P. and Ba, Jimmy Lei},
+  title = {{Adam}: A method for stochastic optimization},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year = {2015},
+  url = {https://arxiv.org/abs/1412.6980}
+}
+
+@article{levenberg1944,
+  author = {Levenberg, Kenneth},
+  title = {A method for the solution of certain non-linear problems in least squares},
+  journal = {Quarterly of Applied Mathematics},
+  volume = {2}, number = {2}, pages = {164--168}, year = {1944},
+  doi = {10.1090/qam/10666}
+}
+
+@article{marquardt1963,
+  author = {Marquardt, Donald W.},
+  title = {An algorithm for least-squares estimation of nonlinear parameters},
+  journal = {Journal of the Society for Industrial and Applied Mathematics},
+  volume = {11}, number = {2}, pages = {431--441}, year = {1963},
+  doi = {10.1137/0111030}
+}
+
+@article{lei2018conformal,
+  author = {Lei, Jing and G'Sell, Max and Rinaldo, Alessandro and Tibshirani, Ryan J. and Wasserman, Larry},
+  title = {Distribution-free predictive inference for regression},
+  journal = {Journal of the American Statistical Association},
+  volume = {113}, number = {523}, pages = {1094--1111}, year = {2018},
+  doi = {10.1080/01621459.2017.1307116}
+}
+
+@inproceedings{demoura2021lean4,
+  author = {de Moura, Leonardo and Ullrich, Sebastian},
+  title = {The {Lean} 4 theorem prover and programming language},
+  booktitle = {Automated Deduction -- CADE 28},
+  editor = {Platzer, Andr{\'e} and Sutcliffe, Geoff},
+  series = {Lecture Notes in Computer Science}, volume = {12699},
+  publisher = {Springer}, pages = {625--635}, year = {2021},
+  doi = {10.1007/978-3-030-79876-5_37}
+}
+
+@inproceedings{mathlib2020,
+  author = {{The mathlib Community}},
+  title = {The {Lean} mathematical library},
+  booktitle = {ACM SIGPLAN International Conference on Certified Programs and Proofs (CPP)},
+  publisher = {ACM}, pages = {367--381}, year = {2020},
+  doi = {10.1145/3372885.3373824}
+}
+
+@article{mackay1992interpolation,
+  author = {MacKay, David J. C.},
+  title = {{Bayesian} interpolation},
+  journal = {Neural Computation},
+  volume = {4}, number = {3}, pages = {415--447}, year = {1992},
+  doi = {10.1162/neco.1992.4.3.415}
+}
+
+@inproceedings{immer2021evidence,
+  title = {Scalable marginal likelihood estimation for model selection in deep learning},
+  author = {Immer, Alexander and Bauer, Matthias and Fortuin, Vincent and R{\"a}tsch, Gunnar and Khan, Mohammad Emtiyaz},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {139}, pages = {4563--4573}, year = {2021},
+}
+
+@inproceedings{antoran2022evidence,
+  title = {Adapting the linearised {Laplace} model evidence for modern deep learning},
+  author = {Antor{\'a}n, Javier and Janz, David and Allingham, James Urquhart and Daxberger, Erik and Barbano, Riccardo and Nalisnick, Eric and Hern{\'a}ndez-Lobato, Jos{\'e} Miguel},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {162}, pages = {796--821}, year = {2022},
+}

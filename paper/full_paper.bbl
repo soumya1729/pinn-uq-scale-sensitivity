@@ -1,0 +1,225 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Antor{\'a}n et~al.(2022)Antor{\'a}n, Janz, Allingham, Daxberger,
+  Barbano, Nalisnick, and Hern{\'a}ndez-Lobato]{antoran2022evidence}
+J.~Antor{\'a}n, D.~Janz, J.~U. Allingham, E.~Daxberger, R.~Barbano,
+  E.~Nalisnick, and J.~M. Hern{\'a}ndez-Lobato.
+\newblock Adapting the linearised {Laplace} model evidence for modern deep
+  learning.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  162 of \emph{Proceedings of Machine Learning Research}, pages 796--821, 2022.
+
+\bibitem[Daw et~al.(2023)Daw, Bu, Wang, Perdikaris, and Karpatne]{daw2023r3}
+A.~Daw, J.~Bu, S.~Wang, P.~Perdikaris, and A.~Karpatne.
+\newblock Mitigating propagation failures in physics-informed neural networks
+  using retain-resample-release ({R3}) sampling.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  202 of \emph{Proceedings of Machine Learning Research}, pages 7264--7302,
+  2023.
+
+\bibitem[Daxberger et~al.(2021)Daxberger, Kristiadi, Immer, Eschenhagen, Bauer,
+  and Hennig]{daxberger2021laplace}
+E.~Daxberger, A.~Kristiadi, A.~Immer, R.~Eschenhagen, M.~Bauer, and P.~Hennig.
+\newblock Laplace {Redux} -- effortless {Bayesian} deep learning.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~34, pages 20089--20103, 2021.
+
+\bibitem[de~Moura and Ullrich(2021)]{demoura2021lean4}
+L.~de~Moura and S.~Ullrich.
+\newblock The {Lean} 4 theorem prover and programming language.
+\newblock In A.~Platzer and G.~Sutcliffe, editors, \emph{Automated Deduction --
+  CADE 28}, volume 12699 of \emph{Lecture Notes in Computer Science}, pages
+  625--635. Springer, 2021.
+\newblock \doi{10.1007/978-3-030-79876-5_37}.
+
+\bibitem[Flores et~al.(2025)Flores, Graf, Protopapas, and
+  Pichara]{flores2025errorbounds}
+P.~Flores, O.~Graf, P.~Protopapas, and K.~Pichara.
+\newblock Improved uncertainty quantification in physics-informed neural
+  networks using error bounds and solution bundles.
+\newblock In \emph{Conference on Uncertainty in Artificial Intelligence (UAI)},
+  volume 286 of \emph{Proceedings of Machine Learning Research}, pages
+  1289--1336, 2025.
+
+\bibitem[Gopakumar et~al.(2025)Gopakumar, Gray, Zanisi, Nunn, Giles, Kusner,
+  Pamela, and Deisenroth]{gopakumar2025calibrated}
+V.~Gopakumar, A.~Gray, L.~Zanisi, T.~Nunn, D.~Giles, M.~Kusner, S.~Pamela, and
+  M.~P. Deisenroth.
+\newblock Calibrated physics-informed uncertainty quantification.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  267 of \emph{Proceedings of Machine Learning Research}, pages 20103--20141,
+  2025.
+
+\bibitem[Graczyk and Witkowski(2026)]{graczyk2026bayesian}
+K.~M. Graczyk and K.~Witkowski.
+\newblock Bayesian reasoning for physics-informed neural networks.
+\newblock \emph{Physical Review E}, 113:\penalty0 055307, 2026.
+\newblock \doi{10.1103/29bd-jfhz}.
+
+\bibitem[Immer et~al.(2021{\natexlab{a}})Immer, Bauer, Fortuin, R{\"a}tsch, and
+  Khan]{immer2021evidence}
+A.~Immer, M.~Bauer, V.~Fortuin, G.~R{\"a}tsch, and M.~E. Khan.
+\newblock Scalable marginal likelihood estimation for model selection in deep
+  learning.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  139 of \emph{Proceedings of Machine Learning Research}, pages 4563--4573,
+  2021{\natexlab{a}}.
+
+\bibitem[Immer et~al.(2021{\natexlab{b}})Immer, Korzepa, and
+  Bauer]{immer2021linearized}
+A.~Immer, M.~Korzepa, and M.~Bauer.
+\newblock Improving predictions of {Bayesian} neural nets via local
+  linearization.
+\newblock In \emph{International Conference on Artificial Intelligence and
+  Statistics (AISTATS)}, volume 130 of \emph{Proceedings of Machine Learning
+  Research}, pages 703--711, 2021{\natexlab{b}}.
+
+\bibitem[Izzatullah et~al.(2022)Izzatullah, Yildirim, Waheed, and
+  Alkhalifah]{izzatullah2022hypopinn}
+M.~Izzatullah, I.~E. Yildirim, U.~B. Waheed, and T.~Alkhalifah.
+\newblock Laplace {HypoPINN}: Physics-informed neural network for hypocenter
+  localization and its predictive uncertainty.
+\newblock \emph{Machine Learning: Science and Technology}, 3\penalty0
+  (4):\penalty0 045001, 2022.
+\newblock \doi{10.1088/2632-2153/ac94b3}.
+
+\bibitem[Kassam and Trefethen(2005)]{kassam2005etdrk4}
+A.-K. Kassam and L.~N. Trefethen.
+\newblock Fourth-order time-stepping for stiff {PDEs}.
+\newblock \emph{SIAM Journal on Scientific Computing}, 26\penalty0
+  (4):\penalty0 1214--1233, 2005.
+
+\bibitem[Kingma and Ba(2015)]{kingma2015adam}
+D.~P. Kingma and J.~L. Ba.
+\newblock {Adam}: A method for stochastic optimization.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2015.
+\newblock URL \url{https://arxiv.org/abs/1412.6980}.
+
+\bibitem[Krishnapriyan et~al.(2021)Krishnapriyan, Gholami, Zhe, Kirby, and
+  Mahoney]{krishnapriyan2021failure}
+A.~S. Krishnapriyan, A.~Gholami, S.~Zhe, R.~M. Kirby, and M.~W. Mahoney.
+\newblock Characterizing possible failure modes in physics-informed neural
+  networks.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~34, pages 26548--26560, 2021.
+
+\bibitem[Lakshminarayanan et~al.(2017)Lakshminarayanan, Pritzel, and
+  Blundell]{lakshminarayanan2017ensembles}
+B.~Lakshminarayanan, A.~Pritzel, and C.~Blundell.
+\newblock Simple and scalable predictive uncertainty estimation using deep
+  ensembles.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~30, 2017.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper/2017/hash/9ef2ed4b7fd2c810847ffa5fa85bce38-Abstract.html}.
+
+\bibitem[Lei et~al.(2018)Lei, G'Sell, Rinaldo, Tibshirani, and
+  Wasserman]{lei2018conformal}
+J.~Lei, M.~G'Sell, A.~Rinaldo, R.~J. Tibshirani, and L.~Wasserman.
+\newblock Distribution-free predictive inference for regression.
+\newblock \emph{Journal of the American Statistical Association}, 113\penalty0
+  (523):\penalty0 1094--1111, 2018.
+\newblock \doi{10.1080/01621459.2017.1307116}.
+
+\bibitem[Levenberg(1944)]{levenberg1944}
+K.~Levenberg.
+\newblock A method for the solution of certain non-linear problems in least
+  squares.
+\newblock \emph{Quarterly of Applied Mathematics}, 2\penalty0 (2):\penalty0
+  164--168, 1944.
+\newblock \doi{10.1090/qam/10666}.
+
+\bibitem[MacKay(1992)]{mackay1992interpolation}
+D.~J.~C. MacKay.
+\newblock {Bayesian} interpolation.
+\newblock \emph{Neural Computation}, 4\penalty0 (3):\penalty0 415--447, 1992.
+\newblock \doi{10.1162/neco.1992.4.3.415}.
+
+\bibitem[Marquardt(1963)]{marquardt1963}
+D.~W. Marquardt.
+\newblock An algorithm for least-squares estimation of nonlinear parameters.
+\newblock \emph{Journal of the Society for Industrial and Applied Mathematics},
+  11\penalty0 (2):\penalty0 431--441, 1963.
+\newblock \doi{10.1137/0111030}.
+
+\bibitem[Mishra and Molinaro(2023)]{mishra2023generalization}
+S.~Mishra and R.~Molinaro.
+\newblock Estimates on the generalization error of physics-informed neural
+  networks for approximating {PDEs}.
+\newblock \emph{IMA Journal of Numerical Analysis}, 43\penalty0 (1):\penalty0
+  1--43, 2023.
+\newblock \doi{10.1093/imanum/drab093}.
+
+\bibitem[Psaros et~al.(2023)Psaros, Meng, Zou, Guo, and
+  Karniadakis]{psaros2023uq}
+A.~F. Psaros, X.~Meng, Z.~Zou, L.~Guo, and G.~E. Karniadakis.
+\newblock Uncertainty quantification in scientific machine learning: Methods,
+  metrics, and comparisons.
+\newblock \emph{Journal of Computational Physics}, 477:\penalty0 111902, 2023.
+
+\bibitem[Raissi et~al.(2019)Raissi, Perdikaris, and
+  Karniadakis]{raissi2019pinns}
+M.~Raissi, P.~Perdikaris, and G.~E. Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations.
+\newblock \emph{Journal of Computational Physics}, 378:\penalty0 686--707,
+  2019.
+
+\bibitem[Rathore et~al.(2024)Rathore, Lei, Frangella, Lu, and
+  Udell]{rathore2024challenges}
+P.~Rathore, W.~Lei, Z.~Frangella, L.~Lu, and M.~Udell.
+\newblock Challenges in training {PINNs}: A loss landscape perspective.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  235 of \emph{Proceedings of Machine Learning Research}, pages 42159--42191,
+  2024.
+
+\bibitem[Tancik et~al.(2020)Tancik, Srinivasan, Mildenhall, Fridovich-Keil,
+  Raghavan, Singhal, Ramamoorthi, Barron, and Ng]{tancik2020fourier}
+M.~Tancik, P.~P. Srinivasan, B.~Mildenhall, S.~Fridovich-Keil, N.~Raghavan,
+  U.~Singhal, R.~Ramamoorthi, J.~T. Barron, and R.~Ng.
+\newblock Fourier features let networks learn high frequency functions in low
+  dimensional domains.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~33, pages 7537--7547, 2020.
+
+\bibitem[{The mathlib Community}(2020)]{mathlib2020}
+{The mathlib Community}.
+\newblock The {Lean} mathematical library.
+\newblock In \emph{ACM SIGPLAN International Conference on Certified Programs
+  and Proofs (CPP)}, pages 367--381. ACM, 2020.
+\newblock \doi{10.1145/3372885.3373824}.
+
+\bibitem[Wang et~al.(2021)Wang, Teng, and Perdikaris]{wang2021understanding}
+S.~Wang, Y.~Teng, and P.~Perdikaris.
+\newblock Understanding and mitigating gradient flow pathologies in
+  physics-informed neural networks.
+\newblock \emph{SIAM Journal on Scientific Computing}, 43\penalty0
+  (5):\penalty0 A3055--A3081, 2021.
+
+\bibitem[Wang et~al.(2022)Wang, Yu, and Perdikaris]{wang2022ntk}
+S.~Wang, X.~Yu, and P.~Perdikaris.
+\newblock When and why {PINNs} fail to train: A neural tangent kernel
+  perspective.
+\newblock \emph{Journal of Computational Physics}, 449:\penalty0 110768, 2022.
+
+\bibitem[Yang et~al.(2021)Yang, Meng, and Karniadakis]{yang2021bpinns}
+L.~Yang, X.~Meng, and G.~E. Karniadakis.
+\newblock {B-PINNs}: {Bayesian} physics-informed neural networks for forward
+  and inverse {PDE} problems with noisy data.
+\newblock \emph{Journal of Computational Physics}, 425:\penalty0 109913, 2021.
+
+\bibitem[Yu et~al.(2026)Yu, Ho, and Wang]{yu2026conformal}
+Y.~Yu, C.~H. Ho, and Y.~Wang.
+\newblock A conformal prediction framework for uncertainty quantification in
+  physics-informed neural networks.
+\newblock \emph{Journal of Computational Physics}, 561:\penalty0 114979, 2026.
+\newblock \doi{10.1016/j.jcp.2026.114979}.
+
+\end{thebibliography}

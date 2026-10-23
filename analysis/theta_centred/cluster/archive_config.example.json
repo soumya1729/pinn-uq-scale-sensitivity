@@ -1,0 +1,5 @@
+{
+  "retain": "all",
+  "archive_root": "retained",
+  "storage_confirmed": false
+}

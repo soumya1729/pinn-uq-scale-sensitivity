@@ -1,0 +1,264 @@
+\section{Full-Grid Scale and Centre Diagnostics}\label{app:r2}
+
+These diagnostics use all $17$ admitted checkpoints: Burgers--MLP seeds $0$--$7$,
+Burgers--Fourier seeds $0,2,6$, and Allen--Cahn MLP/Fourier seeds $0,1,3$.
+Trained parameters, raw weighted residuals, reference fields, $400\times200$ grids and
+global percentile masks remain fixed. Recentring does not change admission. Affine means
+use the frozen output; $u_{\theta+\delta_L}$ is a separate nonlinear diagnostic with
+covariance still at $\theta$. The three-run families are exploratory. Appendix~\ref{app:n1} retains per-seed
+Burgers--MLP results; Appendix~\ref{oa:empirical} gives extended curves and tables.
+
+\input{short_seed_table}
+
+\emph{Settings and computation.}\label{app:r2:numerics}
+The unit-noise sweep uses $19$ prior multipliers $10^{-7}$--$10^2$, with exact aliases
+for conditional-MLE and evidence-selected effective precisions. The evidence grids
+span $\alpha/\alpha_0=10^{-7}$--$10^7$ and initially
+$v/\widehat v=10^{-4}$--$10^6$ in quarter decades; one extension lowers the noise edge
+to $10^{-8}\widehat v$. Six prescribed spectral sensitivity cases supply further
+settings. For each prior centre, shared $\gamma=\alpha v$ gives the same contrast and affine mean;
+widths differ by $\sqrt v$, without added predictive noise.
+
+One direct-$J$ Householder QR/SVD per checkpoint gives
+$J^\top=Q_1U\operatorname{diag}(s_i)V^\top$, with $Q=[Q_1,Q_c]$.
+All $N=6400$ singular directions and $P-N$ complement coordinates are retained,
+without a Gram matrix, rank cutoff or noise floor. Prediction/loss reconstruction and
+baseline width comparisons give maximum width relative discrepancy
+$5.41\times10^{-11}$. At all $401$ settings, independent differentiation checks
+$h_\gamma=J^\top(r+J\delta_\gamma)+\gamma(\theta+\delta_\gamma)$.
+The maximum normwise backward error is $6.19\times10^{-17}$ against a $10^{-7}$
+tolerance; complement norm, projection, output and null-membership checks have maximum
+scaled defect $5.10\times10^{-16}$. These consistency checks do not certify weak-mode
+forward accuracy or exact rank. Appendix~\ref{oa:numerics} specifies their denominators.
+
+The checkpoint-conditional $\theta$-centred comparison uses the same fixed-scale
+covariance; Appendix~\ref{oa:numerics} records its separate $95$ checks.
+
+\emph{Regional modal sums and conditional limits.}\label{app:r2:modal}
+Let $\lambda_i=s_i^2$,
+$q_{r,i}=\langle(U^\top Q_1^\top g(x))_i^2\rangle_r$,
+$d_r=\langle\|Q_c^\top g(x)\|^2\rangle_r$, and
+$A_r=d_r+\sum_iq_{r,i}$. Equation~\eqref{eq:modal-quotient} becomes
+\begin{equation}\label{eq:r2-regional-modal}
+ H_r(\gamma)=\frac{d_r}{\gamma}+\sum_i\frac{q_{r,i}}{\lambda_i+\gamma},\qquad
+ \langle\sigma^2\rangle_r=vH_r(\gamma),\qquad
+ \Rrms(\gamma)^2=\frac{H_{\mathcal S}(\gamma)}{H_{\mathcal B}(\gamma)}.
+\end{equation}
+The conditional limits in Section~\ref{sec:theory} follow by multiplying \eqref{eq:r2-regional-modal}
+by $\gamma$: the strong limit requires $A_{\mathcal B}>0$, and the finite weak
+ratio requires positive bulk energy in the whole kernel. The QR-complement ratio
+in Table~\ref{tab:r2-limits} equals that weak limit if $J$ has full row rank;
+tiny positive returned singular values do not certify this premise.
+
+\input{generated/round2_limits_table}
+
+Neither limit bounds the intermediate quotient in general. Of the $17$ full-time
+sampled curves, $13$ have increasing and decreasing segments, and $12$ leave the
+interval between the reported endpoint ratios. Allen--Cahn MLP has tangent/QR ratios
+about $1.27$--$2.53$ but sampled maxima $7.30$--$7.73$. The largest saved
+$\gamma/\lambda_{\max}$ is only $6.28\times10^{-5}$--$2.96\times10^{-4}$; the
+saved modal sums also permit evaluation at stronger precisions without new fields.
+At $\gamma=10^3\lambda_{\max}$, all full and Burgers post-formation contrasts are
+within $1.94\times10^{-4}$ relative to their tangent-norm limits. The first-order
+expansion \eqref{eq:r3-strong-expansion} differs from the returned squared ratios by
+at most $3.43\times10^{-7}$ relative to those squared ratios.
+Appendix~\ref{oa:empirical} reports changed-scale brackets and loading
+ratios at $\epsilon=\gamma$; the brackets remain too broad to certify a realised-error deficit.
+
+\emph{Evidence selection and mechanism.}\label{app:r2:evidence}
+For the zero-mean prior's affine observation $y=J\theta-r$, set $z=V^\top y$ and
+$C_i=v+\lambda_i/\alpha$. The affine log evidence \citep{mackay1992interpolation} is
+\[
+ \ell(\alpha,v)=-\tfrac12\sum_{i=1}^N[z_i^2/C_i+\log C_i+\log(2\pi)].
+\]
+Fourteen original selections occur at $10^{-4}\widehat v$ and remain on the new
+$10^{-8}\widehat v$ boundary after extension; the three Allen--Cahn Fourier selections
+are interior and unchanged (Table~\ref{tab:r2-evidence-summary}).
+All selected alpha coordinates are interior. These zero-mean-prior selections are
+best tested grid pairs, not continuous optima.
+
+For the $\theta$-centred prior the same formula uses $z=-V^\top r$. On the extended
+grid, $14$ selections lie at the lower noise boundary, two Allen--Cahn Fourier
+selections at the upper alpha boundary, and one is interior. Sharp $1.96$-sigma
+coverage around its affine mean is below nominal in all $17$ runs,
+ranging from $0.00275$ to $0.90175$.
+
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+
+
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+family & runs & extended noise edge & selected $\gamma/\gamma_{\rm ext}$ \\
+\midrule
+Burgers--MLP & $8$ & $8/8$ & $[0.562,3.162]$ \\
+Burgers--Fourier & $3$ & $3/3$ & $[1,1.778]$ \\
+Allen--Cahn--MLP & $3$ & $3/3$ & $[1.778,3.16228\times10^5]$ \\
+Allen--Cahn--Fourier & $3$ & $0/3$ & $1$ \\
+\bottomrule
+\end{tabular}
+\caption{Zero-mean-prior evidence-grid outcomes and six-case sensitivity. The interval is perturbed
+selected effective precision divided by the extended selection, across each family's
+runs and cases. Perturbations change singular values and the affine observation
+coherently, keeping singular vectors fixed; fields at alternative selected scales use
+the original Jacobian. Appendix~\ref{oa:empirical} gives full per-run values.}
+\label{tab:r2-evidence-summary}
+\end{table}
+
+Each case changes singular values by
+$\delta s=\varepsilon_{64}\max(N,P)s_{\max}$ or $10\delta s$, upwards, downwards or
+alternately, with zero clamping. It also changes
+$z$ coherently by $(s'-s)\theta_{\rm modes}$, where
+$\theta_{\rm modes}=U^\top Q_1^\top\theta$. These are finite sensitivity cases, not
+certified error bounds. All Allen--Cahn MLP selections change in all six cases;
+their $1\times$ quadratic terms $\delta s^2/\gamma$ alone are $7.55$, $488.55$ and
+$228.65$. Their extended selections are not treated as robust scale estimates.
+
+At fixed alpha,
+\begin{equation}\label{eq:r2-evidence-slope}
+ D_v=\frac{\partial\ell}{\partial\log v}
+ =-\frac12\sum_i\frac{v}{C_i}\left(1-\frac{z_i^2}{C_i}\right).
+\end{equation}
+At the fourteen extended boundary selections, the $\lambda_i/\gamma<0.01$ group
+contains $603$--$4594$ modes, with summed projected data energy only
+$0.000481$--$0.014164$ times summed model variance
+(Figure~\ref{fig:r2-evidence-energy} illustrates Burgers--MLP seed~$2$).
+Its negative slope contributions
+favour lower noise. Original/extended fixed-alpha slopes are $-2633$ to $-2561$ /
+$-2379$ to $-2255$ for Burgers--MLP, $-481$ to $-417$ / $-407$ to $-317$ for
+Burgers--Fourier, and $-1503$ to $-1124$ / $-1397$ to $-753$ for Allen--Cahn MLP.
+Allen--Cahn Fourier slopes are $-291$ to $-113$; an interior quarter-decade maximum
+need not have zero continuous slope. These fixed-alpha slopes describe local behaviour,
+not an alpha-reoptimised path or the limit $v\to0$.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.86\textwidth]{figures/round2_evidence_energy_reference.pdf}
+\caption{Burgers--MLP seed $2$, zero-mean prior: projected affine-observation energy $z_i^2$ and model
+variance $v+\lambda_i/\alpha$ at the original and extended selections, averaged in three
+$\lambda_i/\gamma$ groups. Counts accompany the bars. Little data energy in weak
+groups favours lower noise in \eqref{eq:r2-evidence-slope}; the grouping is descriptive.}
+\label{fig:r2-evidence-energy}
+\end{figure}
+
+\emph{Synthetic validation.}
+Dense tests give posterior mean/covariance relative discrepancies at most
+$4.90\times10^{-12}$ and $3.01\times10^{-12}$, and log-evidence discrepancy
+$1.42\times10^{-13}$. Across $1000$ correctly specified draws, posterior-centred
+coverage is $0.6870$ (SE $0.00544$) at one sigma and $0.9534$ (SE $0.00249$) at
+$1.96$ sigma. A full-column-rank fit with $N=40,P=12,v=0.2$ gives mean residual-noise
+MLE $0.140411$ (SE $0.001198$), consistent with $(N-P)v/N=0.14$ rather than $v$.
+In each $100$-draw evidence toy, including a $21.2$-decade spectrum with $79/96$
+eigenvalues below $\varepsilon_{64}\lambda_{\max}$, all selected pairs are interior and
+agree with the prescribed-spectrum reference. The stressed toy nevertheless fails its
+whole-grid $10^{-7}$ scaled tolerance, with maximum discrepancy
+$4.55\times10^{-5}$, despite selected log-evidence discrepancies at most
+$9.40\times10^{-8}$. Appendix~\ref{oa:numerics} gives scale-estimation distributions and
+the failed check; these controls do not establish PINN evidence stability.
+
+\emph{Centre and regional displacement.}\label{app:r2:centres}
+Table~\ref{tab:r2-centres} compares the prior centres and nonlinear diagnostic at fixed
+baseline/MLE scales; Table~\ref{tab:r2-relative-shift} reports relative regional
+displacements. A reduced error contrast need not improve accuracy. Covariance
+is shared, whereas errors and coverage are centre-specific.
+At the conditional MLE, all eight Burgers--MLP zero-mean-prior affine gaps lie in
+$[1.51,3.39]$; one-standard-deviation coverage is $0.9815$--$0.99998$ in bulk
+and $0.4185$--$0.92475$ in sharp. The trained-centre allocation reversals and
+bulk undercoverage therefore do not transfer to this centre.
+
+\input{generated/round2_centre_table}
+
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+
+
+\begin{tabular}{@{}llrr@{}}
+\toprule
+family & region & baseline & MLE \\
+\midrule
+Burgers--MLP & bulk & $[7.54,54.1]$ & $[0.264,1.51]$ \\
+ & sharp & $[0.58,57.7]$ & $[0.108,8.55]$ \\
+Burgers--Fourier & bulk & $[3.87,8.31]$ & $[0.823,2.42]$ \\
+ & sharp & $[0.666,0.864]$ & $[0.167,0.809]$ \\
+Allen--Cahn--MLP & bulk & $[15.7,23]$ & $[1.57,2.59]$ \\
+ & sharp & $[5.46,7.22]$ & $[0.416,0.628]$ \\
+Allen--Cahn--Fourier & bulk & $[8.94,9.95]$ & $[0.97,1.09]$ \\
+ & sharp & $[4.38,6.25]$ & $[0.36,2.26]$ \\
+\bottomrule
+\end{tabular}
+\caption{Across-run ranges of total regional RMS zero-mean-prior affine displacement divided by trained
+error RMS on the same full-time region. Baseline is $(\alpha_0,1)$ and MLE is
+$(\alpha_0,\widehat v)$. Displacement alone does not determine prediction accuracy;
+its alignment with trained error matters. Appendix~\ref{oa:empirical} includes transition
+regions and evidence settings.}
+\label{tab:r2-relative-shift}
+\end{table}
+
+\emph{Sampled oracle and post-formation coverage.}
+At every saved $\gamma$, centre and subset, a higher empirical bulk-$0.68$ quantile of
+$|e_c|/\sigma$ supplies a width multiplier. Selection minimises $|\log\rho|$ across
+distinct saved precisions, with lowest $\gamma$ breaking ties. This reference-error
+oracle uses sampled settings. Trained Burgers--MLP
+seeds $0,4,5,6,7$ have full-time sampled crossing brackets; six zero-mean affine full-time
+and six post-formation curves have brackets. Full-time zero-mean affine seeds $1,7$ and
+post-formation seeds $1,3$ stay above one at every saved point.
+
+\input{generated/round2_oracle_table}
+
+For Burgers, post-formation masks intersect unchanged global masks with
+$t\ge1/\pi$, yielding $48{,}246$ bulk, $4928$ transition and $1226$ sharp points.
+Table~\ref{tab:r2-oracle} includes all runs, including those without crossings; the
+closest sample need not have $\rho\approx1$. Its coverage ranges distinguish regional
+contrast from calibration. Saved modal sums refine the five trained-centre crossings;
+direct root fields confirm their coverage envelopes (Table~\ref{tab:r3-roots}).
+These precisions are not contrast-matching roots for the other centres.
+Appendix~\ref{oa:empirical} gives per-run curves.
+
+\input{round3_math}
+
+\emph{Regional calibration and sampled agreement band.}\label{app:r4-oracles}
+At each trained-centre closest saved setting, use either
+$k_{\mathcal B}=Q_{\mathcal B}(|e|/\sigma;0.68)$ or
+$k_{\mathcal S}=Q_{\mathcal S}(|e|/\sigma;0.68)$, with the higher empirical quantile.
+Write $C^r_{\mathcal S}(z)=\langle\mathbf1\{|e|\le z k_r\sigma\}\rangle_{\mathcal S}$
+and $Z^r=e/(k_r\sigma)$ for the resulting coverage and standardised errors.
+Table~\ref{tab:r4-oracles} gives full-grid per-seed results and family ranges,
+including the Burgers post-formation subsets. Sharp calibration fixes its
+one-standard-deviation coverage by construction: $0.68025$ on $4000$ full-grid
+sharp points and $0.68108$ on $1226$ post-formation points here. The informative
+outputs are coverage at $1.96$ standard deviations and the absolute and signed
+standardised means. These are finite-grid descriptions, not repeated-draw guarantees.
+Inclusive quantile comparisons can differ by one point from older multiplied-width
+arithmetic; all continuous summaries reproduce to relative tolerance $10^{-12}$.
+
+The band inventory retains every distinct saved precision with $0.9\le\rho\le1.1$:
+$28$ run/subset settings across the full grids and Burgers post-formation masks.
+For Burgers--MLP seed $7$, the seven full-grid samples give sharp coverage
+$0.44725$--$0.986$ at one standard deviation and $0.78375$--$1$ at $1.96$ after
+bulk calibration. Their $\rho$ values span $0.90635$--$1.06370$; nearby contrast
+values need not correspond to nearby precisions on a nonmonotone curve.
+The other four crossing seeds each have one saved full-grid point in the band,
+with one-standard-deviation coverages $0.34275$, $0.437$, $0.35925$ and $0.5165$
+for seeds $0,4,5,6$. The archived per-run inventory is sampled rather than a
+continuous-band enclosure; Table~\ref{tab:r3-roots} retains the separate refined-root bounds.
+
+\input{generated/round4_oracle_table}
+
+\emph{Width versus allocation.}
+At $v=1$, changing $\gamma$ changes modal weights. At fixed $\gamma=\alpha_0$,
+varying $v$ with $\alpha=\alpha_0/v$ multiplies widths by $\sqrt v$ without changing
+contrast: $\meanZ$ scales as $v^{-1/2}$ and coverage is the empirical CDF of fixed
+standardised errors at $\sqrt v$. Figure~\ref{fig:r2-coverage-scale} shows both effects;
+the fixed-$\gamma$ curves are rescalings of saved fields, not fitted scales.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=.95\textwidth]{figures/round2_coverage_scale.pdf}
+\caption{Trained-centre one-sigma coverage and mean standardised error for all $17$
+full-time runs. Colours identify families; dashed/solid curves denote bulk/sharp.
+Left: saved precisions at $v=1$; right: width rescaling at $\gamma=\alpha_0$.
+Dotted lines mark Gaussian expectations $0.68269$ and $0.79788$.
+Lines join evaluated points without asserting confidence intervals.}
+\label{fig:r2-coverage-scale}
+\end{figure}
+

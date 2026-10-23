@@ -1,0 +1,113 @@
+\subsection{Feature Expressivity for the Reference Solution}\label{sec:offmanifold}
+
+The trained network's $129$ last-layer features, including the bias, can approximate
+the sharp-region reference accurately when their readout is refitted using reference
+values. This tests feature expressivity, separately from the coefficients selected by
+residual-only training or the affine posterior. Let $\Phi$ be the feature matrix on the $80{,}000$ evaluation points
+and $e=u_\theta-u^\ast$ the sampled trained-network error.
+
+\begin{samepage}
+\begin{definition}[Per-region fraction and masked-global ratio]\label{def:diagnostics}
+For a region $r$ with nonzero error $e_r$ and local feature matrix $\Phi_r$, let $P_r$ denote the
+orthogonal projector onto $\mathrm{col}(\Phi_r)$ and define the \emph{per-region} fraction
+\begin{equation}\label{eq:fperregion}
+  f^{\perp}_r \;=\; \frac{\|e_r - P_r e_r\|^2}{\|e_r\|^2}.
+\end{equation}
+Let $P$ instead denote the projector onto $\mathrm{col}(\Phi)$ formed once globally, and define
+the \emph{masked-global} ratio
+\begin{equation*}
+  \tilde f^{\perp}_r \;=\; \frac{\big\|(e - Pe)\big|_r\big\|^2}{\|e_r\|^2}.
+\end{equation*}
+\end{definition}
+\end{samepage}
+
+The linear readout gives
+$u_\theta|_r\in\mathrm{col}(\Phi_r)$. Since $e_r=u_\theta|_r-u^\ast|_r$,
+\[
+ (I-P_r)e_r=-(I-P_r)u^\ast|_r,
+ \qquad
+ f_r^\perp=\frac{\|(I-P_r)u^\ast|_r\|^2}{\|e_r\|^2}.
+\]
+The numerator is local reference-approximation error; the denominator is trained-network
+error. Their regional ordering therefore depends on both.
+
+\begin{samepage}
+\begin{remark}[The per-region diagnostic is a fraction]\label{prop:wellposed}
+For any self-adjoint idempotent map $P$ and nonzero $e$,
+$\|e\|^2=\|Pe\|^2+\|e-Pe\|^2$, so $f_r^\perp\in[0,1]$.
+\end{remark}
+
+\begin{proof}
+Self-adjointness and idempotence give $\langle e,Pe\rangle=\|Pe\|^2$;
+expanding $\|e-Pe\|^2$ gives the identity and both bounds.
+\end{proof}
+\end{samepage}
+
+\begin{samepage}
+\begin{remark}[The masked-global quantity is not a fraction]\label{prop:illposed}
+The masked-global ratio can exceed one, because global orthogonality need not survive
+restriction to a region.
+\end{remark}
+
+\begin{proof}
+For $\varphi=(1,1)^\top$, $e=(1,1/10)^\top$ and $r=\{2\}$, the rank-one projection
+is $P_\varphi e=(11/20)\varphi$, giving $\tilde f_r^\perp=81/4=20.25$.
+\end{proof}
+\end{samepage}
+
+For comparison, $\tilde f_{\mathcal B}^\perp=3.30$ on Burgers--MLP seed $2$ and $4.4$
+on a synthetic control with error concentrated in a $5\%$ subset.
+
+\begin{table}[t]
+\centering
+
+
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+& \multicolumn{3}{c}{Same grid: $f^{\perp}_r$} & \multicolumn{2}{c}{Held-out sharp region} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+configuration & $\mathcal{B}$ & $\mathcal{T}$ & $\mathcal{S}$ & random & $10$-slice blocks \\
+\midrule
+Burgers, MLP (seed 2)                        & $0.002$ & $0.001$ & $\mathbf{0.0001}$ & $0.000146$ & $0.000455$ \\
+Burgers, Fourier $\mathrm{FS}=2$ (seed 2)    & $0.071$ & $0.057$ & $\mathbf{0.0015}$ & $0.00163$ & $0.00670$ \\
+Allen--Cahn, MLP (seed 0)                    & $0.230$ & $0.030$ & $\mathbf{0.0009}$ & $0.00139$ & $0.0324$ \\
+Allen--Cahn, Fourier $\mathrm{FS}=1$ (seed 0)& $0.051$ & $0.017$ & $\mathbf{0.0007}$ & $0.000841$ & $0.00987$ \\
+\bottomrule
+\end{tabular}
+\caption{Reference expressivity of $129$ last-layer features, including the bias.
+Residual energies are normalised by trained-network regional error. Same-grid columns
+give \eqref{eq:fperregion}; held-out columns pool both test directions for random halves
+and alternating ten-slice time blocks.}
+\label{tab:offmanifold}
+\end{table}
+
+\emph{Measured off-span fractions.} Across all $17$ runs,
+$f_{\mathcal S}^\perp$ is the smallest regional fraction. Its maximum
+is $0.011616$ (Burgers--MLP seed $4$): at least $98.8\%$ of sampled sharp error lies
+in the local last-layer span. The bulk-to-sharp fraction ratio ranges from $9.37$ to
+$542.5$ (the displayed runs span $18$--$266$). Span containment makes this residual
+an upper bound for the full-network projection residual on the same points.
+
+\emph{Held-out fits.}
+Within each region we fit alternating ten-slice time blocks and test the remaining blocks,
+then swap, using unregularised least squares of numerical rank $129$. The pooled test
+residual energy, divided by total regional error energy, is below $4\%$ in $16/17$
+sharp-region fits (median $0.72\%$). The worst fraction, $14.2\%$, is on Burgers--MLP seed $4$,
+whose sharp error RMS $0.00362$ is the smallest among Burgers--MLP seeds; its test
+residual RMS is $0.00136$, versus error RMS $0.283$ on seed $2$.
+Random halves remain close to same-grid fits (Table~\ref{tab:offmanifold}), but blocked
+transition residual exceeds error energy in $10/17$ runs.
+Because the trained prediction $u_\theta$ lies in the last-layer span and each fit has
+full column rank, fitting $e$ or $u^\ast$ yields the same held-out residual energy.
+The pooled held-out residuals thus measure reference approximation by the local
+feature span, using additional reference information.
+These are local last-layer tests within the evaluation grid; span containment transfers
+only the same-grid bound, not held-out performance or a single global coefficient vector.
+
+\emph{Expressivity and coefficient selection.}
+Regional refits use reference values, whereas \eqref{eq:affine-mean} selects coefficients
+from the residual likelihood and zero-mean parameter prior. The predictive-centre analysis
+in Section~\ref{sec:ceiling} attributes its prediction worsening to prior shrinkage.
+Together, these diagnostics distinguish feature expressivity from coefficient selection;
+they do not identify the cause of the trained error or its uncertainty mismatch.

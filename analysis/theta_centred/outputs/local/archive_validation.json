@@ -1,0 +1,63 @@
+{
+  "numerical_status": "PASS",
+  "cases": [
+    {
+      "rank_deficient": false,
+      "dense_variance_relative_defect": 7.771561172376096e-16,
+      "dense_zero_shift_absolute_defect": 7.105427357601002e-15,
+      "reload_checks": {
+        "theta_modal_relative_defect": 0.0,
+        "theta_complement_relative_defect": 0.0,
+        "residual_modal_relative_defect": 0.0,
+        "sample_gradient_modal_scaled_defect": 1.9783652281076274e-16,
+        "sample_gradient_complement_energy_scaled_defect": 2.3140784018906545e-16,
+        "sample_gradient_complement_shift_scaled_defect": 4.802677208326253e-17,
+        "full_variance_relative_defect": 2.220446049250313e-16,
+        "full_zero_shift_scaled_defect": 2.0887970565640528e-16,
+        "gradient_sample_indices": [
+          0,
+          1,
+          2
+        ],
+        "gamma": 0.4,
+        "tolerance": 1e-10,
+        "interpretation": "Reload/layout consistency; not a weak-mode forward-error certificate."
+      },
+      "post_write_corruption_detected": true
+    },
+    {
+      "rank_deficient": true,
+      "dense_variance_relative_defect": 5.551115123125783e-16,
+      "dense_zero_shift_absolute_defect": 5.329070518200751e-15,
+      "reload_checks": {
+        "theta_modal_relative_defect": 0.0,
+        "theta_complement_relative_defect": 0.0,
+        "residual_modal_relative_defect": 0.0,
+        "sample_gradient_modal_scaled_defect": 1.5438433888990706e-16,
+        "sample_gradient_complement_energy_scaled_defect": 2.0949502470407617e-16,
+        "sample_gradient_complement_shift_scaled_defect": 1.1583854632317894e-16,
+        "full_variance_relative_defect": 2.220446049250313e-16,
+        "full_zero_shift_scaled_defect": 1.119404217285284e-16,
+        "gradient_sample_indices": [
+          0,
+          1,
+          2
+        ],
+        "gamma": 0.4,
+        "tolerance": 1e-10,
+        "interpretation": "Reload/layout consistency; not a weak-mode forward-error certificate."
+      },
+      "post_write_corruption_detected": true
+    }
+  ],
+  "layout_check": {
+    "nonfinite_grid_detected": false,
+    "corrupt_householder_layout_detected": true,
+    "interpretation": "Reload checks inspect native factors, not only saved grid fields."
+  },
+  "nonfinite_check": {
+    "nonfinite_grid_detected": true,
+    "corrupt_householder_layout_detected": false,
+    "interpretation": "Reload checks inspect native factors, not only saved grid fields."
+  }
+}

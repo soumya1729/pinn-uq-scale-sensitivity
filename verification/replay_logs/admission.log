@@ -1,0 +1,13 @@
+configuration                      runs  adm  att     min%     max%  median%    vs tau
+Fisher--KPP                           5    0    5     81.7    170.5    100.0    41-85x
+Nagumo, both initial conditions      10    0   10     75.9     90.3     80.5    38-45x
+Kuramoto--Sivashinsky, T=100          5    0    5     98.2    103.8    100.4    49-52x
+Kuramoto--Sivashinsky, T=10           5    0    5      9.9     17.0     12.8      5-9x
+Burgers, MLP                          8    8    8     0.05     0.40     0.08       ---
+Burgers, Fourier                      3    3    8     0.37     1.48     0.78       ---
+Allen--Cahn, MLP                      3    3    5     1.39     2.33     2.33       ---
+Allen--Cahn, Fourier                  3    3    4     1.64     2.60     2.34       ---
+convection--diffusion, MLP (control)    3    3    4     0.19     0.31     0.21       ---
+convection--diffusion, Fourier (rejected control)    1    0    1     63.3     63.3     63.3    32-32x
+
+wrote ..\..\reproduced_saved\admission\solve_gate_table.json

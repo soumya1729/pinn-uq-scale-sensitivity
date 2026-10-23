@@ -1,0 +1,49 @@
+{
+  "draws": 100,
+  "protocol_file": "protocol.json",
+  "quantile_probabilities": [
+    0.05,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+  ],
+  "interior_count": 100,
+  "alpha_lower_boundary_count": 0,
+  "alpha_upper_boundary_count": 0,
+  "noise_lower_boundary_count": 0,
+  "noise_upper_boundary_count": 0,
+  "reference_selected_pair_agrees_count": 100,
+  "log10_alpha_ratio_quantiles": [
+    -0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.25
+  ],
+  "log10_noise_ratio_quantiles": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "log10_gamma_ratio_quantiles": [
+    -0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.25
+  ],
+  "max_log_evidence_absolute_error": 0.01774877384013962,
+  "max_scaled_evidence_error": 4.549830640719889e-05,
+  "selected_log_evidence_absolute_error": 9.40392510528909e-08,
+  "selected_slope_absolute_error": 1.1305018698948288e-08,
+  "checks": {
+    "all_selected_pairs_agree": true,
+    "surface_error": false,
+    "slope_error": true
+  },
+  "status": "REVIEW_REQUIRED",
+  "interpretation": "Analytic agreement checks the implementation on this fixed synthetic design. Scale estimates need not equal generating values; this cannot establish PINN likelihood adequacy."
+}

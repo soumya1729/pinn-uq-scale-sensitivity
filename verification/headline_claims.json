@@ -1,0 +1,316 @@
+{
+  "schema": "headline_claim_registry/1",
+  "scope": "Numerical assertions in the current abstract and contribution bullets, with two supporting consistency checks. Does not certify all numerical occurrences in the manuscript or the qualitative/Lean claims. Expectations are explicit reported claims; computed values are independently aggregated from identified records. Fresh field-derived records are preferred when supplied, while N5 remains labelled as a frozen-summary check unless a fresh N5 CSV is supplied.",
+  "quantities": [
+    {
+      "id": "H01_admitted_cohort",
+      "description": "17 admitted nonlinear checkpoints",
+      "formula": "len(unique cohort tags)",
+      "records": [
+        "cohort"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 17
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Cohort",
+          "pattern": "using \\$17\\$\\s+admitted"
+        }
+      ]
+    },
+    {
+      "id": "H02_architectures",
+      "description": "Two architectures",
+      "formula": "len(unique architecture labels in admitted cohort)",
+      "records": [
+        "cohort"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 2
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Cohort",
+          "pattern": "runs with two architectures"
+        }
+      ]
+    },
+    {
+      "id": "H03_burgers_mlp_seeds",
+      "description": "Eight admitted Burgers-MLP seeds",
+      "formula": "count unique cohort tags with pde=burgers and architecture=mlp",
+      "records": [
+        "cohort"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 8
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Scale sensitivity",
+          "pattern": "Across eight Burgers--MLP seeds"
+        }
+      ]
+    },
+    {
+      "id": "H04_trained_roots",
+      "description": "Five refined trained-centre crossings",
+      "formula": "count refined-root records with unique tags",
+      "records": [
+        "roots"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 5
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Scale sensitivity",
+          "pattern": "five\\s+refined contrast-matching crossings"
+        },
+        {
+          "source": "j_abstract.tex",
+          "location": "Oracle",
+          "pattern": "At the five trained-centre contrast-matching roots"
+        }
+      ]
+    },
+    {
+      "id": "H05_root_precision_decades",
+      "description": "Crossings span more than four decades",
+      "formula": "log10(max(root_gamma) / min(root_gamma))",
+      "records": [
+        "roots"
+      ],
+      "expected": {
+        "operator": "gt",
+        "value": 4
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Scale sensitivity",
+          "pattern": "span more than four orders of magnitude"
+        }
+      ]
+    },
+    {
+      "id": "H06_noncrossing_seeds",
+      "description": "Three seeds retain the sampled trained-centre deficit",
+      "formula": "count Burgers-MLP tags for which min(rho) > 1 over all unit-noise prior_sweep rows, full grid and trained centre",
+      "records": [
+        "cohort",
+        "scale_metrics"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 3
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Scale sensitivity",
+          "pattern": "three other seeds retain a deficit at every sampled setting"
+        }
+      ]
+    },
+    {
+      "id": "H07_mle_both_regions_under68",
+      "description": "Eight trained predictions under-cover both regions at one standard deviation",
+      "formula": "count Burgers-MLP tags with sharp coverage68 < .68 AND bulk coverage68 < .68 at conditional_noise_mle",
+      "records": [
+        "cohort",
+        "scale_metrics"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 8
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Noise MLE",
+          "pattern": "under-covers both regions\\s+around all eight trained predictions"
+        }
+      ]
+    },
+    {
+      "id": "H08_mle_both_regions_under95",
+      "description": "The same eight also under-cover at 1.96 standard deviations",
+      "formula": "count Burgers-MLP tags with sharp coverage95 < .95 AND bulk coverage95 < .95 at conditional_noise_mle",
+      "records": [
+        "cohort",
+        "scale_metrics"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 8
+      },
+      "occurrences": []
+    },
+    {
+      "id": "H09_theta_baseline_deficits",
+      "description": "Theta-centred affine baseline deficit in all 17 runs",
+      "formula": "count distinct cohort tags with rho > 1 at baseline/theta_affine/full/selected/sharp",
+      "records": [
+        "cohort",
+        "theta_metrics"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 17
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Prior centre",
+          "pattern": "preserves the baseline deficit in all \\$17\\$ runs"
+        }
+      ]
+    },
+    {
+      "id": "H10_bulk_oracle_target",
+      "description": "Declared empirical bulk calibration target 68 percent",
+      "formula": "read oracle_target from the root-analysis protocol; this checks a declared method setting, not an empirical outcome",
+      "records": [
+        "root_protocol"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 0.68
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Oracle",
+          "pattern": "targeting \\$68\\\\%\\$ bulk coverage"
+        }
+      ]
+    },
+    {
+      "id": "H11_root_sharp_coverage_min",
+      "description": "Minimum root sharp one-standard-deviation coverage rounds to 30.3 percent",
+      "formula": "min(coverage68) over trained/full/bulk_68_oracle/sharp direct root rows; multiply by 100 and round to one decimal for the printed percentage",
+      "records": [
+        "direct_roots"
+      ],
+      "expected": {
+        "operator": "format",
+        "value": "30.3",
+        "format": ".1f",
+        "scale": 100
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Oracle",
+          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp"
+        }
+      ]
+    },
+    {
+      "id": "H12_root_sharp_coverage_max",
+      "description": "Maximum root sharp one-standard-deviation coverage rounds to 55.7 percent",
+      "formula": "max(coverage68) over trained/full/bulk_68_oracle/sharp direct root rows; multiply by 100 and round to one decimal for the printed percentage",
+      "records": [
+        "direct_roots"
+      ],
+      "expected": {
+        "operator": "format",
+        "value": "55.7",
+        "format": ".1f",
+        "scale": 100
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Oracle",
+          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp"
+        }
+      ]
+    },
+    {
+      "id": "H14_heldout_below_threshold",
+      "description": "Sixteen blocked held-out sharp fractions are below the declared four-percent cutoff",
+      "formula": "count heldout_pooled < .04 on sharp/time_blocks/block_slices=10/rcond=1e-10 records; .04 is the declared claim threshold",
+      "records": [
+        "n5"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 16
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Feature expressivity",
+          "pattern": "below \\$4\\\\%\\$.*?sharp-region\\s+error energy.*?\\$16/17\\$"
+        },
+        {
+          "source": "j_intro.tex",
+          "location": "Contribution 2",
+          "pattern": "below \\$4\\\\%\\$.*?trained\\s+sharp-region error energy.*?\\$16/17\\$"
+        }
+      ]
+    },
+    {
+      "id": "H15_heldout_cohort",
+      "description": "Seventeen independent held-out checkpoint results",
+      "formula": "count unique sharp/time_blocks/block_slices=10/rcond=1e-10 records and require exact cohort tag set",
+      "records": [
+        "cohort",
+        "n5"
+      ],
+      "expected": {
+        "operator": "eq",
+        "value": 17
+      },
+      "occurrences": [
+        {
+          "source": "j_abstract.tex",
+          "location": "Feature expressivity",
+          "pattern": "held-out time blocks in \\$16/17\\$ runs"
+        },
+        {
+          "source": "j_intro.tex",
+          "location": "Contribution 2",
+          "pattern": "held-out time blocks in \\$16/17\\$ runs"
+        }
+      ]
+    },
+    {
+      "id": "H16_bulk_root_coverage_min",
+      "description": "Direct root bulk calibration achieves the declared 68 percent target",
+      "formula": "min(coverage68) over trained/full/bulk_68_oracle/bulk rows; higher quantile and closed inequalities can exceed target",
+      "records": [
+        "direct_roots"
+      ],
+      "expected": {
+        "operator": "ge",
+        "value": 0.68
+      },
+      "occurrences": []
+    },
+    {
+      "id": "H17_root_rho_max_defect",
+      "description": "Direct root fields agree with trained-centre RMS contrast target",
+      "formula": "max(abs(rho-1)) over trained/full/bulk_68_oracle/sharp root rows",
+      "records": [
+        "direct_roots"
+      ],
+      "expected": {
+        "operator": "lt",
+        "value": 1e-10
+      },
+      "occurrences": []
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "admitted_tags": [
+    "burgers_mlp_seed0",
+    "burgers_mlp_seed1",
+    "burgers_mlp_seed2",
+    "burgers_mlp_seed3",
+    "burgers_mlp_seed4",
+    "burgers_mlp_seed5",
+    "burgers_mlp_seed6",
+    "burgers_mlp_seed7",
+    "burgers_fourier_seed0",
+    "burgers_fourier_seed2",
+    "burgers_fourier_seed6",
+    "allen_cahn_mlp_seed0",
+    "allen_cahn_mlp_seed1",
+    "allen_cahn_mlp_seed3",
+    "allen_cahn_fourier_seed0",
+    "allen_cahn_fourier_seed1",
+    "allen_cahn_fourier_seed3"
+  ],
+  "artifact_sha256": {
+    "results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fields.npz": "b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64",
+    "results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_manifold_fields.npz": "0b0b1e850df3e4cf2409e312a6b0b06a7c52fe3706ad57e7c45e3b5c1a4dd9b6",
+    "results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_manifold_metrics.json": "6519351bbc0be18baa7617846faad264a82510912444c130f5bc4b3654eec816",
+    "results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765",
+    "results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_manifold_fields.npz": "e1e6af5e2add81ce5e407bd214b54bb246684edaf0c9e0caa69e4cfb3d8cf4b5",
+    "results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_manifold_metrics.json": "b748c6a27ca6ccb293b5310df9c10dd65b6a76d2935e7579552d34c3db90660b",
+    "results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fields.npz": "9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3",
+    "results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_manifold_fields.npz": "3d839c31e73acdc4be82bb444cc3af95e37fc7a3dfd3c61f6f132d8baf9d4e03",
+    "results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_manifold_metrics.json": "6387684a27eb4ac286ccaed65725c702f7c21fcd15b00f36b5a1c7e97c526a8d",
+    "results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fields.npz": "baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a",
+    "results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_manifold_fields.npz": "d9b74100b2126e8115cd6ed4370828bf585feab4353f1cab9c46c10026d8ca67",
+    "results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_manifold_metrics.json": "2d0a501dc9d9d9292b7bc460e2a27cadc5426820ec54f7a7c081eae3f8933399",
+    "results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fields.npz": "8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f",
+    "results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_manifold_fields.npz": "746f2c6c12723bf59b999d09dcc221b4761ea680a556b66c75e501b1412f05d3",
+    "results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_manifold_metrics.json": "1cb7ddf73ffde4e7f4d2201c7b2d68c0ad06a977fcee65cd1829a36b6d9348c8",
+    "results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fields.npz": "cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb",
+    "results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_manifold_fields.npz": "e5cea2e7140d73e6e2976aee21b419f855261492eced6bea5a45b000a4bbf8dd",
+    "results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_manifold_metrics.json": "9c7a608ada0584c39b0cdddaf791280778e7317f77dd76f7150695ccefbb31d9",
+    "results/burgers_fourier_seed0/burgers_fourier_seed0_fields.npz": "ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9",
+    "results/burgers_fourier_seed0/burgers_fourier_seed0_manifold_fields.npz": "fcfd2d3b7ba45a3a238addb9736be5853bad29e8443b94a12248537a0f6c5312",
+    "results/burgers_fourier_seed0/burgers_fourier_seed0_manifold_metrics.json": "bf873509895badf69d2adc332dae0b86a732c6a599205378a5dc72524472791c",
+    "results/burgers_fourier_seed2/burgers_fourier_seed2_fields.npz": "3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0",
+    "results/burgers_fourier_seed2/burgers_fourier_seed2_manifold_fields.npz": "e30d26352e6e45695a12099d7d64b05f747a8f87e112f7b7d19dd12389d358a5",
+    "results/burgers_fourier_seed2/burgers_fourier_seed2_manifold_metrics.json": "4a4dc4a3af707fffa8bf845424d1a2d8de070b3b05f584a8c32ac5cc658534ea",
+    "results/burgers_fourier_seed6/burgers_fourier_seed6_fields.npz": "4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564",
+    "results/burgers_fourier_seed6/burgers_fourier_seed6_manifold_fields.npz": "4819083c62ed4e41e4867896ccabe07b1778dd5d681ac335c4ea605352f7eee0",
+    "results/burgers_fourier_seed6/burgers_fourier_seed6_manifold_metrics.json": "1788b0f757ecbd3092f72b84da06388a6abb2c868d92932ef407797c472ef39f",
+    "results/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b",
+    "results/burgers_mlp_seed0/burgers_mlp_seed0_manifold_fields.npz": "1ba8389a34e336b54c500cdc5d50fe11fe58d0759916d41333cd727ccd255af1",
+    "results/burgers_mlp_seed0/burgers_mlp_seed0_manifold_metrics.json": "0457f87e3d62f5dd144e94c99809141ac4bbd8d0b1e35739cc597dd355386a61",
+    "results/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6",
+    "results/burgers_mlp_seed1/burgers_mlp_seed1_manifold_fields.npz": "76bb516aeacc9a0c5711df174f5389dce3ce849c6cc96146ce91e20cad646443",
+    "results/burgers_mlp_seed1/burgers_mlp_seed1_manifold_metrics.json": "2e4b55cce2056d15e3ebbdb876a1350da44ceabe6f7bd15d5b4e4ecfad1e43fe",
+    "results/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800",
+    "results/burgers_mlp_seed2/burgers_mlp_seed2_manifold_fields.npz": "373e4b8c4e9c1ccfa9a1496dcf3047a273a5dc374d144761a06c1e0d9543f337",
+    "results/burgers_mlp_seed2/burgers_mlp_seed2_manifold_metrics.json": "8405649ad4065d389c552f1feb9650f9112806698f521c7b3aa5ae071b95505c",
+    "results/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5",
+    "results/burgers_mlp_seed3/burgers_mlp_seed3_manifold_fields.npz": "4d33987fcc3eeceab0ebcc074edec5b127330e60d242f739c15d187fa15105dc",
+    "results/burgers_mlp_seed3/burgers_mlp_seed3_manifold_metrics.json": "b281cc858dc922e7c86c554846b0005bbea0aec7115526314b8334549de40764",
+    "results/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a",
+    "results/burgers_mlp_seed4/burgers_mlp_seed4_manifold_fields.npz": "5b803ea4a4c71243a227d98b038b9742d8c6ded289c791353da202e9d086b544",
+    "results/burgers_mlp_seed4/burgers_mlp_seed4_manifold_metrics.json": "1049fd6e75a863b0ba86c1667644a85cd5c514bf8d6cf31438853cd49012a98a",
+    "results/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f",
+    "results/burgers_mlp_seed5/burgers_mlp_seed5_manifold_fields.npz": "d15c67dbfc3381915d650a511a27ac5ab8927bcc5e22dfe22fa418a649edb03a",
+    "results/burgers_mlp_seed5/burgers_mlp_seed5_manifold_metrics.json": "1949fd42ceae3961fc7f53803596ea6ebb9610e2bdb52256dacbf71f3d4b7fec",
+    "results/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f",
+    "results/burgers_mlp_seed6/burgers_mlp_seed6_manifold_fields.npz": "4b366c3568650581ec596140da38f4032ec6e6a99058a81d292077422f022677",
+    "results/burgers_mlp_seed6/burgers_mlp_seed6_manifold_metrics.json": "f0cf6af250ea6d01d8de9c9dbf7089f733299d4ad5af133a3772d91d435cfb45",
+    "results/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0",
+    "results/burgers_mlp_seed7/burgers_mlp_seed7_manifold_fields.npz": "7c35f0f9f2f38140bb2a8047875b304cf52966ce098b5960e8f9c6c486a3ee5e",
+    "results/burgers_mlp_seed7/burgers_mlp_seed7_manifold_metrics.json": "dd1744cc4f95a6d64df1621fce9c583d003d4c7e5748d2b07ea269001ea51cb1"
+  },
+  "bulk_over_sharp": {
+    "max": 542.5187253418009,
+    "min": 9.365654284775243
+  },
+  "canonical": {
+    "allen_cahn_fourier_seed0": {
+      "bulk_over_sharp": 68.71356898895424,
+      "captured_sharp_energy_fraction": 0.9992561189807483,
+      "shock": 0.0007438810192516826,
+      "smooth": 0.05111471973592408,
+      "transition": 0.017263158660222017
+    },
+    "allen_cahn_mlp_seed0": {
+      "bulk_over_sharp": 265.7275029538751,
+      "captured_sharp_energy_fraction": 0.9991326957601699,
+      "shock": 0.0008673042398300376,
+      "smooth": 0.2304665899513447,
+      "transition": 0.03009582207741688
+    },
+    "burgers_fourier_seed2": {
+      "bulk_over_sharp": 47.72105289539408,
+      "captured_sharp_energy_fraction": 0.9985079461960588,
+      "shock": 0.0014920538039412633,
+      "smooth": 0.07120237850065497,
+      "transition": 0.05677583575377776
+    },
+    "burgers_mlp_seed2": {
+      "bulk_over_sharp": 17.79418200351202,
+      "captured_sharp_energy_fraction": 0.9998786113773066,
+      "shock": 0.00012138862269342753,
+      "smooth": 0.002160011245362499,
+      "transition": 0.00109177608922028
+    }
+  },
+  "canonical_bulk_over_sharp": {
+    "max": 265.7275029538751,
+    "min": 17.79418200351202
+  },
+  "definition": "regionwise least-squares residual energy / regional error energy",
+  "evaluation_points_per_run": 80000,
+  "feature_scope": "last_layer",
+  "feature_span_dim": 129,
+  "n_admitted": 17,
+  "producer_contract": {
+    "change": "module docstring and reporting-only print text; numerical AST is identical",
+    "docstring_stripped_ast_sha256": "85790e54f233473ebcf3bb7a1919edded3fe6b4f17b7b850123d1de69893b672",
+    "historical_artifact_producer_sha256": "4964dff75410cee27f6243bc6abbd18727c637c14967531a732489bcf9a642bb",
+    "release_source_sha256": "0b09b604ad69b3b6dc8a8a37239b1ae30637c5e406f52c55c98d4443d6119aa5"
+  },
+  "rows": {
+    "allen_cahn_fourier_seed0": {
+      "bulk_over_sharp": 68.71356898895424,
+      "captured_sharp_energy_fraction": 0.9992561189807483,
+      "shock": 0.0007438810192516826,
+      "smooth": 0.05111471973592408,
+      "transition": 0.017263158660222017
+    },
+    "allen_cahn_fourier_seed1": {
+      "bulk_over_sharp": 177.42312842413003,
+      "captured_sharp_energy_fraction": 0.9996396229956409,
+      "shock": 0.00036037700435911024,
+      "smooth": 0.06393921552550969,
+      "transition": 0.020381883339669175
+    },
+    "allen_cahn_fourier_seed3": {
+      "bulk_over_sharp": 66.43879528971895,
+      "captured_sharp_energy_fraction": 0.999043148599573,
+      "shock": 0.0009568514004270077,
+      "smooth": 0.06357205431565087,
+      "transition": 0.0133418226290242
+    },
+    "allen_cahn_mlp_seed0": {
+      "bulk_over_sharp": 265.7275029538751,
+      "captured_sharp_energy_fraction": 0.9991326957601699,
+      "shock": 0.0008673042398300376,
+      "smooth": 0.2304665899513447,
+      "transition": 0.03009582207741688
+    },
+    "allen_cahn_mlp_seed1": {
+      "bulk_over_sharp": 163.49954146476,
+      "captured_sharp_energy_fraction": 0.9992349178195933,
+      "shock": 0.000765082180406773,
+      "smooth": 0.12509058567936618,
+      "transition": 0.01850768492232967
+    },
+    "allen_cahn_mlp_seed3": {
+      "bulk_over_sharp": 402.65918480671354,
+      "captured_sharp_energy_fraction": 0.9997632876385919,
+      "shock": 0.00023671236140809101,
+      "smooth": 0.09531440647825408,
+      "transition": 0.02623973115096366
+    },
+    "burgers_fourier_seed0": {
+      "bulk_over_sharp": 542.5187253418009,
+      "captured_sharp_energy_fraction": 0.9994440133936375,
+      "shock": 0.0005559866063624861,
+      "smooth": 0.30163314499088956,
+      "transition": 0.09110744539515175
+    },
+    "burgers_fourier_seed2": {
+      "bulk_over_sharp": 47.72105289539408,
+      "captured_sharp_energy_fraction": 0.9985079461960588,
+      "shock": 0.0014920538039412633,
+      "smooth": 0.07120237850065497,
+      "transition": 0.05677583575377776
+    },
+    "burgers_fourier_seed6": {
+      "bulk_over_sharp": 56.04621770675987,
+      "captured_sharp_energy_fraction": 0.9965201892564708,
+      "shock": 0.0034798107435291816,
+      "smooth": 0.19503023051015844,
+      "transition": 0.051395815875095494
+    },
+    "burgers_mlp_seed0": {
+      "bulk_over_sharp": 34.39242095451314,
+      "captured_sharp_energy_fraction": 0.9975649601326324,
+      "shock": 0.002435039867367584,
+      "smooth": 0.0837469161595278,
+      "transition": 0.04641752131350404
+    },
+    "burgers_mlp_seed1": {
+      "bulk_over_sharp": 168.53407901963914,
+      "captured_sharp_energy_fraction": 0.9999267738372791,
+      "shock": 7.322616272091565e-05,
+      "smooth": 0.01234110389431175,
+      "transition": 0.009978236261467882
+    },
+    "burgers_mlp_seed2": {
+      "bulk_over_sharp": 17.79418200351202,
+      "captured_sharp_energy_fraction": 0.9998786113773066,
+      "shock": 0.00012138862269342753,
+      "smooth": 0.002160011245362499,
+      "transition": 0.00109177608922028
+    },
+    "burgers_mlp_seed3": {
+      "bulk_over_sharp": 218.14014843431082,
+      "captured_sharp_energy_fraction": 0.9999694509459357,
+      "shock": 3.05490540643033e-05,
+      "smooth": 0.006663975188114908,
+      "transition": 0.004632763472770352
+    },
+    "burgers_mlp_seed4": {
+      "bulk_over_sharp": 9.365654284775243,
+      "captured_sharp_energy_fraction": 0.9883839199339883,
+      "shock": 0.011616080066011693,
+      "smooth": 0.10879219004253471,
+      "transition": 0.04881961929091359
+    },
+    "burgers_mlp_seed5": {
+      "bulk_over_sharp": 271.77257701373054,
+      "captured_sharp_energy_fraction": 0.9997980768630573,
+      "shock": 0.00020192313694268875,
+      "smooth": 0.05487717128561093,
+      "transition": 0.02577692168015552
+    },
+    "burgers_mlp_seed6": {
+      "bulk_over_sharp": 320.0963109656002,
+      "captured_sharp_energy_fraction": 0.9994208519563373,
+      "shock": 0.0005791480436626652,
+      "smooth": 0.18538315227936347,
+      "transition": 0.08616318597093073
+    },
+    "burgers_mlp_seed7": {
+      "bulk_over_sharp": 528.1350818810898,
+      "captured_sharp_energy_fraction": 0.999911229091228,
+      "shock": 8.877090877204255e-05,
+      "smooth": 0.04688303117298145,
+      "transition": 0.013906520042743961
+    }
+  },
+  "schema": "offmanifold_summary/3",
+  "sharp_is_smallest_in_every_run": true,
+  "validation": "exact primary/manifold grids and regions; error decomposition; global projection orthogonality; regional RMSE and local-fraction identities",
+  "worst_sharp": {
+    "captured_energy_fraction": 0.9883839199339883,
+    "fraction": 0.011616080066011693,
+    "tag": "burgers_mlp_seed4"
+  }
+}

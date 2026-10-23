@@ -1,0 +1,149 @@
+{
+  "schema": "loading_perpoint/3",
+  "tag": "allen_cahn_mlp_seed0",
+  "scope": "full",
+  "sigma_metric": "raw",
+  "P_bayes": 196009,
+  "alpha": 18.04405717135039,
+  "eps": 18.04405717135039,
+  "eps_mult": 1.0,
+  "lam_max": 19458228.358340215,
+  "n_gram_modes": 6400,
+  "n_gram_modes_sloppy": 6047,
+  "n_stiff_modes": 353,
+  "want_resolved": false,
+  "floor_rel": 1e-12,
+  "config": {
+    "pde": "allen_cahn",
+    "arch": "mlp",
+    "seed": 0,
+    "fourier_scale": 1.0,
+    "eval_nx": 400,
+    "eval_nt": 200
+  },
+  "dtypes": {
+    "J": "float64",
+    "G": "float64"
+  },
+  "hashes": {
+    "producer": "5cdf648ff8ee6dcd934148efd3f2d0f08f481f93",
+    "map_pkl": "1b1ce33cde05207c9dfdbd926004127c2e97c62e",
+    "sigma_raw": "4c86b3616201bc2602306150aacee8333c26d36f",
+    "loading_cdf": "c4fd11a7981eb1f393e29bf9447a3efecea8931c",
+    "fourier_B": null,
+    "fourier_B_path": null,
+    "gram": "ff57af7aaf063167ae45751aa24c9e3c2fda423f"
+  },
+  "validation_tolerances": {
+    "backward_factor_N_eps": 100.0,
+    "backward_tolerance": 1.4210854715202004e-10,
+    "raw_inverse_lift_orthogonality_inf_tolerance": 1.4901161193847656e-08,
+    "orthogonality_dimension_roundoff_scale": 4.352274096675046e-09,
+    "orthogonality_application_cap": 5e-11,
+    "orthogonality_inf_tolerance": 5e-11,
+    "cutoff_min_safety": 10.0,
+    "psd_factor_dimension_eps_normG": 10.0,
+    "psd_tolerance_abs": 0.008468754325119192,
+    "negative_complement_rel": 1e-10,
+    "woodbury_sample_rel": 0.001,
+    "cdf_leg_rel": 0.001
+  },
+  "numerics": {
+    "stiff_inverse_lift_orthonormality_max_dev_raw": 1.2835326061006423e-10,
+    "stiff_inverse_lift_orthonormality_inf_norm_raw": 7.925132222266172e-10,
+    "stiff_inverse_lift_condition_number_upper_bound": 1.0000000007925132,
+    "stiff_basis_correction": "implicit_cholesky_qr",
+    "stiff_projector_orthonormality_max_dev": 2.220446049250313e-16,
+    "stiff_projector_orthonormality_inf_norm": 2.220446049676278e-16,
+    "eigenpair_backward_error": 5.737971229584901e-16,
+    "eigenpair_backward_error_N_eps_mach": 0.00040377382955345605,
+    "eigenpair_max_per_mode_residual": 1.4046292507576912e-10,
+    "eigenpair_residual_near_alpha": 4.5971021342352935e-11,
+    "gram_min_eigenvalue_raw": -8.59490646013232e-09,
+    "gram_negative_eigenvalue_abs": 8.59490646013232e-09,
+    "gram_negative_eigenvalue_rel_lam_max": 4.4171063787769547e-16,
+    "gram_negative_eigenvalue_rel_alpha": 4.763289308226622e-10,
+    "worst_negative_complement_rel": 0.0,
+    "separation_around_alpha": {
+      "lam_just_below_eps": 17.73663291616577,
+      "lam_just_above_eps": 18.08811413038829,
+      "margin_below": 0.3074242551846176,
+      "margin_above": 0.04405695903790274,
+      "relative_margin_below": 0.017037424137224148,
+      "relative_margin_above": 0.002441632645004837,
+      "boundary_residual_below": 5.454903981411385e-10,
+      "boundary_residual_above": 7.11016595257845e-10,
+      "roundoff_scale_N_eps_normG": 2.765180562155964e-05,
+      "classification_safety_below": 11117.691892963552,
+      "classification_safety_above": 1593.2760283672862
+    },
+    "woodbury_sample": {
+      "n_sampled": 255,
+      "max_rel_err": 2.4479185163143088e-11,
+      "median_rel_err": 3.1614277031562847e-13,
+      "woodbury_min_sigma2_rel": 0.0
+    }
+  },
+  "sharp": {
+    "n": 4000,
+    "Q_sl": 1.5872523634523608,
+    "Q_st": 347.8276409751312,
+    "Q_tot": 349.4148933385836,
+    "M_sl": 0.15660762277514095,
+    "M_st": 140.73339915631072,
+    "M_sl_negative_rel": 0.0,
+    "kappa": 0.0986658620778556,
+    "sigma2_stored_mean": 0.2169240776720622
+  },
+  "bulk": {
+    "n": 56000,
+    "Q_sl": 0.026768240617090263,
+    "Q_st": 164.56777689737095,
+    "Q_tot": 164.59454513798806,
+    "M_sl": 0.000583141899667794,
+    "M_st": 49.5356863291558,
+    "M_sl_negative_rel": 0.0,
+    "kappa": 0.021784842269218296,
+    "sigma2_stored_mean": 0.004595172698838315
+  },
+  "ratio_perpoint_sl": 59.29610339945072,
+  "ratio_mean_tangent_sl": 268.55834379995275,
+  "ratio_perpoint_sl_resolved": null,
+  "ratio_mean_tangent_sl_resolved": null,
+  "sensitivity": {
+    "computed": false,
+    "note": "run separately with WANT_RESOLVED=1; writes its own file"
+  },
+  "sandwich": {
+    "sharp": {
+      "lower": 0.04400056607892097,
+      "sigma2_stored": 0.2169240776720622,
+      "upper": 9.726253424294805,
+      "inside": true
+    },
+    "bulk": {
+      "lower": 0.0007502042071986785,
+      "sigma2_stored": 0.004595172698838315,
+      "upper": 4.5616490741335065,
+      "inside": true
+    }
+  },
+  "validation": {
+    "legs": {
+      "sharp": {
+        "recomputed": 0.15660762277514095,
+        "cdf_complement": 0.1566076227732367,
+        "rel_err": 1.2159398745196291e-11
+      },
+      "bulk": {
+        "recomputed": 0.000583141899667794,
+        "cdf_complement": 0.000583141900499129,
+        "rel_err": 1.425613560143341e-09
+      }
+    },
+    "ratio_recomputed": 268.55834379995275,
+    "ratio_cdf_complement": 268.55834341382683,
+    "cdf_ratio_as_shipped": 268.69960019245184,
+    "note": "target is the theorem-aligned complement, not the shipped ratio; legs checked individually"
+  }
+}

@@ -1,0 +1,91 @@
+\emph{Predictive bounds for the prior-centre comparison.}\label{app:r3:centres}
+For $\gamma,v>0$, write $A_\gamma=F+\gamma I$. The zero-mean-prior shift splits as
+\[
+ \delta_\gamma=\delta_{L,\gamma}+\delta_{P,\gamma},\qquad
+ \delta_{L,\gamma}=-A_\gamma^{-1}J^\top r,\qquad
+ \delta_{P,\gamma}=-\gamma A_\gamma^{-1}\theta.
+\]
+In the factorisation above, their coordinates are
+$-s_i(V^\top r)_i/(s_i^2+\gamma)$ and
+$-\gamma\theta_{\rm modes,i}/(s_i^2+\gamma)$; the QR-complement contributions
+are $0$ and $-Q_cQ_c^\top\theta$, respectively. The total norm includes their
+cross term. Replacing the prior by $\vartheta\sim\mathcal N(\theta,\alpha^{-1}I)$
+removes $\delta_{P,\gamma}$ and leaves the covariance unchanged.
+
+Define $\mathcal K_\gamma=r^\top J A_\gamma^{-1}J^\top r$ and
+$c_\gamma=\sqrt{\mathcal K_\gamma/v}$. Since
+$\delta_{L,\gamma}^\top A_\gamma\delta_{L,\gamma}=\mathcal K_\gamma$,
+Cauchy--Schwarz in the $A_\gamma$ metric gives the pointwise bound
+\begin{equation}\label{eq:r3:centre-bound}
+ |m^\theta_\gamma(x)-u_\theta(x)|
+ =|g(x)^\top\delta_{L,\gamma}|
+ \le\sigma(x)c_\gamma,\qquad
+ \mathcal K_\gamma=\sum_i\frac{s_i^2(V^\top r)_i^2}{s_i^2+\gamma}.
+\end{equation}
+Let $E_r$ and $\Sigma_r$ denote trained error RMS and uncertainty RMS, and let
+$q_{r,i}$ be the regional mode energies in \eqref{eq:r2-regional-modal}.
+The regional RMS triangle inequality also gives
+\begin{equation}\label{eq:r3:regional-bound}
+ B_r=\min\!\left\{c_\gamma\Sigma_r,
+              \sum_i|\delta_{L,\gamma,i}|\sqrt{q_{r,i}}\right\},\qquad
+ \max(0,E_r-B_r)\le E^\theta_r\le E_r+B_r.
+\end{equation}
+For $E^\theta_{\mathcal B}>0$ and $\Rrms>0$,
+$\rho^\theta\ge\max(0,E_{\mathcal S}-B_{\mathcal S})/
+[(E_{\mathcal B}+B_{\mathcal B})\Rrms]$.
+The prior-only prediction differs from
+the archived zero-mean affine mean by $g^\top\delta_L$; its full-grid error is
+therefore at least $E^{\rm zero}_{\rm full}-B_{\rm full}$. This attributes
+worsening through a prediction-level bound rather than parameter norms.
+If $C_c(t)$ denotes empirical coverage at $t$ standard deviations, then
+\[
+ C_{\rm trained}(t-c_\gamma)\le C_\theta(t)
+       \le C_{\rm trained}(t+c_\gamma),\qquad t\ge c_\gamma,
+\]
+by the pointwise triangle inequality.
+
+\input{round3_math_results}
+
+\emph{Coverage envelopes at refined contrast-matching roots.}\label{app:r3:root-envelope}
+At unit noise, each pointwise variance has the positive modal representation
+$q_\gamma(x)=\sum_i a_i(x)/(\lambda_i+\gamma)$, including the QR complement
+as a zero-eigenvalue mode, with $a_i(x),\lambda_i\ge0$.
+For positive endpoint variances at saved precisions
+$0<l\le\gamma\le h$, $l<h$, and
+$t=(\gamma-l)/(h-l)$, positivity gives
+\begin{equation}\label{eq:r3:variance-envelope}
+ L_\gamma=\frac{(1-t)lq_l+thq_h}{\gamma}
+ \le q_\gamma\le
+ U_\gamma=\left(\frac{1-t}{q_l}+\frac{t}{q_h}\right)^{-1}.
+\end{equation}
+For the lower bound in \eqref{eq:r3:variance-envelope}, $\gamma q_\gamma$ is concave because every
+$\gamma/(\lambda_i+\gamma)$ is concave. For the upper bound,
+$q'=-\sum_i a_i/(\lambda_i+\gamma)^2$ and
+$q''=2\sum_i a_i/(\lambda_i+\gamma)^3$ satisfy
+$(q')^2\le qq''/2$ by Cauchy--Schwarz. Hence
+$(1/q)''=[2(q')^2-qq'']/q^3\le0$, and taking the reciprocal of its chord gives
+$U_\gamma$. Both envelopes decrease with $\gamma$ since $q_l\ge q_h$.
+
+For a numerically refined root bracket $[a,b]\subset[l,h]$, use $L_b$ and
+$U_a$ to retain root-location uncertainty. The higher empirical bulk-$0.68$
+quantile $Q_{\mathcal B}$ is monotone, so
+\[
+ k_{\min}=Q_{\mathcal B}(|e|/\sqrt{U_a}),\qquad
+ k_{\max}=Q_{\mathcal B}(|e|/\sqrt{L_b})
+\]
+enclose the multiplier $k_\gamma$ that calibrates bulk coverage at the root.
+For sharp coverage at threshold $z\ge0$, this yields
+\begin{equation}\label{eq:r3:coverage-envelope}
+ \left\langle\mathbf1\{|e|\le z k_{\min}\sqrt{L_b}\}\right\rangle_{\mathcal S}
+ \le C_{\mathcal S,\gamma}(z)\le
+ \left\langle\mathbf1\{|e|\le z k_{\max}\sqrt{U_a}\}\right\rangle_{\mathcal S}.
+\end{equation}
+These analytic bounds use the returned spectral model and saved endpoint fields;
+they are not directed-rounding certificates for the original Jacobian.
+Direct pointwise root evaluations confirm the enclosures in Table~\ref{tab:r3-roots}.
+Root refinement concerns the five observed
+trained-centre brackets, without asserting uniqueness or global optimality.
+Appendix~\ref{oa:lean} maps the Lean verification of these analytic bounds.
+The evaluated run counts and refined brackets remain numerical results.
+
+\input{round3_math_root_table}

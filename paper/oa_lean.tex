@@ -1,0 +1,59 @@
+The independent \texttt{PaperReliability} development uses Lean~\texttt{v4.30.0}
+\citep{demoura2021lean4} and the matching Mathlib release \citep{mathlib2020}.
+Table~\ref{tab:lean} records its analytic scope.
+The covariance bridge assumes a supplied exact orthogonal spectral representation.
+Physical modal applications use nonnegative eigenvalues and energies, positive
+precision and the stated positive pointwise or bulk denominators. Kernel statements
+concern exact zero modes, including the whole kernel rather than a numerical rank
+cutoff. Coverage envelopes use fixed trained errors and regions, an actual empirical
+higher quantile, and a precision supplied within the retained bracket.
+
+\begin{table}[!htbp]
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.31\linewidth}p{0.66\linewidth}@{}}
+\toprule
+manuscript result & Lean declarations\\
+\midrule
+Matrix-to-modal covariance, \eqref{eq:sigma-sum} &
+  \mbox{\texttt{spectral\_covariance\_representation}}\\
+Fixed-cutoff contrast bounds, \eqref{eq:sandwich} &
+  \mbox{\texttt{two\_subspace\_contrast\_enclosure}}\\
+Regional variance aggregation, \eqref{eq:regional-rms-sandwich} &
+  \mbox{\texttt{regional\_two\_subspace\_enclosure}}\\
+Sharpness witnesses, Proposition~\ref{prop:sharp} &
+  \mbox{\texttt{upper\_envelope\_arbitrary\_energy\_sharpness}}\newline
+  \mbox{\texttt{lower\_envelope\_arbitrary\_energy\_sharpness}}\\
+Conditional modal limits, Section~\ref{sec:theory} &
+  \mbox{\texttt{regional\_contrast\_strong\_limit}}\newline
+  \mbox{\texttt{regional\_contrast\_weak\_limit}}\\
+Nonmonotone counterexample, Section~\ref{sec:theory} &
+  \mbox{\texttt{endpoint\_limits\_do\_not\_bound\_contrast}}\\
+Exact-kernel prior attribution, Appendix~\ref{app:r3:centres} &
+  \mbox{\texttt{kernel\_prediction\_shift\_attribution}}\\
+Pointwise likelihood-shift bound, \eqref{eq:r3:centre-bound} &
+  \mbox{\texttt{likelihood\_predictive\_shift\_bound}}\\
+Regional prior-centre bounds, \eqref{eq:r3:regional-bound} &
+  \mbox{\texttt{likelihood\_regional\_error\_bounds}}\\
+Prior-centre coverage brackets, Appendix~\ref{app:r3:centres} &
+  \mbox{\texttt{likelihood\_centre\_coverage}}\\
+Positive-modal and retained-bracket envelopes, \eqref{eq:r3:variance-envelope} &
+  \mbox{\texttt{positive\_modal\_variance\_enclosure}}\newline
+  \mbox{\texttt{variance\_enclosure\_on\_precision\_bracket}}\\
+Bulk-calibrated sharp coverage, \eqref{eq:r3:coverage-envelope} &
+  \mbox{\texttt{calibrated\_modal\_coverage\_enclosure}}\\
+\bottomrule
+\end{tabular}
+\caption{The authoritative map to the $15$ public analytic declarations, all in
+namespace \texttt{PaperReliability} and free of \texttt{sorry}. Private proof lemmas
+are supporting infrastructure.}
+\label{tab:lean}
+\end{table}
+
+Verification covers fixed-cutoff inequalities and sharpness witnesses with
+prescribed energies in spectra bounded by $\lambda_{\max}$ and explicit approach
+factors as $\epsilon'\downarrow\epsilon$. Maximum-eigenvalue equalities and
+supremum/infimum statements are not separate formal results.
+The expansion \eqref{eq:r3-strong-expansion}, secondary mean-width identities and
+transfers, Remarks~\ref{prop:wellposed}--\ref{prop:illposed}, and spectral-decomposition
+existence remain unverified. The proofs concern real-model inequalities, not
+QR/SVD accuracy, saved values, run counts or numerical root brackets.

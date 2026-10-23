@@ -1,0 +1,15 @@
+{
+  "scientific_occurrences": 1996,
+  "classifications": {
+    "numerical-result": 1576,
+    "configuration": 212,
+    "analytic": 208
+  },
+  "statuses": {
+    "CHECKED": 13,
+    "PROVENANCE_MAPPED": 1983
+  },
+  "active_source_files": 26,
+  "exact_float_or_equation_pages": 1971,
+  "unmatched_outputs": []
+}

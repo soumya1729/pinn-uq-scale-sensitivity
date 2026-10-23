@@ -1,0 +1,203 @@
+\section{Setting and Definitions}\label{sec:setting}
+
+We specify the equations, admission rule and frozen affine model before comparing
+regional uncertainty under changes of scale and predictive centre.
+
+\emph{Equations and trained networks.}
+On $(x,t)\in[-1,1]\times[0,1]$, the viscous Burgers equation is
+\[
+ u_t+u u_x=\nu u_{xx},\qquad \nu=0.01/\pi,\qquad
+ u(x,0)=-\sin(\pi x),\qquad u(\pm1,t)=0.
+\]
+The positive-viscosity solution remains smooth and develops a thin layer near $x=0$.
+We use the inviscid breaking time $1/\pi$ to define pre- and post-formation windows.
+The Allen--Cahn equation is
+\[
+ u_t=\varepsilon^2u_{xx}+5(u-u^3),\qquad \varepsilon^2=10^{-4},\qquad
+ u(x,0)=x^2\cos(\pi x),
+\]
+with periodic boundaries and interfaces of width $O(\varepsilon)$ between phases
+$u\approx\pm1$. A contextual linear control is recorded in Appendix~\ref{app:training};
+it is outside the nonlinear scale study.
+
+The independent-feature MLP has $20$ spatial and $20$ temporal sub-networks feeding
+a fusion head, with $P=196{,}009$ parameters. Replacing its input layer by random
+Fourier features gives $P=275{,}369$ at bandwidth $\mathrm{FS}$
+\citep{tancik2020fourier}. Both are trained in float64 by Adam
+\citep{kingma2015adam} followed by Levenberg--Marquardt
+\citep{levenberg1944,marquardt1963}. Evaluation uses a uniform $400\times200$ grid ($80{,}000$
+points); the residual Jacobian has $N=6400$ rows: $5000$ collocation, $1000$
+initial-condition and $400$ boundary rows. The Burgers reference uses the Cole--Hopf
+solution with $80$-node Gauss--Hermite quadrature, agreeing with independent
+log-space quadrature to $4.5\times10^{-14}$. The Allen--Cahn reference uses
+fourth-order exponential time differencing with $512$ modes and $1000$ steps
+\citep{kassam2005etdrk4}; refinement to $2048$ modes changes the canonical contrast
+by less than $0.1\%$. Appendix~\ref{app:training} records the training details.
+Unless a seed count is stated, numerical illustrations use Burgers--MLP seed $2$
+or Allen--Cahn seed $0$.
+
+\begin{samepage}
+\begin{definition}[Region partition]\label{def:regions}
+Let $p_{70},p_{95}$ be the $70$th and $95$th percentiles of $|u_x^\ast|$ over the
+whole evaluation grid. Define
+\[
+ \mathcal S=\{|u_x^\ast|\ge p_{95}\},\qquad
+ \mathcal B=\{|u_x^\ast|<p_{70}\},\qquad
+ \mathcal T=(\mathcal S\cup\mathcal B)^c.
+\]
+These are the sharp, bulk and transitional regions.
+\end{definition}
+\end{samepage}
+The reference partition is used only for evaluation. It follows moving and narrowing
+features: the Allen--Cahn interface moves by $58$ grid cells, and sharp Burgers cells
+per slice fall from $58$ at $t=0.13$ to $8$ at $t=0.5$. No sampled reference-gradient
+magnitude equals either threshold. The top-$5\%$ definition alone does not establish resolution
+(Appendix~\ref{app:grid}). For Burgers, the sharp threshold is $3.34$, against
+maximum $116.8$, and $69\%$ of sharp points precede formation; temporal results
+therefore also use the two windows separately.
+
+\begin{samepage}
+\begin{definition}[Run admission]\label{def:gate}
+A trained prediction is admitted if its relative error outside the sharp region satisfies
+\begin{equation*}
+ \frac{\| (u_\theta-u^\ast)|_{\mathcal B\cup\mathcal T}\|_2}
+      {\| u^\ast|_{\mathcal B\cup\mathcal T}\|_2}<\tau,
+ \qquad \tau=0.03\text{ for Allen--Cahn},\quad0.02\text{ otherwise}.
+\end{equation*}
+\end{definition}
+\end{samepage}
+These trained-network decisions remain fixed in every scale and centre comparison.
+Excluding $\mathcal S$ avoids selecting directly on sharp error, but selecting a small
+bulk error can enlarge its regional ratio. Burgers--MLP has no seed filtering
+($8/8$ admitted); the other nonlinear families are selected samples. A common
+$2\%$ threshold retains $13/17$ runs; Appendix~\ref{app:training} reports the
+saved-output comparison on that subset.
+
+\begin{table}[t]
+\centering\small
+
+
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+configuration & admitted/attempted & error range & median & $\tau$\\
+\midrule
+Fisher--KPP & $0/5$ & $81.7$--$170.5\%$ & $100.0\%$ & $2\%$\\
+Nagumo, both initial conditions & $0/10$ & $75.9$--$90.3\%$ & $80.5\%$ & $2\%$\\
+Kuramoto--Sivashinsky, $T=100$ & $0/5$ & $98.2$--$103.8\%$ & $100.4\%$ & $2\%$\\
+Kuramoto--Sivashinsky, $T=10$ & $0/5$ & $9.9$--$17.0\%$ & $12.8\%$ & $2\%$\\
+\midrule
+Burgers, MLP & $8/8$ & $0.05$--$0.40\%$ & $0.08\%$ & $2\%$\\
+Burgers, Fourier & $3/8$ & $0.37$--$1.48\%$ & $0.78\%$ & $2\%$\\
+Allen--Cahn, MLP & $3/5$ & $1.39$--$2.33\%$ & $2.33\%$ & $3\%$\\
+Allen--Cahn, Fourier & $3/4$ & $1.64$--$2.60\%$ & $2.34\%$ & $3\%$\\
+Convection--diffusion, MLP control & $3/4$ & $0.19$--$0.31\%$ & $0.21\%$ & $2\%$\\
+\bottomrule
+\end{tabular}
+\caption{Admission accounting and relative $L^2$ error on $\mathcal B\cup\mathcal T$.
+Rejected rows include every attempted run; admitted rows include admitted runs only.
+Nagumo pools five seeds for each of two initial conditions. The control varies paired
+pulse width and diffusivity at one seed. Its narrowest MLP run is rejected at
+$62.2\%$; a separate Fourier attempt is rejected at $63.3\%$. All Kuramoto--Sivashinsky
+attempts also fail a relaxed $5\%$ gate.}
+\label{tab:rejected}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+Allen--Cahn MLP has median $2.330\%$ and maximum $2.331\%$; both round to $2.33\%$.
+\end{minipage}
+\end{table}
+
+Table~\ref{tab:rejected} includes every attempted setting. A small training residual
+does not ensure an accurate field: one Kuramoto--Sivashinsky run has loss
+$4.4\times10^{-5}$ at $103.8\%$ non-feature error. The rejected settings therefore
+measure failure of this training-and-collocation protocol, consistent with known
+stiff-problem difficulties \citep{krishnapriyan2021failure,wang2022ntk}.
+
+\emph{Working likelihood, prior and centres.}
+Write $r(\theta)\in\mathbb R^N$ for the stacked training residuals
+$r_{\rm blk}=w_{\rm blk}e_{\rm blk}$. The fixed factors are $w=10$ on initial conditions,
+$w=10$ on Burgers Dirichlet boundaries or Allen--Cahn periodic value matching,
+and $w=1$ on collocation and periodic derivative matching. With common residual
+variance $v$, the working likelihood is $r(\vartheta)\sim\mathcal N(0,vI)$; hence
+the baseline negative log-likelihood is
+\begin{equation*}
+ -\log p=\tfrac12\|r(\vartheta)\|^2+\mathrm{const}
+ =\tfrac12\sum_{\rm blk}w_{\rm blk}^2\|e_{\rm blk}(\vartheta)\|^2+\mathrm{const}
+ \qquad(v=1).
+\end{equation*}
+The weights specify the likelihood as well as the training loss: the unweighted
+block noise standard deviations are $\sqrt v/w_{\rm blk}$.
+All analyses retain this raw weighted metric, with $J=\partial r/\partial\theta$
+and $F=J^\top J$. For $\alpha,v>0$, the isotropic prior is $\vartheta\sim\mathcal N(0,\alpha^{-1}I)$.
+The baseline uses $v=1$ and $\alpha_0=1/\langle\theta^2\rangle$ over the parameters
+carrying variance; this plug-in rule is not evidence maximisation.
+
+Freeze the affine residual $r(\theta)+J(\vartheta-\theta)$ and affine output
+$u_\theta(x)+g(x)^\top(\vartheta-\theta)$, where $g=\nabla_\theta u_\theta$.
+Conditioning on zero residual gives
+\[
+ \Sigma(\alpha,v)=v(F+\gamma I)^{-1},\qquad
+ \sigma^2(x)=g(x)^\top\Sigma g(x),\qquad \gamma=\alpha v,
+\]
+and the exact affine posterior mean
+\begin{equation}\label{eq:affine-mean}
+ \delta_\gamma=-(F+\gamma I)^{-1}[J^\top r(\theta)+\gamma\theta],
+ \qquad m_\gamma(x)=u_\theta(x)+g(x)^\top\delta_\gamma.
+\end{equation}
+The prior is absent during training, so $u_\theta$ need not equal $m_\gamma$ even
+at a stationary training solution. A $\theta$-centred (checkpoint-centred) prior
+$\vartheta\sim\mathcal N(\theta,\alpha^{-1}I)$ instead gives
+\[
+ \delta_{L,\gamma}=-(F+\gamma I)^{-1}J^\top r(\theta),\qquad
+ m^\theta_\gamma=u_\theta+g^\top\delta_{L,\gamma}.
+\]
+Its covariance is unchanged. This prior is conditional on the fitted checkpoint.
+We compare its affine mean at the stated scales and available trained-centre roots,
+and evaluate $\widetilde u^\theta_\gamma=u_{\theta+\delta_{L,\gamma}}$ as a nonlinear
+forward diagnostic. The covariance remains at $\theta$; this diagnostic is not a
+nonlinear posterior predictive mean. Prediction bounds are in
+Appendix~\ref{app:r3:centres}.
+At fixed $\gamma$, centres and uncertainty contrasts are unchanged by matched
+$(\alpha,v)$ choices, while widths scale as $\sqrt v$. No output-noise term is added
+when comparing latent uncertainty with the deterministic reference.
+
+Baseline variances use the Woodbury identity
+\begin{equation*}
+ \sigma^2(x)=\alpha^{-1}\left[\|g\|^2-(Jg)^\top
+ (JJ^\top+\alpha I)^{-1}Jg\right].
+\end{equation*}
+None of the $94$ baseline solves required added diagonal regularisation. Weak-precision
+calculations instead factor $J$ directly by QR/SVD to avoid cancellation
+(Appendix~\ref{app:n1}).
+
+\emph{Regional diagnostics.}
+For each predictive centre, write $e$ for prediction minus $u^\ast$ and
+$\langle\cdot\rangle_r$ for a regional mean.
+\begin{samepage}
+\begin{definition}[Contrast, target and gap]\label{def:metrics}
+\[
+ \Rrms=\sqrt{\frac{\langle\sigma^2\rangle_{\mathcal S}}
+                         {\langle\sigma^2\rangle_{\mathcal B}}},\qquad
+ \Rtar=\sqrt{\frac{\langle e^2\rangle_{\mathcal S}}
+                        {\langle e^2\rangle_{\mathcal B}}},\qquad
+ \ratiogap=\Rtar/\Rrms.
+\]
+The secondary mean-width contrast is
+$\achratio=\langle\sigma\rangle_{\mathcal S}/\langle\sigma\rangle_{\mathcal B}$.
+\end{definition}
+\end{samepage}
+Ratios assume positive denominators.
+At fixed scales, all centres share the contrast; the target, gap and coverage differ.
+The identity $\ratiogap=1$ matches regional RMS contrasts, not pointwise calibration
+or absolute width. We also report
+\begin{equation*}
+ \meanZ_r=\langle|e|/\sigma\rangle_r,
+ \qquad \mathrm{cov}@k_r=\langle\mathbf1\{|e|/\sigma\le z_k\}\rangle_r,
+\end{equation*}
+with $z_{68}=1$, $z_{95}=1.96$. Under a correctly specified centred Gaussian error
+model their expectations are $\sqrt{2/\pi}\approx0.8$ and approximately $0.68,0.95$.
+Throughout, sampled curves describe evaluated settings; refined roots locate the
+observed trained-centre crossings within retained numerical brackets. Direct root
+fields are compared with the coverage envelopes.
+A \emph{best tested evidence setting} maximises a finite search, and a
+\emph{consistency check} compares numerical representations. All spectral conclusions
+use the returned affine model; the checks do not certify weak-mode forward accuracy.

@@ -1,0 +1,20 @@
+% Derived only from frozen production/review archives; no new grid or checkpoint evaluation.
+\begin{table}[t]
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+
+
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+family & subset & trained $68\%$ & affine $68\%$ & trained $95\%$ & affine $95\%$ \\
+\midrule
+Burgers--MLP & full & $[0.3427,\,0.8605]$ & $[0.164,\,0.9815]$ & $[0.639,\,0.9742]$ & $[0.298,\,0.995]$ \\
+Burgers--MLP & post & $[0.1639,\,0.9959]$ & $[0.008972,\,0.3467]$ & $[0.4176,\,1]$ & $[0.01387,\,0.7121]$ \\
+Burgers--Fourier & full & $[0.1985,\,0.5978]$ & $[0.2828,\,0.4662]$ & $[0.4472,\,0.7588]$ & $[0.5145,\,0.742]$ \\
+Burgers--Fourier & post & $[0.01713,\,0.0938]$ & $[0.08972,\,0.3173]$ & $[0.03589,\,0.1819]$ & $[0.1998,\,0.5571]$ \\
+Allen--Cahn--MLP & full & $[0.0095,\,0.0655]$ & $[0.2015,\,0.2755]$ & $[0.0395,\,0.2722]$ & $[0.3588,\,0.3962]$ \\
+Allen--Cahn--Fourier & full & $[0.1477,\,0.2005]$ & $[0.0775,\,0.3827]$ & $[0.2407,\,0.4138]$ & $[0.1432,\,0.7338]$ \\
+\bottomrule
+\end{tabular}
+\caption{Across-run sharp-region coverage ranges for trained and zero-mean-prior affine centres at each run's closest saved contrast setting, chosen separately for each centre and subset. A closest sample need not have $\rho\approx1$, so these rows do not generally evaluate coverage after RMS-contrast matching. At each saved $\gamma$, a higher empirical bulk-$0.68$ quantile supplies the width multiplier; selection minimises $|\log\rho|$ and the lowest saved $\gamma$ breaks exact ties. These reference-error oracles use all $8$ Burgers--MLP or $3$ other admitted runs, including runs without a crossing. ``Post'' uses the unchanged global masks intersected with Burgers $t\ge1/\pi$. Bulk one-sigma coverage is about $0.68002$; neither nominal sharp coverage nor an exact root is enforced.}
+\label{tab:r2-oracle}
+\end{table}

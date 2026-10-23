@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "producers": [
+    {
+      "producer": "plot_shortened_records.py",
+      "exit_code": 0,
+      "elapsed_seconds": 23.641000000061467
+    },
+    {
+      "producer": "plot_shortened_coverage.py",
+      "exit_code": 0,
+      "elapsed_seconds": 9.233999999938533
+    },
+    {
+      "producer": "plot_shortened_slice.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.4540000000270084
+    },
+    {
+      "producer": "plot_merged_family_curves.py",
+      "exit_code": 0,
+      "elapsed_seconds": 5.795999999972992
+    }
+  ],
+  "current_figures": [
+    "burgers_error_uncertainty_slice.pdf",
+    "round2_allen_cahn_families_merged.pdf",
+    "round2_burgers_families_merged.pdf",
+    "round2_contrast_and_gap.pdf",
+    "round2_coverage_scale.pdf",
+    "round2_evidence_energy_reference.pdf"
+  ],
+  "slice_reconstruction": {
+    "file": "burgers_slice.csv",
+    "rows": 400,
+    "numeric_fields_compared": 2000,
+    "max_absolute_difference": 0.0,
+    "relative_tolerance": 2e-09,
+    "absolute_tolerance": 2e-12
+  },
+  "scope": "Six figures regenerated from released reviewed records and fields. Numerical producer inputs are checked by saved mode; cross-platform PDF byte identity is not claimed."
+}

@@ -1,0 +1,242 @@
+{
+  "allen_cahn_fourier_seed0": {
+    "alpha": 25.29191205111797,
+    "band_at_eps_alpha": [
+      0.16,
+      259.3
+    ],
+    "band_at_eps_alpha_full": [
+      0.16010362604703868,
+      259.2664996384867
+    ],
+    "band_at_eps_alpha_safe": [
+      0.16,
+      260.0
+    ],
+    "band_tightest": [
+      0.242,
+      47.9
+    ],
+    "band_tightest_full": [
+      0.24214325239099327,
+      47.92844804322775
+    ],
+    "band_tightest_safe": [
+      0.24,
+      48.0
+    ],
+    "cdf_accounting_contract": "legacy_cdf_stiff_complement/1",
+    "cdf_closure_diagnostics": {
+      "shock": {
+        "captured": 53.015602856556484,
+        "recorded_legacy_nullspace": 0.0015830580447300235,
+        "signed_closure_relative_to_total": 2.9859337447294442e-05,
+        "signed_closure_residual": 0.0015830580447300235,
+        "total_gg": 53.017185914601214
+      },
+      "smooth": {
+        "captured": 29.071213299027054,
+        "recorded_legacy_nullspace": 1.862786760398194e-07,
+        "signed_closure_relative_to_total": 6.40766771342295e-09,
+        "signed_closure_residual": 1.862786760398194e-07,
+        "total_gg": 29.07121348530573
+      }
+    },
+    "exact_regmean_inside_band": true,
+    "exact_regmean_ratio": 12.711912875044284,
+    "lambda_max": 10375144.828692699,
+    "measured": {
+      "bll_allfusion": 5.102,
+      "bll_last2fusion": 3.506,
+      "bll_lastlayer": 2.28,
+      "full_laplace_fullgrid": 7.27
+    },
+    "optimization": {
+      "algorithm": "exact spectral interval endpoints; both left-limit and closed-threshold states",
+      "lower_eps": 1530.354837522869,
+      "lower_side": "at",
+      "upper_eps": 689.0834130936101,
+      "upper_side": "at"
+    }
+  },
+  "allen_cahn_mlp_seed0": {
+    "alpha": 18.04405717135039,
+    "band_at_eps_alpha": [
+      0.056,
+      457.1
+    ],
+    "band_at_eps_alpha_full": [
+      0.05622665451723954,
+      457.11479798815725
+    ],
+    "band_at_eps_alpha_safe": [
+      0.05,
+      458.0
+    ],
+    "band_tightest": [
+      0.534,
+      124.0
+    ],
+    "band_tightest_full": [
+      0.5335986774527405,
+      124.02855013119404
+    ],
+    "band_tightest_safe": [
+      0.53,
+      125.0
+    ],
+    "cdf_accounting_contract": "legacy_cdf_stiff_complement/1",
+    "cdf_closure_diagnostics": {
+      "shock": {
+        "captured": 140.89002084992882,
+        "recorded_legacy_nullspace": -1.4070842951241502e-05,
+        "signed_closure_relative_to_total": -9.987112125918514e-08,
+        "signed_closure_residual": -1.4070842951241502e-05,
+        "total_gg": 140.89000677908587
+      },
+      "smooth": {
+        "captured": 49.53626921686118,
+        "recorded_legacy_nullspace": 2.541942905054384e-07,
+        "signed_closure_relative_to_total": 5.131478272782868e-09,
+        "signed_closure_residual": 2.541942905054384e-07,
+        "total_gg": 49.53626947105547
+      }
+    },
+    "exact_regmean_inside_band": true,
+    "exact_regmean_ratio": 13.405771710561694,
+    "lambda_max": 19458228.358340215,
+    "measured": {
+      "bll_allfusion": 7.816,
+      "bll_last2fusion": 4.693,
+      "bll_lastlayer": 2.283,
+      "full_laplace_fullgrid": 8.8
+    },
+    "optimization": {
+      "algorithm": "exact spectral interval endpoints; both left-limit and closed-threshold states",
+      "lower_eps": 1856.0064938199084,
+      "lower_side": "at",
+      "upper_eps": 1624.875569447437,
+      "upper_side": "at"
+    }
+  },
+  "burgers_fourier_seed2": {
+    "alpha": 25.35135918183645,
+    "band_at_eps_alpha": [
+      0.042,
+      320.2
+    ],
+    "band_at_eps_alpha_full": [
+      0.042318980271808214,
+      320.15244555191265
+    ],
+    "band_at_eps_alpha_safe": [
+      0.04,
+      321.0
+    ],
+    "band_tightest": [
+      0.081,
+      54.4
+    ],
+    "band_tightest_full": [
+      0.08061287209217877,
+      54.42153786022133
+    ],
+    "band_tightest_safe": [
+      0.08,
+      55.0
+    ],
+    "cdf_accounting_contract": "legacy_cdf_stiff_complement/1",
+    "cdf_closure_diagnostics": {
+      "shock": {
+        "captured": 62.04478810535282,
+        "recorded_legacy_nullspace": 0.010342027566579759,
+        "signed_closure_relative_to_total": 0.00016665870403345515,
+        "signed_closure_residual": 0.010342027566579759,
+        "total_gg": 62.0551301329194
+      },
+      "smooth": {
+        "captured": 51.3834589564416,
+        "recorded_legacy_nullspace": 2.1982409577958606e-05,
+        "signed_closure_relative_to_total": 4.27810829011735e-07,
+        "signed_closure_residual": 2.1982409577958606e-05,
+        "total_gg": 51.38348093885118
+      }
+    },
+    "exact_regmean_inside_band": true,
+    "exact_regmean_ratio": 7.512226573674527,
+    "lambda_max": 19240800.80674621,
+    "measured": {
+      "bll_allfusion": 1.932,
+      "bll_last2fusion": 1.485,
+      "bll_lastlayer": 0.797,
+      "full_laplace_fullgrid": 2.72
+    },
+    "optimization": {
+      "algorithm": "exact spectral interval endpoints; both left-limit and closed-threshold states",
+      "lower_eps": 7196.434253002852,
+      "lower_side": "at",
+      "upper_eps": 54619.133953476034,
+      "upper_side": "at"
+    }
+  },
+  "burgers_mlp_seed2": {
+    "alpha": 17.652641714178376,
+    "band_at_eps_alpha": [
+      0.026,
+      647.5
+    ],
+    "band_at_eps_alpha_full": [
+      0.026484311340268348,
+      647.5465876933922
+    ],
+    "band_at_eps_alpha_safe": [
+      0.02,
+      648.0
+    ],
+    "band_tightest": [
+      0.106,
+      77.8
+    ],
+    "band_tightest_full": [
+      0.10587740990480873,
+      77.78145032570609
+    ],
+    "band_tightest_safe": [
+      0.1,
+      78.0
+    ],
+    "cdf_accounting_contract": "legacy_cdf_stiff_complement/1",
+    "cdf_closure_diagnostics": {
+      "shock": {
+        "captured": 67.5600059132376,
+        "recorded_legacy_nullspace": 0.0006407509953305635,
+        "signed_closure_relative_to_total": 9.484086179858628e-06,
+        "signed_closure_residual": 0.0006407509953305635,
+        "total_gg": 67.56064666423293
+      },
+      "smooth": {
+        "captured": 49.88701080505854,
+        "recorded_legacy_nullspace": 1.0391801197329187e-08,
+        "signed_closure_relative_to_total": 2.0830675214781114e-10,
+        "signed_closure_residual": 1.0391801197329187e-08,
+        "total_gg": 49.88701081545034
+      }
+    },
+    "exact_regmean_inside_band": true,
+    "exact_regmean_ratio": 7.564979381623343,
+    "lambda_max": 18889569.394274563,
+    "measured": {
+      "bll_allfusion": 3.312,
+      "bll_last2fusion": 2.362,
+      "bll_lastlayer": 1.502,
+      "full_laplace_fullgrid": 4.07
+    },
+    "optimization": {
+      "algorithm": "exact spectral interval endpoints; both left-limit and closed-threshold states",
+      "lower_eps": 5242.037463654432,
+      "lower_side": "at",
+      "upper_eps": 12168.947962754877,
+      "upper_side": "at"
+    }
+  }
+}

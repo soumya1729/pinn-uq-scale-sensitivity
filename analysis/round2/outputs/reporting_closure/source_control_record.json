@@ -1,0 +1,114 @@
+{
+  "source": "C:\\dev\\pinn-uq-jmlr-ready\\calibration_figures\\ceiling_table.json",
+  "source_sha256": "93aafcb1ce1d749310a7b3368542d399881c5e0ada1f2e2e812c679edc75c1a9",
+  "record": {
+    "R_rms": {
+      "mean": 1.2050129360551718,
+      "sd": 0.1002146869339395,
+      "min": 1.0856125973546382,
+      "max": 1.330835299520196,
+      "per_run": [
+        1.330835299520196,
+        1.1985909112906812,
+        1.0856125973546382
+      ]
+    },
+    "R_mean_width": {
+      "mean": 1.230396971183555,
+      "sd": 0.10253175594174418,
+      "min": 1.1077894778109514,
+      "max": 1.358743192402136,
+      "per_run": [
+        1.358743192402136,
+        1.224658243337578,
+        1.1077894778109514
+      ]
+    },
+    "R_tar": {
+      "mean": 0.9187339942831727,
+      "sd": 0.09739479990570127,
+      "min": 0.7816187930489509,
+      "max": 0.9986135543544382,
+      "per_run": [
+        0.9986135543544382,
+        0.7816187930489509,
+        0.975969635446129
+      ]
+    },
+    "ratio_gap": {
+      "mean": 0.7671614437764845,
+      "sd": 0.10148922316637467,
+      "min": 0.6521147337979384,
+      "max": 0.8990036020439692,
+      "per_run": [
+        0.7503659954875459,
+        0.6521147337979384,
+        0.8990036020439692
+      ]
+    },
+    "mean_width_gap": {
+      "mean": 0.7513981632535023,
+      "sd": 0.09979110329639172,
+      "min": 0.6382342153830561,
+      "max": 0.881006414120032,
+      "per_run": [
+        0.7349538602574185,
+        0.6382342153830561,
+        0.881006414120032
+      ]
+    },
+    "admitted": 3,
+    "attempted": 4,
+    "attempted_architecture": "mlp",
+    "control_suite_attempted": 5,
+    "separate_fourier_attempt": {
+      "admitted": 0,
+      "attempted": 1
+    },
+    "seeds": [
+      "admitted pulse-width/diffusivity settings, seed 0"
+    ],
+    "R_mean_width_crosscheck_fullgrid_ratio": [
+      1.36,
+      1.22,
+      1.11
+    ],
+    "historical_mean_width_comparison": {
+      "role": "historical regression diagnostic, not current-field validation",
+      "changed_at_print_precision": false,
+      "review_approval_recorded_here": false,
+      "per_setting": [
+        {
+          "setting": "mlp_d09_n06",
+          "legacy_record": "results/cd_sweep/mlp_d09_n06/convection_diffusion_mlp_seed0_fullgrid_ratio.json",
+          "new_mean_width_contrast": 1.358743192402136,
+          "legacy_mean_width_contrast": 1.36,
+          "signed_delta": -0.0012568075978640625,
+          "absolute_delta": 0.0012568075978640625,
+          "relative_delta_vs_legacy": -0.0009241232337235753,
+          "same_at_2_decimal_places": true
+        },
+        {
+          "setting": "mlp_d11_n08",
+          "legacy_record": "results/cd_sweep/mlp_d11_n08/convection_diffusion_mlp_seed0_fullgrid_ratio.json",
+          "new_mean_width_contrast": 1.224658243337578,
+          "legacy_mean_width_contrast": 1.22,
+          "signed_delta": 0.004658243337577916,
+          "absolute_delta": 0.004658243337577916,
+          "relative_delta_vs_legacy": 0.003818232243916325,
+          "same_at_2_decimal_places": true
+        },
+        {
+          "setting": "mlp_d13_n10",
+          "legacy_record": "results/cd_sweep/mlp_d13_n10/convection_diffusion_mlp_seed0_fullgrid_ratio.json",
+          "new_mean_width_contrast": 1.1077894778109514,
+          "legacy_mean_width_contrast": 1.11,
+          "signed_delta": -0.0022105221890487137,
+          "absolute_delta": 0.0022105221890487137,
+          "relative_delta_vs_legacy": -0.0019914614315754177,
+          "same_at_2_decimal_places": true
+        }
+      ]
+    }
+  }
+}

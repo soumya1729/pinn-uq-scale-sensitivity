@@ -1,0 +1,91 @@
+{
+  "job_id": "471423",
+  "date": "2026-10-14",
+  "source": "author-pasted submission and queue output",
+  "study": "pinn_theta_followup",
+  "pilot_job_id": "471403",
+  "cohort_size": 17,
+  "remaining_new_checkpoints": 16,
+  "requested_retention": "all",
+  "reported_tasks": {
+    "471423_0": {
+      "state": "RUNNING",
+      "node": "gnode1",
+      "elapsed": "00:00:08"
+    },
+    "471423_1": {
+      "state": "PENDING",
+      "reason": "Resources"
+    },
+    "471423_2": {
+      "state": "PENDING",
+      "reason": "Resources"
+    }
+  },
+  "test_only_job_id": "471422",
+  "test_only_start_estimate": "2026-10-15T21:51:00",
+  "numerical_status": "PASS",
+  "reported_completion": {
+    "date": "2026-10-16",
+    "source": "author-pasted completion summary",
+    "completed": 17,
+    "pass": 17,
+    "tags": [
+      "allen_cahn_mlp_seed3",
+      "burgers_mlp_seed2",
+      "allen_cahn_mlp_seed0",
+      "burgers_mlp_seed4",
+      "burgers_fourier_seed6",
+      "allen_cahn_fourier_seed1",
+      "burgers_mlp_seed1",
+      "burgers_mlp_seed5",
+      "burgers_mlp_seed3",
+      "burgers_fourier_seed0",
+      "allen_cahn_mlp_seed1",
+      "burgers_mlp_seed7",
+      "burgers_mlp_seed6",
+      "burgers_fourier_seed2",
+      "allen_cahn_fourier_seed0",
+      "burgers_mlp_seed0",
+      "allen_cahn_fourier_seed3"
+    ],
+    "final_slurm_accounting": "verified COMPLETED exit 0:0 for pilot and all three array tasks",
+    "local_download": "complete and verified 2026-10-16",
+    "scientific_interpretation": "review completed 2026-10-16; see outputs/review/RESULTS.md; manuscript unchanged"
+  },
+  "latest_report": {
+    "date": "2026-10-15",
+    "source": "author-pasted queue and log tail",
+    "tasks": {
+      "471423_0": {
+        "state": "RUNNING",
+        "node": "gnode1",
+        "elapsed": "12:26:58"
+      },
+      "471423_1": {
+        "state": "PENDING",
+        "reason": "Resources"
+      },
+      "471423_2": {
+        "state": "PENDING",
+        "reason": "Resources"
+      }
+    },
+    "reported_checkpoint_completed": {
+      "tag": "allen_cahn_fourier_seed0",
+      "analysis_hours": 3.61,
+      "numerical_status": "PASS",
+      "archive_verification": "PASS"
+    },
+    "current_checkpoint": {
+      "tag": "allen_cahn_mlp_seed0",
+      "group": 0,
+      "position_in_group": "last",
+      "reported_start": "2026-10-15T09:46:34+05:30",
+      "early_checks": "PASS",
+      "stage": "grid evaluation",
+      "grid_progress": "10200/80000"
+    },
+    "completed_cohort_count": "not verified from this log tail"
+  }
+}

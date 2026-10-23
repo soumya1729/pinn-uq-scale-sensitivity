@@ -1,0 +1,52 @@
+# Saved-archive third-round results
+
+Reviewed all 17 admitted checkpoints; no Jacobian or network pass.
+
+## Centre decomposition and prediction bounds
+
+- Across all saved precisions, total displacement / parameter norm: [0.9889322418283703, 31.170462612361955].
+- Zero-mean baseline displacement / parameter norm: [0.9977752582748762, 0.9995764389573768].
+- QR-complement / parameter norm: [0.9766745802681731, 0.9850866937498811].
+- Likelihood displacement / parameter norm: [8.733499897645804e-06, 0.00015412623904661956].
+- Baseline covariance-metric bound c: [0.0074892404641358715, 0.09077405506702785]; MLE c: [75.42843676643415, 79.9096395087034].
+- Theta-centred baseline deficit bounded in 16/17; unresolved: [{'tag': 'burgers_mlp_seed4', 'rho_lower': 0.48778321894267185}].
+- Prior-only worsening bounded in 14/14 baseline worsening cases.
+- Sharp baseline 1-sigma coverage lower bound: 0.792500; bulk: 0.997196.
+
+## Numerically refined trained-centre roots
+
+Positive-modal envelopes include the final root interval and uncertainty in the higher bulk-68% calibration quantile.
+
+| Seed | Precision | Sharp 1-sigma coverage | Sharp 1.96-sigma coverage |
+|---|---:|---:|---:|
+| 0 | 0.021055146 | 0.32300--0.33300 | 0.78150--0.78475 |
+| 4 | 0.73626974 | 0.41975--0.43375 | 0.84525--0.86200 |
+| 5 | 2.0476385e-05 | 0.29775--0.31500 | 0.67550--0.67925 |
+| 6 | 0.0016354097 | 0.52250--0.52600 | 0.84650--0.84775 |
+| 7 | 3.0590419e-05 | 0.55400--0.56300 | 0.82125--0.82675 |
+
+These bound coverage at the five observed trained-centre crossings; they neither compute exact fields nor prove uniqueness or global optimality.
+
+## Oracle distributions at the nearest saved settings
+
+Five crossing seeds, sharp median |e|/sigma: [0.7248933294981561, 1.2725796264805103]; bulk: [0.6551236243483993, 0.700483144098874].
+Sharp 99th percentile: [3.600083733979274, 8.697160503038205]; bulk: [3.0486826875454955, 4.6609999643570905].
+Sharp top-1% error-energy share: [0.15256582102038466, 0.23837377117348382]; sharp rank association: [0.6934818174676135, 0.9358188459261777].
+These are descriptive statistics, not evidence that a particular tail or bias mechanism causes the coverage gap.
+rho^2 equals the ratio of regional sigma^2-weighted second moments of e/sigma; it does not determine unweighted coverage quantiles.
+
+## Strong precision and common threshold
+
+At gamma = 1000 lambda_max, maximum contrast-limit relative error: 0.000193101; first-order squared-contrast error: 3.42636e-07.
+Original nonsharp 2% gate retains 13: burgers_mlp_seed0, burgers_mlp_seed1, burgers_mlp_seed2, burgers_mlp_seed3, burgers_mlp_seed4, burgers_mlp_seed5, burgers_mlp_seed6, burgers_mlp_seed7, burgers_fourier_seed0, burgers_fourier_seed2, burgers_fourier_seed6, allen_cahn_mlp_seed3, allen_cahn_fourier_seed1.
+Baseline affine worsening: all17 14/17, common13 10/13.
+Theta-centred baseline deficit bounds: common13 12/13.
+Full per-run baseline/MLE records and all aggregate coverage ranges are in common_threshold.csv and summary.json.
+
+## Verification and limits
+
+401 saved total displacement norms reproduced; max relative defect 4.44e-16.
+Regional field/modal variance maximum relative defect 6.73e-14; stored intermediate envelope maximum relative violation 0.
+The positive-modal toy checks 49 interior precisions, including an exact null mode: {'seed': 3103, 'points': 80, 'modes_including_null': 5, 'interior_precisions': 49, 'minimum_relative_margin': 0.0004121929958794052, 'bulk_calibrated_coverage_envelopes_checked': True}.
+Theta-centred MLE/evidence fields, nonlinear shifted predictions, new likelihoods and exact pointwise root fields remain unperformed.
+Bounds concern the returned floating-point affine model and have ordinary tolerance checks, not interval-arithmetic certification of the original Jacobian.

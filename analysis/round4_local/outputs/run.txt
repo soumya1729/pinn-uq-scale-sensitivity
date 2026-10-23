@@ -1,0 +1,463 @@
+burgers_mlp_seed0: saved-field summaries complete
+burgers_mlp_seed1: saved-field summaries complete
+burgers_mlp_seed2: saved-field summaries complete
+burgers_mlp_seed3: saved-field summaries complete
+burgers_mlp_seed4: saved-field summaries complete
+burgers_mlp_seed5: saved-field summaries complete
+burgers_mlp_seed6: saved-field summaries complete
+burgers_mlp_seed7: saved-field summaries complete
+burgers_fourier_seed0: saved-field summaries complete
+burgers_fourier_seed2: saved-field summaries complete
+burgers_fourier_seed6: saved-field summaries complete
+allen_cahn_mlp_seed0: saved-field summaries complete
+allen_cahn_mlp_seed1: saved-field summaries complete
+allen_cahn_mlp_seed3: saved-field summaries complete
+allen_cahn_fourier_seed0: saved-field summaries complete
+allen_cahn_fourier_seed1: saved-field summaries complete
+allen_cahn_fourier_seed3: saved-field summaries complete
+{
+  "cohort_runs": 17,
+  "numpy_version": "2.3.5",
+  "checked_previous_nearest_rows": 84,
+  "checked_previous_band_rows": 84,
+  "maximum_previous_coverage_count_difference": 1,
+  "family_sharp_calibrated_summaries": [
+    {
+      "family": "allen_cahn_fourier",
+      "subset": "full",
+      "runs": 3,
+      "coverage95_below_nominal_count": 0,
+      "rho_range": [
+        0.943204621914177,
+        1.0626753639095097
+      ],
+      "coverage68_range": [
+        0.68025,
+        0.68025
+      ],
+      "coverage95_range": [
+        0.98325,
+        0.9995
+      ],
+      "mean_Z_range": [
+        0.7124667656462047,
+        0.814911586572368
+      ],
+      "signed_standardized_mean_range": [
+        -0.36262759054844196,
+        0.27284848041718485
+      ],
+      "median_Z_range": [
+        0.5331563395946748,
+        0.8404159722098425
+      ],
+      "q99_Z_range": [
+        1.6845319976032347,
+        2.014748209038142
+      ]
+    },
+    {
+      "family": "allen_cahn_mlp",
+      "subset": "full",
+      "runs": 3,
+      "coverage95_below_nominal_count": 1,
+      "rho_range": [
+        2.9579594132396645,
+        4.54165916921808
+      ],
+      "coverage68_range": [
+        0.68025,
+        0.68025
+      ],
+      "coverage95_range": [
+        0.921,
+        0.959
+      ],
+      "mean_Z_range": [
+        0.7770784081296854,
+        0.8603884042019906
+      ],
+      "signed_standardized_mean_range": [
+        -0.2992495678816995,
+        0.32370816841623673
+      ],
+      "median_Z_range": [
+        0.6572883467077701,
+        0.7686503208564888
+      ],
+      "q99_Z_range": [
+        2.300406319858427,
+        2.8258505576313717
+      ]
+    },
+    {
+      "family": "burgers_fourier",
+      "subset": "full",
+      "runs": 3,
+      "coverage95_below_nominal_count": 3,
+      "rho_range": [
+        1.2897433577289734,
+        3.6911013166347044
+      ],
+      "coverage68_range": [
+        0.68025,
+        0.68025
+      ],
+      "coverage95_range": [
+        0.82475,
+        0.85075
+      ],
+      "mean_Z_range": [
+        1.0792236500932175,
+        1.3448416901634646
+      ],
+      "signed_standardized_mean_range": [
+        0.9851759238492056,
+        1.3233529078666129
+      ],
+      "median_Z_range": [
+        0.6055851333557711,
+        0.6868873585497057
+      ],
+      "q99_Z_range": [
+        4.898926795002369,
+        10.910989664238555
+      ]
+    },
+    {
+      "family": "burgers_fourier",
+      "subset": "post_formation",
+      "runs": 3,
+      "coverage95_below_nominal_count": 2,
+      "rho_range": [
+        1.3432078835098331,
+        3.83134337821372
+      ],
+      "coverage68_range": [
+        0.6810766721044046,
+        0.6810766721044046
+      ],
+      "coverage95_range": [
+        0.8646003262642741,
+        1.0
+      ],
+      "mean_Z_range": [
+        0.8285195399151895,
+        0.8752657229937456
+      ],
+      "signed_standardized_mean_range": [
+        0.7548036637306396,
+        0.8657813192134408
+      ],
+      "median_Z_range": [
+        0.507093351590415,
+        0.7134848207388043
+      ],
+      "q99_Z_range": [
+        1.7176083190810743,
+        3.604122382978817
+      ]
+    },
+    {
+      "family": "burgers_mlp",
+      "subset": "full",
+      "runs": 8,
+      "coverage95_below_nominal_count": 7,
+      "rho_range": [
+        0.9543763996909198,
+        2.587439301121248
+      ],
+      "coverage68_range": [
+        0.68025,
+        0.68025
+      ],
+      "coverage95_range": [
+        0.8345,
+        0.95775
+      ],
+      "mean_Z_range": [
+        0.7717899842363938,
+        1.3643817134858345
+      ],
+      "signed_standardized_mean_range": [
+        -1.0371115579302297,
+        1.2089574375973
+      ],
+      "median_Z_range": [
+        0.4248707140602779,
+        0.8043708302148405
+      ],
+      "q99_Z_range": [
+        2.5850026918751876,
+        8.195638458538717
+      ]
+    },
+    {
+      "family": "burgers_mlp",
+      "subset": "post_formation",
+      "runs": 8,
+      "coverage95_below_nominal_count": 2,
+      "rho_range": [
+        0.9292744962089364,
+        2.676178364833261
+      ],
+      "coverage68_range": [
+        0.6810766721044046,
+        0.6810766721044046
+      ],
+      "coverage95_range": [
+        0.9445350734094616,
+        1.0
+      ],
+      "mean_Z_range": [
+        0.6186831203274513,
+        0.9857462516140243
+      ],
+      "signed_standardized_mean_range": [
+        -0.8715431732951838,
+        0.8226659595672751
+      ],
+      "median_Z_range": [
+        0.3215097014046169,
+        0.8991468394514648
+      ],
+      "q99_Z_range": [
+        1.417661130950153,
+        4.845871755303415
+      ]
+    }
+  ],
+  "sampled_band_summaries": [
+    {
+      "tag": "allen_cahn_fourier_seed0",
+      "subset": "full",
+      "saved_gamma_count": 3,
+      "rho_range": [
+        0.9583205910480835,
+        1.0779539958205708
+      ],
+      "coverage68_range": [
+        0.18275,
+        0.23825
+      ],
+      "coverage95_range": [
+        0.39575,
+        0.4485
+      ]
+    },
+    {
+      "tag": "allen_cahn_fourier_seed1",
+      "subset": "full",
+      "saved_gamma_count": 2,
+      "rho_range": [
+        0.943204621914177,
+        1.0767422537788727
+      ],
+      "coverage68_range": [
+        0.11225,
+        0.14775
+      ],
+      "coverage95_range": [
+        0.21125,
+        0.24075
+      ]
+    },
+    {
+      "tag": "allen_cahn_fourier_seed3",
+      "subset": "full",
+      "saved_gamma_count": 2,
+      "rho_range": [
+        0.9262267845207505,
+        1.0626753639095097
+      ],
+      "coverage68_range": [
+        0.17325,
+        0.19475
+      ],
+      "coverage95_range": [
+        0.36125,
+        0.426
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed0",
+      "subset": "full",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        0.9543763996909198,
+        0.9543763996909198
+      ],
+      "coverage68_range": [
+        0.34275,
+        0.34275
+      ],
+      "coverage95_range": [
+        0.7885,
+        0.7885
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed0",
+      "subset": "post_formation",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        0.936490252326624,
+        0.936490252326624
+      ],
+      "coverage68_range": [
+        0.3172920065252855,
+        0.3172920065252855
+      ],
+      "coverage95_range": [
+        0.8947797716150081,
+        0.8947797716150081
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "subset": "full",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        0.9548553798590897,
+        0.9548553798590897
+      ],
+      "coverage68_range": [
+        0.437,
+        0.437
+      ],
+      "coverage95_range": [
+        0.86375,
+        0.86375
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "subset": "post_formation",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        0.9292744962089364,
+        0.9292744962089364
+      ],
+      "coverage68_range": [
+        0.47797716150081565,
+        0.47797716150081565
+      ],
+      "coverage95_range": [
+        0.8915171288743883,
+        0.8915171288743883
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "subset": "full",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        0.9733108901931664,
+        0.9733108901931664
+      ],
+      "coverage68_range": [
+        0.35925,
+        0.35925
+      ],
+      "coverage95_range": [
+        0.69175,
+        0.69175
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "subset": "post_formation",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        1.0016997503245892,
+        1.0016997503245892
+      ],
+      "coverage68_range": [
+        0.29853181076672103,
+        0.29853181076672103
+      ],
+      "coverage95_range": [
+        0.7226753670473083,
+        0.7226753670473083
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "subset": "full",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        1.0323280412659526,
+        1.0323280412659526
+      ],
+      "coverage68_range": [
+        0.5165,
+        0.5165
+      ],
+      "coverage95_range": [
+        0.8435,
+        0.8435
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "subset": "post_formation",
+      "saved_gamma_count": 1,
+      "rho_range": [
+        1.0507664734379933,
+        1.0507664734379933
+      ],
+      "coverage68_range": [
+        0.1639477977161501,
+        0.1639477977161501
+      ],
+      "coverage95_range": [
+        0.899673735725938,
+        0.899673735725938
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "subset": "full",
+      "saved_gamma_count": 7,
+      "rho_range": [
+        0.9063538045023544,
+        1.0636988783150565
+      ],
+      "coverage68_range": [
+        0.44725,
+        0.986
+      ],
+      "coverage95_range": [
+        0.78375,
+        1.0
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "subset": "post_formation",
+      "saved_gamma_count": 6,
+      "rho_range": [
+        0.9682375688389344,
+        1.028959750518109
+      ],
+      "coverage68_range": [
+        0.7748776508972267,
+        1.0
+      ],
+      "coverage95_range": [
+        0.9967373572593801,
+        1.0
+      ]
+    }
+  ],
+  "conventions": {
+    "centre": "trained prediction only",
+    "nearest": "min abs(log rho), tie lowest saved gamma",
+    "regions": "full-grid p70/p95 reference-gradient thresholds, retained for the post-formation subset",
+    "post_formation": "Burgers t >= 1/pi",
+    "calibration": "higher empirical .68 quantile of abs(e)/unit-sigma",
+    "coverage95": "abs(e) <= 1.96 times calibrated sigma",
+    "band": "all saved gamma samples with .9 <= rho <= 1.1; no continuous-band claim",
+    "scope": "reference-informed descriptive diagnostics; sharp68 coverage is fixed by construction, up to ties/discreteness"
+  }
+}

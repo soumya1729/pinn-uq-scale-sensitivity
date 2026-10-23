@@ -1,0 +1,16 @@
+                   JobID      State    Elapsed     MaxRSS ExitCode 
+------------------------ ---------- ---------- ---------- -------- 
+                469955_0  COMPLETED   02:20:15                 0:0 
+          469955_0.batch  COMPLETED   02:20:15  17795372K      0:0 
+                470013_0  COMPLETED   14:06:57                 0:0 
+          470013_0.batch  COMPLETED   14:06:57  17795144K      0:0 
+                470013_1  COMPLETED   11:10:35                 0:0 
+          470013_1.batch  COMPLETED   11:10:35  17730136K      0:0 
+                470013_2  COMPLETED   10:08:29                 0:0 
+          470013_2.batch  COMPLETED   10:08:29  17793816K      0:0 
+                470288_0  COMPLETED   00:01:16                 0:0 
+          470288_0.batch  COMPLETED   00:01:16    123684K      0:0 
+                470288_1  COMPLETED   00:00:12                 0:0 
+          470288_1.batch  COMPLETED   00:00:12                 0:0 
+                470288_2 CANCELLED+   00:06:22                 0:0 
+          470288_2.batch  CANCELLED   00:06:22  16651940K     0:15 

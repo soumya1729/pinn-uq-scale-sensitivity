@@ -1,0 +1,57 @@
+{
+  "burgers_mlp_seed0": [
+    {
+      "setting": "trained_centre_refined_root",
+      "name": "trained_centre_refined_root",
+      "gamma": 0.02105514633346756,
+      "lower": 0.021055146333462046,
+      "upper": 0.021055146333473072,
+      "saved_bracket_low": 0.018215042035356364,
+      "saved_bracket_high": 0.0576010205074354
+    }
+  ],
+  "burgers_mlp_seed4": [
+    {
+      "setting": "trained_centre_refined_root",
+      "name": "trained_centre_refined_root",
+      "gamma": 0.7362697403921155,
+      "lower": 0.7362697403919227,
+      "upper": 0.7362697403923082,
+      "saved_bracket_low": 0.5697667069305609,
+      "saved_bracket_high": 1.801760528834217
+    }
+  ],
+  "burgers_mlp_seed5": [
+    {
+      "setting": "trained_centre_refined_root",
+      "name": "trained_centre_refined_root",
+      "gamma": 2.047638475502056e-05,
+      "lower": 2.04763847550152e-05,
+      "upper": 2.047638475502592e-05,
+      "saved_bracket_low": 1.7334452926186198e-05,
+      "saved_bracket_high": 5.481635323971901e-05
+    }
+  ],
+  "burgers_mlp_seed6": [
+    {
+      "setting": "trained_centre_refined_root",
+      "name": "trained_centre_refined_root",
+      "gamma": 0.0016354097305255593,
+      "lower": 0.0016354097305251313,
+      "upper": 0.0016354097305259876,
+      "saved_bracket_low": 0.0005619119229932127,
+      "saved_bracket_high": 0.0017769215210636912
+    }
+  ],
+  "burgers_mlp_seed7": [
+    {
+      "setting": "trained_centre_refined_root",
+      "name": "trained_centre_refined_root",
+      "gamma": 3.059041865349411e-05,
+      "lower": 3.059041865348611e-05,
+      "upper": 3.059041865350212e-05,
+      "saved_bracket_low": 1.78416162733608e-05,
+      "saved_bracket_high": 5.642014456254548e-05
+    }
+  ]
+}

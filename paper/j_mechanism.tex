@@ -1,0 +1,60 @@
+\emph{Measured spectrum and loadings.}
+The canonical Gram eigensolves return positive eigenvalues spanning $19.6$--$21.2$
+decades, but values below $\varepsilon_{64}\lambda_{\max}$ are not individually
+resolved. Their inverse lifts $J^\top w_i/\sqrt{\lambda_i}$ are unstable near that
+scale. We instead resolve the separated strong subspace and compute
+\begin{equation*}
+ \|\Pisl g\|^2=\|g\|^2-\|\Pist g\|^2.
+\end{equation*}
+This includes Fisher-null directions without division by small eigenvalues.
+Orthonormality, cutoff separation, eigenpair error and independent variance checks
+are recorded in Appendix~\ref{app:spectralchecks}.
+
+\input{generated/loading_table_values.tex}
+\input{generated/rms_bounds_macros.tex}
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+
+
+\begin{tabular}{@{}lrrrrl@{}}
+\toprule
+ & returned & below & $Q_{\mathcal S,\rm sl}/$ & $M_{\mathcal S,\rm sl}/$ & RMS bracket\\
+configuration & decades & roundoff & $Q_{\mathcal B,\rm sl}$ & $M_{\mathcal B,\rm sl}$ & \\
+\midrule
+Burgers--MLP, seed $2$ & $21.2$ & $82\%$ & $\LoadingBMLPPerPoint$ & $\LoadingBMLPMeanTangent$ & $[\RMSBoundBurgersMLPLower,\RMSBoundBurgersMLPUpper]$\\
+Burgers--Fourier, seed $2$ & $19.9$ & $13\%$ & $\LoadingBFourierPerPoint$ & $\LoadingBFourierMeanTangent$ & $[\RMSBoundBurgersFourierLower,\RMSBoundBurgersFourierUpper]$\\
+Allen--Cahn--MLP, seed $0$ & $20.4$ & $66\%$ & $\LoadingACMLPPerPoint$ & $\LoadingACMLPMeanTangent$ & $[\RMSBoundAllenCahnMLPLower,\RMSBoundAllenCahnMLPUpper]$\\
+Allen--Cahn--Fourier, seed $0$ & $19.6$ & $26\%$ & $\LoadingACFourierPerPoint$ & $\LoadingACFourierMeanTangent$ & $[\RMSBoundAllenCahnFourierLower,\RMSBoundAllenCahnFourierUpper]$\\
+\bottomrule
+\end{tabular}
+\caption{Canonical spectrum and baseline sub-$\alpha$ loadings. Returned decades include
+unresolved positive eigenvalues; the next column is the fraction below
+$\varepsilon_{64}\lambda_{\max}$. Primary loading uses
+$Q_{r,\rm sl}=\langle\|\Pisl g\|^2\rangle_r$; the supporting mean-tangent loading
+uses $M_{r,\rm sl}=\|\Pisl\langle g\rangle_r\|^2$. The final column gives
+\eqref{eq:regional-rms-sandwich} at $\epsilon=\alpha$, in contrast units, rounded
+outward from recorded energies. Only Burgers--MLP has replicated baseline loadings.}
+\label{tab:spectrum}\label{tab:loading}
+\end{table}
+
+Sharp-to-bulk tangent-energy ratios are close to one on Burgers: bulk/transition/sharp
+means are $134/136/141$ for MLP and $114/119/120$ for Fourier. The canonical strong-
+precision RMS limits are $1.02,1.03,1.46,1.09$, whereas baseline configuration-mean
+contrasts are $3.92$--$7.30$; covariance weighting supplies the amplification.
+At $\epsilon=\alpha$, the sharp field loads the weak subspace
+$\LoadingCanonicalPerPointMin$--$\LoadingCanonicalPerPointMax$ times more strongly
+than bulk (Table~\ref{tab:loading}). All $11$ evaluated baseline brackets contain their measured RMS
+contrasts but are too wide to establish a deficit relative to the error target.
+For eight Burgers--MLP seeds, primary loading ratios span
+$\LoadingSeedPerPointMin$--$\LoadingSeedPerPointMax$; supporting mean-tangent ratios
+span $\LoadingSeedMeanTangentMin$--$\LoadingSeedMeanTangentMax$.
+
+The full-grid study extends this geometry to all $17$ runs. Among the full-time sampled
+curves, $13/17$ have both increasing and decreasing segments, and $12/17$ leave the
+interval formed by the tangent and QR-complement ratios. The saved fields reach
+$\gamma/\lambda_{\max}=6.28\times10^{-5}$--$2.96\times10^{-4}$. Evaluation of
+their regional modal sums at $10^3\lambda_{\max}$ confirms approach to the
+tangent-norm limit, within $1.94\times10^{-4}$ relative across all full and
+Burgers post-formation curves. Small positive singular values are retained without
+exact-null classification. The measured curves, conditional limits and coarse
+brackets answer distinct questions (Appendix~\ref{app:r2:modal}).

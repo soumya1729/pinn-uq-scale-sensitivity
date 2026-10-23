@@ -1,0 +1,11 @@
+Completed Burgers-MLP runs: 8
+Crossings are sampled intervals of the unit-noise curve (rho = 1: equal RMS contrasts).
+burgers_mlp_seed0: R_tar=28.2  rho(operating)=4.66  rho(noise-MLE)=0.20  min rho=0.06 at alpha*v=6.6e-09  crossing: [0.018215, 0.057601]
+burgers_mlp_seed1: R_tar=176.0  rho(operating)=28.83  rho(noise-MLE)=1.91  min rho=1.84 at alpha*v=5.6e-06  crossing: no sampled crossing
+burgers_mlp_seed2: R_tar=118.6  rho(operating)=18.33  rho(noise-MLE)=2.59  min rho=2.59 at alpha*v=1.8e-04  crossing: no sampled crossing
+burgers_mlp_seed3: R_tar=200.8  rho(operating)=32.10  rho(noise-MLE)=2.04  min rho=1.99 at alpha*v=5.5e-06  crossing: no sampled crossing
+burgers_mlp_seed4: R_tar=10.0  rho(operating)=1.58  rho(noise-MLE)=0.06  min rho=0.02 at alpha*v=5.0e-09  crossing: [0.569767, 1.80176]
+burgers_mlp_seed5: R_tar=209.0  rho(operating)=28.82  rho(noise-MLE)=1.70  min rho=0.77 at alpha*v=1.1e-08  crossing: [1.73345e-05, 5.48164e-05]
+burgers_mlp_seed6: R_tar=63.7  rho(operating)=9.74  rho(noise-MLE)=0.37  min rho=0.13 at alpha*v=7.0e-09  crossing: [0.000561912, 0.00177692]
+burgers_mlp_seed7: R_tar=238.2  rho(operating)=39.69  rho(noise-MLE)=1.30  min rho=0.91 at alpha*v=1.0e-08  crossing: [1.78416e-05, 5.64201e-05]
+Saved C:\dev\myshortened\pinn_uq\analysis\n1\outputs_cpu\n1_rho_vs_effective_precision.pdf and .png

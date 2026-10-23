@@ -1,0 +1,131 @@
+{
+  "schema": "loading_perpoint/3",
+  "tag": "burgers_mlp_seed6",
+  "scope": "full",
+  "sigma_metric": "raw",
+  "P_bayes": 196009,
+  "alpha": 17.76921521063691,
+  "eps": 17.76921521063691,
+  "eps_mult": 1.0,
+  "lam_max": 20464328.747862518,
+  "n_gram_modes": 6400,
+  "n_gram_modes_sloppy": 6158,
+  "n_stiff_modes": 242,
+  "want_resolved": false,
+  "floor_rel": 1e-12,
+  "config": {
+    "pde": "burgers",
+    "arch": "mlp",
+    "seed": 6,
+    "fourier_scale": 2.0,
+    "eval_nx": 400,
+    "eval_nt": 200
+  },
+  "dtypes": {
+    "J": "float64",
+    "G": "float64"
+  },
+  "hashes": {
+    "producer": "5cdf648ff8ee6dcd934148efd3f2d0f08f481f93",
+    "map_pkl": "89072ae5f544f5818be740b5246df6c06a54a1a1",
+    "sigma_raw": "26d515e8d100deb1a7d3d1a99c7cf9bfee6f1e29",
+    "loading_cdf": null,
+    "fourier_B": null,
+    "fourier_B_path": null,
+    "gram": "b4a377dfbd43f514ca35b112da661e4706e2053a"
+  },
+  "validation_tolerances": {
+    "backward_factor_N_eps": 100.0,
+    "backward_tolerance": 1.4210854715202004e-10,
+    "raw_inverse_lift_orthogonality_inf_tolerance": 1.4901161193847656e-08,
+    "orthogonality_dimension_roundoff_scale": 4.352274096675046e-09,
+    "orthogonality_application_cap": 5e-11,
+    "orthogonality_inf_tolerance": 5e-11,
+    "cutoff_min_safety": 10.0,
+    "psd_factor_dimension_eps_normG": 10.0,
+    "psd_tolerance_abs": 0.008906636791516452,
+    "negative_complement_rel": 1e-10,
+    "woodbury_sample_rel": 0.001,
+    "cdf_leg_rel": 0.001
+  },
+  "numerics": {
+    "stiff_inverse_lift_orthonormality_max_dev_raw": 1.062753785798995e-11,
+    "stiff_inverse_lift_orthonormality_inf_norm_raw": 1.7285822279065436e-10,
+    "stiff_inverse_lift_condition_number_upper_bound": 1.0000000001728582,
+    "stiff_basis_correction": "implicit_cholesky_qr",
+    "stiff_projector_orthonormality_max_dev": 2.220446049250313e-16,
+    "stiff_projector_orthonormality_inf_norm": 2.220446049618428e-16,
+    "eigenpair_backward_error": 4.490224830975611e-16,
+    "eigenpair_backward_error_N_eps_mach": 0.00031597148243111737,
+    "eigenpair_max_per_mode_residual": 1.26614540184282e-10,
+    "eigenpair_residual_near_alpha": 1.26614540184282e-10,
+    "gram_min_eigenvalue_raw": -6.970623693337572e-09,
+    "gram_negative_eigenvalue_abs": 6.970623693337572e-09,
+    "gram_negative_eigenvalue_rel_lam_max": 3.406231291151266e-16,
+    "gram_negative_eigenvalue_rel_alpha": 3.9228652535902965e-10,
+    "worst_negative_complement_rel": 0.0,
+    "separation_around_alpha": {
+      "lam_just_below_eps": 17.275502585942654,
+      "lam_just_above_eps": 17.834098561957564,
+      "margin_below": 0.4937126246942576,
+      "margin_above": 0.0648833513206526,
+      "relative_margin_below": 0.02778471749268443,
+      "relative_margin_above": 0.0036514472108938427,
+      "boundary_residual_below": 1.5131211409126145e-09,
+      "boundary_residual_above": 8.720812421499343e-10,
+      "roundoff_scale_N_eps_normG": 2.9081560268000598e-05,
+      "classification_safety_below": 16976.8272453217,
+      "classification_safety_above": 2231.0821951340035
+    },
+    "woodbury_sample": {
+      "n_sampled": 255,
+      "max_rel_err": 7.874605273712332e-11,
+      "median_rel_err": 1.7131580004743057e-12,
+      "woodbury_min_sigma2_rel": 0.0
+    }
+  },
+  "sharp": {
+    "n": 4000,
+    "Q_sl": 0.2806445003238711,
+    "Q_st": 118.57494476856206,
+    "Q_tot": 118.85558926888596,
+    "M_sl": 0.03693845320868405,
+    "M_st": 50.67014836140226,
+    "M_sl_negative_rel": 0.0,
+    "kappa": 0.13162008578844805,
+    "sigma2_stored_mean": 0.023528000698188386
+  },
+  "bulk": {
+    "n": 56000,
+    "Q_sl": 0.0010972229008973276,
+    "Q_st": 132.60720373807226,
+    "Q_tot": 132.60830096097314,
+    "M_sl": 7.373850247205382e-05,
+    "M_st": 45.67946876742681,
+    "M_sl_negative_rel": 0.0,
+    "kappa": 0.06720466954503886,
+    "sigma2_stored_mean": 0.0005503244401669618
+  },
+  "ratio_perpoint_sl": 255.77710790975587,
+  "ratio_mean_tangent_sl": 500.93847814014623,
+  "ratio_perpoint_sl_resolved": null,
+  "ratio_mean_tangent_sl_resolved": null,
+  "sensitivity": {
+    "computed": false,
+    "note": "run separately with WANT_RESOLVED=1; writes its own file"
+  },
+  "sandwich": {
+    "sharp": {
+      "lower": 0.00790272430469732,
+      "sigma2_stored": 0.023528000698188386,
+      "upper": 3.3523212014983397,
+      "inside": true
+    },
+    "bulk": {
+      "lower": 3.735417841844752e-05,
+      "sigma2_stored": 0.0005503244401669618,
+      "upper": 3.7314365494456987,
+      "inside": true
+    }
+  }
+}

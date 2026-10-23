@@ -1,0 +1,8 @@
+{
+  "source": "C:\\dev\\myshortened\\pinn_uq",
+  "shift_rows": 204,
+  "loading_rows": 51,
+  "baseline_runs": 17,
+  "control_settings": 3,
+  "scope": "Existing full-time archives only; no new checkpoint evaluation, Jacobian, scale search or exact-root field."
+}

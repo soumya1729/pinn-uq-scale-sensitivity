@@ -1,0 +1,122 @@
+{
+ "burgers_mlp": {
+  "tag": "burgers_mlp_seed2",
+  "t_index": 101,
+  "t": 0.507537688442211,
+  "n_members": 8,
+  "shared_ylim": [
+   -1.770474090879314,
+   1.770474090879314
+  ],
+  "symlog_linthresh": 0.0007462190000695271,
+  "sigma_ratio": {
+   "bll": 1.5022035186357383,
+   "full_laplace": 4.067705024834763,
+   "ensemble": 167.00868212857603
+  },
+  "fullgrid_2sigma_by_region": {
+   "bll": {
+    "smooth": 0.03053781690076412,
+    "shock": 0.045874015999781775
+   },
+   "full_laplace": {
+    "smooth": 0.04556564791635676,
+    "shock": 0.18534761498921604
+   },
+   "ensemble": {
+    "smooth": 0.0006815514486189823,
+    "shock": 0.11382500923667814
+   }
+  }
+ },
+ "burgers_fourier": {
+  "tag": "burgers_fourier_seed2",
+  "t_index": 101,
+  "t": 0.507537688442211,
+  "n_members": 3,
+  "shared_ylim": [
+   -1.6704558635425113,
+   1.6704558635425113
+  ],
+  "symlog_linthresh": 0.007483871987375334,
+  "sigma_ratio": {
+   "bll": 0.7967022347338211,
+   "full_laplace": 2.7203403855541715,
+   "ensemble": 10.571592222298937
+  },
+  "fullgrid_2sigma_by_region": {
+   "bll": {
+    "smooth": 0.02703970848392272,
+    "shock": 0.02154259617569229
+   },
+   "full_laplace": {
+    "smooth": 0.07726358281588848,
+    "shock": 0.2101832446666707
+   },
+   "ensemble": {
+    "smooth": 0.0061208624594103625,
+    "shock": 0.06470726196966413
+   }
+  }
+ },
+ "allen_cahn_mlp": {
+  "tag": "allen_cahn_mlp_seed0",
+  "t_index": 199,
+  "t": 1.0,
+  "n_members": 3,
+  "shared_ylim": [
+   -3.8769167679816037,
+   3.8769167679816037
+  ],
+  "symlog_linthresh": 0.0020934494538855904,
+  "sigma_ratio": {
+   "bll": 2.2825370817570887,
+   "full_laplace": 8.798129343544671,
+   "ensemble": 32.01520034999316
+  },
+  "fullgrid_2sigma_by_region": {
+   "bll": {
+    "smooth": 0.0313796997774459,
+    "shock": 0.07162532835642493
+   },
+   "full_laplace": {
+    "smooth": 0.09395644720863987,
+    "shock": 0.8266409752015402
+   },
+   "ensemble": {
+    "smooth": 0.0033973405197761457,
+    "shock": 0.1087665373977832
+   }
+  }
+ },
+ "allen_cahn_fourier": {
+  "tag": "allen_cahn_fourier_seed0",
+  "t_index": 199,
+  "t": 1.0,
+  "n_members": 3,
+  "shared_ylim": [
+   -3.3435281732604163,
+   3.3435281732604163
+  ],
+  "symlog_linthresh": 0.001797444815698541,
+  "sigma_ratio": {
+   "bll": 2.280119218915614,
+   "full_laplace": 7.272502918267675,
+   "ensemble": 61.654379010178374
+  },
+  "fullgrid_2sigma_by_region": {
+   "bll": {
+    "smooth": 0.03131304317412744,
+    "shock": 0.07139747154406235
+   },
+   "full_laplace": {
+    "smooth": 0.09350780540073221,
+    "shock": 0.6800357876576308
+   },
+   "ensemble": {
+    "smooth": 0.0025439352087262084,
+    "shock": 0.1568447455361429
+   }
+  }
+ }
+}

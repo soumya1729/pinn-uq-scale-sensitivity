@@ -1,0 +1,109 @@
+\section{Introduction}\label{sec:intro}
+
+Physics-informed neural networks (PINNs) approximate PDE solutions by minimising
+residuals of the governing equations, initial and boundary conditions, and available
+observations \citep{raissi2019pinns}. Automatic differentiation supplies the required
+derivatives. The resulting field is continuous, but training does not ensure accuracy:
+imbalanced loss gradients, differential-operator conditioning and sampling can impede
+convergence \citep{wang2021understanding,rathore2024challenges,daw2023r3}.
+For thin layers or interfaces, the remaining error can be concentrated in a small
+region. Domain-averaged accuracy and coverage can conceal that concentration.
+
+Scientific-machine-learning uncertainty methods target observation noise, limited
+information about model parameters, or error in an approximate numerical solution
+\citep{psaros2023uq}. These sources need not have the same spatial pattern.
+Bayesian PINNs combine physical constraints with noisy observations in a probabilistic
+model, propagating parameter uncertainty to predictions of the solution
+\citep{yang2021bpinns}. Deep ensembles combine independently trained predictors, so
+variation between fitted solutions contributes to their predictive uncertainty
+\citep{lakshminarayanan2017ensembles}.
+
+Local Gaussian methods provide a less costly alternative to posterior sampling by
+approximating parameter uncertainty using curvature around a trained network
+\citep{daxberger2021laplace}. Local linearisation then propagates that parameter
+covariance through the output tangents to obtain predictive variances
+\citep{immer2021linearized}. Marginal-likelihood methods use the training data to
+select hyperparameters such as the prior precision \citep{immer2021evidence}.
+The linearisation point need not optimise the resulting affine model, however, and
+this distinction affects evidence-based selection \citep{antoran2022evidence}.
+For PINNs, HypoPINN uses a diagonal-Fisher approximation to quantify predictive
+uncertainty in hypocentre localisation \citep{izzatullah2022hypopinn}.
+Full-Hessian Laplace inference also permits evidence-based selection of prior strength
+and the relative weights of PDE, boundary and observation terms
+\citep{graczyk2026bayesian}.
+
+Error-bound and calibration methods connect uncertainty to different accuracy
+criteria. PDE stability estimates can relate PINN solution error to training
+residuals under stated assumptions \citep{mishra2023generalization}.
+Available solution-error bounds can specify spatially varying likelihood widths
+in a second Bayesian fitting stage \citep{flores2025errorbounds}.
+Physics-informed conformal prediction uses PDE residuals as nonconformity scores to
+calibrate coverage in residual space without labelled solutions
+\citep{gopakumar2025calibrated}.
+Conformal calibration of PINN predictions instead uses labelled solution values in
+a calibration set, with local quantile estimation allowing spatially adaptive bands
+\citep{yu2026conformal}.
+These approaches motivate separating uncertainty from numerical accuracy: a
+covariance derived from a training likelihood still needs to be checked against
+the error in the computed solution, particularly where that error is concentrated.
+
+We examine whether curvature-based uncertainty identifies numerical errors near sharp
+layers in solutions of the Burgers and Allen--Cahn equations. We study uncertainty in
+the solution around a fixed trained network, without additional output noise.
+For output tangent $g(x)=\nabla_\theta u_\theta(x)$ and the
+training-weighted residual Gauss--Newton matrix $F$, the unit-noise baseline is
+\begin{equation*}
+ \sigma^2(x)=g(x)^\top\Sigma g(x),\qquad \Sigma=(\alpha I+F)^{-1}.
+\end{equation*}
+The covariance uses every network parameter. We compare its sharp-to-bulk contrast
+with each predictive centre's error contrast: the trained output, affine posterior
+means under zero-mean and $\theta$-centred priors, and a nonlinear shifted-network
+diagnostic. Reference solutions are used for evaluation, not covariance construction.
+
+Under this training-weighted homoscedastic likelihood, the $17$ admitted Burgers and
+Allen--Cahn runs show a scale-sensitive baseline mismatch
+(Table~\ref{tab:ceiling}). Figure~\ref{fig:burgers-slice} illustrates the regional mismatch
+in one run. The baseline deficit persists under the $\theta$-centred prior in all
+$17$ runs. At weaker precision its affine mean can improve accuracy without calibrating
+both regions, and the improvement need not transfer to the shifted nonlinear network.
+A reference-informed oracle matches regional RMS contrasts and calibrates bulk widths,
+yet sharp intervals under-cover at all five observed trained-centre crossings.
+Readout refits test feature expressivity; spectral analysis explains covariance weighting.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.94\textwidth]{figures/burgers_error_uncertainty_slice.pdf}
+\caption{Burgers--MLP seed $2$: absolute error and full-network baseline standard
+deviation at $t=0.503$, the stored slice nearest $t=0.5$, after breaking time $1/\pi$.
+The logarithmic scale is shared without rescaling; shading marks the global sharp
+region of Definition~\ref{def:regions}. Error is more concentrated near the layer.
+Here $|e|>\sigma$ near its centre; this is seed-specific, with post-formation calibration
+varying across seeds (Table~\ref{tab:temporal}). Full-grid contrasts are in
+Table~\ref{tab:ceiling}.}
+\label{fig:burgers-slice}
+\end{figure}
+
+\begin{samepage}
+\emph{Contributions.}
+\begin{itemize}
+\item \emph{Scale sensitivity and regional coverage (Section~\ref{sec:ceiling}).}
+The tested scales and centres do not reliably calibrate both regions. The baseline
+deficit survives the alternative prior centre, and direct root fields confirm that
+matching regional RMS contrasts is insufficient after bulk calibration.
+\item \emph{Reference feature expressivity (Section~\ref{sec:offmanifold}).}
+Using reference values to refit the regional readout leaves below $4\%$ of the trained
+sharp-region error energy on held-out time blocks in $16/17$ runs. This tests feature
+expressivity independently of residual-only coefficient selection.
+\item \emph{Spectral weighting (Section~\ref{sec:theory}).}
+The modal quotient explains scale dependence; two-subspace bounds constrain contrast
+but are too wide to certify the measured baseline deficit. Lean verifies the spectral
+bounds and conditional limits, prior-centre bounds and coverage envelopes; reported
+run counts remain numerical.
+\end{itemize}
+\end{samepage}
+
+\emph{Empirical scope.}
+All eight attempted Burgers--MLP seeds are admitted. Each other nonlinear family has
+three admitted runs selected by the error criterion in Section~\ref{sec:setting} and
+is exploratory. Attempted counts and rejected settings remain explicit. The results
+concern the specified raw residual metric and reference-based partition.

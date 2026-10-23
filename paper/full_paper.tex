@@ -1,0 +1,93 @@
+\documentclass[twoside,11pt]{article}
+
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\usepackage[abbrvbib]{jmlr2e}
+\usepackage{times}
+\hypersetup{hidelinks,
+  pdftitle={Scale Sensitivity of Regional Uncertainty in Physics-Informed Neural Networks:
+    A Full-Network Gauss--Newton Study},
+  pdfauthor={Soumyadip Mal and Nagaiah Chamakuri}}
+% Packages jmlr2e does not provide.
+\usepackage{amsmath, mathtools}
+\usepackage{booktabs, multirow, array}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{placeins}
+
+\let\pinnorigunderscore\_
+\renewcommand{\_}{\pinnorigunderscore\allowbreak}
+\emergencystretch=1.5em
+
+\newcommand{\Rrms}{R_{\sigma}^{\mathrm{rms}}}
+\newcommand{\achratio}{\widehat{R}_{\sigma}}
+
+\newcommand{\rmratio}{\widetilde{R}_{\sigma}}
+\newcommand{\ratiogap}{\rho}
+\newcommand{\meanwidthgap}{\rho_{\mathrm{mw}}}
+\newcommand{\meanZ}{\overline{Z}}
+\newcommand{\Rtar}{R_{\mathrm{tar}}}
+\newcommand{\sh}{\mathrm{s}}
+\newcommand{\bk}{\mathrm{b}}
+\newcommand{\Pisl}{\Pi_{\mathrm{sl}}}
+\newcommand{\Pist}{\Pi_{\mathrm{st}}}
+\DeclareMathOperator{\spn}{span}
+
+\jmlrheading{}{2026}{1-\pageref{LastPage}}{}{}{}{Soumyadip Mal and Nagaiah Chamakuri}
+
+% Running head: must be 50 characters or fewer.
+\ShortHeadings{Scale Sensitivity of Regional PINN Uncertainty}{Mal and Chamakuri}
+\firstpageno{1}
+
+
+\begin{document}
+
+\title{Scale Sensitivity of Regional Uncertainty in Physics-Informed Neural Networks:
+       A Full-Network Gauss--Newton Study}
+
+\author{\name Soumyadip Mal \email soumya24@iisertvm.ac.in \\
+        \name Nagaiah Chamakuri\thanks{Corresponding author.} \email nagaiah.chamakuri@iisertvm.ac.in \\
+        \addr School of Mathematics\\
+        Indian Institute of Science Education and Research Thiruvananthapuram\\
+        Vithura, Trivandrum, Keralam 695551, India}
+
+\editor{}
+
+\maketitle
+\setcounter{bottomnumber}{2}
+\raggedbottom
+
+\input{j_abstract}
+\input{j_intro}
+\input{j_setting}
+\input{j_ceiling}
+\input{j_offmanifold}
+\input{j_theory}
+\par\input{j_mechanism}\par
+\input{j_robustness}
+\input{j_discussion}
+
+\begin{samepage}
+\acks{%.
+Computations were performed on the Padmanabha high-performance computing facility at
+the Indian Institute of Science Education and Research Thiruvananthapuram.
+\emph{Funding in direct support of this work:} None.
+\emph{Additional revenues related to this work:} None.
+The authors declare no competing financial interests.}
+\end{samepage}
+
+\appendix
+\raggedbottom
+\input{j_appendix}
+
+
+\section{Extended Empirical Records}\label{oa:empirical}
+\input{oa_empirical}
+\section{Computation and Numerical Validation}\label{oa:numerics}
+\input{oa_numerics}
+\section{Formal Development}\label{oa:lean}
+\input{oa_lean}
+
+\FloatBarrier
+\bibliography{references}
+
+\end{document}

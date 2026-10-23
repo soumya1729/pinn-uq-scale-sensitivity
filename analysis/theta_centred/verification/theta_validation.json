@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "dense_matrix_checks": {
+    "theta_shift": 4.6629367034256575e-15,
+    "zero_shift": 1.2878587085651816e-14,
+    "prior_shift": 9.325873406851315e-15,
+    "complement_shift": 4.440892098500626e-16,
+    "variance": 1.3926637620897964e-12,
+    "evidence": 1.509903313490213e-14,
+    "gradient_norm": 7.105427357601002e-15
+  },
+  "nonlinear_checks": {
+    "grid_checks": {
+      "max_prediction_absolute_defect": 5.551115123125783e-17,
+      "max_gradient_norm_relative_defect": 1.1263191808026643e-15,
+      "affine_jvp_absolute_defect": 1.1102230246251565e-15,
+      "affine_jvp_scaled_defect": 7.240778817291835e-16,
+      "affine_jvp_samples": 11
+    },
+    "normal_checks": [
+      {
+        "gamma": 0.05,
+        "residual_norm": 2.597186369366252e-15,
+        "denominator": 8.820583049729048,
+        "normwise_backward_error": 2.944461102768068e-16,
+        "delta_norm": 1.1511033584329267,
+        "rhs_norm": 3.5765502650175898,
+        "interpretation": "Consistency check; not a weak-mode forward-error certificate."
+      },
+      {
+        "gamma": 2.0,
+        "residual_norm": 9.992007221626409e-16,
+        "denominator": 7.744872249979695,
+        "normwise_backward_error": 1.2901448725190535e-16,
+        "delta_norm": 0.6407226185720949,
+        "rhs_norm": 3.5765502650175898,
+        "interpretation": "Consistency check; not a weak-mode forward-error certificate."
+      }
+    ],
+    "rows": 48,
+    "nonlinear_remainder_is_nonzero": true
+  },
+  "versions": {
+    "jax": "0.10.1",
+    "numpy": "2.4.6"
+  }
+}

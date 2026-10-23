@@ -1,0 +1,69 @@
+burgers_mlp_seed0 bulk: same-grid=0.083747; random=0.08459; time_blocks10=0.285
+burgers_mlp_seed0 transition: same-grid=0.046418; random=0.054067; time_blocks10=779.89
+burgers_mlp_seed0 sharp: same-grid=0.002435; random=0.0028809; time_blocks10=0.011463
+burgers_mlp_seed0: 6.3 seconds
+burgers_mlp_seed1 bulk: same-grid=0.012341; random=0.012528; time_blocks10=0.13333
+burgers_mlp_seed1 transition: same-grid=0.0099782; random=0.012865; time_blocks10=210.47
+burgers_mlp_seed1 sharp: same-grid=7.3226e-05; random=8.4711e-05; time_blocks10=0.0010883
+burgers_mlp_seed1: 6.0 seconds
+burgers_mlp_seed2 bulk: same-grid=0.00216; random=0.002206; time_blocks10=0.0080797
+burgers_mlp_seed2 transition: same-grid=0.0010918; random=0.0012886; time_blocks10=72.935
+burgers_mlp_seed2 sharp: same-grid=0.00012139; random=0.00014632; time_blocks10=0.00045547
+burgers_mlp_seed2: 5.9 seconds
+burgers_mlp_seed3 bulk: same-grid=0.006664; random=0.0067621; time_blocks10=0.03301
+burgers_mlp_seed3 transition: same-grid=0.0046328; random=0.0090532; time_blocks10=2927.3
+burgers_mlp_seed3 sharp: same-grid=3.0549e-05; random=3.5746e-05; time_blocks10=0.00020242
+burgers_mlp_seed3: 5.9 seconds
+burgers_mlp_seed4 bulk: same-grid=0.10879; random=0.11005; time_blocks10=0.71213
+burgers_mlp_seed4 transition: same-grid=0.04882; random=0.059474; time_blocks10=873.07
+burgers_mlp_seed4 sharp: same-grid=0.011616; random=0.013182; time_blocks10=0.14204
+burgers_mlp_seed4: 6.2 seconds
+burgers_mlp_seed5 bulk: same-grid=0.054877; random=0.05563; time_blocks10=0.66293
+burgers_mlp_seed5 transition: same-grid=0.025777; random=0.030947; time_blocks10=43.649
+burgers_mlp_seed5 sharp: same-grid=0.00020192; random=0.00022913; time_blocks10=0.0014499
+burgers_mlp_seed5: 6.1 seconds
+burgers_mlp_seed6 bulk: same-grid=0.18538; random=0.18818; time_blocks10=0.89949
+burgers_mlp_seed6 transition: same-grid=0.086163; random=0.098625; time_blocks10=7869.9
+burgers_mlp_seed6 sharp: same-grid=0.00057915; random=0.00068066; time_blocks10=0.00166
+burgers_mlp_seed6: 5.8 seconds
+burgers_mlp_seed7 bulk: same-grid=0.046883; random=0.047568; time_blocks10=0.10765
+burgers_mlp_seed7 transition: same-grid=0.013907; random=0.022118; time_blocks10=370.8
+burgers_mlp_seed7 sharp: same-grid=8.8771e-05; random=9.949e-05; time_blocks10=0.00052164
+burgers_mlp_seed7: 5.4 seconds
+burgers_fourier_seed0 bulk: same-grid=0.30163; random=0.30388; time_blocks10=0.3547
+burgers_fourier_seed0 transition: same-grid=0.091107; random=0.093726; time_blocks10=0.21773
+burgers_fourier_seed0 sharp: same-grid=0.00055599; random=0.00063454; time_blocks10=0.0023146
+burgers_fourier_seed0: 5.8 seconds
+burgers_fourier_seed2 bulk: same-grid=0.071202; random=0.072044; time_blocks10=0.095026
+burgers_fourier_seed2 transition: same-grid=0.056776; random=0.05851; time_blocks10=0.23663
+burgers_fourier_seed2 sharp: same-grid=0.0014921; random=0.0016267; time_blocks10=0.006697
+burgers_fourier_seed2: 5.6 seconds
+burgers_fourier_seed6 bulk: same-grid=0.19503; random=0.19793; time_blocks10=0.26757
+burgers_fourier_seed6 transition: same-grid=0.051396; random=0.053775; time_blocks10=0.54453
+burgers_fourier_seed6 sharp: same-grid=0.0034798; random=0.0039123; time_blocks10=0.036645
+burgers_fourier_seed6: 5.8 seconds
+allen_cahn_mlp_seed0 bulk: same-grid=0.23047; random=0.23462; time_blocks10=0.80697
+allen_cahn_mlp_seed0 transition: same-grid=0.030096; random=0.030917; time_blocks10=3.545
+allen_cahn_mlp_seed0 sharp: same-grid=0.0008673; random=0.0013916; time_blocks10=0.032406
+allen_cahn_mlp_seed0: 5.6 seconds
+allen_cahn_mlp_seed1 bulk: same-grid=0.12509; random=0.12736; time_blocks10=0.36653
+allen_cahn_mlp_seed1 transition: same-grid=0.018508; random=0.018927; time_blocks10=0.39885
+allen_cahn_mlp_seed1 sharp: same-grid=0.00076508; random=0.001487; time_blocks10=0.023667
+allen_cahn_mlp_seed1: 5.0 seconds
+allen_cahn_mlp_seed3 bulk: same-grid=0.095314; random=0.097479; time_blocks10=0.56731
+allen_cahn_mlp_seed3 transition: same-grid=0.02624; random=0.026951; time_blocks10=6.4633
+allen_cahn_mlp_seed3 sharp: same-grid=0.00023671; random=0.00030867; time_blocks10=0.0081024
+allen_cahn_mlp_seed3: 5.2 seconds
+allen_cahn_fourier_seed0 bulk: same-grid=0.051115; random=0.053272; time_blocks10=0.08357
+allen_cahn_fourier_seed0 transition: same-grid=0.017263; random=0.017892; time_blocks10=0.090423
+allen_cahn_fourier_seed0 sharp: same-grid=0.00074388; random=0.00084122; time_blocks10=0.0098746
+allen_cahn_fourier_seed0: 5.2 seconds
+allen_cahn_fourier_seed1 bulk: same-grid=0.063939; random=0.065693; time_blocks10=0.10224
+allen_cahn_fourier_seed1 transition: same-grid=0.020382; random=0.021038; time_blocks10=0.11611
+allen_cahn_fourier_seed1 sharp: same-grid=0.00036038; random=0.00041964; time_blocks10=0.0072383
+allen_cahn_fourier_seed1: 5.6 seconds
+allen_cahn_fourier_seed3 bulk: same-grid=0.063572; random=0.06554; time_blocks10=0.13885
+allen_cahn_fourier_seed3 transition: same-grid=0.013342; random=0.013979; time_blocks10=0.045484
+allen_cahn_fourier_seed3 sharp: same-grid=0.00095685; random=0.0012113; time_blocks10=0.020966
+allen_cahn_fourier_seed3: 5.5 seconds
+Saved 17 runs to C:\dev\shortened_astra\github_release_audit_20261023\reproduced_saved\n5\n5_all17.csv; total 97.5 seconds

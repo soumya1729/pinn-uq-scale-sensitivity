@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using these reproduction sources."
+type: software
+title: "Scale Sensitivity of Regional PINN Uncertainty: Reproduction Sources"
+version: 1.0.0
+authors:
+  - family-names: Mal
+    given-names: Soumyadip
+  - family-names: Chamakuri
+    given-names: Nagaiah
+license: MIT

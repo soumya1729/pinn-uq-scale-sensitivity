@@ -1,0 +1,122 @@
+[
+  {
+    "relative_path": "burgers_mlp_seed0/burgers_mlp_seed0_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed0\\burgers_mlp_seed0_loading_perpoint.json",
+    "sha256": "5952570791376f21a749f1e8d912cf22225e55c29f2c72129bb39217ca4d41b6",
+    "bytes": 4477
+  },
+  {
+    "relative_path": "burgers_mlp_seed1/burgers_mlp_seed1_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed1\\burgers_mlp_seed1_loading_perpoint.json",
+    "sha256": "c5e41f05da33d3f6911f216fe4b6fb62e321e78509e70b11e93f8dd68750201b",
+    "bytes": 4474
+  },
+  {
+    "relative_path": "burgers_mlp_seed2/burgers_mlp_seed2_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed2\\burgers_mlp_seed2_loading_perpoint.json",
+    "sha256": "618c19c302b82fa04818a2df0ee59853b3c2a09026f6bac7776618135d86a64e",
+    "bytes": 5114
+  },
+  {
+    "relative_path": "burgers_mlp_seed3/burgers_mlp_seed3_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed3\\burgers_mlp_seed3_loading_perpoint.json",
+    "sha256": "c01f865769cfc7fa5e8bd584be574fcf6dfbb3f84f314d0afd037fdde795c217",
+    "bytes": 4473
+  },
+  {
+    "relative_path": "burgers_mlp_seed4/burgers_mlp_seed4_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed4\\burgers_mlp_seed4_loading_perpoint.json",
+    "sha256": "1cd75f447933d120cff96f2f44a4e80748bd4bce5840092fb705a51439d26325",
+    "bytes": 4480
+  },
+  {
+    "relative_path": "burgers_mlp_seed5/burgers_mlp_seed5_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed5\\burgers_mlp_seed5_loading_perpoint.json",
+    "sha256": "d104b89ea2dc136be2d79d865a5cfcea9b609d14d24858109f4282e666636941",
+    "bytes": 4481
+  },
+  {
+    "relative_path": "burgers_mlp_seed6/burgers_mlp_seed6_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed6\\burgers_mlp_seed6_loading_perpoint.json",
+    "sha256": "8a7a1cc6e7227a742cfb61f43ffb783b74199494d3728871a2c7e0d7bcb555b0",
+    "bytes": 4478
+  },
+  {
+    "relative_path": "burgers_mlp_seed7/burgers_mlp_seed7_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed7\\burgers_mlp_seed7_loading_perpoint.json",
+    "sha256": "1c792fc2610d8f98f1638cad31a8cc2245bea318387bef4f7dba52ed3104cc16",
+    "bytes": 4487
+  },
+  {
+    "relative_path": "burgers_fourier_seed2/burgers_fourier_seed2_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_fourier_seed2\\burgers_fourier_seed2_loading_perpoint.json",
+    "sha256": "8ee0fc87c83ab0c330777db2bbbc899114b7884c576012a989ce1cc1073e864e",
+    "bytes": 5266
+  },
+  {
+    "relative_path": "allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_mlp_seed0\\allen_cahn_mlp_seed0_loading_perpoint.json",
+    "sha256": "d12d459cae7ede6673fae403de99b13b00539e4a073a1869fe82bccfcd429da6",
+    "bytes": 5114
+  },
+  {
+    "relative_path": "allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_loading_perpoint.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_fourier_seed0\\allen_cahn_fourier_seed0_loading_perpoint.json",
+    "sha256": "ba356ede3ab1d6da107ec1573cc5870d6c2e46bc3ae206996a5f49ce2da5038e",
+    "bytes": 5259
+  },
+  {
+    "relative_path": "burgers_mlp_seed2/burgers_mlp_seed2_spectral_loading.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed2\\burgers_mlp_seed2_spectral_loading.json",
+    "sha256": "2181b4bbfdc20b39408f2b9d407a735544b4b8e172f1d2375449e18e2389deb5",
+    "bytes": 1687
+  },
+  {
+    "relative_path": "allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_spectral_loading.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_fourier_seed0\\allen_cahn_fourier_seed0_spectral_loading.json",
+    "sha256": "a5eae7ecc4b7ced0b5340f953908b312c92e530cdd8369b5eeb00d8b055fcc8f",
+    "bytes": 1692
+  },
+  {
+    "relative_path": "allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_spectral_loading.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_mlp_seed0\\allen_cahn_mlp_seed0_spectral_loading.json",
+    "sha256": "426b4ce0b1f3a5ae5ba3383ef48df9d245812547f0a0fb4ccb0b1c3a8e033ff2",
+    "bytes": 1635
+  },
+  {
+    "relative_path": "_alpha/burgers_mlp_seed0_M0.1.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\_alpha\\burgers_mlp_seed0_M0.1.json",
+    "sha256": "41ebf71e0501c9981ab75acd1200cb7ab1ca51d4b2ebf3f27109952cdef78229",
+    "bytes": 396
+  },
+  {
+    "relative_path": "_alpha/burgers_mlp_seed0_M1.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\_alpha\\burgers_mlp_seed0_M1.json",
+    "sha256": "294c104620e8db1c8eb32c1ebe640714a3b19bdcc6315f0505db23f08d3ca986",
+    "bytes": 396
+  },
+  {
+    "relative_path": "_alpha/burgers_mlp_seed0_M10.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\_alpha\\burgers_mlp_seed0_M10.json",
+    "sha256": "550819bb98cff0acc94632aae6bb354c1d6f9bd7be97075d37311cf58175c4ce",
+    "bytes": 394
+  },
+  {
+    "relative_path": "burgers_mlp_seed2/burgers_mlp_seed2_loading_cdf.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_mlp_seed2\\burgers_mlp_seed2_loading_cdf.json",
+    "sha256": "0ce3a34724ca0b1e7b5f27ee40ce4d5087cc4c9ca3aca98a90fef443f736fd37",
+    "bytes": 404692
+  },
+  {
+    "relative_path": "_theorem_band/theorem_band_check.json",
+    "source_path": "C:\\dev\\pinn-uq-jmlr-ready\\results\\_theorem_band\\theorem_band_check.json",
+    "sha256": "316d2e550fbee8bb5bc725faaede306f72ab32364e17053fb314fc95db8b5755",
+    "bytes": 6770
+  },
+  {
+    "relative_path": "producers/step2b_spectral_loading.py",
+    "source_path": "C:\\dev\\pinn-uq\\pinn-uq-core\\step2b_spectral_loading.py",
+    "sha256": "a0f7ed5e4a97a5c28e003509e05b5a56b52c7c134f92a596c8c30ee59952379b",
+    "bytes": 10743
+  }
+]

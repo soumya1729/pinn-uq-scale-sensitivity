@@ -1,0 +1,18 @@
+{
+  "tag": "burgers_mlp_seed0",
+  "alpha": 18.215042035356365,
+  "n_shock": 4000,
+  "n_smooth": 56000,
+  "whitened": {
+    "ratio_mean": 64.97,
+    "ratio_median": 10.71,
+    "frac_mean_from_top1pct": 0.083,
+    "shock_sigma_max_over_median": 50.3
+  },
+  "raw": {
+    "ratio_mean": 3.76,
+    "ratio_median": 1.91,
+    "frac_mean_from_top1pct": 0.059,
+    "shock_sigma_max_over_median": 11.3
+  }
+}

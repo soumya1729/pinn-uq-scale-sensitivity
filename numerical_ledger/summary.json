@@ -1,0 +1,70 @@
+{
+  "scope": "Active-LaTeX digit-bearing scientific occurrence inventory; not a complete value verification.",
+  "scientific_occurrences": 1996,
+  "excluded_metadata_tokens": 28,
+  "classifications": {
+    "numerical-result": 1576,
+    "configuration": 212,
+    "analytic": 208
+  },
+  "token_forms": {
+    "DIGIT": 1878,
+    "RELEVANT_WORD_COUNT": 118
+  },
+  "statuses": {
+    "CHECKED": 13,
+    "PROVENANCE_MAPPED": 1983
+  },
+  "exact_float_or_equation_pages": 1971,
+  "active_source_files": 26,
+  "table_outputs": 18,
+  "figure_outputs": 6,
+  "registered_claim_join": {
+    "present": true,
+    "report_status": "PASS",
+    "linked_occurrences": 13,
+    "checked_occurrences": 13,
+    "report_sha256": "8b9e9d018cd21d61e7820e6a4c09d98e103a437a6f8fa10591f0ef82fe7e7d52"
+  },
+  "unmatched_outputs": [],
+  "source_hashes": {
+    "paper/full_paper.tex": "568b2ead6bd7978d8e07633ee482fd391512fbee26e538348d756e565f376a1a",
+    "paper/j_abstract.tex": "d50367204444762bcf99ca76531402d6cdda6b1e952abae58f8cfd305ab66c7a",
+    "paper/j_intro.tex": "e86f54fd7de0f8e782e99df6ea87307663960e38481b6eccfa8c381807b3c53c",
+    "paper/j_setting.tex": "1431050d783113ad5057fb260db9cc6a8f9327ff20d679a4ef23bc28fd468273",
+    "paper/j_ceiling.tex": "8d1e55d59e86e1bf1696b51a154df8ff3678b2ff0c11cab858c1590ed660fabc",
+    "paper/j_offmanifold.tex": "21edb51daa29ea3fa899c123c33d03fb6394689646221441559b582b4b918c8a",
+    "paper/j_theory.tex": "2e9d297bcb087596d4d85942cb4503ffb23ab0a316c7b8601e0cae9584e145cc",
+    "paper/j_mechanism.tex": "7ce28bf3f0dfd6d2bb35b0131eacc6147f12bc6a84228267980b8f509fb7e2cb",
+    "paper/generated/loading_table_values.tex": "09a34763d8f4bf238ded05f47ff5a5e5e964aaa573b01adf3224051f585383a2",
+    "paper/generated/rms_bounds_macros.tex": "78bc9074bbfb2b863cc497e56659bc0d476a670253e27dc6f92846c600dd146b",
+    "paper/j_robustness.tex": "d5df00430666639f02bbc9d29295b2dbb7863792016a4a00bf4f16dc3bed6062",
+    "paper/j_discussion.tex": "a50161fa1a171bfe53658708dbaf88e4a1edb26aa6064d355445695cc4c4c442",
+    "paper/j_appendix.tex": "9ab939af71b9636a17a21fc48238253049e80e06d849b8a289b6be1655cd2d65",
+    "paper/trim_aux_proofs.tex": "8d97a0d088a183cced464996bba1b568e4cbf0dedb31bc6bbf30d358a141f118",
+    "paper/j_round2_appendix.tex": "285f6b2c6f18149a1f8142e938366d1f7afcebc63adedef6db1f2c987e70b94a",
+    "paper/short_seed_table.tex": "fe6264c955dfc3a7a3a6782b364986df8c25889e9218771cc3206a71fa038c6f",
+    "paper/generated/round2_limits_table.tex": "dd578cb07bf43217416fd9478667623cfb7713917321df5f87424729ce87b35a",
+    "paper/generated/round2_centre_table.tex": "f4df2a6502d175124b5b70b2aa3d8dc3ab28e7ba5561f55c01b55dd474c87b94",
+    "paper/generated/round2_oracle_table.tex": "f9f3fae78b4c2adea3ccaca45db89423d6c17d20ce052688268dd7f587f178fb",
+    "paper/round3_math.tex": "54a7a9178e3447a8bff6c88a0aa09de98095aa5b5ff7114c3c6af265941b787c",
+    "paper/round3_math_results.tex": "3eff20b3ea7458c0477d3c17232a478d532324566a8c97d5c3c62e72ef52d4d0",
+    "paper/round3_math_root_table.tex": "83ef8e82e864bc8c3b835e257af67137315cb312236c027b88e483ce680051d9",
+    "paper/generated/round4_oracle_table.tex": "3a53b6c8fbf60a232bc2e952c839c2cf3346d0b87fcff02e5e4dca042869f12b",
+    "paper/oa_empirical.tex": "1aab13ace8f2c7789e4ef7985b8f3cc13eb9226406c52ec2109052c69e620101",
+    "paper/oa_numerics.tex": "68cb26629c902ed5aaa1f5a13e4794997158d8c5340c2f45abbc6967fb1125c8",
+    "paper/oa_lean.tex": "7a0e9d132d1bd7fd84ff315d8f4dbc7a8a8ce9765bad260e00b85b79bcd9d4a9"
+  },
+  "aux_present": true,
+  "aux_sha256": "af0cea5ff50be3ee3688aefff377328df2f5de3859e80810c2fc06f971000864",
+  "output_map_present": true,
+  "output_map_sha256": "3b1d7bdea0587975372da7880947083dfdf5ef9051b57e6fcc6030434a449c94",
+  "notes": [
+    "Only explicit registered source-span/token-role joins to an executed numerical check can be labelled CHECKED.",
+    "File/topic provenance is weaker than a scalar-level calculation selector.",
+    "Every literal recurrence is retained; macros and registered claims may share quantity IDs.",
+    "Blank pdf_page means unknown; section_anchor_page is not claimed as the occurrence page.",
+    "Relevant verbal count patterns are included; other prose numerals and numeric labels drawn inside figure PDFs require manual review.",
+    "Generated numeric macro definitions are excluded as unprinted definitions, and expanded at every printed call site."
+  ]
+}

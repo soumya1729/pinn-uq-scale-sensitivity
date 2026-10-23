@@ -1,0 +1,59 @@
+{
+ "schema": "ensemble_calibration/3",
+ "tag": "burgers_mlp_ensemble",
+ "n_members": 8,
+ "members": [
+  "burgers_mlp_seed0",
+  "burgers_mlp_seed1",
+  "burgers_mlp_seed2",
+  "burgers_mlp_seed3",
+  "burgers_mlp_seed4",
+  "burgers_mlp_seed5",
+  "burgers_mlp_seed6",
+  "burgers_mlp_seed7"
+ ],
+ "sigma_rms_ratio_between_basin": 136.49334080590444,
+ "target_rms_ratio_ensemble_mean": 158.23118176642694,
+ "ratio_gap_ensemble_mean": 1.159259351644371,
+ "sigma_ratio_between_basin": 167.00868212857605,
+ "shock": {
+  "meanZ": 0.6394059133835822,
+  "cov68": 0.8765,
+  "cov95": 0.99325,
+  "mean_sigma": 0.05323677332625361
+ },
+ "smooth": {
+  "meanZ": 0.45346412372944556,
+  "cov68": 0.9017678571428571,
+  "cov95": 0.9998035714285715,
+  "mean_sigma": 0.0003187665015239619
+ },
+ "inputs_sha256": {
+  "results/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b",
+  "results/burgers_mlp_seed0/burgers_mlp_seed0_map.json": "89f9f8f095defb106739dccd56fea12986e3f990630cb7a7bddb899b6a453e1d",
+  "results/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6",
+  "results/burgers_mlp_seed1/burgers_mlp_seed1_map.json": "c1697f259e512ef884d461a82665018429bf9995d7f7d17ffb83957eeae35b52",
+  "results/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800",
+  "results/burgers_mlp_seed2/burgers_mlp_seed2_map.json": "5a23c215efc9d0741579322dce6275a9165f2f2cfa13b8bddf1a74ff3cd7dbac",
+  "results/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5",
+  "results/burgers_mlp_seed3/burgers_mlp_seed3_map.json": "8ae498ebd56a7f1c4a43719f372d55636fcc84a6c7e5014a55ec1a293594803e",
+  "results/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a",
+  "results/burgers_mlp_seed4/burgers_mlp_seed4_map.json": "29e173f1ec939ecc126a2a55d6e05c7842b3641b45317fc1aaf779329e763464",
+  "results/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f",
+  "results/burgers_mlp_seed5/burgers_mlp_seed5_map.json": "8606bac91e0eaa0805cdecaf101e642238191e0f3579fe2eebeb2ff657dc7987",
+  "results/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f",
+  "results/burgers_mlp_seed6/burgers_mlp_seed6_map.json": "d0eada9d7a229a3b5602729fd27cd89831fe74a66b8b5bd16c98f9a486462185",
+  "results/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0",
+  "results/burgers_mlp_seed7/burgers_mlp_seed7_map.json": "53b1536ba511c2fae941bbe118d0e92f2148730b864603950072ee9ff9651b62"
+ },
+ "code_sha256": "667644879085e74d78769133a01aac74608f5d621459760ac48feafca9f84ec0",
+ "estimator": "std across members with divisor K (ddof=0); error is |member mean - reference|",
+ "note": "deep ensemble of the 8 admitted burgers_mlp seeds; the legacy *_between_basin key names do not assert distinct basin membership; R_rms and R_tar are computed from the ensemble spread and ensemble-mean error field on the same RMS scale; sigma_ratio_between_basin is secondary mean width",
+ "provenance": {
+  "timestamp_utc": "2026-09-02T12:55:38.550449+00:00",
+  "command": "analysis/ensemble_calibration.py",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "reconstructs": "the pre-consolidation step3a artifact, whose writer was not in the tree; values agree at the printed precision"
+ }
+}

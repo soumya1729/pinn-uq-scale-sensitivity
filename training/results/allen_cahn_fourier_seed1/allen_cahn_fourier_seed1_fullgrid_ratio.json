@@ -1,0 +1,18 @@
+{
+  "tag": "allen_cahn_fourier_seed1",
+  "alpha": 25.192872722861413,
+  "n_shock": 4000,
+  "n_smooth": 56000,
+  "whitened": {
+    "ratio_mean": 43.73,
+    "ratio_median": 190.26,
+    "frac_mean_from_top1pct": 0.038,
+    "shock_sigma_max_over_median": 5.3
+  },
+  "raw": {
+    "ratio_mean": 7.53,
+    "ratio_median": 12.67,
+    "frac_mean_from_top1pct": 0.024,
+    "shock_sigma_max_over_median": 2.7
+  }
+}

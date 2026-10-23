@@ -1,0 +1,7 @@
+# Tested saved-data replay and occurrence-ledger dependencies, 22 October2026.
+# Python3.12.14; no JAX/CUDA needed for reproduce.py --mode saved.
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.2
+pypdf==6.10.0
+openpyxl==3.1.5

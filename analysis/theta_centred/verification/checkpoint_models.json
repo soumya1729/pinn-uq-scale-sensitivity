@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": {
+    "burgers_mlp_seed2": {
+      "prediction_samples": 200,
+      "residual_count": 6400,
+      "max_prediction_absolute_defect": 1.1102230246251565e-15,
+      "rebuilt_training_loss": 6.235895493600835e-06
+    },
+    "burgers_fourier_seed2": {
+      "prediction_samples": 200,
+      "residual_count": 6400,
+      "max_prediction_absolute_defect": 4.9960036108132044e-15,
+      "rebuilt_training_loss": 1.680641886392083e-05
+    },
+    "allen_cahn_mlp_seed1": {
+      "prediction_samples": 200,
+      "residual_count": 6400,
+      "max_prediction_absolute_defect": 2.0539125955565396e-15,
+      "rebuilt_training_loss": 1.1306497182466416e-05
+    },
+    "allen_cahn_fourier_seed1": {
+      "prediction_samples": 200,
+      "residual_count": 6400,
+      "max_prediction_absolute_defect": 3.885780586188048e-15,
+      "rebuilt_training_loss": 1.099177600950688e-06
+    }
+  }
+}

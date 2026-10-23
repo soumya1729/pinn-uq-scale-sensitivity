@@ -1,0 +1,18 @@
+{
+  "tag": "allen_cahn_mlp_seed1",
+  "alpha": 17.58268408883504,
+  "n_shock": 4000,
+  "n_smooth": 56000,
+  "whitened": {
+    "ratio_mean": 11.64,
+    "ratio_median": 45.09,
+    "frac_mean_from_top1pct": 0.051,
+    "shock_sigma_max_over_median": 9.8
+  },
+  "raw": {
+    "ratio_mean": 10.18,
+    "ratio_median": 18.89,
+    "frac_mean_from_top1pct": 0.026,
+    "shock_sigma_max_over_median": 3.2
+  }
+}

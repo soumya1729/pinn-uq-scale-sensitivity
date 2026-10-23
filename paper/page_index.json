@@ -1,0 +1,2744 @@
+{
+  "method": "SyncTeX source-line lookup; ambiguous multi-page results remain candidates",
+  "pdf_sha256": "5b464290331dae5383a859eb7d0afc9fbb06155fc5332b03049dd6ac37436cab",
+  "sources": {
+    "generated/round2_centre_table.tex": "f4df2a6502d175124b5b70b2aa3d8dc3ab28e7ba5561f55c01b55dd474c87b94",
+    "generated/round2_limits_table.tex": "dd578cb07bf43217416fd9478667623cfb7713917321df5f87424729ce87b35a",
+    "generated/round2_oracle_table.tex": "f9f3fae78b4c2adea3ccaca45db89423d6c17d20ce052688268dd7f587f178fb",
+    "generated/round4_oracle_table.tex": "3a53b6c8fbf60a232bc2e952c839c2cf3346d0b87fcff02e5e4dca042869f12b",
+    "j_abstract.tex": "d50367204444762bcf99ca76531402d6cdda6b1e952abae58f8cfd305ab66c7a",
+    "j_appendix.tex": "9ab939af71b9636a17a21fc48238253049e80e06d849b8a289b6be1655cd2d65",
+    "j_ceiling.tex": "8d1e55d59e86e1bf1696b51a154df8ff3678b2ff0c11cab858c1590ed660fabc",
+    "j_discussion.tex": "a50161fa1a171bfe53658708dbaf88e4a1edb26aa6064d355445695cc4c4c442",
+    "j_intro.tex": "e86f54fd7de0f8e782e99df6ea87307663960e38481b6eccfa8c381807b3c53c",
+    "j_mechanism.tex": "7ce28bf3f0dfd6d2bb35b0131eacc6147f12bc6a84228267980b8f509fb7e2cb",
+    "j_offmanifold.tex": "21edb51daa29ea3fa899c123c33d03fb6394689646221441559b582b4b918c8a",
+    "j_round2_appendix.tex": "285f6b2c6f18149a1f8142e938366d1f7afcebc63adedef6db1f2c987e70b94a",
+    "j_setting.tex": "1431050d783113ad5057fb260db9cc6a8f9327ff20d679a4ef23bc28fd468273",
+    "j_theory.tex": "2e9d297bcb087596d4d85942cb4503ffb23ab0a316c7b8601e0cae9584e145cc",
+    "oa_empirical.tex": "1aab13ace8f2c7789e4ef7985b8f3cc13eb9226406c52ec2109052c69e620101",
+    "oa_lean.tex": "7a0e9d132d1bd7fd84ff315d8f4dbc7a8a8ce9765bad260e00b85b79bcd9d4a9",
+    "oa_numerics.tex": "68cb26629c902ed5aaa1f5a13e4794997158d8c5340c2f45abbc6967fb1125c8",
+    "round3_math.tex": "54a7a9178e3447a8bff6c88a0aa09de98095aa5b5ff7114c3c6af265941b787c",
+    "round3_math_results.tex": "3eff20b3ea7458c0477d3c17232a478d532324566a8c97d5c3c62e72ef52d4d0",
+    "round3_math_root_table.tex": "83ef8e82e864bc8c3b835e257af67137315cb312236c027b88e483ce680051d9",
+    "short_seed_table.tex": "fe6264c955dfc3a7a3a6782b364986df8c25889e9218771cc3206a71fa038c6f",
+    "trim_aux_proofs.tex": "8d97a0d088a183cced464996bba1b568e4cbf0dedb31bc6bbf30d358a141f118"
+  },
+  "pages": {
+    "paper/generated/round2_centre_table.tex:6": 21,
+    "paper/generated/round2_centre_table.tex:7": 21,
+    "paper/generated/round2_centre_table.tex:10": 21,
+    "paper/generated/round2_centre_table.tex:11": 21,
+    "paper/generated/round2_centre_table.tex:12": 21,
+    "paper/generated/round2_centre_table.tex:13": 21,
+    "paper/generated/round2_centre_table.tex:18": 21,
+    "paper/generated/round2_centre_table.tex:19": 21,
+    "paper/generated/round2_limits_table.tex:10": 19,
+    "paper/generated/round2_limits_table.tex:11": 19,
+    "paper/generated/round2_limits_table.tex:12": 19,
+    "paper/generated/round2_limits_table.tex:13": 19,
+    "paper/generated/round2_oracle_table.tex:8": 22,
+    "paper/generated/round2_oracle_table.tex:10": 22,
+    "paper/generated/round2_oracle_table.tex:11": 22,
+    "paper/generated/round2_oracle_table.tex:12": 22,
+    "paper/generated/round2_oracle_table.tex:13": 22,
+    "paper/generated/round2_oracle_table.tex:14": 22,
+    "paper/generated/round2_oracle_table.tex:15": 22,
+    "paper/generated/round2_oracle_table.tex:18": 22,
+    "paper/generated/round4_oracle_table.tex:6": 25,
+    "paper/generated/round4_oracle_table.tex:8": 25,
+    "paper/generated/round4_oracle_table.tex:9": 25,
+    "paper/generated/round4_oracle_table.tex:10": 25,
+    "paper/generated/round4_oracle_table.tex:11": 25,
+    "paper/generated/round4_oracle_table.tex:12": 25,
+    "paper/generated/round4_oracle_table.tex:13": 25,
+    "paper/generated/round4_oracle_table.tex:14": 25,
+    "paper/generated/round4_oracle_table.tex:15": 25,
+    "paper/generated/round4_oracle_table.tex:17": 25,
+    "paper/generated/round4_oracle_table.tex:19": 25,
+    "paper/generated/round4_oracle_table.tex:20": 25,
+    "paper/generated/round4_oracle_table.tex:21": 25,
+    "paper/generated/round4_oracle_table.tex:22": 25,
+    "paper/generated/round4_oracle_table.tex:23": 25,
+    "paper/generated/round4_oracle_table.tex:24": 25,
+    "paper/generated/round4_oracle_table.tex:29": 25,
+    "paper/generated/round4_oracle_table.tex:30": 25,
+    "paper/generated/round4_oracle_table.tex:34": 25,
+    "paper/j_abstract.tex:4": 1,
+    "paper/j_abstract.tex:5": 1,
+    "paper/j_abstract.tex:6": 1,
+    "paper/j_abstract.tex:7": 1,
+    "paper/j_abstract.tex:8": 1,
+    "paper/j_abstract.tex:11": 1,
+    "paper/j_abstract.tex:13": 1,
+    "paper/j_abstract.tex:14": 1,
+    "paper/j_abstract.tex:15": 1,
+    "paper/j_abstract.tex:16": 1,
+    "paper/j_abstract.tex:17": 1,
+    "paper/j_appendix.tex:4": 15,
+    "paper/j_appendix.tex:5": 15,
+    "paper/j_appendix.tex:7": 15,
+    "paper/j_appendix.tex:8": 15,
+    "paper/j_appendix.tex:9": 15,
+    "paper/j_appendix.tex:10": 15,
+    "paper/j_appendix.tex:11": 15,
+    "paper/j_appendix.tex:12": 15,
+    "paper/j_appendix.tex:13": 15,
+    "paper/j_appendix.tex:18": 15,
+    "paper/j_appendix.tex:20": 15,
+    "paper/j_appendix.tex:23": 16,
+    "paper/j_appendix.tex:24": 16,
+    "paper/j_appendix.tex:25": 16,
+    "paper/j_appendix.tex:27": 16,
+    "paper/j_appendix.tex:28": 16,
+    "paper/j_appendix.tex:29": 16,
+    "paper/j_appendix.tex:30": 16,
+    "paper/j_appendix.tex:31": 16,
+    "paper/j_appendix.tex:32": 16,
+    "paper/j_appendix.tex:33": 16,
+    "paper/j_appendix.tex:34": 16,
+    "paper/j_appendix.tex:38": 16,
+    "paper/j_appendix.tex:40": 16,
+    "paper/j_appendix.tex:41": 16,
+    "paper/j_appendix.tex:42": 16,
+    "paper/j_appendix.tex:45": 16,
+    "paper/j_appendix.tex:52": 16,
+    "paper/j_appendix.tex:53": 16,
+    "paper/j_appendix.tex:55": 16,
+    "paper/j_appendix.tex:60": 16,
+    "paper/j_appendix.tex:64": 16,
+    "paper/j_appendix.tex:67": 16,
+    "paper/j_appendix.tex:70": 16,
+    "paper/j_appendix.tex:71": 16,
+    "paper/j_appendix.tex:77": 16,
+    "paper/j_appendix.tex:90": 17,
+    "paper/j_appendix.tex:91": 17,
+    "paper/j_ceiling.tex:11": 7,
+    "paper/j_ceiling.tex:24": 7,
+    "paper/j_ceiling.tex:25": 7,
+    "paper/j_ceiling.tex:26": 7,
+    "paper/j_ceiling.tex:27": 7,
+    "paper/j_ceiling.tex:30": 7,
+    "paper/j_ceiling.tex:32": 7,
+    "paper/j_ceiling.tex:33": 7,
+    "paper/j_ceiling.tex:34": 7,
+    "paper/j_ceiling.tex:35": 7,
+    "paper/j_ceiling.tex:39": 7,
+    "paper/j_ceiling.tex:40": 7,
+    "paper/j_ceiling.tex:42": 7,
+    "paper/j_ceiling.tex:46": 7,
+    "paper/j_ceiling.tex:47": 7,
+    "paper/j_ceiling.tex:48": 7,
+    "paper/j_ceiling.tex:58": 7,
+    "paper/j_ceiling.tex:60": 7,
+    "paper/j_ceiling.tex:61": 7,
+    "paper/j_ceiling.tex:64": 7,
+    "paper/j_ceiling.tex:65": 7,
+    "paper/j_ceiling.tex:66": 7,
+    "paper/j_ceiling.tex:71": 7,
+    "paper/j_ceiling.tex:72": 7,
+    "paper/j_ceiling.tex:73": 7,
+    "paper/j_ceiling.tex:74": 7,
+    "paper/j_ceiling.tex:77": 8,
+    "paper/j_ceiling.tex:82": 8,
+    "paper/j_ceiling.tex:83": 8,
+    "paper/j_ceiling.tex:84": 8,
+    "paper/j_ceiling.tex:88": 8,
+    "paper/j_ceiling.tex:90": 8,
+    "paper/j_ceiling.tex:92": 8,
+    "paper/j_ceiling.tex:93": 8,
+    "paper/j_ceiling.tex:94": 8,
+    "paper/j_ceiling.tex:95": 8,
+    "paper/j_ceiling.tex:102": 8,
+    "paper/j_ceiling.tex:103": 8,
+    "paper/j_ceiling.tex:105": 8,
+    "paper/j_ceiling.tex:115": 8,
+    "paper/j_ceiling.tex:119": 9,
+    "paper/j_ceiling.tex:120": 9,
+    "paper/j_ceiling.tex:121": 9,
+    "paper/j_ceiling.tex:122": 9,
+    "paper/j_ceiling.tex:124": 9,
+    "paper/j_ceiling.tex:132": 9,
+    "paper/j_ceiling.tex:133": 9,
+    "paper/j_ceiling.tex:134": 9,
+    "paper/j_ceiling.tex:135": 9,
+    "paper/j_ceiling.tex:136": 9,
+    "paper/j_ceiling.tex:140": 9,
+    "paper/j_ceiling.tex:143": 9,
+    "paper/j_ceiling.tex:144": 9,
+    "paper/j_ceiling.tex:149": 9,
+    "paper/j_ceiling.tex:150": 9,
+    "paper/j_ceiling.tex:151": 9,
+    "paper/j_ceiling.tex:152": 9,
+    "paper/j_ceiling.tex:153": 9,
+    "paper/j_ceiling.tex:154": 9,
+    "paper/j_ceiling.tex:159": 9,
+    "paper/j_ceiling.tex:160": 9,
+    "paper/j_ceiling.tex:161": 9,
+    "paper/j_ceiling.tex:162": 9,
+    "paper/j_ceiling.tex:167": 9,
+    "paper/j_ceiling.tex:169": 9,
+    "paper/j_ceiling.tex:170": 9,
+    "paper/j_ceiling.tex:171": 9,
+    "paper/j_ceiling.tex:172": 9,
+    "paper/j_ceiling.tex:173": 9,
+    "paper/j_ceiling.tex:174": 9,
+    "paper/j_ceiling.tex:175": 9,
+    "paper/j_ceiling.tex:177": 9,
+    "paper/j_ceiling.tex:181": 9,
+    "paper/j_ceiling.tex:182": 9,
+    "paper/j_ceiling.tex:184": 10,
+    "paper/j_ceiling.tex:185": 10,
+    "paper/j_ceiling.tex:189": 10,
+    "paper/j_ceiling.tex:190": 10,
+    "paper/j_ceiling.tex:191": 10,
+    "paper/j_ceiling.tex:193": 10,
+    "paper/j_ceiling.tex:194": 10,
+    "paper/j_ceiling.tex:196": 10,
+    "paper/j_ceiling.tex:197": 10,
+    "paper/j_ceiling.tex:198": 10,
+    "paper/j_ceiling.tex:199": 10,
+    "paper/j_ceiling.tex:203": 10,
+    "paper/j_ceiling.tex:204": 10,
+    "paper/j_ceiling.tex:205": 10,
+    "paper/j_ceiling.tex:207": 10,
+    "paper/j_ceiling.tex:208": 10,
+    "paper/j_ceiling.tex:209": 10,
+    "paper/j_ceiling.tex:212": 10,
+    "paper/j_ceiling.tex:214": 10,
+    "paper/j_ceiling.tex:215": 10,
+    "paper/j_ceiling.tex:216": 10,
+    "paper/j_ceiling.tex:221": 10,
+    "paper/j_ceiling.tex:222": 10,
+    "paper/j_ceiling.tex:223": 10,
+    "paper/j_ceiling.tex:224": 10,
+    "paper/j_ceiling.tex:226": 10,
+    "paper/j_ceiling.tex:227": 10,
+    "paper/j_ceiling.tex:228": 10,
+    "paper/j_ceiling.tex:229": 10,
+    "paper/j_ceiling.tex:230": 10,
+    "paper/j_discussion.tex:20": 14,
+    "paper/j_discussion.tex:28": 14,
+    "paper/j_discussion.tex:29": 14,
+    "paper/j_discussion.tex:32": 14,
+    "paper/j_discussion.tex:49": 15,
+    "paper/j_discussion.tex:50": 15,
+    "paper/j_discussion.tex:59": 15,
+    "paper/j_intro.tex:55": 2,
+    "paper/j_intro.tex:62": 2,
+    "paper/j_intro.tex:65": 2,
+    "paper/j_intro.tex:66": 2,
+    "paper/j_intro.tex:69": 2,
+    "paper/j_intro.tex:75": 3,
+    "paper/j_intro.tex:76": 3,
+    "paper/j_intro.tex:93": 3,
+    "paper/j_intro.tex:94": 3,
+    "paper/j_intro.tex:97": 3,
+    "paper/j_intro.tex:105": 3,
+    "paper/j_intro.tex:106": 3,
+    "paper/j_mechanism.tex:2": 13,
+    "paper/j_mechanism.tex:3": 13,
+    "paper/j_mechanism.tex:7": 13,
+    "paper/j_mechanism.tex:24": 14,
+    "paper/j_mechanism.tex:25": 14,
+    "paper/j_mechanism.tex:26": 14,
+    "paper/j_mechanism.tex:27": 14,
+    "paper/j_mechanism.tex:32": 14,
+    "paper/j_mechanism.tex:33": 14,
+    "paper/j_mechanism.tex:34": 14,
+    "paper/j_mechanism.tex:41": 13,
+    "paper/j_mechanism.tex:42": 13,
+    "paper/j_mechanism.tex:43": 13,
+    "paper/j_mechanism.tex:45": 13,
+    "paper/j_mechanism.tex:46": 13,
+    "paper/j_mechanism.tex:48": 13,
+    "paper/j_mechanism.tex:49": 13,
+    "paper/j_mechanism.tex:50": 13,
+    "paper/j_mechanism.tex:52": 14,
+    "paper/j_mechanism.tex:53": 14,
+    "paper/j_mechanism.tex:55": 14,
+    "paper/j_mechanism.tex:56": 14,
+    "paper/j_mechanism.tex:57": 14,
+    "paper/j_offmanifold.tex:3": 10,
+    "paper/j_offmanifold.tex:6": 10,
+    "paper/j_offmanifold.tex:14": 11,
+    "paper/j_offmanifold.tex:19": 11,
+    "paper/j_offmanifold.tex:37": 11,
+    "paper/j_offmanifold.tex:41": 11,
+    "paper/j_offmanifold.tex:42": 11,
+    "paper/j_offmanifold.tex:53": 11,
+    "paper/j_offmanifold.tex:54": 11,
+    "paper/j_offmanifold.tex:58": 11,
+    "paper/j_offmanifold.tex:59": 11,
+    "paper/j_offmanifold.tex:68": 12,
+    "paper/j_offmanifold.tex:69": 12,
+    "paper/j_offmanifold.tex:70": 12,
+    "paper/j_offmanifold.tex:72": 12,
+    "paper/j_offmanifold.tex:73": 12,
+    "paper/j_offmanifold.tex:74": 12,
+    "paper/j_offmanifold.tex:75": 12,
+    "paper/j_offmanifold.tex:78": 12,
+    "paper/j_offmanifold.tex:81": 12,
+    "paper/j_offmanifold.tex:85": 11,
+    "paper/j_offmanifold.tex:87": 11,
+    "paper/j_offmanifold.tex:88": 11,
+    "paper/j_offmanifold.tex:89": 11,
+    "paper/j_offmanifold.tex:93": 11,
+    "paper/j_offmanifold.tex:94": 11,
+    "paper/j_offmanifold.tex:95": 11,
+    "paper/j_offmanifold.tex:96": 11,
+    "paper/j_offmanifold.tex:97": 11,
+    "paper/j_offmanifold.tex:98": 11,
+    "paper/j_offmanifold.tex:100": 11,
+    "paper/j_offmanifold.tex:110": 12,
+    "paper/j_round2_appendix.tex:3": 17,
+    "paper/j_round2_appendix.tex:4": 17,
+    "paper/j_round2_appendix.tex:5": 17,
+    "paper/j_round2_appendix.tex:8": 17,
+    "paper/j_round2_appendix.tex:14": 18,
+    "paper/j_round2_appendix.tex:16": 18,
+    "paper/j_round2_appendix.tex:17": 18,
+    "paper/j_round2_appendix.tex:18": 18,
+    "paper/j_round2_appendix.tex:22": 18,
+    "paper/j_round2_appendix.tex:23": 18,
+    "paper/j_round2_appendix.tex:24": 18,
+    "paper/j_round2_appendix.tex:27": 18,
+    "paper/j_round2_appendix.tex:29": 18,
+    "paper/j_round2_appendix.tex:31": 18,
+    "paper/j_round2_appendix.tex:35": 18,
+    "paper/j_round2_appendix.tex:38": 18,
+    "paper/j_round2_appendix.tex:39": 18,
+    "paper/j_round2_appendix.tex:40": 18,
+    "paper/j_round2_appendix.tex:44": 18,
+    "paper/j_round2_appendix.tex:45": 18,
+    "paper/j_round2_appendix.tex:48": 18,
+    "paper/j_round2_appendix.tex:55": 18,
+    "paper/j_round2_appendix.tex:56": 18,
+    "paper/j_round2_appendix.tex:59": 19,
+    "paper/j_round2_appendix.tex:61": 19,
+    "paper/j_round2_appendix.tex:62": 19,
+    "paper/j_round2_appendix.tex:64": 19,
+    "paper/j_round2_appendix.tex:72": 19,
+    "paper/j_round2_appendix.tex:74": 19,
+    "paper/j_round2_appendix.tex:75": 19,
+    "paper/j_round2_appendix.tex:81": 19,
+    "paper/j_round2_appendix.tex:82": 19,
+    "paper/j_round2_appendix.tex:83": 19,
+    "paper/j_round2_appendix.tex:84": 19,
+    "paper/j_round2_appendix.tex:94": 20,
+    "paper/j_round2_appendix.tex:95": 20,
+    "paper/j_round2_appendix.tex:96": 20,
+    "paper/j_round2_appendix.tex:97": 20,
+    "paper/j_round2_appendix.tex:100": 20,
+    "paper/j_round2_appendix.tex:109": 19,
+    "paper/j_round2_appendix.tex:112": 19,
+    "paper/j_round2_appendix.tex:113": 19,
+    "paper/j_round2_appendix.tex:114": 19,
+    "paper/j_round2_appendix.tex:115": 19,
+    "paper/j_round2_appendix.tex:120": 19,
+    "paper/j_round2_appendix.tex:122": 19,
+    "paper/j_round2_appendix.tex:123": 19,
+    "paper/j_round2_appendix.tex:124": 19,
+    "paper/j_round2_appendix.tex:125": 19,
+    "paper/j_round2_appendix.tex:127": 19,
+    "paper/j_round2_appendix.tex:129": 20,
+    "paper/j_round2_appendix.tex:130": 20,
+    "paper/j_round2_appendix.tex:137": 20,
+    "paper/j_round2_appendix.tex:146": 20,
+    "paper/j_round2_appendix.tex:147": 20,
+    "paper/j_round2_appendix.tex:148": 20,
+    "paper/j_round2_appendix.tex:149": 20,
+    "paper/j_round2_appendix.tex:150": 20,
+    "paper/j_round2_appendix.tex:151": 20,
+    "paper/j_round2_appendix.tex:152": 20,
+    "paper/j_round2_appendix.tex:154": 20,
+    "paper/j_round2_appendix.tex:156": 21,
+    "paper/j_round2_appendix.tex:165": 21,
+    "paper/j_round2_appendix.tex:166": 21,
+    "paper/j_round2_appendix.tex:179": 21,
+    "paper/j_round2_appendix.tex:180": 21,
+    "paper/j_round2_appendix.tex:181": 21,
+    "paper/j_round2_appendix.tex:182": 21,
+    "paper/j_round2_appendix.tex:183": 21,
+    "paper/j_round2_appendix.tex:184": 21,
+    "paper/j_round2_appendix.tex:185": 21,
+    "paper/j_round2_appendix.tex:186": 21,
+    "paper/j_round2_appendix.tex:190": 21,
+    "paper/j_round2_appendix.tex:191": 21,
+    "paper/j_round2_appendix.tex:198": 21,
+    "paper/j_round2_appendix.tex:202": 21,
+    "paper/j_round2_appendix.tex:203": 21,
+    "paper/j_round2_appendix.tex:204": 21,
+    "paper/j_round2_appendix.tex:209": 22,
+    "paper/j_round2_appendix.tex:211": 22,
+    "paper/j_round2_appendix.tex:212": 22,
+    "paper/j_round2_appendix.tex:221": 24,
+    "paper/j_round2_appendix.tex:222": 24,
+    "paper/j_round2_appendix.tex:227": 24,
+    "paper/j_round2_appendix.tex:228": 24,
+    "paper/j_round2_appendix.tex:229": 24,
+    "paper/j_round2_appendix.tex:231": 24,
+    "paper/j_round2_appendix.tex:232": 24,
+    "paper/j_round2_appendix.tex:234": 24,
+    "paper/j_round2_appendix.tex:235": 24,
+    "paper/j_round2_appendix.tex:236": 24,
+    "paper/j_round2_appendix.tex:237": 24,
+    "paper/j_round2_appendix.tex:238": 24,
+    "paper/j_round2_appendix.tex:240": 24,
+    "paper/j_round2_appendix.tex:241": 24,
+    "paper/j_round2_appendix.tex:242": 24,
+    "paper/j_round2_appendix.tex:248": 24,
+    "paper/j_round2_appendix.tex:249": 24,
+    "paper/j_round2_appendix.tex:250": 24,
+    "paper/j_round2_appendix.tex:257": 26,
+    "paper/j_round2_appendix.tex:259": 26,
+    "paper/j_round2_appendix.tex:260": 26,
+    "paper/j_setting.tex:7": 4,
+    "paper/j_setting.tex:9": 4,
+    "paper/j_setting.tex:10": 4,
+    "paper/j_setting.tex:12": 4,
+    "paper/j_setting.tex:13": 4,
+    "paper/j_setting.tex:16": 4,
+    "paper/j_setting.tex:17": 4,
+    "paper/j_setting.tex:20": 4,
+    "paper/j_setting.tex:23": 4,
+    "paper/j_setting.tex:24": 4,
+    "paper/j_setting.tex:25": 4,
+    "paper/j_setting.tex:28": 4,
+    "paper/j_setting.tex:29": 4,
+    "paper/j_setting.tex:30": 4,
+    "paper/j_setting.tex:31": 4,
+    "paper/j_setting.tex:32": 4,
+    "paper/j_setting.tex:33": 4,
+    "paper/j_setting.tex:34": 4,
+    "paper/j_setting.tex:35": 4,
+    "paper/j_setting.tex:36": 4,
+    "paper/j_setting.tex:37": 4,
+    "paper/j_setting.tex:41": 4,
+    "paper/j_setting.tex:44": 4,
+    "paper/j_setting.tex:45": 4,
+    "paper/j_setting.tex:52": 4,
+    "paper/j_setting.tex:53": 4,
+    "paper/j_setting.tex:54": 4,
+    "paper/j_setting.tex:55": 4,
+    "paper/j_setting.tex:56": 4,
+    "paper/j_setting.tex:63": 4,
+    "paper/j_setting.tex:64": 4,
+    "paper/j_setting.tex:65": 4,
+    "paper/j_setting.tex:72": 5,
+    "paper/j_setting.tex:73": 5,
+    "paper/j_setting.tex:84": 5,
+    "paper/j_setting.tex:85": 5,
+    "paper/j_setting.tex:86": 5,
+    "paper/j_setting.tex:87": 5,
+    "paper/j_setting.tex:89": 5,
+    "paper/j_setting.tex:90": 5,
+    "paper/j_setting.tex:91": 5,
+    "paper/j_setting.tex:92": 5,
+    "paper/j_setting.tex:93": 5,
+    "paper/j_setting.tex:96": 5,
+    "paper/j_setting.tex:98": 5,
+    "paper/j_setting.tex:99": 5,
+    "paper/j_setting.tex:100": 5,
+    "paper/j_setting.tex:101": 5,
+    "paper/j_setting.tex:105": 5,
+    "paper/j_setting.tex:110": 5,
+    "paper/j_setting.tex:111": 5,
+    "paper/j_setting.tex:117": 5,
+    "paper/j_setting.tex:118": 5,
+    "paper/j_setting.tex:119": 5,
+    "paper/j_setting.tex:120": 5,
+    "paper/j_setting.tex:123": 5,
+    "paper/j_setting.tex:124": 5,
+    "paper/j_setting.tex:125": 5,
+    "paper/j_setting.tex:130": 5,
+    "paper/j_setting.tex:131": 5,
+    "paper/j_setting.tex:136": 5,
+    "paper/j_setting.tex:138": 5,
+    "paper/j_setting.tex:139": 5,
+    "paper/j_setting.tex:143": 5,
+    "paper/j_setting.tex:148": 6,
+    "paper/j_setting.tex:150": 6,
+    "paper/j_setting.tex:165": 6,
+    "paper/j_setting.tex:166": 6,
+    "paper/j_setting.tex:168": 6,
+    "paper/j_setting.tex:178": 6,
+    "paper/j_setting.tex:179": 6,
+    "paper/j_setting.tex:180": 6,
+    "paper/j_setting.tex:181": 6,
+    "paper/j_setting.tex:190": 6,
+    "paper/j_setting.tex:196": 6,
+    "paper/j_setting.tex:197": 6,
+    "paper/j_theory.tex:9": 12,
+    "paper/j_theory.tex:13": 12,
+    "paper/j_theory.tex:14": 12,
+    "paper/j_theory.tex:16": 12,
+    "paper/j_theory.tex:17": 12,
+    "paper/j_theory.tex:19": 12,
+    "paper/j_theory.tex:26": 12,
+    "paper/j_theory.tex:29": 12,
+    "paper/j_theory.tex:31": 12,
+    "paper/j_theory.tex:33": 12,
+    "paper/j_theory.tex:37": 12,
+    "paper/j_theory.tex:38": 12,
+    "paper/j_theory.tex:39": 12,
+    "paper/j_theory.tex:41": 13,
+    "paper/j_theory.tex:44": 13,
+    "paper/j_theory.tex:45": 13,
+    "paper/j_theory.tex:46": 13,
+    "paper/j_theory.tex:54": 13,
+    "paper/j_theory.tex:57": 13,
+    "paper/j_theory.tex:61": 13,
+    "paper/j_theory.tex:62": 13,
+    "paper/j_theory.tex:69": 13,
+    "paper/j_theory.tex:70": 13,
+    "paper/j_theory.tex:71": 13,
+    "paper/j_theory.tex:72": 13,
+    "paper/j_theory.tex:80": 13,
+    "paper/oa_empirical.tex:1": 24,
+    "paper/oa_empirical.tex:6": 24,
+    "paper/oa_empirical.tex:12": 26,
+    "paper/oa_empirical.tex:13": 26,
+    "paper/oa_empirical.tex:19": 26,
+    "paper/oa_empirical.tex:20": 26,
+    "paper/oa_empirical.tex:37": 27,
+    "paper/oa_empirical.tex:38": 27,
+    "paper/oa_empirical.tex:40": 27,
+    "paper/oa_empirical.tex:41": 27,
+    "paper/oa_empirical.tex:42": 27,
+    "paper/oa_empirical.tex:51": 27,
+    "paper/oa_empirical.tex:53": 27,
+    "paper/oa_empirical.tex:54": 27,
+    "paper/oa_empirical.tex:55": 27,
+    "paper/oa_empirical.tex:56": 27,
+    "paper/oa_empirical.tex:57": 27,
+    "paper/oa_empirical.tex:58": 27,
+    "paper/oa_empirical.tex:59": 27,
+    "paper/oa_empirical.tex:60": 27,
+    "paper/oa_empirical.tex:61": 27,
+    "paper/oa_empirical.tex:62": 27,
+    "paper/oa_empirical.tex:63": 27,
+    "paper/oa_empirical.tex:64": 27,
+    "paper/oa_empirical.tex:65": 27,
+    "paper/oa_empirical.tex:66": 27,
+    "paper/oa_empirical.tex:67": 27,
+    "paper/oa_empirical.tex:68": 27,
+    "paper/oa_empirical.tex:69": 27,
+    "paper/oa_empirical.tex:72": 27,
+    "paper/oa_empirical.tex:73": 27,
+    "paper/oa_empirical.tex:75": 27,
+    "paper/oa_empirical.tex:87": 27,
+    "paper/oa_empirical.tex:88": 27,
+    "paper/oa_empirical.tex:89": 27,
+    "paper/oa_empirical.tex:90": 27,
+    "paper/oa_empirical.tex:93": 27,
+    "paper/oa_empirical.tex:106": 28,
+    "paper/oa_empirical.tex:107": 28,
+    "paper/oa_empirical.tex:108": 28,
+    "paper/oa_empirical.tex:109": 28,
+    "paper/oa_empirical.tex:110": 28,
+    "paper/oa_empirical.tex:111": 28,
+    "paper/oa_empirical.tex:112": 28,
+    "paper/oa_empirical.tex:113": 28,
+    "paper/oa_empirical.tex:114": 28,
+    "paper/oa_empirical.tex:115": 28,
+    "paper/oa_empirical.tex:116": 28,
+    "paper/oa_empirical.tex:117": 28,
+    "paper/oa_empirical.tex:131": 28,
+    "paper/oa_empirical.tex:132": 28,
+    "paper/oa_empirical.tex:133": 28,
+    "paper/oa_empirical.tex:134": 28,
+    "paper/oa_empirical.tex:135": 28,
+    "paper/oa_empirical.tex:136": 28,
+    "paper/oa_empirical.tex:137": 28,
+    "paper/oa_empirical.tex:138": 28,
+    "paper/oa_empirical.tex:139": 28,
+    "paper/oa_empirical.tex:140": 28,
+    "paper/oa_empirical.tex:141": 28,
+    "paper/oa_empirical.tex:142": 28,
+    "paper/oa_empirical.tex:145": 28,
+    "paper/oa_empirical.tex:153": 29,
+    "paper/oa_empirical.tex:155": 29,
+    "paper/oa_empirical.tex:157": 29,
+    "paper/oa_empirical.tex:169": 30,
+    "paper/oa_lean.tex:7": 32,
+    "paper/oa_lean.tex:46": 33,
+    "paper/oa_numerics.tex:10": 30,
+    "paper/oa_numerics.tex:18": 30,
+    "paper/oa_numerics.tex:19": 30,
+    "paper/oa_numerics.tex:21": 31,
+    "paper/oa_numerics.tex:22": 31,
+    "paper/oa_numerics.tex:27": 31,
+    "paper/oa_numerics.tex:31": 31,
+    "paper/oa_numerics.tex:32": 31,
+    "paper/oa_numerics.tex:33": 31,
+    "paper/oa_numerics.tex:37": 31,
+    "paper/oa_numerics.tex:38": 31,
+    "paper/oa_numerics.tex:40": 31,
+    "paper/oa_numerics.tex:43": 31,
+    "paper/oa_numerics.tex:49": 31,
+    "paper/oa_numerics.tex:52": 31,
+    "paper/oa_numerics.tex:55": 31,
+    "paper/oa_numerics.tex:58": 31,
+    "paper/oa_numerics.tex:59": 31,
+    "paper/oa_numerics.tex:60": 31,
+    "paper/oa_numerics.tex:61": 31,
+    "paper/oa_numerics.tex:64": 31,
+    "paper/oa_numerics.tex:65": 31,
+    "paper/oa_numerics.tex:66": 31,
+    "paper/oa_numerics.tex:67": 31,
+    "paper/oa_numerics.tex:68": 31,
+    "paper/oa_numerics.tex:69": 31,
+    "paper/oa_numerics.tex:70": 31,
+    "paper/oa_numerics.tex:71": 31,
+    "paper/oa_numerics.tex:72": 31,
+    "paper/oa_numerics.tex:77": 31,
+    "paper/oa_numerics.tex:80": 31,
+    "paper/oa_numerics.tex:82": 31,
+    "paper/oa_numerics.tex:94": 32,
+    "paper/oa_numerics.tex:99": 32,
+    "paper/oa_numerics.tex:100": 32,
+    "paper/oa_numerics.tex:101": 32,
+    "paper/oa_numerics.tex:102": 32,
+    "paper/oa_numerics.tex:103": 32,
+    "paper/oa_numerics.tex:104": 32,
+    "paper/oa_numerics.tex:105": 32,
+    "paper/oa_numerics.tex:106": 32,
+    "paper/oa_numerics.tex:107": 32,
+    "paper/oa_numerics.tex:114": 32,
+    "paper/oa_numerics.tex:115": 32,
+    "paper/oa_numerics.tex:116": 32,
+    "paper/oa_numerics.tex:117": 32,
+    "paper/oa_numerics.tex:118": 32,
+    "paper/oa_numerics.tex:119": 32,
+    "paper/oa_numerics.tex:122": 32,
+    "paper/oa_numerics.tex:123": 32,
+    "paper/oa_numerics.tex:124": 32,
+    "paper/oa_numerics.tex:126": 32,
+    "paper/oa_numerics.tex:127": 32,
+    "paper/oa_numerics.tex:128": 32,
+    "paper/oa_numerics.tex:129": 32,
+    "paper/oa_numerics.tex:130": 32,
+    "paper/oa_numerics.tex:131": 32,
+    "paper/round3_math.tex:2": 22,
+    "paper/round3_math.tex:5": 22,
+    "paper/round3_math.tex:6": 22,
+    "paper/round3_math.tex:9": 22,
+    "paper/round3_math.tex:10": 22,
+    "paper/round3_math.tex:11": 22,
+    "paper/round3_math.tex:12": 22,
+    "paper/round3_math.tex:15": 22,
+    "paper/round3_math.tex:23": 22,
+    "paper/round3_math.tex:31": 22,
+    "paper/round3_math.tex:33": 22,
+    "paper/round3_math.tex:34": 22,
+    "paper/round3_math.tex:52": 23,
+    "paper/round3_math.tex:54": 23,
+    "paper/round3_math.tex:57": 23,
+    "paper/round3_math.tex:59": 23,
+    "paper/round3_math.tex:63": 23,
+    "paper/round3_math.tex:64": 23,
+    "paper/round3_math.tex:65": 23,
+    "paper/round3_math.tex:66": 23,
+    "paper/round3_math.tex:70": 23,
+    "paper/round3_math.tex:77": 23,
+    "paper/round3_math.tex:86": 23,
+    "paper/round3_math_results.tex:2": 23,
+    "paper/round3_math_results.tex:3": 23,
+    "paper/round3_math_results.tex:5": 23,
+    "paper/round3_math_results.tex:6": 23,
+    "paper/round3_math_results.tex:7": 23,
+    "paper/round3_math_results.tex:8": 23,
+    "paper/round3_math_results.tex:10": 23,
+    "paper/round3_math_results.tex:11": 23,
+    "paper/round3_math_results.tex:12": 23,
+    "paper/round3_math_results.tex:13": 23,
+    "paper/round3_math_results.tex:14": 23,
+    "paper/round3_math_results.tex:16": 23,
+    "paper/round3_math_results.tex:17": 23,
+    "paper/round3_math_results.tex:18": 23,
+    "paper/round3_math_results.tex:19": 23,
+    "paper/round3_math_results.tex:20": 23,
+    "paper/round3_math_results.tex:21": 23,
+    "paper/round3_math_results.tex:22": 23,
+    "paper/round3_math_root_table.tex:6": 24,
+    "paper/round3_math_root_table.tex:7": 24,
+    "paper/round3_math_root_table.tex:10": 24,
+    "paper/round3_math_root_table.tex:11": 24,
+    "paper/round3_math_root_table.tex:12": 24,
+    "paper/round3_math_root_table.tex:13": 24,
+    "paper/round3_math_root_table.tex:14": 24,
+    "paper/round3_math_root_table.tex:17": 24,
+    "paper/round3_math_root_table.tex:19": 24,
+    "paper/short_seed_table.tex:2": 17,
+    "paper/short_seed_table.tex:3": 17,
+    "paper/short_seed_table.tex:12": 18,
+    "paper/short_seed_table.tex:14": 18,
+    "paper/short_seed_table.tex:16": 18,
+    "paper/short_seed_table.tex:17": 18,
+    "paper/short_seed_table.tex:18": 18,
+    "paper/short_seed_table.tex:19": 18,
+    "paper/short_seed_table.tex:20": 18,
+    "paper/short_seed_table.tex:21": 18,
+    "paper/short_seed_table.tex:22": 18,
+    "paper/short_seed_table.tex:23": 18,
+    "paper/short_seed_table.tex:27": 18,
+    "paper/short_seed_table.tex:28": 18,
+    "paper/short_seed_table.tex:36": 17,
+    "paper/short_seed_table.tex:37": 17,
+    "paper/short_seed_table.tex:38": 17,
+    "paper/short_seed_table.tex:39": 17,
+    "paper/short_seed_table.tex:40": 17,
+    "paper/short_seed_table.tex:44": 17,
+    "paper/trim_aux_proofs.tex:2": 17,
+    "paper/trim_aux_proofs.tex:6": 17,
+    "paper/trim_aux_proofs.tex:11": 17,
+    "paper/trim_aux_proofs.tex:12": 17,
+    "paper/trim_aux_proofs.tex:13": 17,
+    "paper/trim_aux_proofs.tex:21": 17
+  },
+  "candidates": {
+    "paper/generated/round2_centre_table.tex:6": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:7": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:10": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:11": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:12": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:13": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:18": [
+      21
+    ],
+    "paper/generated/round2_centre_table.tex:19": [
+      21
+    ],
+    "paper/generated/round2_limits_table.tex:10": [
+      19
+    ],
+    "paper/generated/round2_limits_table.tex:11": [
+      19
+    ],
+    "paper/generated/round2_limits_table.tex:12": [
+      19
+    ],
+    "paper/generated/round2_limits_table.tex:13": [
+      19
+    ],
+    "paper/generated/round2_oracle_table.tex:8": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:10": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:11": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:12": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:13": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:14": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:15": [
+      22
+    ],
+    "paper/generated/round2_oracle_table.tex:18": [
+      22
+    ],
+    "paper/generated/round4_oracle_table.tex:6": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:8": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:9": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:10": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:11": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:12": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:13": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:14": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:15": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:17": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:19": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:20": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:21": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:22": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:23": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:24": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:29": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:30": [
+      25
+    ],
+    "paper/generated/round4_oracle_table.tex:34": [
+      25
+    ],
+    "paper/j_abstract.tex:4": [
+      1
+    ],
+    "paper/j_abstract.tex:5": [
+      1
+    ],
+    "paper/j_abstract.tex:6": [
+      1
+    ],
+    "paper/j_abstract.tex:7": [
+      1
+    ],
+    "paper/j_abstract.tex:8": [
+      1
+    ],
+    "paper/j_abstract.tex:11": [
+      1
+    ],
+    "paper/j_abstract.tex:13": [
+      1
+    ],
+    "paper/j_abstract.tex:14": [
+      1
+    ],
+    "paper/j_abstract.tex:15": [
+      1
+    ],
+    "paper/j_abstract.tex:16": [
+      1
+    ],
+    "paper/j_abstract.tex:17": [
+      1
+    ],
+    "paper/j_appendix.tex:4": [
+      15
+    ],
+    "paper/j_appendix.tex:5": [
+      15
+    ],
+    "paper/j_appendix.tex:7": [
+      15
+    ],
+    "paper/j_appendix.tex:8": [
+      15
+    ],
+    "paper/j_appendix.tex:9": [
+      15
+    ],
+    "paper/j_appendix.tex:10": [
+      15
+    ],
+    "paper/j_appendix.tex:11": [
+      15
+    ],
+    "paper/j_appendix.tex:12": [
+      15
+    ],
+    "paper/j_appendix.tex:13": [
+      15
+    ],
+    "paper/j_appendix.tex:18": [
+      15
+    ],
+    "paper/j_appendix.tex:20": [
+      15
+    ],
+    "paper/j_appendix.tex:23": [
+      16
+    ],
+    "paper/j_appendix.tex:24": [
+      16
+    ],
+    "paper/j_appendix.tex:25": [
+      16
+    ],
+    "paper/j_appendix.tex:27": [
+      16
+    ],
+    "paper/j_appendix.tex:28": [
+      16
+    ],
+    "paper/j_appendix.tex:29": [
+      16
+    ],
+    "paper/j_appendix.tex:30": [
+      16
+    ],
+    "paper/j_appendix.tex:31": [
+      16
+    ],
+    "paper/j_appendix.tex:32": [
+      16
+    ],
+    "paper/j_appendix.tex:33": [
+      16
+    ],
+    "paper/j_appendix.tex:34": [
+      16
+    ],
+    "paper/j_appendix.tex:38": [
+      16
+    ],
+    "paper/j_appendix.tex:40": [
+      16
+    ],
+    "paper/j_appendix.tex:41": [
+      16
+    ],
+    "paper/j_appendix.tex:42": [
+      16
+    ],
+    "paper/j_appendix.tex:45": [
+      16
+    ],
+    "paper/j_appendix.tex:52": [
+      16
+    ],
+    "paper/j_appendix.tex:53": [
+      16
+    ],
+    "paper/j_appendix.tex:55": [
+      16
+    ],
+    "paper/j_appendix.tex:60": [
+      16
+    ],
+    "paper/j_appendix.tex:64": [
+      16
+    ],
+    "paper/j_appendix.tex:67": [
+      16
+    ],
+    "paper/j_appendix.tex:70": [
+      16
+    ],
+    "paper/j_appendix.tex:71": [
+      16
+    ],
+    "paper/j_appendix.tex:77": [
+      16
+    ],
+    "paper/j_appendix.tex:90": [
+      17
+    ],
+    "paper/j_appendix.tex:91": [
+      17
+    ],
+    "paper/j_ceiling.tex:11": [
+      7
+    ],
+    "paper/j_ceiling.tex:24": [
+      7
+    ],
+    "paper/j_ceiling.tex:25": [
+      7
+    ],
+    "paper/j_ceiling.tex:26": [
+      7
+    ],
+    "paper/j_ceiling.tex:27": [
+      7
+    ],
+    "paper/j_ceiling.tex:30": [
+      7
+    ],
+    "paper/j_ceiling.tex:32": [
+      7
+    ],
+    "paper/j_ceiling.tex:33": [
+      7
+    ],
+    "paper/j_ceiling.tex:34": [
+      7
+    ],
+    "paper/j_ceiling.tex:35": [
+      7
+    ],
+    "paper/j_ceiling.tex:39": [
+      7
+    ],
+    "paper/j_ceiling.tex:40": [
+      7
+    ],
+    "paper/j_ceiling.tex:42": [
+      7
+    ],
+    "paper/j_ceiling.tex:46": [
+      7
+    ],
+    "paper/j_ceiling.tex:47": [
+      7
+    ],
+    "paper/j_ceiling.tex:48": [
+      7
+    ],
+    "paper/j_ceiling.tex:58": [
+      7
+    ],
+    "paper/j_ceiling.tex:60": [
+      7
+    ],
+    "paper/j_ceiling.tex:61": [
+      7
+    ],
+    "paper/j_ceiling.tex:64": [
+      7
+    ],
+    "paper/j_ceiling.tex:65": [
+      7
+    ],
+    "paper/j_ceiling.tex:66": [
+      7
+    ],
+    "paper/j_ceiling.tex:71": [
+      7
+    ],
+    "paper/j_ceiling.tex:72": [
+      7
+    ],
+    "paper/j_ceiling.tex:73": [
+      7
+    ],
+    "paper/j_ceiling.tex:74": [
+      7
+    ],
+    "paper/j_ceiling.tex:77": [
+      8
+    ],
+    "paper/j_ceiling.tex:81": [
+      7,
+      8
+    ],
+    "paper/j_ceiling.tex:82": [
+      8
+    ],
+    "paper/j_ceiling.tex:83": [
+      8
+    ],
+    "paper/j_ceiling.tex:84": [
+      8
+    ],
+    "paper/j_ceiling.tex:88": [
+      8
+    ],
+    "paper/j_ceiling.tex:90": [
+      8
+    ],
+    "paper/j_ceiling.tex:92": [
+      8
+    ],
+    "paper/j_ceiling.tex:93": [
+      8
+    ],
+    "paper/j_ceiling.tex:94": [
+      8
+    ],
+    "paper/j_ceiling.tex:95": [
+      8
+    ],
+    "paper/j_ceiling.tex:102": [
+      8
+    ],
+    "paper/j_ceiling.tex:103": [
+      8
+    ],
+    "paper/j_ceiling.tex:105": [
+      8
+    ],
+    "paper/j_ceiling.tex:115": [
+      8
+    ],
+    "paper/j_ceiling.tex:119": [
+      9
+    ],
+    "paper/j_ceiling.tex:120": [
+      9
+    ],
+    "paper/j_ceiling.tex:121": [
+      9
+    ],
+    "paper/j_ceiling.tex:122": [
+      9
+    ],
+    "paper/j_ceiling.tex:124": [
+      9
+    ],
+    "paper/j_ceiling.tex:132": [
+      9
+    ],
+    "paper/j_ceiling.tex:133": [
+      9
+    ],
+    "paper/j_ceiling.tex:134": [
+      9
+    ],
+    "paper/j_ceiling.tex:135": [
+      9
+    ],
+    "paper/j_ceiling.tex:136": [
+      9
+    ],
+    "paper/j_ceiling.tex:140": [
+      9
+    ],
+    "paper/j_ceiling.tex:143": [
+      9
+    ],
+    "paper/j_ceiling.tex:144": [
+      9
+    ],
+    "paper/j_ceiling.tex:149": [
+      9
+    ],
+    "paper/j_ceiling.tex:150": [
+      9
+    ],
+    "paper/j_ceiling.tex:151": [
+      9
+    ],
+    "paper/j_ceiling.tex:152": [
+      9
+    ],
+    "paper/j_ceiling.tex:153": [
+      9
+    ],
+    "paper/j_ceiling.tex:154": [
+      9
+    ],
+    "paper/j_ceiling.tex:159": [
+      9
+    ],
+    "paper/j_ceiling.tex:160": [
+      9
+    ],
+    "paper/j_ceiling.tex:161": [
+      9
+    ],
+    "paper/j_ceiling.tex:162": [
+      9
+    ],
+    "paper/j_ceiling.tex:167": [
+      9
+    ],
+    "paper/j_ceiling.tex:169": [
+      9
+    ],
+    "paper/j_ceiling.tex:170": [
+      9
+    ],
+    "paper/j_ceiling.tex:171": [
+      9
+    ],
+    "paper/j_ceiling.tex:172": [
+      9
+    ],
+    "paper/j_ceiling.tex:173": [
+      9
+    ],
+    "paper/j_ceiling.tex:174": [
+      9
+    ],
+    "paper/j_ceiling.tex:175": [
+      9
+    ],
+    "paper/j_ceiling.tex:177": [
+      9
+    ],
+    "paper/j_ceiling.tex:181": [
+      9
+    ],
+    "paper/j_ceiling.tex:182": [
+      9
+    ],
+    "paper/j_ceiling.tex:183": [
+      9,
+      10
+    ],
+    "paper/j_ceiling.tex:184": [
+      10
+    ],
+    "paper/j_ceiling.tex:185": [
+      10
+    ],
+    "paper/j_ceiling.tex:189": [
+      10
+    ],
+    "paper/j_ceiling.tex:190": [
+      10
+    ],
+    "paper/j_ceiling.tex:191": [
+      10
+    ],
+    "paper/j_ceiling.tex:193": [
+      10
+    ],
+    "paper/j_ceiling.tex:194": [
+      10
+    ],
+    "paper/j_ceiling.tex:196": [
+      10
+    ],
+    "paper/j_ceiling.tex:197": [
+      10
+    ],
+    "paper/j_ceiling.tex:198": [
+      10
+    ],
+    "paper/j_ceiling.tex:199": [
+      10
+    ],
+    "paper/j_ceiling.tex:203": [
+      10
+    ],
+    "paper/j_ceiling.tex:204": [
+      10
+    ],
+    "paper/j_ceiling.tex:205": [
+      10
+    ],
+    "paper/j_ceiling.tex:207": [
+      10
+    ],
+    "paper/j_ceiling.tex:208": [
+      10
+    ],
+    "paper/j_ceiling.tex:209": [
+      10
+    ],
+    "paper/j_ceiling.tex:212": [
+      10
+    ],
+    "paper/j_ceiling.tex:214": [
+      10
+    ],
+    "paper/j_ceiling.tex:215": [
+      10
+    ],
+    "paper/j_ceiling.tex:216": [
+      10
+    ],
+    "paper/j_ceiling.tex:221": [
+      10
+    ],
+    "paper/j_ceiling.tex:222": [
+      10
+    ],
+    "paper/j_ceiling.tex:223": [
+      10
+    ],
+    "paper/j_ceiling.tex:224": [
+      10
+    ],
+    "paper/j_ceiling.tex:226": [
+      10
+    ],
+    "paper/j_ceiling.tex:227": [
+      10
+    ],
+    "paper/j_ceiling.tex:228": [
+      10
+    ],
+    "paper/j_ceiling.tex:229": [
+      10
+    ],
+    "paper/j_ceiling.tex:230": [
+      10
+    ],
+    "paper/j_discussion.tex:20": [
+      14
+    ],
+    "paper/j_discussion.tex:28": [
+      14
+    ],
+    "paper/j_discussion.tex:29": [
+      14
+    ],
+    "paper/j_discussion.tex:32": [
+      14
+    ],
+    "paper/j_discussion.tex:49": [
+      15
+    ],
+    "paper/j_discussion.tex:50": [
+      15
+    ],
+    "paper/j_discussion.tex:59": [
+      15
+    ],
+    "paper/j_intro.tex:55": [
+      2
+    ],
+    "paper/j_intro.tex:62": [
+      2
+    ],
+    "paper/j_intro.tex:65": [
+      2
+    ],
+    "paper/j_intro.tex:66": [
+      2
+    ],
+    "paper/j_intro.tex:69": [
+      2
+    ],
+    "paper/j_intro.tex:75": [
+      3
+    ],
+    "paper/j_intro.tex:76": [
+      3
+    ],
+    "paper/j_intro.tex:93": [
+      3
+    ],
+    "paper/j_intro.tex:94": [
+      3
+    ],
+    "paper/j_intro.tex:97": [
+      3
+    ],
+    "paper/j_intro.tex:105": [
+      3
+    ],
+    "paper/j_intro.tex:106": [
+      3
+    ],
+    "paper/j_mechanism.tex:2": [
+      13
+    ],
+    "paper/j_mechanism.tex:3": [
+      13
+    ],
+    "paper/j_mechanism.tex:7": [
+      13
+    ],
+    "paper/j_mechanism.tex:24": [
+      14
+    ],
+    "paper/j_mechanism.tex:25": [
+      14
+    ],
+    "paper/j_mechanism.tex:26": [
+      14
+    ],
+    "paper/j_mechanism.tex:27": [
+      14
+    ],
+    "paper/j_mechanism.tex:32": [
+      14
+    ],
+    "paper/j_mechanism.tex:33": [
+      14
+    ],
+    "paper/j_mechanism.tex:34": [
+      14
+    ],
+    "paper/j_mechanism.tex:41": [
+      13
+    ],
+    "paper/j_mechanism.tex:42": [
+      13
+    ],
+    "paper/j_mechanism.tex:43": [
+      13
+    ],
+    "paper/j_mechanism.tex:45": [
+      13
+    ],
+    "paper/j_mechanism.tex:46": [
+      13
+    ],
+    "paper/j_mechanism.tex:48": [
+      13
+    ],
+    "paper/j_mechanism.tex:49": [
+      13
+    ],
+    "paper/j_mechanism.tex:50": [
+      13
+    ],
+    "paper/j_mechanism.tex:52": [
+      14
+    ],
+    "paper/j_mechanism.tex:53": [
+      14
+    ],
+    "paper/j_mechanism.tex:55": [
+      14
+    ],
+    "paper/j_mechanism.tex:56": [
+      14
+    ],
+    "paper/j_mechanism.tex:57": [
+      14
+    ],
+    "paper/j_offmanifold.tex:3": [
+      10
+    ],
+    "paper/j_offmanifold.tex:6": [
+      10
+    ],
+    "paper/j_offmanifold.tex:14": [
+      11
+    ],
+    "paper/j_offmanifold.tex:19": [
+      11
+    ],
+    "paper/j_offmanifold.tex:29": [
+      10,
+      11
+    ],
+    "paper/j_offmanifold.tex:37": [
+      11
+    ],
+    "paper/j_offmanifold.tex:41": [
+      11
+    ],
+    "paper/j_offmanifold.tex:42": [
+      11
+    ],
+    "paper/j_offmanifold.tex:53": [
+      11
+    ],
+    "paper/j_offmanifold.tex:54": [
+      11
+    ],
+    "paper/j_offmanifold.tex:58": [
+      11
+    ],
+    "paper/j_offmanifold.tex:59": [
+      11
+    ],
+    "paper/j_offmanifold.tex:68": [
+      12
+    ],
+    "paper/j_offmanifold.tex:69": [
+      12
+    ],
+    "paper/j_offmanifold.tex:70": [
+      12
+    ],
+    "paper/j_offmanifold.tex:72": [
+      12
+    ],
+    "paper/j_offmanifold.tex:73": [
+      12
+    ],
+    "paper/j_offmanifold.tex:74": [
+      12
+    ],
+    "paper/j_offmanifold.tex:75": [
+      12
+    ],
+    "paper/j_offmanifold.tex:78": [
+      12
+    ],
+    "paper/j_offmanifold.tex:81": [
+      12
+    ],
+    "paper/j_offmanifold.tex:85": [
+      11
+    ],
+    "paper/j_offmanifold.tex:87": [
+      11
+    ],
+    "paper/j_offmanifold.tex:88": [
+      11
+    ],
+    "paper/j_offmanifold.tex:89": [
+      11
+    ],
+    "paper/j_offmanifold.tex:93": [
+      11
+    ],
+    "paper/j_offmanifold.tex:94": [
+      11
+    ],
+    "paper/j_offmanifold.tex:95": [
+      11
+    ],
+    "paper/j_offmanifold.tex:96": [
+      11
+    ],
+    "paper/j_offmanifold.tex:97": [
+      11
+    ],
+    "paper/j_offmanifold.tex:98": [
+      11
+    ],
+    "paper/j_offmanifold.tex:100": [
+      11
+    ],
+    "paper/j_offmanifold.tex:110": [
+      12
+    ],
+    "paper/j_round2_appendix.tex:3": [
+      17
+    ],
+    "paper/j_round2_appendix.tex:4": [
+      17
+    ],
+    "paper/j_round2_appendix.tex:5": [
+      17
+    ],
+    "paper/j_round2_appendix.tex:8": [
+      17
+    ],
+    "paper/j_round2_appendix.tex:14": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:16": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:17": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:18": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:22": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:23": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:24": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:27": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:29": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:31": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:35": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:38": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:39": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:40": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:44": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:45": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:48": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:55": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:56": [
+      18
+    ],
+    "paper/j_round2_appendix.tex:58": [
+      18,
+      19
+    ],
+    "paper/j_round2_appendix.tex:59": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:61": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:62": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:64": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:72": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:74": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:75": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:81": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:82": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:83": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:84": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:94": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:95": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:96": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:97": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:100": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:109": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:112": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:113": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:114": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:115": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:120": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:122": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:123": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:124": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:125": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:127": [
+      19
+    ],
+    "paper/j_round2_appendix.tex:128": [
+      19,
+      20
+    ],
+    "paper/j_round2_appendix.tex:129": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:130": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:137": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:146": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:147": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:148": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:149": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:150": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:151": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:152": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:154": [
+      20
+    ],
+    "paper/j_round2_appendix.tex:155": [
+      20,
+      21
+    ],
+    "paper/j_round2_appendix.tex:156": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:165": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:166": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:179": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:180": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:181": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:182": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:183": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:184": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:185": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:186": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:190": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:191": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:198": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:202": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:203": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:204": [
+      21
+    ],
+    "paper/j_round2_appendix.tex:209": [
+      22
+    ],
+    "paper/j_round2_appendix.tex:211": [
+      22
+    ],
+    "paper/j_round2_appendix.tex:212": [
+      22
+    ],
+    "paper/j_round2_appendix.tex:221": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:222": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:227": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:228": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:229": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:231": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:232": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:234": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:235": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:236": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:237": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:238": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:240": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:241": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:242": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:248": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:249": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:250": [
+      24
+    ],
+    "paper/j_round2_appendix.tex:257": [
+      26
+    ],
+    "paper/j_round2_appendix.tex:259": [
+      26
+    ],
+    "paper/j_round2_appendix.tex:260": [
+      26
+    ],
+    "paper/j_setting.tex:7": [
+      4
+    ],
+    "paper/j_setting.tex:9": [
+      4
+    ],
+    "paper/j_setting.tex:10": [
+      4
+    ],
+    "paper/j_setting.tex:12": [
+      4
+    ],
+    "paper/j_setting.tex:13": [
+      4
+    ],
+    "paper/j_setting.tex:16": [
+      4
+    ],
+    "paper/j_setting.tex:17": [
+      4
+    ],
+    "paper/j_setting.tex:20": [
+      4
+    ],
+    "paper/j_setting.tex:23": [
+      4
+    ],
+    "paper/j_setting.tex:24": [
+      4
+    ],
+    "paper/j_setting.tex:25": [
+      4
+    ],
+    "paper/j_setting.tex:28": [
+      4
+    ],
+    "paper/j_setting.tex:29": [
+      4
+    ],
+    "paper/j_setting.tex:30": [
+      4
+    ],
+    "paper/j_setting.tex:31": [
+      4
+    ],
+    "paper/j_setting.tex:32": [
+      4
+    ],
+    "paper/j_setting.tex:33": [
+      4
+    ],
+    "paper/j_setting.tex:34": [
+      4
+    ],
+    "paper/j_setting.tex:35": [
+      4
+    ],
+    "paper/j_setting.tex:36": [
+      4
+    ],
+    "paper/j_setting.tex:37": [
+      4
+    ],
+    "paper/j_setting.tex:41": [
+      4
+    ],
+    "paper/j_setting.tex:44": [
+      4
+    ],
+    "paper/j_setting.tex:45": [
+      4
+    ],
+    "paper/j_setting.tex:52": [
+      4
+    ],
+    "paper/j_setting.tex:53": [
+      4
+    ],
+    "paper/j_setting.tex:54": [
+      4
+    ],
+    "paper/j_setting.tex:55": [
+      4
+    ],
+    "paper/j_setting.tex:56": [
+      4
+    ],
+    "paper/j_setting.tex:63": [
+      4
+    ],
+    "paper/j_setting.tex:64": [
+      4
+    ],
+    "paper/j_setting.tex:65": [
+      4
+    ],
+    "paper/j_setting.tex:72": [
+      5
+    ],
+    "paper/j_setting.tex:73": [
+      5
+    ],
+    "paper/j_setting.tex:84": [
+      5
+    ],
+    "paper/j_setting.tex:85": [
+      5
+    ],
+    "paper/j_setting.tex:86": [
+      5
+    ],
+    "paper/j_setting.tex:87": [
+      5
+    ],
+    "paper/j_setting.tex:89": [
+      5
+    ],
+    "paper/j_setting.tex:90": [
+      5
+    ],
+    "paper/j_setting.tex:91": [
+      5
+    ],
+    "paper/j_setting.tex:92": [
+      5
+    ],
+    "paper/j_setting.tex:93": [
+      5
+    ],
+    "paper/j_setting.tex:96": [
+      5
+    ],
+    "paper/j_setting.tex:98": [
+      5
+    ],
+    "paper/j_setting.tex:99": [
+      5
+    ],
+    "paper/j_setting.tex:100": [
+      5
+    ],
+    "paper/j_setting.tex:101": [
+      5
+    ],
+    "paper/j_setting.tex:105": [
+      5
+    ],
+    "paper/j_setting.tex:110": [
+      5
+    ],
+    "paper/j_setting.tex:111": [
+      5
+    ],
+    "paper/j_setting.tex:117": [
+      5
+    ],
+    "paper/j_setting.tex:118": [
+      5
+    ],
+    "paper/j_setting.tex:119": [
+      5
+    ],
+    "paper/j_setting.tex:120": [
+      5
+    ],
+    "paper/j_setting.tex:123": [
+      5
+    ],
+    "paper/j_setting.tex:124": [
+      5
+    ],
+    "paper/j_setting.tex:125": [
+      5
+    ],
+    "paper/j_setting.tex:130": [
+      5
+    ],
+    "paper/j_setting.tex:131": [
+      5
+    ],
+    "paper/j_setting.tex:136": [
+      5
+    ],
+    "paper/j_setting.tex:138": [
+      5
+    ],
+    "paper/j_setting.tex:139": [
+      5
+    ],
+    "paper/j_setting.tex:143": [
+      5
+    ],
+    "paper/j_setting.tex:148": [
+      6
+    ],
+    "paper/j_setting.tex:150": [
+      6
+    ],
+    "paper/j_setting.tex:165": [
+      6
+    ],
+    "paper/j_setting.tex:166": [
+      6
+    ],
+    "paper/j_setting.tex:168": [
+      6
+    ],
+    "paper/j_setting.tex:178": [
+      6
+    ],
+    "paper/j_setting.tex:179": [
+      6
+    ],
+    "paper/j_setting.tex:180": [
+      6
+    ],
+    "paper/j_setting.tex:181": [
+      6
+    ],
+    "paper/j_setting.tex:190": [
+      6
+    ],
+    "paper/j_setting.tex:196": [
+      6
+    ],
+    "paper/j_setting.tex:197": [
+      6
+    ],
+    "paper/j_theory.tex:9": [
+      12
+    ],
+    "paper/j_theory.tex:13": [
+      12
+    ],
+    "paper/j_theory.tex:14": [
+      12
+    ],
+    "paper/j_theory.tex:16": [
+      12
+    ],
+    "paper/j_theory.tex:17": [
+      12
+    ],
+    "paper/j_theory.tex:19": [
+      12
+    ],
+    "paper/j_theory.tex:26": [
+      12
+    ],
+    "paper/j_theory.tex:29": [
+      12
+    ],
+    "paper/j_theory.tex:31": [
+      12
+    ],
+    "paper/j_theory.tex:33": [
+      12
+    ],
+    "paper/j_theory.tex:37": [
+      12
+    ],
+    "paper/j_theory.tex:38": [
+      12
+    ],
+    "paper/j_theory.tex:39": [
+      12
+    ],
+    "paper/j_theory.tex:41": [
+      13
+    ],
+    "paper/j_theory.tex:44": [
+      13
+    ],
+    "paper/j_theory.tex:45": [
+      13
+    ],
+    "paper/j_theory.tex:46": [
+      13
+    ],
+    "paper/j_theory.tex:54": [
+      13
+    ],
+    "paper/j_theory.tex:57": [
+      13
+    ],
+    "paper/j_theory.tex:61": [
+      13
+    ],
+    "paper/j_theory.tex:62": [
+      13
+    ],
+    "paper/j_theory.tex:69": [
+      13
+    ],
+    "paper/j_theory.tex:70": [
+      13
+    ],
+    "paper/j_theory.tex:71": [
+      13
+    ],
+    "paper/j_theory.tex:72": [
+      13
+    ],
+    "paper/j_theory.tex:80": [
+      13
+    ],
+    "paper/oa_empirical.tex:1": [
+      24
+    ],
+    "paper/oa_empirical.tex:6": [
+      24
+    ],
+    "paper/oa_empirical.tex:12": [
+      26
+    ],
+    "paper/oa_empirical.tex:13": [
+      26
+    ],
+    "paper/oa_empirical.tex:19": [
+      26
+    ],
+    "paper/oa_empirical.tex:20": [
+      26
+    ],
+    "paper/oa_empirical.tex:37": [
+      27
+    ],
+    "paper/oa_empirical.tex:38": [
+      27
+    ],
+    "paper/oa_empirical.tex:40": [
+      27
+    ],
+    "paper/oa_empirical.tex:41": [
+      27
+    ],
+    "paper/oa_empirical.tex:42": [
+      27
+    ],
+    "paper/oa_empirical.tex:51": [
+      27
+    ],
+    "paper/oa_empirical.tex:53": [
+      27
+    ],
+    "paper/oa_empirical.tex:54": [
+      27
+    ],
+    "paper/oa_empirical.tex:55": [
+      27
+    ],
+    "paper/oa_empirical.tex:56": [
+      27
+    ],
+    "paper/oa_empirical.tex:57": [
+      27
+    ],
+    "paper/oa_empirical.tex:58": [
+      27
+    ],
+    "paper/oa_empirical.tex:59": [
+      27
+    ],
+    "paper/oa_empirical.tex:60": [
+      27
+    ],
+    "paper/oa_empirical.tex:61": [
+      27
+    ],
+    "paper/oa_empirical.tex:62": [
+      27
+    ],
+    "paper/oa_empirical.tex:63": [
+      27
+    ],
+    "paper/oa_empirical.tex:64": [
+      27
+    ],
+    "paper/oa_empirical.tex:65": [
+      27
+    ],
+    "paper/oa_empirical.tex:66": [
+      27
+    ],
+    "paper/oa_empirical.tex:67": [
+      27
+    ],
+    "paper/oa_empirical.tex:68": [
+      27
+    ],
+    "paper/oa_empirical.tex:69": [
+      27
+    ],
+    "paper/oa_empirical.tex:72": [
+      27
+    ],
+    "paper/oa_empirical.tex:73": [
+      27
+    ],
+    "paper/oa_empirical.tex:75": [
+      27
+    ],
+    "paper/oa_empirical.tex:87": [
+      27
+    ],
+    "paper/oa_empirical.tex:88": [
+      27
+    ],
+    "paper/oa_empirical.tex:89": [
+      27
+    ],
+    "paper/oa_empirical.tex:90": [
+      27
+    ],
+    "paper/oa_empirical.tex:93": [
+      27
+    ],
+    "paper/oa_empirical.tex:106": [
+      28
+    ],
+    "paper/oa_empirical.tex:107": [
+      28
+    ],
+    "paper/oa_empirical.tex:108": [
+      28
+    ],
+    "paper/oa_empirical.tex:109": [
+      28
+    ],
+    "paper/oa_empirical.tex:110": [
+      28
+    ],
+    "paper/oa_empirical.tex:111": [
+      28
+    ],
+    "paper/oa_empirical.tex:112": [
+      28
+    ],
+    "paper/oa_empirical.tex:113": [
+      28
+    ],
+    "paper/oa_empirical.tex:114": [
+      28
+    ],
+    "paper/oa_empirical.tex:115": [
+      28
+    ],
+    "paper/oa_empirical.tex:116": [
+      28
+    ],
+    "paper/oa_empirical.tex:117": [
+      28
+    ],
+    "paper/oa_empirical.tex:131": [
+      28
+    ],
+    "paper/oa_empirical.tex:132": [
+      28
+    ],
+    "paper/oa_empirical.tex:133": [
+      28
+    ],
+    "paper/oa_empirical.tex:134": [
+      28
+    ],
+    "paper/oa_empirical.tex:135": [
+      28
+    ],
+    "paper/oa_empirical.tex:136": [
+      28
+    ],
+    "paper/oa_empirical.tex:137": [
+      28
+    ],
+    "paper/oa_empirical.tex:138": [
+      28
+    ],
+    "paper/oa_empirical.tex:139": [
+      28
+    ],
+    "paper/oa_empirical.tex:140": [
+      28
+    ],
+    "paper/oa_empirical.tex:141": [
+      28
+    ],
+    "paper/oa_empirical.tex:142": [
+      28
+    ],
+    "paper/oa_empirical.tex:145": [
+      28
+    ],
+    "paper/oa_empirical.tex:153": [
+      29
+    ],
+    "paper/oa_empirical.tex:155": [
+      29
+    ],
+    "paper/oa_empirical.tex:157": [
+      29
+    ],
+    "paper/oa_empirical.tex:169": [
+      30
+    ],
+    "paper/oa_lean.tex:7": [
+      32
+    ],
+    "paper/oa_lean.tex:46": [
+      33
+    ],
+    "paper/oa_numerics.tex:10": [
+      30
+    ],
+    "paper/oa_numerics.tex:18": [
+      30
+    ],
+    "paper/oa_numerics.tex:19": [
+      30
+    ],
+    "paper/oa_numerics.tex:21": [
+      31
+    ],
+    "paper/oa_numerics.tex:22": [
+      31
+    ],
+    "paper/oa_numerics.tex:25": [
+      30,
+      31
+    ],
+    "paper/oa_numerics.tex:27": [
+      31
+    ],
+    "paper/oa_numerics.tex:31": [
+      31
+    ],
+    "paper/oa_numerics.tex:32": [
+      31
+    ],
+    "paper/oa_numerics.tex:33": [
+      31
+    ],
+    "paper/oa_numerics.tex:37": [
+      31
+    ],
+    "paper/oa_numerics.tex:38": [
+      31
+    ],
+    "paper/oa_numerics.tex:40": [
+      31
+    ],
+    "paper/oa_numerics.tex:43": [
+      31
+    ],
+    "paper/oa_numerics.tex:49": [
+      31
+    ],
+    "paper/oa_numerics.tex:52": [
+      31
+    ],
+    "paper/oa_numerics.tex:55": [
+      31
+    ],
+    "paper/oa_numerics.tex:58": [
+      31
+    ],
+    "paper/oa_numerics.tex:59": [
+      31
+    ],
+    "paper/oa_numerics.tex:60": [
+      31
+    ],
+    "paper/oa_numerics.tex:61": [
+      31
+    ],
+    "paper/oa_numerics.tex:64": [
+      31
+    ],
+    "paper/oa_numerics.tex:65": [
+      31
+    ],
+    "paper/oa_numerics.tex:66": [
+      31
+    ],
+    "paper/oa_numerics.tex:67": [
+      31
+    ],
+    "paper/oa_numerics.tex:68": [
+      31
+    ],
+    "paper/oa_numerics.tex:69": [
+      31
+    ],
+    "paper/oa_numerics.tex:70": [
+      31
+    ],
+    "paper/oa_numerics.tex:71": [
+      31
+    ],
+    "paper/oa_numerics.tex:72": [
+      31
+    ],
+    "paper/oa_numerics.tex:77": [
+      31
+    ],
+    "paper/oa_numerics.tex:80": [
+      31
+    ],
+    "paper/oa_numerics.tex:82": [
+      31
+    ],
+    "paper/oa_numerics.tex:94": [
+      32
+    ],
+    "paper/oa_numerics.tex:99": [
+      32
+    ],
+    "paper/oa_numerics.tex:100": [
+      32
+    ],
+    "paper/oa_numerics.tex:101": [
+      32
+    ],
+    "paper/oa_numerics.tex:102": [
+      32
+    ],
+    "paper/oa_numerics.tex:103": [
+      32
+    ],
+    "paper/oa_numerics.tex:104": [
+      32
+    ],
+    "paper/oa_numerics.tex:105": [
+      32
+    ],
+    "paper/oa_numerics.tex:106": [
+      32
+    ],
+    "paper/oa_numerics.tex:107": [
+      32
+    ],
+    "paper/oa_numerics.tex:114": [
+      32
+    ],
+    "paper/oa_numerics.tex:115": [
+      32
+    ],
+    "paper/oa_numerics.tex:116": [
+      32
+    ],
+    "paper/oa_numerics.tex:117": [
+      32
+    ],
+    "paper/oa_numerics.tex:118": [
+      32
+    ],
+    "paper/oa_numerics.tex:119": [
+      32
+    ],
+    "paper/oa_numerics.tex:122": [
+      32
+    ],
+    "paper/oa_numerics.tex:123": [
+      32
+    ],
+    "paper/oa_numerics.tex:124": [
+      32
+    ],
+    "paper/oa_numerics.tex:126": [
+      32
+    ],
+    "paper/oa_numerics.tex:127": [
+      32
+    ],
+    "paper/oa_numerics.tex:128": [
+      32
+    ],
+    "paper/oa_numerics.tex:129": [
+      32
+    ],
+    "paper/oa_numerics.tex:130": [
+      32
+    ],
+    "paper/oa_numerics.tex:131": [
+      32
+    ],
+    "paper/round3_math.tex:2": [
+      22
+    ],
+    "paper/round3_math.tex:5": [
+      22
+    ],
+    "paper/round3_math.tex:6": [
+      22
+    ],
+    "paper/round3_math.tex:9": [
+      22
+    ],
+    "paper/round3_math.tex:10": [
+      22
+    ],
+    "paper/round3_math.tex:11": [
+      22
+    ],
+    "paper/round3_math.tex:12": [
+      22
+    ],
+    "paper/round3_math.tex:15": [
+      22
+    ],
+    "paper/round3_math.tex:23": [
+      22
+    ],
+    "paper/round3_math.tex:31": [
+      22
+    ],
+    "paper/round3_math.tex:33": [
+      22
+    ],
+    "paper/round3_math.tex:34": [
+      22
+    ],
+    "paper/round3_math.tex:52": [
+      23
+    ],
+    "paper/round3_math.tex:54": [
+      23
+    ],
+    "paper/round3_math.tex:57": [
+      23
+    ],
+    "paper/round3_math.tex:59": [
+      23
+    ],
+    "paper/round3_math.tex:63": [
+      23
+    ],
+    "paper/round3_math.tex:64": [
+      23
+    ],
+    "paper/round3_math.tex:65": [
+      23
+    ],
+    "paper/round3_math.tex:66": [
+      23
+    ],
+    "paper/round3_math.tex:70": [
+      23
+    ],
+    "paper/round3_math.tex:77": [
+      23
+    ],
+    "paper/round3_math.tex:86": [
+      23
+    ],
+    "paper/round3_math_results.tex:2": [
+      23
+    ],
+    "paper/round3_math_results.tex:3": [
+      23
+    ],
+    "paper/round3_math_results.tex:5": [
+      23
+    ],
+    "paper/round3_math_results.tex:6": [
+      23
+    ],
+    "paper/round3_math_results.tex:7": [
+      23
+    ],
+    "paper/round3_math_results.tex:8": [
+      23
+    ],
+    "paper/round3_math_results.tex:10": [
+      23
+    ],
+    "paper/round3_math_results.tex:11": [
+      23
+    ],
+    "paper/round3_math_results.tex:12": [
+      23
+    ],
+    "paper/round3_math_results.tex:13": [
+      23
+    ],
+    "paper/round3_math_results.tex:14": [
+      23
+    ],
+    "paper/round3_math_results.tex:16": [
+      23
+    ],
+    "paper/round3_math_results.tex:17": [
+      23
+    ],
+    "paper/round3_math_results.tex:18": [
+      23
+    ],
+    "paper/round3_math_results.tex:19": [
+      23
+    ],
+    "paper/round3_math_results.tex:20": [
+      23
+    ],
+    "paper/round3_math_results.tex:21": [
+      23
+    ],
+    "paper/round3_math_results.tex:22": [
+      23
+    ],
+    "paper/round3_math_root_table.tex:6": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:7": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:10": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:11": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:12": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:13": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:14": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:17": [
+      24
+    ],
+    "paper/round3_math_root_table.tex:19": [
+      24
+    ],
+    "paper/short_seed_table.tex:2": [
+      17
+    ],
+    "paper/short_seed_table.tex:3": [
+      17
+    ],
+    "paper/short_seed_table.tex:12": [
+      18
+    ],
+    "paper/short_seed_table.tex:14": [
+      18
+    ],
+    "paper/short_seed_table.tex:16": [
+      18
+    ],
+    "paper/short_seed_table.tex:17": [
+      18
+    ],
+    "paper/short_seed_table.tex:18": [
+      18
+    ],
+    "paper/short_seed_table.tex:19": [
+      18
+    ],
+    "paper/short_seed_table.tex:20": [
+      18
+    ],
+    "paper/short_seed_table.tex:21": [
+      18
+    ],
+    "paper/short_seed_table.tex:22": [
+      18
+    ],
+    "paper/short_seed_table.tex:23": [
+      18
+    ],
+    "paper/short_seed_table.tex:27": [
+      18
+    ],
+    "paper/short_seed_table.tex:28": [
+      18
+    ],
+    "paper/short_seed_table.tex:36": [
+      17
+    ],
+    "paper/short_seed_table.tex:37": [
+      17
+    ],
+    "paper/short_seed_table.tex:38": [
+      17
+    ],
+    "paper/short_seed_table.tex:39": [
+      17
+    ],
+    "paper/short_seed_table.tex:40": [
+      17
+    ],
+    "paper/short_seed_table.tex:44": [
+      17
+    ],
+    "paper/trim_aux_proofs.tex:2": [
+      17
+    ],
+    "paper/trim_aux_proofs.tex:6": [
+      17
+    ],
+    "paper/trim_aux_proofs.tex:11": [
+      17
+    ],
+    "paper/trim_aux_proofs.tex:12": [
+      17
+    ],
+    "paper/trim_aux_proofs.tex:13": [
+      17
+    ],
+    "paper/trim_aux_proofs.tex:21": [
+      17
+    ]
+  }
+}

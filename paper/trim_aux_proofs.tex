@@ -1,0 +1,23 @@
+\emph{Sharpness of the spectral bounds.}\label{app:sharpness}
+The following construction shows what can be inferred from the four block energies alone.
+It does not assert that measured networks attain the bounding envelopes.
+
+\begin{proposition}[Sharpness]\label{prop:sharp}
+Fix $\alpha>0$, $0<\epsilon<\lambda_{\max}$ and four nonnegative block energies,
+with positive total bulk energy. Spectra and vectors realising these energies can
+approach either endpoint of \eqref{eq:sandwich}.
+\end{proposition}
+\begin{proof}
+For $\epsilon<\epsilon'\le\lambda_{\max}$, use four orthogonal modes with eigenvalues
+$0,\epsilon,\epsilon',\lambda_{\max}$. To approach $U$, place the sharp weak and
+strong energies at $0,\epsilon'$, and the bulk energies at $\epsilon,\lambda_{\max}$.
+Square-root coordinates realise the prescribed energies and give
+\[
+ \frac{q_{\sh,\rm sl}/\alpha+q_{\sh,\rm st}/(\alpha+\epsilon')}
+      {q_{\bk,\rm sl}/(\alpha+\epsilon)+q_{\bk,\rm st}/(\alpha+\lambda_{\max})}
+ \longrightarrow U(\epsilon)\quad(\epsilon'\downarrow\epsilon).
+\]
+For $L$, place sharp energies at $\epsilon,\lambda_{\max}$ and bulk energies at
+$0,\epsilon'$. The ratio then tends to $L(\epsilon)$. The strict inequality
+$\epsilon'>\epsilon$ keeps that mode in the strong block.
+\end{proof}

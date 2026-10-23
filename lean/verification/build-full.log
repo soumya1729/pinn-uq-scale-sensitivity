@@ -1,0 +1,122 @@
+Lean release source-clean build and axiom audit, 23 October 2026.
+Project objects initially absent; exact-pinned existing dependency cache.
+Command: date -u
+Fri Oct 23 04:46:04 UTC 2026
+Command: lean --version
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+Command: lake --version
+Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)
+Command: cat lean-toolchain
+leanprover/lean4:v4.30.0
+Command: verify all manifest dependency commits against reused cache
+mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f
+plausible a456461b368b71d2accd95234832cd9c174b5437
+LeanSearchClient c5d5b8fe6e5158def25cd28eb94e4141ad97c843
+importGraph 515cf9d0c00ece5e661f6de4326a53dedc1e8ea1
+proofwidgets a84b3e2475d5c5ab979567b1ad8aea21b764bcf8
+aesop 558915ae105bfd8074e22d597613d1961822adc2
+Qq a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c
+batteries 32dc18cde3684679f3c003de608743b57498c56f
+Cli 6b907cf12b2e445ccb7c24bc208ef04a1f39e84c
+ALL_PINNED_DEPENDENCY_COMMITS: PASS
+Command: LEAN_NUM_THREADS=4 lake --no-cache --wfail build
+✔ [8475/8483] Built PaperReliability.ModalModel (416s)
+Terminated
+
+INITIAL ALL-TARGET ATTEMPT: intentionally interrupted to avoid concurrent heavy importers.
+
+Sequential source-clean Lean release build, 23 October 2026.
+The initial all-target build compiled ModalModel, then was intentionally stopped
+when Lake scheduled four full Mathlib importers concurrently in the 7.6 GiB VM.
+That initial log is lean_build_20261023.log; no proof or source was changed.
+This route compiles remaining modules one target at a time, then builds the
+complete default library and executes the axiom audit.
+Command: lean --version
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+Command: lake --version
+Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)
+Command: LEAN_NUM_THREADS=4 lake --no-cache --wfail build +PaperReliability.ModalModel
+Build completed successfully (8475 jobs).
+MODULE_TARGET_PASS: ModalModel
+Command: LEAN_NUM_THREADS=4 lake --no-cache --wfail build +PaperReliability.CovarianceRepresentation
+✔ [8476/8476] Built PaperReliability.CovarianceRepresentation (260s)
+Build completed successfully (8476 jobs).
+MODULE_TARGET_PASS: CovarianceRepresentation
+Command: LEAN_NUM_THREADS=4 lake --no-cache --wfail build +PaperReliability.CoarseSpectralBounds
+✔ [8476/8476] Built PaperReliability.CoarseSpectralBounds (461s)
+Build completed successfully (8476 jobs).
+MODULE_TARGET_PASS: CoarseSpectralBounds
+Command: LEAN_NUM_THREADS=4 lake --no-cache --wfail build +PaperReliability.VarianceEnvelopes
+Terminated
+
+SEQUENTIAL LAKE ATTEMPT: intentionally interrupted for excessive setup/import overhead, not a proof failure.
+
+Fresh source-clean direct compiler rebuild, 23 October 2026.
+The direct build/ output directory was absent before this run.
+The slow Lake attempts are retained separately; no Lake-success claim is made.
+Dependency cache commits were verified in lean_build_20261023.log.
+Command: LEAN_CACHE_PROJECT=/home/soumya_nitro/pinn_theory LEAN_COMPILER=lean bash check_cached.sh
+Command: lean --version
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+Compiling all project modules from source; warnings are errors.
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/ModalModel.olean PaperReliability/ModalModel.lean
+DIRECT_MODULE_PASS: ModalModel
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/CovarianceRepresentation.olean PaperReliability/CovarianceRepresentation.lean
+DIRECT_MODULE_PASS: CovarianceRepresentation
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/CoarseSpectralBounds.olean PaperReliability/CoarseSpectralBounds.lean
+DIRECT_MODULE_PASS: CoarseSpectralBounds
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/VarianceEnvelopes.olean PaperReliability/VarianceEnvelopes.lean
+DIRECT_MODULE_PASS: VarianceEnvelopes
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/CoverageEnvelopes.olean PaperReliability/CoverageEnvelopes.lean
+DIRECT_MODULE_PASS: CoverageEnvelopes
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/PredictiveCentres.olean PaperReliability/PredictiveCentres.lean
+DIRECT_MODULE_PASS: PredictiveCentres
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability/RegionalLimits.olean PaperReliability/RegionalLimits.lean
+DIRECT_MODULE_PASS: RegionalLimits
+Command: lean -j4 -DwarningAsError=true -o build/PaperReliability.olean PaperReliability.lean
+Command: lean -j4 -DwarningAsError=true Audit.lean
+'PaperReliability.spectral_covariance_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.two_subspace_contrast_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.regional_two_subspace_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.upper_envelope_arbitrary_energy_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.lower_envelope_arbitrary_energy_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.positive_modal_variance_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.variance_enclosure_on_precision_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.calibrated_modal_coverage_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.kernel_prediction_shift_attribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.likelihood_predictive_shift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.likelihood_regional_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.likelihood_centre_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.regional_contrast_strong_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.regional_contrast_weak_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperReliability.endpoint_limits_do_not_bound_contrast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PaperReliability.likelihood_regional_error_bounds : ∀ {X : Type u_1} {ι : Type u_2} [inst : Fintype X] [Nonempty X]
+  [inst_2 : Fintype ι] (error : X → ℝ) (tangent : X → ι → ℝ) (singular residual : ι → ℝ) {precision noise : ℝ},
+  0 < precision →
+    0 < noise →
+      have shift := fun x => PaperReliability.predictiveShift (tangent x) singular residual precision;
+      have width := fun x =>
+        √(noise * PaperReliability.modalVariance (fun i => singular i ^ 2) (fun i => tangent x i ^ 2) precision);
+      have c := √(PaperReliability.likelihoodEnergy singular residual precision / noise);
+      have B :=
+        min (c * PaperReliability.regionalRMS width)
+          (∑ i,
+            |PaperReliability.likelihoodShift singular residual precision i| *
+              PaperReliability.regionalRMS fun x => tangent x i);
+      (max 0 (PaperReliability.regionalRMS error - B) ≤ PaperReliability.regionalRMS fun x => error x + shift x) ∧
+        (PaperReliability.regionalRMS fun x => error x + shift x) ≤ PaperReliability.regionalRMS error + B
+@PaperReliability.likelihood_centre_coverage : ∀ {X : Type u_1} {ι : Type u_2} [inst : Fintype X] [Nonempty X]
+  [inst_2 : Fintype ι] (error : X → ℝ) (tangent : X → ι → ℝ) (singular residual : ι → ℝ)
+  {precision noise threshold : ℝ},
+  0 < precision →
+    0 < noise →
+      √(PaperReliability.likelihoodEnergy singular residual precision / noise) ≤ threshold →
+        have shift := fun x => PaperReliability.predictiveShift (tangent x) singular residual precision;
+        have width := fun x =>
+          √(noise * PaperReliability.modalVariance (fun i => singular i ^ 2) (fun i => tangent x i ^ 2) precision);
+        have c := √(PaperReliability.likelihoodEnergy singular residual precision / noise);
+        PaperReliability.centreCoverage error width (threshold - c) ≤
+            PaperReliability.centreCoverage (fun x => error x + shift x) width threshold ∧
+          PaperReliability.centreCoverage (fun x => error x + shift x) width threshold ≤
+            PaperReliability.centreCoverage error width (threshold + c)
+DIRECT_BUILD_AND_AXIOM_AUDIT: PASS

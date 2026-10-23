@@ -1,0 +1,6 @@
+{
+  "retain": "all",
+  "archive_root": "retained",
+  "storage_confirmed": true,
+  "storage_notes": "Author confirms /home is not purged and authorises all-17 retention. df reports 206 TB free on the shared filesystem; quota -s returned no output. This is not an explicit certificate of unlimited individual quota."
+}

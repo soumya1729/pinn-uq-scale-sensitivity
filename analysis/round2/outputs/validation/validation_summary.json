@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "numerical_checks": [
+    {
+      "gamma": 0.0001,
+      "alpha": 2.0,
+      "noise_variance": 5e-05,
+      "mean_relative_error": 4.902089444124467e-12,
+      "covariance_relative_error": 3.005247590910337e-12,
+      "log_evidence_absolute_error": 1.4210854715202004e-13,
+      "slope_absolute_error": 1.9096963593812077e-10,
+      "normal_residual_absolute": 1.3236818172994717e-14,
+      "normal_residual_scaled": 2.6488424329929065e-15,
+      "complement_shift_absolute_error": 1.9405097854084435e-15,
+      "matched_mean_absolute_error": 0.0,
+      "matched_variance_relative_error": 1.1876760559051215e-16,
+      "matched_delta_absolute_error": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "alpha": 2.0,
+      "noise_variance": 0.5,
+      "mean_relative_error": 1.718052785488054e-15,
+      "covariance_relative_error": 9.085413744524464e-16,
+      "log_evidence_absolute_error": 0.0,
+      "slope_absolute_error": 6.580602729400198e-11,
+      "normal_residual_absolute": 1.1101050571614356e-14,
+      "normal_residual_scaled": 6.966642502763056e-16,
+      "complement_shift_absolute_error": 8.917491093561516e-16,
+      "matched_mean_absolute_error": 0.0,
+      "matched_variance_relative_error": 1.1963597191898653e-16,
+      "matched_delta_absolute_error": 0.0
+    },
+    {
+      "gamma": 10000.0,
+      "alpha": 2.0,
+      "noise_variance": 5000.0,
+      "mean_relative_error": 1.670855183943002e-12,
+      "covariance_relative_error": 8.38081681037647e-16,
+      "log_evidence_absolute_error": 7.105427357601002e-15,
+      "slope_absolute_error": 1.5862511304476357e-10,
+      "normal_residual_absolute": 2.7201741707092942e-11,
+      "normal_residual_scaled": 3.163201441391077e-16,
+      "complement_shift_absolute_error": 1.0630110286146864e-15,
+      "matched_mean_absolute_error": 0.0,
+      "matched_variance_relative_error": 1.7244328465460546e-16,
+      "matched_delta_absolute_error": 0.0
+    }
+  ],
+  "coverage": {
+    "draws": 1000,
+    "outputs_per_draw": 10,
+    "alpha_true": 2.0,
+    "noise_variance_true": 0.2,
+    "displacement_in_sigma": 1.0,
+    "centre": "exact affine posterior output mean",
+    "posterior_mean": {
+      "one_sigma": {
+        "coverage": 0.687,
+        "draw_level_standard_error": 0.005438803230544435,
+        "exact_posterior_probability": 0.6826894921370859
+      },
+      "nominal_95": {
+        "coverage": 0.9534000000000001,
+        "draw_level_standard_error": 0.002488902295116189,
+        "exact_posterior_probability": 0.95
+      }
+    },
+    "displaced_centre": {
+      "one_sigma": {
+        "coverage": 0.481,
+        "draw_level_standard_error": 0.005008401350139991,
+        "exact_posterior_probability": 0.4772498680518207
+      },
+      "nominal_95": {
+        "coverage": 0.8301000000000002,
+        "draw_level_standard_error": 0.003831275070869837,
+        "exact_posterior_probability": 0.8299249542469125
+      }
+    }
+  },
+  "fitted_residual_mle": {
+    "n": 40,
+    "p": 12,
+    "draws": 1000,
+    "noise_variance_true": 0.2,
+    "estimator": "squared fitted residual norm / N",
+    "mean_estimate": 0.14041122948813772,
+    "expected_estimate": 0.14,
+    "standard_error": 0.0011978721184820935
+  },
+  "evidence_toy": {
+    "protocol_file": "weak_spectrum_protocol.json",
+    "draws": 100,
+    "interpretation": "Finite-sample scale estimates need not equal generating scales. Analytic agreement tests numerics; it does not establish PINN likelihood adequacy.",
+    "interior_count": 100,
+    "alpha_lower_boundary_count": 0,
+    "alpha_upper_boundary_count": 0,
+    "noise_lower_boundary_count": 0,
+    "noise_upper_boundary_count": 0,
+    "reference_selected_pair_agrees_count": 100,
+    "quantile_probabilities": [
+      0.05,
+      0.25,
+      0.5,
+      0.75,
+      0.95
+    ],
+    "log10_alpha_ratio_quantiles": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25
+    ],
+    "log10_noise_ratio_quantiles": [
+      -0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.25000000000000006
+    ],
+    "log10_gamma_ratio_quantiles": [
+      -0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.25000000000000006
+    ],
+    "max_log_evidence_absolute_error": 2.9439019272103906e-05,
+    "max_scaled_evidence_error": 3.3594616644190856e-10,
+    "selected_log_evidence_absolute_error": 1.7479351299698465e-11,
+    "selected_slope_absolute_error": 2.88643797752286e-09
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.17.1"
+  },
+  "script_sha256": "0241dfcdb2f2c7dfe19fcd9a45ef2c8331426b285cb41ce28f1bb6cba0271461",
+  "scope": "small linear-Gaussian validation only; no PINN checkpoint or manuscript changes"
+}

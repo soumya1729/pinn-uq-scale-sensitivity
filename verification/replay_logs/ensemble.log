@@ -1,0 +1,8 @@
+Baseline reproduced; eight omissions complete.
+R_sigma_rms: baseline=136.493, leave-one-out [124.212, 177.141]
+R_tar: baseline=158.231, leave-one-out [144.707, 191.719]
+rho: baseline=1.15926, leave-one-out [1.05504, 1.35099]
+sharp_coverage68: baseline=0.8765, leave-one-out [0.4935, 0.9075]
+sharp_coverage95: baseline=0.99325, leave-one-out [0.972, 0.9995]
+bulk_coverage68: baseline=0.901768, leave-one-out [0.845054, 0.928357]
+bulk_coverage95: baseline=0.999804, leave-one-out [0.989161, 1]

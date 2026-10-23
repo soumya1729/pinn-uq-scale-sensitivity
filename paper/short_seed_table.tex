@@ -1,0 +1,45 @@
+\emph{Burgers--MLP per-seed results.}\label{app:n1}
+Table~\ref{tab:n1-scales} retains the eight trained-centre runs. Its minima use the
+original grid and matched aliases, whereas the all-17 diagnostics also include expanded
+evidence and sensitivity-selected settings.
+
+\begin{table}[ht]
+\centering\small\setlength{\tabcolsep}{4pt}
+
+
+\begin{tabular}{@{}rrrrrrrr@{}}
+\toprule
+ & & & & \multicolumn{2}{c}{bulk coverage} & \multicolumn{2}{c}{sharp coverage}\\
+seed & baseline $\ratiogap$ & MLE $\ratiogap$ & min. sampled $\ratiogap$
+ & $68\%$ & $95\%$ & $68\%$ & $95\%$\\
+\midrule
+0 & 4.66 & 0.20 & 0.06 & 0.261 & 0.501 & 0.516 & 0.684 \\
+1 & 28.83 & 1.91 & 1.84 & 0.274 & 0.455 & 0.095 & 0.273 \\
+2 & 18.33 & 2.59 & 2.59 & 0.380 & 0.598 & 0.137 & 0.349 \\
+3 & 32.10 & 2.04 & 1.99 & 0.198 & 0.412 & 0.143 & 0.339 \\
+4 & 1.58 & 0.06 & 0.02 & 0.233 & 0.449 & 0.531 & 0.630 \\
+5 & 28.82 & 1.70 & 0.77 & 0.416 & 0.721 & 0.018 & 0.051 \\
+6 & 9.74 & 0.37 & 0.13 & 0.247 & 0.459 & 0.363 & 0.698 \\
+7 & 39.69 & 1.30 & 0.91 & 0.356 & 0.617 & 0.060 & 0.161 \\
+\bottomrule
+\end{tabular}
+\caption{Original Burgers--MLP scale study at the fixed trained centre. Baseline and MLE gaps
+use $(\alpha_0,1)$ and $(\alpha_0,\widehat v)$. Minima use the original $19$ unit-noise prior multipliers and
+matched MLE/evidence points. Coverage is at the conditional MLE, within one and $1.96$
+standard deviations.}
+\label{tab:n1-scales}
+\end{table}
+
+Approximate sampled crossing brackets in $\alpha v$ are
+\[
+\begin{aligned}
+\text{seed }0:&\quad[0.0182150,0.0576010],&
+\text{seed }4:&\quad[0.569767,1.80176],\\
+\text{seed }5:&\quad[1.73345,5.48164]\times10^{-5},&
+\text{seed }6:&\quad[5.61912,17.7692]\times10^{-4},\\
+\text{seed }7:&\quad[1.78416,5.64201]\times10^{-5}.&&
+\end{aligned}
+\]
+These intervals need not contain unique roots.
+No sampled crossing is found for seeds $1$--$3$; this does not exclude unsampled crossings.
+

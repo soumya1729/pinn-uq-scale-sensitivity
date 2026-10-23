@@ -1,0 +1,6 @@
+PASS: 11 saved regional enclosures; stronger/legacy ratio ordering; exact display direction; 3 OLS fits; reference mean-tangent consistency.
+burgers_mlp_seed2: [0.0488, 307.86], observed 6.46812826
+burgers_fourier_seed2: [0.0648, 103.51], observed 3.85677093
+allen_cahn_mlp_seed0: [0.0982, 113.87], observed 6.87073124
+allen_cahn_fourier_seed0: [0.1743, 55.92], observed 5.92967877
+Mean-tangent stiff SD contrast: 4.9157192757101048960137411920307137947033982231720476983634209184788608169465658

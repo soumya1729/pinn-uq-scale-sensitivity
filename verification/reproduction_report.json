@@ -1,0 +1,1206 @@
+{
+  "schema": "paper_reproduction/1",
+  "mode": "saved",
+  "status": "PASS",
+  "root": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo",
+  "output": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "tasks": [
+    {
+      "task": "records",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
+      "details": {
+        "checkpoints": 17,
+        "production_record_sets": 34,
+        "csv_rows": 7698,
+        "contrast_identities": 7698,
+        "scope": "Checks stored records/identities; does not recompute errors or coverage from fields."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 1.1400000000139698,
+      "exit_code": 0
+    },
+    {
+      "task": "admission",
+      "verification_level": "RECOMPUTED_METADATA",
+      "details": {
+        "families": 10,
+        "attempted": 55,
+        "reference_record_matches": true,
+        "scope": "Reaggregates recorded per-run admission metadata; does not rerun rejected solutions."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 1.047000000020489,
+      "exit_code": 0
+    },
+    {
+      "task": "scalar_bounds",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
+      "details": {
+        "regional_enclosures": 11,
+        "decimal_precision": 80,
+        "scope": "80-digit arithmetic from saved scalar summaries with internal enclosure and rounding assertions; not new loading/eigensolver calculations or a complete printed-value check."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 0.7650000000139698,
+      "exit_code": 0
+    },
+    {
+      "task": "data_integrity",
+      "verification_level": "CHECKED_FILE_HASHES",
+      "details": {
+        "files": 331,
+        "bytes": 2377096330,
+        "all_sha256_match": true,
+        "scope": "Data identity, not numerical or scientific correctness."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 6.967999999993481,
+      "exit_code": 0
+    },
+    {
+      "task": "round2",
+      "verification_level": "RECOMPUTED_FIELDS_AND_MODAL",
+      "details": {
+        "checkpoints": 17,
+        "comparisons": [
+          {
+            "file": "regional_scale_metrics.csv",
+            "rows": 5442,
+            "numeric_fields_compared": 97956,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "uncertainty_contrast_curves.csv",
+            "rows": 1310,
+            "numeric_fields_compared": 24890,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "sampled_oracle_coverage.csv",
+            "rows": 3930,
+            "numeric_fields_compared": 82530,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "nearest_sampled_agreement.csv",
+            "rows": 56,
+            "numeric_fields_compared": 672,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "sampled_crossing_brackets.csv",
+            "rows": 43,
+            "numeric_fields_compared": 172,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "n3_centre_comparison.csv",
+            "rows": 336,
+            "numeric_fields_compared": 9408,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "qr_complement_summary.csv",
+            "rows": 84,
+            "numeric_fields_compared": 588,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "spectral_limits.csv",
+            "rows": 28,
+            "numeric_fields_compared": 56,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "evidence_best.csv",
+            "rows": 34,
+            "numeric_fields_compared": 374,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "evidence_slope_groups.csv",
+            "rows": 408,
+            "numeric_fields_compared": 6528,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          }
+        ],
+        "scope": "Recomputed field metrics/modal consistency and evidence-slope arithmetic. Perturbed optimum selections remain recorded producer diagnostics."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 97.03100000007544,
+      "exit_code": 0
+    },
+    {
+      "task": "round3",
+      "verification_level": "RECOMPUTED_FIELDS_AND_MODAL",
+      "details": {
+        "comparisons": [
+          {
+            "file": "parameter_decomposition.csv",
+            "rows": 401,
+            "numeric_fields_compared": 3762,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "baseline_centres.csv",
+            "rows": 17,
+            "numeric_fields_compared": 306,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "theta_bounds.csv",
+            "rows": 84,
+            "numeric_fields_compared": 1176,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "oracle_distributions.csv",
+            "rows": 168,
+            "numeric_fields_compared": 3192,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "refined_roots.csv",
+            "rows": 5,
+            "numeric_fields_compared": 75,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "strong_precision.csv",
+            "rows": 112,
+            "numeric_fields_compared": 1120,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "common_threshold.csv",
+            "rows": 204,
+            "numeric_fields_compared": 1836,
+            "max_absolute_difference": 1.0408340855860843e-17,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          }
+        ],
+        "scope": "Recomputed modal roots, bounds, strong-limit approach and field diagnostics. Historical consumer prose predates the completed direct theta study."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 35.54700000002049,
+      "exit_code": 0
+    },
+    {
+      "task": "round4",
+      "verification_level": "RECOMPUTED_FIELDS",
+      "details": {
+        "comparisons": [
+          {
+            "file": "nearest_saved_oracles.csv",
+            "rows": 168,
+            "numeric_fields_compared": 2856,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "sampled_contrast_agreement_band.csv",
+            "rows": 84,
+            "numeric_fields_compared": 1428,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          }
+        ],
+        "scope": "Recomputed regional oracle quantiles, distributions and saved rho-band metrics from fields."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 12.047000000020489,
+      "exit_code": 0
+    },
+    {
+      "task": "theta",
+      "verification_level": "RECOMPUTED_FIELDS_AND_SAMPLED_FORWARD",
+      "details": {
+        "checkpoints": 17,
+        "comparisons": [
+          {
+            "file": "paired_centres.csv",
+            "rows": 1284,
+            "numeric_fields_compared": 23112,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "family_summary.csv",
+            "rows": 6144,
+            "numeric_fields_compared": 24576,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "root_comparisons.csv",
+            "rows": 240,
+            "numeric_fields_compared": 4320,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "displacement_summary.csv",
+            "rows": 107,
+            "numeric_fields_compared": 428,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "full_grid_errors.csv",
+            "rows": 428,
+            "numeric_fields_compared": 856,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          }
+        ],
+        "scope": "Recomputed all saved field metrics and direct root coverage; independent NumPy nonlinear forward checks at nine points per gamma, not a new full-grid forward/Jacobian pass."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 27.469000000040978,
+      "exit_code": 0
+    },
+    {
+      "task": "ensemble",
+      "verification_level": "RECOMPUTED_FIELDS",
+      "details": {
+        "comparison": {
+          "file": "ensemble_loo.csv",
+          "rows": 9,
+          "numeric_fields_compared": 161,
+          "max_absolute_difference": 0.0,
+          "relative_tolerance": 2e-09,
+          "absolute_tolerance": 2e-12
+        },
+        "scope": "Reconstructed ensemble mean, population spread and all eight leave-one-out subsets from member prediction fields."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 1.3910000000614673,
+      "exit_code": 0
+    },
+    {
+      "task": "reporting_closure",
+      "verification_level": "RECOMPUTED_FIELDS_AND_MODAL_WITH_FROZEN_CONTROL",
+      "details": {
+        "comparisons": [
+          {
+            "file": "regional_relative_shift.csv",
+            "rows": 204,
+            "numeric_fields_compared": 816,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "changed_scale_loadings.csv",
+            "rows": 51,
+            "numeric_fields_compared": 408,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "baseline_per_run.csv",
+            "rows": 17,
+            "numeric_fields_compared": 136,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          },
+          {
+            "file": "control_per_setting.csv",
+            "rows": 3,
+            "numeric_fields_compared": 12,
+            "max_absolute_difference": 0.0,
+            "relative_tolerance": 2e-09,
+            "absolute_tolerance": 2e-12
+          }
+        ],
+        "scope": "Regional displacement ratios, scale-dependent loadings and nonlinear baseline ranges regenerated from fresh review records/saved spectra; the separate linear-control extract remains frozen metadata."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 0.7029999999795109,
+      "exit_code": 0
+    },
+    {
+      "task": "n5",
+      "verification_level": "RECOMPUTED_CHECKPOINT_FEATURE_FITS",
+      "details": {
+        "comparison": {
+          "file": "n5_all17.csv",
+          "rows": 204,
+          "numeric_fields_compared": 4488,
+          "max_absolute_difference": 3.248453140258789e-06,
+          "relative_tolerance": 2e-09,
+          "absolute_tolerance": 2e-12
+        },
+        "checkpoints": 17,
+        "scope": "Rebuilt the trained 129 last-layer features and predictions, and refitted all regional same-grid/random/time-block regressions at the published split seed and rank cutoffs. No PINN training or Jacobian."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 98.40700000000652,
+      "exit_code": 0
+    },
+    {
+      "task": "tables",
+      "verification_level": "GENERATED_FROM_RECOMPUTED_RESULTS",
+      "details": {
+        "generated_files": [
+          "round2\\round2_centre_table.tex",
+          "round2\\round2_changed_bounds_table.tex",
+          "round2\\round2_evidence_table.tex",
+          "round2\\round2_limits_table.tex",
+          "round2\\round2_oracle_table.tex",
+          "theta_current\\round2_centre_table.tex",
+          "theta_current\\round3_math_root_table.tex"
+        ],
+        "current_manuscript_table_comparisons": [
+          {
+            "generated": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\tables\\theta_current\\round2_centre_table.tex",
+            "paper": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\paper\\generated\\round2_centre_table.tex",
+            "displayed_numeric_tokens": 63,
+            "match": true,
+            "scope": "Current displayed table values, not independent validation of every printed prose occurrence."
+          },
+          {
+            "generated": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\tables\\theta_current\\round3_math_root_table.tex",
+            "paper": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\paper\\round3_math_root_table.tex",
+            "displayed_numeric_tokens": 52,
+            "match": true,
+            "scope": "Current displayed table values, not independent validation of every printed prose occurrence."
+          }
+        ],
+        "manuscript_comparison_status": "PASS",
+        "scope": "Regenerated numerical table records. Current manuscript retains deliberate manual merges, display rounding and captions; byte-identical TeX is not asserted."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 0.375,
+      "exit_code": 0
+    },
+    {
+      "task": "headline_claims",
+      "verification_level": "PER_CLAIM_LEVELS_REPORTED",
+      "details": {
+        "report": {
+          "schema": "headline_claims/1",
+          "status": "PASS",
+          "scope": "Numerical assertions in the current abstract and contribution bullets, with two supporting consistency checks. Does not certify all numerical occurrences in the manuscript or the qualitative/Lean claims. Expectations are explicit reported claims; computed values are independently aggregated from identified records. Fresh field-derived records are preferred when supplied, while N5 remains labelled as a frozen-summary check unless a fresh N5 CSV is supplied.",
+          "quantities": [
+            {
+              "id": "H01_admitted_cohort",
+              "description": "17 admitted nonlinear checkpoints",
+              "computed_value": 17,
+              "expected": {
+                "operator": "eq",
+                "value": 17
+              },
+              "formula": "len(unique cohort tags)",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "CHECKED_SAVED_SUMMARY",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Cohort",
+                  "pattern": "using \\$17\\$\\s+admitted",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H02_architectures",
+              "description": "Two architectures",
+              "computed_value": 2,
+              "expected": {
+                "operator": "eq",
+                "value": 2
+              },
+              "formula": "len(unique architecture labels in admitted cohort)",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "CHECKED_SAVED_SUMMARY",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Cohort",
+                  "pattern": "runs with two architectures",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H03_burgers_mlp_seeds",
+              "description": "Eight admitted Burgers-MLP seeds",
+              "computed_value": 8,
+              "expected": {
+                "operator": "eq",
+                "value": 8
+              },
+              "formula": "count unique cohort tags with pde=burgers and architecture=mlp",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "CHECKED_SAVED_SUMMARY",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Scale sensitivity",
+                  "pattern": "Across eight Burgers--MLP seeds",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H04_trained_roots",
+              "description": "Five refined trained-centre crossings",
+              "computed_value": 5,
+              "expected": {
+                "operator": "eq",
+                "value": 5
+              },
+              "formula": "count refined-root records with unique tags",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round3\\refined_roots.csv",
+                  "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Scale sensitivity",
+                  "pattern": "five\\s+refined contrast-matching crossings",
+                  "matches_current_paper": true
+                },
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Oracle",
+                  "pattern": "At the five trained-centre contrast-matching roots",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H05_root_precision_decades",
+              "description": "Crossings span more than four decades",
+              "computed_value": 4.555783670548647,
+              "expected": {
+                "operator": "gt",
+                "value": 4
+              },
+              "formula": "log10(max(root_gamma) / min(root_gamma))",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round3\\refined_roots.csv",
+                  "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Scale sensitivity",
+                  "pattern": "span more than four orders of magnitude",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H06_noncrossing_seeds",
+              "description": "Three seeds retain the sampled trained-centre deficit",
+              "computed_value": 3,
+              "expected": {
+                "operator": "eq",
+                "value": 3
+              },
+              "formula": "count Burgers-MLP tags for which min(rho) > 1 over all unit-noise prior_sweep rows, full grid and trained centre",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                },
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round2\\review\\regional_scale_metrics.csv",
+                  "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Scale sensitivity",
+                  "pattern": "three other seeds retain a deficit at every sampled setting",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H07_mle_both_regions_under68",
+              "description": "Eight trained predictions under-cover both regions at one standard deviation",
+              "computed_value": 8,
+              "expected": {
+                "operator": "eq",
+                "value": 8
+              },
+              "formula": "count Burgers-MLP tags with sharp coverage68 < .68 AND bulk coverage68 < .68 at conditional_noise_mle",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                },
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round2\\review\\regional_scale_metrics.csv",
+                  "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Noise MLE",
+                  "pattern": "under-covers both regions\\s+around all eight trained predictions",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H08_mle_both_regions_under95",
+              "description": "The same eight also under-cover at 1.96 standard deviations",
+              "computed_value": 8,
+              "expected": {
+                "operator": "eq",
+                "value": 8
+              },
+              "formula": "count Burgers-MLP tags with sharp coverage95 < .95 AND bulk coverage95 < .95 at conditional_noise_mle",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                },
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round2\\review\\regional_scale_metrics.csv",
+                  "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": []
+            },
+            {
+              "id": "H09_theta_baseline_deficits",
+              "description": "Theta-centred affine baseline deficit in all 17 runs",
+              "computed_value": 17,
+              "expected": {
+                "operator": "eq",
+                "value": 17
+              },
+              "formula": "count distinct cohort tags with rho > 1 at baseline/theta_affine/full/selected/sharp",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                },
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\paired_centres.csv",
+                  "sha256": "dc6ba408bd88088e4fbdd3f590138f4194e403e83e1b47d510998b243a90ed73",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Prior centre",
+                  "pattern": "preserves the baseline deficit in all \\$17\\$ runs",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H10_bulk_oracle_target",
+              "description": "Declared empirical bulk calibration target 68 percent",
+              "computed_value": 0.68,
+              "expected": {
+                "operator": "eq",
+                "value": 0.68
+              },
+              "formula": "read oracle_target from the root-analysis protocol; this checks a declared method setting, not an empirical outcome",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round3\\summary.json",
+                  "sha256": "98d39848b6e90cee2cfc0ca7dfee7158f683bf39e9f331daf393202c5d25e249",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Oracle",
+                  "pattern": "targeting \\$68\\\\%\\$ bulk coverage",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H11_root_sharp_coverage_min",
+              "description": "Minimum root sharp one-standard-deviation coverage rounds to 30.3 percent",
+              "computed_value": 0.30325,
+              "expected": {
+                "operator": "format",
+                "value": "30.3",
+                "format": ".1f",
+                "scale": 100
+              },
+              "formula": "min(coverage68) over trained/full/bulk_68_oracle/sharp direct root rows; multiply by 100 and round to one decimal for the printed percentage",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\root_comparisons.csv",
+                  "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Oracle",
+                  "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H12_root_sharp_coverage_max",
+              "description": "Maximum root sharp one-standard-deviation coverage rounds to 55.7 percent",
+              "computed_value": 0.55725,
+              "expected": {
+                "operator": "format",
+                "value": "55.7",
+                "format": ".1f",
+                "scale": 100
+              },
+              "formula": "max(coverage68) over trained/full/bulk_68_oracle/sharp direct root rows; multiply by 100 and round to one decimal for the printed percentage",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\root_comparisons.csv",
+                  "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Oracle",
+                  "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H14_heldout_below_threshold",
+              "description": "Sixteen blocked held-out sharp fractions are below the declared four-percent cutoff",
+              "computed_value": 16,
+              "expected": {
+                "operator": "eq",
+                "value": 16
+              },
+              "formula": "count heldout_pooled < .04 on sharp/time_blocks/block_slices=10/rcond=1e-10 records; .04 is the declared claim threshold",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\n5\\n5_all17.csv",
+                  "sha256": "cad66d0c6c2ee9299169cb5301c58cdb49bae3e4f40fc251beb0f7fdea0f0dd4",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Feature expressivity",
+                  "pattern": "below \\$4\\\\%\\$.*?sharp-region\\s+error energy.*?\\$16/17\\$",
+                  "matches_current_paper": true
+                },
+                {
+                  "source": "j_intro.tex",
+                  "location": "Contribution 2",
+                  "pattern": "below \\$4\\\\%\\$.*?trained\\s+sharp-region error energy.*?\\$16/17\\$",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H15_heldout_cohort",
+              "description": "Seventeen independent held-out checkpoint results",
+              "computed_value": 17,
+              "expected": {
+                "operator": "eq",
+                "value": 17
+              },
+              "formula": "count unique sharp/time_blocks/block_slices=10/rcond=1e-10 records and require exact cohort tag set",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+                  "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+                  "verification_level": "CHECKED_SAVED_SUMMARY"
+                },
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\n5\\n5_all17.csv",
+                  "sha256": "cad66d0c6c2ee9299169cb5301c58cdb49bae3e4f40fc251beb0f7fdea0f0dd4",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": [
+                {
+                  "source": "j_abstract.tex",
+                  "location": "Feature expressivity",
+                  "pattern": "held-out time blocks in \\$16/17\\$ runs",
+                  "matches_current_paper": true
+                },
+                {
+                  "source": "j_intro.tex",
+                  "location": "Contribution 2",
+                  "pattern": "held-out time blocks in \\$16/17\\$ runs",
+                  "matches_current_paper": true
+                }
+              ]
+            },
+            {
+              "id": "H16_bulk_root_coverage_min",
+              "description": "Direct root bulk calibration achieves the declared 68 percent target",
+              "computed_value": 0.6800178571428571,
+              "expected": {
+                "operator": "ge",
+                "value": 0.68
+              },
+              "formula": "min(coverage68) over trained/full/bulk_68_oracle/bulk rows; higher quantile and closed inequalities can exceed target",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\root_comparisons.csv",
+                  "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": []
+            },
+            {
+              "id": "H17_root_rho_max_defect",
+              "description": "Direct root fields agree with trained-centre RMS contrast target",
+              "computed_value": 7.038813976123492e-14,
+              "expected": {
+                "operator": "lt",
+                "value": 1e-10
+              },
+              "formula": "max(abs(rho-1)) over trained/full/bulk_68_oracle/sharp root rows",
+              "status": "PASS",
+              "numeric_check": true,
+              "paper_check": true,
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+              "records": [
+                {
+                  "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\root_comparisons.csv",
+                  "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
+                  "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+                }
+              ],
+              "occurrences": []
+            }
+          ],
+          "details": {
+            "cohort_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3",
+              "burgers_mlp_seed4",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7",
+              "burgers_fourier_seed0",
+              "burgers_fourier_seed2",
+              "burgers_fourier_seed6",
+              "allen_cahn_mlp_seed0",
+              "allen_cahn_mlp_seed1",
+              "allen_cahn_mlp_seed3",
+              "allen_cahn_fourier_seed0",
+              "allen_cahn_fourier_seed1",
+              "allen_cahn_fourier_seed3"
+            ],
+            "burgers_mlp_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3",
+              "burgers_mlp_seed4",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7"
+            ],
+            "root_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed4",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7"
+            ],
+            "root_precisions": [
+              0.02105514633346756,
+              0.7362697403921155,
+              2.047638475502056e-05,
+              0.0016354097305255593,
+              3.059041865349411e-05
+            ],
+            "noncrossing_tags": [
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3"
+            ],
+            "minimum_sampled_rho": {
+              "burgers_mlp_seed0": 0.05724136608021786,
+              "burgers_mlp_seed1": 1.8362544398977083,
+              "burgers_mlp_seed2": 2.5874393011212438,
+              "burgers_mlp_seed3": 1.9923559669033468,
+              "burgers_mlp_seed4": 0.019261534908845575,
+              "burgers_mlp_seed5": 0.7676870555598654,
+              "burgers_mlp_seed6": 0.13279833623072845,
+              "burgers_mlp_seed7": 0.9063538045023526
+            },
+            "mle_under68_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3",
+              "burgers_mlp_seed4",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7"
+            ],
+            "mle_under95_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3",
+              "burgers_mlp_seed4",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7"
+            ],
+            "theta_baseline_deficit_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3",
+              "burgers_mlp_seed4",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7",
+              "burgers_fourier_seed0",
+              "burgers_fourier_seed2",
+              "burgers_fourier_seed6",
+              "allen_cahn_mlp_seed0",
+              "allen_cahn_mlp_seed1",
+              "allen_cahn_mlp_seed3",
+              "allen_cahn_fourier_seed0",
+              "allen_cahn_fourier_seed1",
+              "allen_cahn_fourier_seed3"
+            ],
+            "root_sharp_coverages": {
+              "burgers_mlp_seed0": 0.3275,
+              "burgers_mlp_seed4": 0.427,
+              "burgers_mlp_seed5": 0.30325,
+              "burgers_mlp_seed6": 0.52325,
+              "burgers_mlp_seed7": 0.55725
+            },
+            "heldout_below_threshold_tags": [
+              "burgers_mlp_seed0",
+              "burgers_mlp_seed1",
+              "burgers_mlp_seed2",
+              "burgers_mlp_seed3",
+              "burgers_mlp_seed5",
+              "burgers_mlp_seed6",
+              "burgers_mlp_seed7",
+              "burgers_fourier_seed0",
+              "burgers_fourier_seed2",
+              "burgers_fourier_seed6",
+              "allen_cahn_mlp_seed0",
+              "allen_cahn_mlp_seed1",
+              "allen_cahn_mlp_seed3",
+              "allen_cahn_fourier_seed0",
+              "allen_cahn_fourier_seed1",
+              "allen_cahn_fourier_seed3"
+            ],
+            "heldout_fractions": {
+              "burgers_mlp_seed0": 0.011462551156725924,
+              "burgers_mlp_seed1": 0.0010883119630743304,
+              "burgers_mlp_seed2": 0.00045546796074993646,
+              "burgers_mlp_seed3": 0.00020242116404432754,
+              "burgers_mlp_seed4": 0.14203888232913214,
+              "burgers_mlp_seed5": 0.0014499326226105943,
+              "burgers_mlp_seed6": 0.0016599619123180975,
+              "burgers_mlp_seed7": 0.0005216412818337783,
+              "burgers_fourier_seed0": 0.0023145885112198397,
+              "burgers_fourier_seed2": 0.006696975659252783,
+              "burgers_fourier_seed6": 0.03664453947445682,
+              "allen_cahn_mlp_seed0": 0.03240605664767352,
+              "allen_cahn_mlp_seed1": 0.02366699950980156,
+              "allen_cahn_mlp_seed3": 0.008102448666307764,
+              "allen_cahn_fourier_seed0": 0.009874564896897288,
+              "allen_cahn_fourier_seed1": 0.007238268305256065,
+              "allen_cahn_fourier_seed3": 0.020965625698074954
+            }
+          },
+          "source_records": {
+            "cohort": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\clean_repo\\analysis\\round2\\cohort.json",
+              "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
+              "verification_level": "CHECKED_SAVED_SUMMARY"
+            },
+            "roots": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round3\\refined_roots.csv",
+              "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+            },
+            "root_protocol": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round3\\summary.json",
+              "sha256": "98d39848b6e90cee2cfc0ca7dfee7158f683bf39e9f331daf393202c5d25e249",
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+            },
+            "scale_metrics": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\round2\\review\\regional_scale_metrics.csv",
+              "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+            },
+            "theta_metrics": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\paired_centres.csv",
+              "sha256": "dc6ba408bd88088e4fbdd3f590138f4194e403e83e1b47d510998b243a90ed73",
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+            },
+            "direct_roots": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\theta\\root_comparisons.csv",
+              "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+            },
+            "n5": {
+              "path": "C:\\dev\\shortened_astra\\github_release_audit_20261023\\reproduced_saved\\n5\\n5_all17.csv",
+              "sha256": "cad66d0c6c2ee9299169cb5301c58cdb49bae3e4f40fc251beb0f7fdea0f0dd4",
+              "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+            }
+          }
+        },
+        "scope": "Explicit abstract/contribution claims at the individual verification levels in the headline report; saved mode uses the freshly refitted N5 records, while records mode labels its saved-summary fallback."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 0.125,
+      "exit_code": 0
+    },
+    {
+      "task": "ledger_inventory",
+      "verification_level": "PROVENANCE_INVENTORY_ONLY",
+      "details": {
+        "inventory": {
+          "scope": "Active-LaTeX digit-bearing scientific occurrence inventory; not a complete value verification.",
+          "scientific_occurrences": 1996,
+          "excluded_metadata_tokens": 28,
+          "classifications": {
+            "numerical-result": 1576,
+            "configuration": 212,
+            "analytic": 208
+          },
+          "token_forms": {
+            "DIGIT": 1878,
+            "RELEVANT_WORD_COUNT": 118
+          },
+          "statuses": {
+            "CHECKED": 13,
+            "PROVENANCE_MAPPED": 1983
+          },
+          "exact_float_or_equation_pages": 1971,
+          "active_source_files": 26,
+          "table_outputs": 18,
+          "figure_outputs": 6,
+          "registered_claim_join": {
+            "present": true,
+            "report_status": "PASS",
+            "linked_occurrences": 13,
+            "checked_occurrences": 13,
+            "report_sha256": "8b9e9d018cd21d61e7820e6a4c09d98e103a437a6f8fa10591f0ef82fe7e7d52"
+          },
+          "unmatched_outputs": [],
+          "source_hashes": {
+            "paper/full_paper.tex": "568b2ead6bd7978d8e07633ee482fd391512fbee26e538348d756e565f376a1a",
+            "paper/j_abstract.tex": "d50367204444762bcf99ca76531402d6cdda6b1e952abae58f8cfd305ab66c7a",
+            "paper/j_intro.tex": "e86f54fd7de0f8e782e99df6ea87307663960e38481b6eccfa8c381807b3c53c",
+            "paper/j_setting.tex": "1431050d783113ad5057fb260db9cc6a8f9327ff20d679a4ef23bc28fd468273",
+            "paper/j_ceiling.tex": "8d1e55d59e86e1bf1696b51a154df8ff3678b2ff0c11cab858c1590ed660fabc",
+            "paper/j_offmanifold.tex": "21edb51daa29ea3fa899c123c33d03fb6394689646221441559b582b4b918c8a",
+            "paper/j_theory.tex": "2e9d297bcb087596d4d85942cb4503ffb23ab0a316c7b8601e0cae9584e145cc",
+            "paper/j_mechanism.tex": "7ce28bf3f0dfd6d2bb35b0131eacc6147f12bc6a84228267980b8f509fb7e2cb",
+            "paper/generated/loading_table_values.tex": "09a34763d8f4bf238ded05f47ff5a5e5e964aaa573b01adf3224051f585383a2",
+            "paper/generated/rms_bounds_macros.tex": "78bc9074bbfb2b863cc497e56659bc0d476a670253e27dc6f92846c600dd146b",
+            "paper/j_robustness.tex": "d5df00430666639f02bbc9d29295b2dbb7863792016a4a00bf4f16dc3bed6062",
+            "paper/j_discussion.tex": "a50161fa1a171bfe53658708dbaf88e4a1edb26aa6064d355445695cc4c4c442",
+            "paper/j_appendix.tex": "9ab939af71b9636a17a21fc48238253049e80e06d849b8a289b6be1655cd2d65",
+            "paper/trim_aux_proofs.tex": "8d97a0d088a183cced464996bba1b568e4cbf0dedb31bc6bbf30d358a141f118",
+            "paper/j_round2_appendix.tex": "285f6b2c6f18149a1f8142e938366d1f7afcebc63adedef6db1f2c987e70b94a",
+            "paper/short_seed_table.tex": "fe6264c955dfc3a7a3a6782b364986df8c25889e9218771cc3206a71fa038c6f",
+            "paper/generated/round2_limits_table.tex": "dd578cb07bf43217416fd9478667623cfb7713917321df5f87424729ce87b35a",
+            "paper/generated/round2_centre_table.tex": "f4df2a6502d175124b5b70b2aa3d8dc3ab28e7ba5561f55c01b55dd474c87b94",
+            "paper/generated/round2_oracle_table.tex": "f9f3fae78b4c2adea3ccaca45db89423d6c17d20ce052688268dd7f587f178fb",
+            "paper/round3_math.tex": "54a7a9178e3447a8bff6c88a0aa09de98095aa5b5ff7114c3c6af265941b787c",
+            "paper/round3_math_results.tex": "3eff20b3ea7458c0477d3c17232a478d532324566a8c97d5c3c62e72ef52d4d0",
+            "paper/round3_math_root_table.tex": "83ef8e82e864bc8c3b835e257af67137315cb312236c027b88e483ce680051d9",
+            "paper/generated/round4_oracle_table.tex": "3a53b6c8fbf60a232bc2e952c839c2cf3346d0b87fcff02e5e4dca042869f12b",
+            "paper/oa_empirical.tex": "1aab13ace8f2c7789e4ef7985b8f3cc13eb9226406c52ec2109052c69e620101",
+            "paper/oa_numerics.tex": "68cb26629c902ed5aaa1f5a13e4794997158d8c5340c2f45abbc6967fb1125c8",
+            "paper/oa_lean.tex": "7a0e9d132d1bd7fd84ff315d8f4dbc7a8a8ce9765bad260e00b85b79bcd9d4a9"
+          },
+          "aux_present": true,
+          "aux_sha256": "af0cea5ff50be3ee3688aefff377328df2f5de3859e80810c2fc06f971000864",
+          "output_map_present": true,
+          "output_map_sha256": "3b1d7bdea0587975372da7880947083dfdf5ef9051b57e6fcc6030434a449c94",
+          "notes": [
+            "Only explicit registered source-span/token-role joins to an executed numerical check can be labelled CHECKED.",
+            "File/topic provenance is weaker than a scalar-level calculation selector.",
+            "Every literal recurrence is retained; macros and registered claims may share quantity IDs.",
+            "Blank pdf_page means unknown; section_anchor_page is not claimed as the occurrence page.",
+            "Relevant verbal count patterns are included; other prose numerals and numeric labels drawn inside figure PDFs require manual review.",
+            "Generated numeric macro definitions are excluded as unprinted definitions, and expanded at every printed call site."
+          ]
+        },
+        "scope": "Occurrence mapping with explicit registered claim joins; not independent verification of every numeral."
+      },
+      "status": "PASS",
+      "elapsed_seconds": 0.6410000000614673,
+      "exit_code": 0
+    }
+  ],
+  "package_versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2",
+    "pypdf": "6.10.0",
+    "openpyxl": "3.1.5"
+  },
+  "scope": "Frozen-data consistency/recomputation at the levels shown per task. Not every manuscript occurrence is independently recalculated; consult the numerical ledger for occurrence coverage.",
+  "not_performed": [
+    "new training",
+    "new Jacobian or factorisation",
+    "cluster jobs",
+    "Lean compilation",
+    "full-grid independent nonlinear reevaluation",
+    "independent PDE reference solve",
+    "full historical loading reconstruction",
+    "all toy reruns"
+  ]
+}

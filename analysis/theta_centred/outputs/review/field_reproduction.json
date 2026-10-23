@@ -1,0 +1,197 @@
+{
+  "numerical_status": "PASS",
+  "checkpoints": 17,
+  "checks": [
+    {
+      "tag": "burgers_mlp_seed0",
+      "csv_rows": 192,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 9.094947017729282e-13,
+      "max_csv_relative_defect_with_1e_12_floor": 2.530757107250182e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 9.992007221626409e-16
+    },
+    {
+      "tag": "burgers_mlp_seed1",
+      "csv_rows": 144,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 9.094947017729282e-13,
+      "max_csv_relative_defect_with_1e_12_floor": 1.932390332402708e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 1.1102230246251565e-15
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "csv_rows": 144,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 1.862645149230957e-09,
+      "max_csv_relative_defect_with_1e_12_floor": 2.0766980157733026e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 8.881784197001252e-16
+    },
+    {
+      "tag": "burgers_mlp_seed3",
+      "csv_rows": 144,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 3.725290298461914e-09,
+      "max_csv_relative_defect_with_1e_12_floor": 3.6096626083140786e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 8.881784197001252e-16
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "csv_rows": 192,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 7.275957614183426e-12,
+      "max_csv_relative_defect_with_1e_12_floor": 1.9557447199788638e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 1.1102230246251565e-15
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "csv_rows": 192,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 4.656612873077393e-10,
+      "max_csv_relative_defect_with_1e_12_floor": 1.2608700484497712e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 7.771561172376096e-16
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "csv_rows": 192,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 9.313225746154785e-10,
+      "max_csv_relative_defect_with_1e_12_floor": 1.9882948723982855e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 7.494005416219807e-16
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "csv_rows": 192,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 1.4551915228366852e-11,
+      "max_csv_relative_defect_with_1e_12_floor": 2.132139595786609e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 8.881784197001252e-16
+    },
+    {
+      "tag": "burgers_fourier_seed0",
+      "csv_rows": 144,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 7.275957614183426e-12,
+      "max_csv_relative_defect_with_1e_12_floor": 2.0224883529095011e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 6.106226635438361e-16
+    },
+    {
+      "tag": "burgers_fourier_seed2",
+      "csv_rows": 144,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 7.275957614183426e-12,
+      "max_csv_relative_defect_with_1e_12_floor": 9.991266649868983e-10,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 1.1102230246251565e-15
+    },
+    {
+      "tag": "burgers_fourier_seed6",
+      "csv_rows": 144,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 1.4551915228366852e-11,
+      "max_csv_relative_defect_with_1e_12_floor": 4.477510284367993e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 8.049116928532385e-16
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "csv_rows": 72,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 7.105427357601002e-15,
+      "max_csv_relative_defect_with_1e_12_floor": 1.7266206620771108e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 4.718003765447065e-12
+    },
+    {
+      "tag": "allen_cahn_mlp_seed1",
+      "csv_rows": 72,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 2.384185791015625e-07,
+      "max_csv_relative_defect_with_1e_12_floor": 1.5265637483023128e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 2.3092638912203256e-13
+    },
+    {
+      "tag": "allen_cahn_mlp_seed3",
+      "csv_rows": 72,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 3.552713678800501e-15,
+      "max_csv_relative_defect_with_1e_12_floor": 1.3909602946189912e-13,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 4.547473508864641e-13
+    },
+    {
+      "tag": "allen_cahn_fourier_seed0",
+      "csv_rows": 72,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 1.4210854715202004e-14,
+      "max_csv_relative_defect_with_1e_12_floor": 5.059793149881049e-10,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 9.992007221626409e-16
+    },
+    {
+      "tag": "allen_cahn_fourier_seed1",
+      "csv_rows": 72,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 3.552713678800501e-15,
+      "max_csv_relative_defect_with_1e_12_floor": 1.8119809567027425e-11,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 8.881784197001252e-16
+    },
+    {
+      "tag": "allen_cahn_fourier_seed3",
+      "csv_rows": 72,
+      "csv_metrics_per_row": 14,
+      "max_csv_absolute_defect": 7.105427357601002e-15,
+      "max_csv_relative_defect_with_1e_12_floor": 7.237756851259018e-10,
+      "numpy_forward_samples_per_gamma": 9,
+      "numpy_forward_max_absolute_defect": 1.1102230246251565e-15
+    }
+  ],
+  "root_checks": [
+    {
+      "tag": "burgers_mlp_seed0",
+      "rho": 1.0000000000000704,
+      "coverage68": 0.3275,
+      "coverage95": 0.78275,
+      "inside_saved_envelopes": true
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "rho": 1.0000000000000278,
+      "coverage68": 0.427,
+      "coverage95": 0.852,
+      "inside_saved_envelopes": true
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "rho": 0.9999999999999536,
+      "coverage68": 0.30325,
+      "coverage95": 0.67725,
+      "inside_saved_envelopes": true
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "rho": 1.0000000000000375,
+      "coverage68": 0.52325,
+      "coverage95": 0.847,
+      "inside_saved_envelopes": true
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "rho": 0.9999999999999983,
+      "coverage68": 0.55725,
+      "coverage95": 0.8235,
+      "inside_saved_envelopes": true
+    }
+  ],
+  "scope": "CSV reproduction and deterministic sampled forward checks, not posterior calibration or weak-mode accuracy."
+}

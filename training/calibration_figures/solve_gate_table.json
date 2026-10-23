@@ -1,0 +1,437 @@
+{
+  "schema": "solve_gate_inventory/3",
+  "statistic": "bulk relative L2 solve error",
+  "median_definition": "standard median; mean of central pair for even n",
+  "families": {
+    "Fisher--KPP": {
+      "tau_bulk": 0.02,
+      "runs_scored": 5,
+      "admitted": 0,
+      "attempted": 5,
+      "admitted_only": false,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 81.6964339569193,
+        "max": 170.47284255445805,
+        "median": 99.97687269850745
+      },
+      "tau_multiple": {
+        "min": 40.84821697845965,
+        "max": 85.23642127722903
+      },
+      "runs": [
+        {
+          "path": "results/fisher_kpp_mlp_seed0/fisher_kpp_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 99.85043308336896,
+          "passed": false
+        },
+        {
+          "path": "results/fisher_kpp_mlp_seed1/fisher_kpp_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 99.97687269850745,
+          "passed": false
+        },
+        {
+          "path": "results/fisher_kpp_mlp_seed2/fisher_kpp_mlp_seed2_map.json",
+          "bulk_rel_l2_pct": 170.47284255445805,
+          "passed": false
+        },
+        {
+          "path": "results/fisher_kpp_mlp_seed3/fisher_kpp_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 81.6964339569193,
+          "passed": false
+        },
+        {
+          "path": "results/fisher_kpp_mlp_seed4/fisher_kpp_mlp_seed4_map.json",
+          "bulk_rel_l2_pct": 167.32266926292016,
+          "passed": false
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Nagumo, both initial conditions": {
+      "tau_bulk": 0.02,
+      "runs_scored": 10,
+      "admitted": 0,
+      "attempted": 10,
+      "admitted_only": false,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 75.91014550938282,
+        "max": 90.27562948230998,
+        "median": 80.5193929047858
+      },
+      "tau_multiple": {
+        "min": 37.95507275469141,
+        "max": 45.13781474115499
+      },
+      "runs": [
+        {
+          "path": "results/nagumo_mlp_seed0/nagumo_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 76.93714800675654,
+          "passed": false
+        },
+        {
+          "path": "results/nagumo_mlp_seed1/nagumo_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 78.67516141440869,
+          "passed": false
+        },
+        {
+          "path": "results/nagumo_mlp_seed2/nagumo_mlp_seed2_map.json",
+          "bulk_rel_l2_pct": 80.33615858122863,
+          "passed": false
+        },
+        {
+          "path": "results/nagumo_mlp_seed3/nagumo_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 75.91014550938282,
+          "passed": false
+        },
+        {
+          "path": "results/nagumo_mlp_seed4/nagumo_mlp_seed4_map.json",
+          "bulk_rel_l2_pct": 78.14187069288033,
+          "passed": false
+        },
+        {
+          "path": "results/_nagumo_round1_gauss/nagumo_mlp_seed0/nagumo_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 82.2446317014333,
+          "passed": false
+        },
+        {
+          "path": "results/_nagumo_round1_gauss/nagumo_mlp_seed1/nagumo_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 87.57689004012005,
+          "passed": false
+        },
+        {
+          "path": "results/_nagumo_round1_gauss/nagumo_mlp_seed2/nagumo_mlp_seed2_map.json",
+          "bulk_rel_l2_pct": 90.27562948230998,
+          "passed": false
+        },
+        {
+          "path": "results/_nagumo_round1_gauss/nagumo_mlp_seed3/nagumo_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 80.70262722834298,
+          "passed": false
+        },
+        {
+          "path": "results/_nagumo_round1_gauss/nagumo_mlp_seed4/nagumo_mlp_seed4_map.json",
+          "bulk_rel_l2_pct": 80.79818813757107,
+          "passed": false
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Kuramoto--Sivashinsky, T=100": {
+      "tau_bulk": 0.02,
+      "runs_scored": 5,
+      "admitted": 0,
+      "attempted": 5,
+      "admitted_only": false,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 98.21162463233959,
+        "max": 103.79979158646815,
+        "median": 100.44626225438556
+      },
+      "tau_multiple": {
+        "min": 49.105812316169796,
+        "max": 51.89989579323407
+      },
+      "runs": [
+        {
+          "path": "results/ks_T100_mlp_seed0/kuramoto_sivashinsky_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 103.79979158646815,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T100_mlp_seed1/kuramoto_sivashinsky_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 100.21515969817484,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T100_mlp_seed2/kuramoto_sivashinsky_mlp_seed2_map.json",
+          "bulk_rel_l2_pct": 100.44626225438556,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T100_mlp_seed3/kuramoto_sivashinsky_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 98.21162463233959,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T100_mlp_seed4/kuramoto_sivashinsky_mlp_seed4_map.json",
+          "bulk_rel_l2_pct": 103.14512215246157,
+          "passed": false
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Kuramoto--Sivashinsky, T=10": {
+      "tau_bulk": 0.02,
+      "runs_scored": 5,
+      "admitted": 0,
+      "attempted": 5,
+      "admitted_only": false,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 9.928157745143459,
+        "max": 17.021097106934143,
+        "median": 12.786704138300736
+      },
+      "tau_multiple": {
+        "min": 4.964078872571729,
+        "max": 8.510548553467071
+      },
+      "runs": [
+        {
+          "path": "results/ks_T10_mlp_seed0/kuramoto_sivashinsky_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 17.021097106934143,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T10_mlp_seed1/kuramoto_sivashinsky_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 12.786704138300736,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T10_mlp_seed2/kuramoto_sivashinsky_mlp_seed2_map.json",
+          "bulk_rel_l2_pct": 12.548747711701338,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T10_mlp_seed3/kuramoto_sivashinsky_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 9.928157745143459,
+          "passed": false
+        },
+        {
+          "path": "results/ks_T10_mlp_seed4/kuramoto_sivashinsky_mlp_seed4_map.json",
+          "bulk_rel_l2_pct": 15.880500250320859,
+          "passed": false
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Burgers, MLP": {
+      "tau_bulk": 0.02,
+      "runs_scored": 8,
+      "admitted": 8,
+      "attempted": 8,
+      "admitted_only": true,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 0.04973254548717173,
+        "max": 0.4028155936386125,
+        "median": 0.07725483910794384
+      },
+      "tau_multiple": {
+        "min": 0.024866272743585865,
+        "max": 0.20140779681930626
+      },
+      "runs": [
+        {
+          "path": "results/burgers_mlp_seed0/burgers_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 0.05691736674189904,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed1/burgers_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 0.19194750920981907,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed2/burgers_mlp_seed2_map.json",
+          "bulk_rel_l2_pct": 0.4028155936386125,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed3/burgers_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 0.17901526803070514,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed4/burgers_mlp_seed4_map.json",
+          "bulk_rel_l2_pct": 0.05574135768476158,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed5/burgers_mlp_seed5_map.json",
+          "bulk_rel_l2_pct": 0.07238845805834375,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed6/burgers_mlp_seed6_map.json",
+          "bulk_rel_l2_pct": 0.04973254548717173,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_mlp_seed7/burgers_mlp_seed7_map.json",
+          "bulk_rel_l2_pct": 0.08212122015754392,
+          "passed": true
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Burgers, Fourier": {
+      "tau_bulk": 0.02,
+      "runs_scored": 3,
+      "admitted": 3,
+      "attempted": 8,
+      "admitted_only": true,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 0.3718327839129917,
+        "max": 1.4809408237168102,
+        "median": 0.7795208836969262
+      },
+      "tau_multiple": {
+        "min": 0.18591639195649584,
+        "max": 0.7404704118584051
+      },
+      "runs": [
+        {
+          "path": "results/burgers_fourier_seed0/burgers_fourier_seed0_map.json",
+          "bulk_rel_l2_pct": 0.3718327839129917,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_fourier_seed2/burgers_fourier_seed2_map.json",
+          "bulk_rel_l2_pct": 1.4809408237168102,
+          "passed": true
+        },
+        {
+          "path": "results/burgers_fourier_seed6/burgers_fourier_seed6_map.json",
+          "bulk_rel_l2_pct": 0.7795208836969262,
+          "passed": true
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Allen--Cahn, MLP": {
+      "tau_bulk": 0.03,
+      "runs_scored": 3,
+      "admitted": 3,
+      "attempted": 5,
+      "admitted_only": true,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 1.3909564213968135,
+        "max": 2.3307710992531665,
+        "median": 2.329924312609697
+      },
+      "tau_multiple": {
+        "min": 0.4636521404656045,
+        "max": 0.7769236997510555
+      },
+      "runs": [
+        {
+          "path": "results/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 2.3307710992531665,
+          "passed": true
+        },
+        {
+          "path": "results/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_map.json",
+          "bulk_rel_l2_pct": 2.329924312609697,
+          "passed": true
+        },
+        {
+          "path": "results/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_map.json",
+          "bulk_rel_l2_pct": 1.3909564213968135,
+          "passed": true
+        }
+      ],
+      "reported_in_table": true
+    },
+    "Allen--Cahn, Fourier": {
+      "tau_bulk": 0.03,
+      "runs_scored": 3,
+      "admitted": 3,
+      "attempted": 4,
+      "admitted_only": true,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 1.6374436785172146,
+        "max": 2.600594613743543,
+        "median": 2.340494637865103
+      },
+      "tau_multiple": {
+        "min": 0.5458145595057382,
+        "max": 0.8668648712478477
+      },
+      "runs": [
+        {
+          "path": "results/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_map.json",
+          "bulk_rel_l2_pct": 2.340494637865103,
+          "passed": true
+        },
+        {
+          "path": "results/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_map.json",
+          "bulk_rel_l2_pct": 1.6374436785172146,
+          "passed": true
+        },
+        {
+          "path": "results/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_map.json",
+          "bulk_rel_l2_pct": 2.600594613743543,
+          "passed": true
+        }
+      ],
+      "reported_in_table": true
+    },
+    "convection--diffusion, MLP (control)": {
+      "tau_bulk": 0.02,
+      "runs_scored": 3,
+      "admitted": 3,
+      "attempted": 4,
+      "admitted_only": true,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 0.19297648704669854,
+        "max": 0.3117715389339067,
+        "median": 0.21242286056464185
+      },
+      "tau_multiple": {
+        "min": 0.09648824352334927,
+        "max": 0.15588576946695334
+      },
+      "runs": [
+        {
+          "path": "results/cd_sweep/mlp_d09_n06/convection_diffusion_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 0.3117715389339067,
+          "passed": true
+        },
+        {
+          "path": "results/cd_sweep/mlp_d11_n08/convection_diffusion_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 0.21242286056464185,
+          "passed": true
+        },
+        {
+          "path": "results/cd_sweep/mlp_d13_n10/convection_diffusion_mlp_seed0_map.json",
+          "bulk_rel_l2_pct": 0.19297648704669854,
+          "passed": true
+        }
+      ],
+      "reported_in_table": true
+    },
+    "convection--diffusion, Fourier (rejected control)": {
+      "tau_bulk": 0.02,
+      "runs_scored": 1,
+      "admitted": 0,
+      "attempted": 1,
+      "admitted_only": false,
+      "median_definition": "standard median; mean of central pair for even n",
+      "bulk_rel_l2_pct": {
+        "min": 63.3106418255053,
+        "max": 63.3106418255053,
+        "median": 63.3106418255053
+      },
+      "tau_multiple": {
+        "min": 31.65532091275265,
+        "max": 31.65532091275265
+      },
+      "runs": [
+        {
+          "path": "results/cd_sweep/fou_d06_n01/convection_diffusion_fourier_seed0_map.json",
+          "bulk_rel_l2_pct": 63.3106418255053,
+          "passed": false
+        }
+      ],
+      "reported_in_table": false
+    }
+  }
+}

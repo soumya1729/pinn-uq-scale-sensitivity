@@ -1,0 +1,363 @@
+{
+  "tag": "allen_cahn_fourier_seed1",
+  "config": {
+    "pde": "allen_cahn",
+    "seed": 1,
+    "arch": "fourier",
+    "nu": 0.003183098861837907,
+    "eps2": 0.0001,
+    "reac": 5.0,
+    "fourier_scale": 1.0,
+    "fourier_dim": 16,
+    "Mx": 20,
+    "Mt": 20,
+    "hidden": 64,
+    "fusion": 128,
+    "N_f": 5000,
+    "N_u": 1000,
+    "N_b": 200,
+    "adam_lr": 0.001,
+    "adam_iters": 15000,
+    "lm_iters": 200,
+    "ic_weight": 10.0,
+    "bc_weight": 10.0,
+    "bcu_weight": 10.0,
+    "bcx_weight": 1.0,
+    "ks_L": 100.53096491487338,
+    "ks_T": 100.0,
+    "gh_n": 80,
+    "lm_cg": 100,
+    "lm_mu_init": 0.0001,
+    "lm_mu_min": 1e-12,
+    "lm_rho_accept": 0.25,
+    "lm_rho_good": 0.75,
+    "lm_mu_dec": 0.3333333333333333,
+    "lm_mu_inc": 4.0,
+    "lm_max_rej": 5,
+    "eval_nx": 400,
+    "eval_nt": 200,
+    "smoke": 0,
+    "d": 128,
+    "d_aug": 129
+  },
+  "choices": [
+    {
+      "setting": "baseline",
+      "alpha": 25.192872722861413,
+      "noise_variance": 1.0,
+      "selection": "fixed_baseline",
+      "gamma": 25.192872722861413,
+      "gamma_index": 3
+    },
+    {
+      "setting": "conditional_noise_mle",
+      "alpha": 25.192872722861413,
+      "noise_variance": 2.1983552019013367e-06,
+      "selection": "conditional_mle_at_theta",
+      "gamma": 5.538288280114068e-05,
+      "gamma_index": 2
+    },
+    {
+      "setting": "zero_evidence_original",
+      "alpha": 7.966685860696998,
+      "noise_variance": 3.909289791493106e-09,
+      "selection": "best_tested_zero_prior_affine_evidence",
+      "alpha_boundary": false,
+      "noise_boundary": false,
+      "gamma": 3.114408370725525e-08,
+      "gamma_index": 0
+    },
+    {
+      "setting": "theta_evidence_original",
+      "alpha": 796.6685860696997,
+      "noise_variance": 3.9092897914931064e-08,
+      "selection": "best_tested_theta_prior_affine_evidence",
+      "alpha_boundary": false,
+      "noise_boundary": false,
+      "gamma": 3.1144083707255244e-05,
+      "gamma_index": 1
+    },
+    {
+      "setting": "zero_evidence_extended",
+      "alpha": 7.966685860696998,
+      "noise_variance": 3.909289791493106e-09,
+      "selection": "best_tested_zero_prior_affine_evidence",
+      "alpha_boundary": false,
+      "noise_boundary": false,
+      "gamma": 3.114408370725525e-08,
+      "gamma_index": 0
+    },
+    {
+      "setting": "theta_evidence_extended",
+      "alpha": 796.6685860696997,
+      "noise_variance": 3.9092897914931064e-08,
+      "selection": "best_tested_theta_prior_affine_evidence",
+      "alpha_boundary": false,
+      "noise_boundary": false,
+      "gamma": 3.1144083707255244e-05,
+      "gamma_index": 1
+    }
+  ],
+  "gammas": [
+    3.114408370725525e-08,
+    3.1144083707255244e-05,
+    5.538288280114068e-05,
+    25.192872722861413
+  ],
+  "alpha0": 25.192872722861413,
+  "conditional_noise_mle": 2.1983552019013367e-06,
+  "parameter_count": 275369,
+  "residual_count": 6400,
+  "lambda_max": 13575279.710617168,
+  "theta_norm": 104.54870973506958,
+  "delta_theta_norm": [
+    15.907223925641942,
+    1.9593456312363897,
+    1.7442909114535763,
+    0.0009130761457702313
+  ],
+  "delta_theta_relative_norm": [
+    0.15215131746677174,
+    0.018740983377044503,
+    0.016684002278685946,
+    8.733499897645806e-06
+  ],
+  "delta_zero_relative_norm": [
+    1.000458681272486,
+    0.9921405740618965,
+    0.9924460305194043,
+    0.9995764389573768
+  ],
+  "delta_complement_relative_norm": 0.9835844830948293,
+  "region_thresholds": {
+    "p70": 1.9401859960611838,
+    "p95": 7.562433426615074
+  },
+  "early_checks": {
+    "prediction_samples": 200,
+    "residual_count": 6400,
+    "max_prediction_absolute_defect": 3.219646771412954e-15,
+    "rebuilt_training_loss": 1.099177600950656e-06
+  },
+  "grid_checks": {
+    "max_prediction_absolute_defect": 5.218048215738236e-15,
+    "max_gradient_norm_relative_defect": 3.3738503697436036e-14,
+    "affine_jvp_absolute_defect": 2.470585042969875e-15,
+    "affine_jvp_scaled_defect": 3.731473547963787e-17,
+    "affine_jvp_samples": 200
+  },
+  "evidence_rebuild_checks": [
+    {
+      "grid": "original",
+      "rebuilt_best_indices": [
+        34,
+        9
+      ],
+      "saved_best_indices": [
+        34,
+        9
+      ],
+      "rebuilt_log_evidence_regret": 0.0,
+      "interpretation": "Coordinates in unresolved clusters may rotate; compare grid evidence, not individual modal signs."
+    },
+    {
+      "grid": "extended",
+      "rebuilt_best_indices": [
+        34,
+        25
+      ],
+      "saved_best_indices": [
+        34,
+        25
+      ],
+      "rebuilt_log_evidence_regret": 0.0,
+      "interpretation": "Coordinates in unresolved clusters may rotate; compare grid evidence, not individual modal signs."
+    }
+  ],
+  "archived_field_checks": [
+    {
+      "gamma": 3.114408370725525e-08,
+      "unit_variance_relative_defect": 0.0,
+      "zero_affine_shift_scaled_defect": 4.376730226030569e-18
+    },
+    {
+      "gamma": 5.538288280114068e-05,
+      "unit_variance_relative_defect": 0.0,
+      "zero_affine_shift_scaled_defect": 6.90907302970542e-18
+    },
+    {
+      "gamma": 25.192872722861413,
+      "unit_variance_relative_defect": 0.0,
+      "zero_affine_shift_scaled_defect": 1.292634523169272e-15
+    }
+  ],
+  "baseline_max_sigma_relative_error": 1.8249401989578473e-11,
+  "normal_equation_checks": [
+    {
+      "gamma": 3.114408370725525e-08,
+      "residual_norm": 1.3435168338340393e-09,
+      "denominator": 215945014.6440981,
+      "normwise_backward_error": 6.221569115861774e-18,
+      "delta_norm": 15.907223925641942,
+      "rhs_norm": 0.4340865469067499,
+      "interpretation": "Consistency check; not a weak-mode forward-error certificate."
+    },
+    {
+      "gamma": 3.1144083707255244e-05,
+      "residual_norm": 3.414971251669086e-10,
+      "denominator": 26598665.42795731,
+      "normwise_backward_error": 1.2838881939090371e-17,
+      "delta_norm": 1.9593456312363893,
+      "rhs_norm": 0.4340865469067499,
+      "interpretation": "Consistency check; not a weak-mode forward-error certificate."
+    },
+    {
+      "gamma": 5.538288280114068e-05,
+      "residual_norm": 5.800922682590379e-10,
+      "denominator": 23679237.453852814,
+      "normwise_backward_error": 2.4497928592065028e-17,
+      "delta_norm": 1.7442909114535765,
+      "rhs_norm": 0.4340865469067499,
+      "interpretation": "Consistency check; not a weak-mode forward-error certificate."
+    },
+    {
+      "gamma": 25.192872722861413,
+      "residual_norm": 7.300660245107092e-14,
+      "denominator": 12395.72116548118,
+      "normwise_backward_error": 5.889661559536777e-18,
+      "delta_norm": 0.0009130761457702314,
+      "rhs_norm": 0.4340865469067499,
+      "interpretation": "Consistency check; not a weak-mode forward-error certificate."
+    }
+  ],
+  "conventions": {
+    "prior_theta": "N(theta, I/alpha)",
+    "prior_zero": "N(0, I/alpha)",
+    "covariance": "v*(J.T J+gamma I)^-1, gamma=alpha*v",
+    "theta_shift": "-(J.T J+gamma I)^-1 J.T r",
+    "no_rank_cutoff": true,
+    "nonlinear_check": "Evaluate u(theta+delta_L); covariance remains at theta.",
+    "oracle": "Bulk empirical 0.68 higher quantile, reference-informed, at trained-root gammas; evaluation_alpha and evaluation_noise_variance preserve gamma.",
+    "numerical_scope": "Backward and reconstruction consistency checks are not forward-accuracy certificates for unresolved modes.",
+    "shift_norm_scope": "Parameter displacement is a diagnostic; nonlinear/affine disagreement tests output linearisation."
+  },
+  "signature": {
+    "inputs": {
+      "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765",
+      "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fourier_B.npz": "cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba",
+      "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_map.json": "a66ad051407bcad447054231195893996e5da730f358f3894b4fe983e61f56ee",
+      "inputs/checkpoints/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_params.pkl": "48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f",
+      "inputs/round2/allen_cahn_fourier_seed1_round2.json": "bf8460d45b52675d634cf11894ca0dd71a9ff60d4e4b41d5f342936d458ab5a4",
+      "inputs/round2/allen_cahn_fourier_seed1_round2_fields.npz": "061af23d68bf1ef4b0489dcaf69959379d4d60ee230df325b2abda59c7e57fd3",
+      "inputs/round2/allen_cahn_fourier_seed1_round2_spectral.npz": "4ec11c0a2a5c70a67fa229f1cdc9cf431aa56e98205bb929c1effa63c25f7d1a",
+      "inputs/baseline/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz": "ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324",
+      "outputs/evidence/allen_cahn_fourier_seed1_theta_evidence.json": "8a30ce662fc61b052b59f5c26041d9b7db6ffa950fec2f7c04af6229af12861c",
+      "outputs/local/root_settings.json": "3c25abad039486c532b1383fb913cd0ef196ed68116f58f26e3e56985c69fcb8"
+    },
+    "sources": {
+      "theta_pass.py": "0c5956f14fc5f3555b85de18abafc42a5552aa06cc497df0dafd674c0820ceef",
+      "theta_linalg.py": "a6c9b38602547e50c9a98e6badcda58f05a4b4813a92f8c88e9dea246b124ba3",
+      "model_residual.py": "824b6e75db01ad50949f6fab07bc0d55f55972c4f943e4b206bc03145a22d13c",
+      "theta_archive.py": "87373864f4d946aaa92d2fd7ddece771f32626ff9286dbcbc2ecb1eca7e00ea0"
+    },
+    "choices": [
+      {
+        "setting": "baseline",
+        "alpha": 25.192872722861413,
+        "noise_variance": 1.0,
+        "selection": "fixed_baseline",
+        "gamma": 25.192872722861413,
+        "gamma_index": 3
+      },
+      {
+        "setting": "conditional_noise_mle",
+        "alpha": 25.192872722861413,
+        "noise_variance": 2.1983552019013367e-06,
+        "selection": "conditional_mle_at_theta",
+        "gamma": 5.538288280114068e-05,
+        "gamma_index": 2
+      },
+      {
+        "setting": "zero_evidence_original",
+        "alpha": 7.966685860696998,
+        "noise_variance": 3.909289791493106e-09,
+        "selection": "best_tested_zero_prior_affine_evidence",
+        "alpha_boundary": false,
+        "noise_boundary": false,
+        "gamma": 3.114408370725525e-08,
+        "gamma_index": 0
+      },
+      {
+        "setting": "theta_evidence_original",
+        "alpha": 796.6685860696997,
+        "noise_variance": 3.9092897914931064e-08,
+        "selection": "best_tested_theta_prior_affine_evidence",
+        "alpha_boundary": false,
+        "noise_boundary": false,
+        "gamma": 3.1144083707255244e-05,
+        "gamma_index": 1
+      },
+      {
+        "setting": "zero_evidence_extended",
+        "alpha": 7.966685860696998,
+        "noise_variance": 3.909289791493106e-09,
+        "selection": "best_tested_zero_prior_affine_evidence",
+        "alpha_boundary": false,
+        "noise_boundary": false,
+        "gamma": 3.114408370725525e-08,
+        "gamma_index": 0
+      },
+      {
+        "setting": "theta_evidence_extended",
+        "alpha": 796.6685860696997,
+        "noise_variance": 3.9092897914931064e-08,
+        "selection": "best_tested_theta_prior_affine_evidence",
+        "alpha_boundary": false,
+        "noise_boundary": false,
+        "gamma": 3.1144083707255244e-05,
+        "gamma_index": 1
+      }
+    ],
+    "versions": {
+      "jax": "0.10.1",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    },
+    "chunks": {
+      "jacobian": 50,
+      "grid": 200
+    },
+    "retention": {
+      "enabled": true,
+      "archive_root": "/home/soumya24/pinn_theta_followup/retained"
+    }
+  },
+  "requested_retention": "all",
+  "archive_validation_report": {
+    "numerical_status": "PASS",
+    "checks_passed": true,
+    "manifest_path": "/home/soumya24/pinn_theta_followup/retained/allen_cahn_fourier_seed1/manifest.json",
+    "manifest_sha256": "29ed42c75f697de7ac37fe63703bbb6934c042041ce57fc358e027ae84bd3671",
+    "retained_bytes": 18862754304,
+    "reload_checks": {
+      "theta_modal_relative_defect": 0.0,
+      "theta_complement_relative_defect": 0.0,
+      "residual_modal_relative_defect": 0.0,
+      "sample_gradient_modal_scaled_defect": 0.0,
+      "sample_gradient_complement_energy_scaled_defect": 0.0,
+      "sample_gradient_complement_shift_scaled_defect": 2.7772845618637685e-28,
+      "full_variance_relative_defect": 5.10702591327572e-15,
+      "full_zero_shift_scaled_defect": 5.666387370898236e-15,
+      "gradient_sample_indices": [
+        0,
+        1,
+        2
+      ],
+      "gamma": 25.192872722861413,
+      "tolerance": 1e-10,
+      "interpretation": "Reload/layout consistency; not a weak-mode forward-error certificate."
+    }
+  },
+  "numerical_status": "PASS",
+  "elapsed_seconds": 10467.651517136022
+}

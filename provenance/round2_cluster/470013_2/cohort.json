@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "cohort": [
+    {
+      "tag": "burgers_mlp_seed0",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 0,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed0",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed0/burgers_mlp_seed0_params.pkl",
+          "bytes": 1577814,
+          "sha256": "b12a4fe574be1beb1f548fd18c8c13105dbfcd7f0151db012f67dd935b3e3975"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed0/burgers_mlp_seed0_map.json",
+          "bytes": 10656,
+          "sha256": "89f9f8f095defb106739dccd56fea12986e3f990630cb7a7bddb899b6a453e1d"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed0/burgers_mlp_seed0_fields.npz",
+          "bytes": 2224277,
+          "sha256": "ea2c2afd2ab7206c779ef15e34f6f3a467da7f82105461bf7e318054a557529b"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed0_fullgrid_sigma_raw.npz",
+          "bytes": 685620,
+          "sha256": "eb3f7f9a860eae4fe0ec27c6fda4a621ef6c08fa2b2c08ee09e18d0bb258ff3e"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed1",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 1,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed1",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed1/burgers_mlp_seed1_params.pkl",
+          "bytes": 1577814,
+          "sha256": "cd6ea761ff4b9ed91616b3c4522c66bbf8a256beeeb2ebe5a74b5fe40ef91faa"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed1/burgers_mlp_seed1_map.json",
+          "bytes": 10659,
+          "sha256": "c1697f259e512ef884d461a82665018429bf9995d7f7d17ffb83957eeae35b52"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed1/burgers_mlp_seed1_fields.npz",
+          "bytes": 2223698,
+          "sha256": "28e9b1c6e1dc9be8ad104c56e3a27d6d89bc417f6927811f565135585fd5f8e6"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed1_fullgrid_sigma_raw.npz",
+          "bytes": 684778,
+          "sha256": "4bb78687b49b520d4ce180b523670eeec144faea5ad5cf22b81906e4ca66a591"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed2",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 2,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed2",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed2/burgers_mlp_seed2_params.pkl",
+          "bytes": 1577814,
+          "sha256": "56b191d3d5047c572a485c9f886d7bba6528bffc0cc8279263f44894a9322d51"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed2/burgers_mlp_seed2_map.json",
+          "bytes": 10168,
+          "sha256": "5a23c215efc9d0741579322dce6275a9165f2f2cfa13b8bddf1a74ff3cd7dbac"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed2/burgers_mlp_seed2_fields.npz",
+          "bytes": 2226478,
+          "sha256": "b5468d6649ef1e5af3dade185c0df9461cbc52a6d834e2675affab94fbd58800"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed2_fullgrid_sigma_raw.npz",
+          "bytes": 686289,
+          "sha256": "242753a71fa31cf5f7756dd93cb5b2c4fc556b4a29021768d25eb5e99a1690a0"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed3",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 3,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed3",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed3/burgers_mlp_seed3_params.pkl",
+          "bytes": 1577814,
+          "sha256": "de78dfb427bd593c3c05138caf64e5f6be7706a757bef0b9e06234b0aa129eb5"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed3/burgers_mlp_seed3_map.json",
+          "bytes": 10689,
+          "sha256": "8ae498ebd56a7f1c4a43719f372d55636fcc84a6c7e5014a55ec1a293594803e"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed3/burgers_mlp_seed3_fields.npz",
+          "bytes": 2224880,
+          "sha256": "4385ad1b3ac810c932624c9ef4f718ddf7755b6515bfa6ef671ec94e3c58dca5"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed3_fullgrid_sigma_raw.npz",
+          "bytes": 684507,
+          "sha256": "c703c169d137173bb5b328e02b29872efbfbb70c73d74d100109766ceb0d89bd"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed4",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 4,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed4",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed4/burgers_mlp_seed4_params.pkl",
+          "bytes": 1577814,
+          "sha256": "09a8a94c87da7ac13947653f565e45b38407358f6dce3632a6b4c9c6a8f1c1a3"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed4/burgers_mlp_seed4_map.json",
+          "bytes": 10686,
+          "sha256": "29e173f1ec939ecc126a2a55d6e05c7842b3641b45317fc1aaf779329e763464"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed4/burgers_mlp_seed4_fields.npz",
+          "bytes": 2225905,
+          "sha256": "d06776c258389b1bdc4be753accf6b5f9aefa477808d637e06da2369402a9f4a"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed4_fullgrid_sigma_raw.npz",
+          "bytes": 685519,
+          "sha256": "db0d3d5cc634be9abe552c0961941f7813a9ca76bf4ce9d1e8a2698e990382f6"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed5",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 5,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed5",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed5/burgers_mlp_seed5_params.pkl",
+          "bytes": 1577814,
+          "sha256": "7d596fe68a41dfa7810790965e7c34a7c8ecfd784725d1cb7cbb5d3ab64b8bfc"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed5/burgers_mlp_seed5_map.json",
+          "bytes": 10685,
+          "sha256": "8606bac91e0eaa0805cdecaf101e642238191e0f3579fe2eebeb2ff657dc7987"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed5/burgers_mlp_seed5_fields.npz",
+          "bytes": 2225283,
+          "sha256": "d5295b74a13b93878eb7ad40c33919f4f78b70c2aae238279c7079c117f2c84f"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed5_fullgrid_sigma_raw.npz",
+          "bytes": 685889,
+          "sha256": "9c07dd7cf6d669bc973bd70f011eb6312777fe7e65aa40760f066569db36af8f"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed6",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 6,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed6",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed6/burgers_mlp_seed6_params.pkl",
+          "bytes": 1577814,
+          "sha256": "22e70ae3a0d5ff40650aec1acc0a083e5d80fea9344df1fb4d70f26e782e9a86"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed6/burgers_mlp_seed6_map.json",
+          "bytes": 10187,
+          "sha256": "d0eada9d7a229a3b5602729fd27cd89831fe74a66b8b5bd16c98f9a486462185"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed6/burgers_mlp_seed6_fields.npz",
+          "bytes": 2225703,
+          "sha256": "7b05276b4730a136692f986177e21a0dfd30f11e746b16e508f3e5b62406c39f"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed6_fullgrid_sigma_raw.npz",
+          "bytes": 683282,
+          "sha256": "282f200cb4837b61e6aa4f6200a7c04f5a804ead3aee5c3d75a36b23c3c5896a"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_mlp_seed7",
+      "pde": "burgers",
+      "architecture": "mlp",
+      "seed": 7,
+      "input_dir": "analysis/n5/input/burgers_mlp_seed7",
+      "baseline_sigma": "analysis/round2/baseline/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed7/burgers_mlp_seed7_params.pkl",
+          "bytes": 1577814,
+          "sha256": "c277e637d77ff381386ba98bae973b3ad82793fd9e78d88ae20c93b53cfb1f6d"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed7/burgers_mlp_seed7_map.json",
+          "bytes": 10671,
+          "sha256": "53b1536ba511c2fae941bbe118d0e92f2148730b864603950072ee9ff9651b62"
+        },
+        {
+          "path": "analysis/n5/input/burgers_mlp_seed7/burgers_mlp_seed7_fields.npz",
+          "bytes": 2224889,
+          "sha256": "4ff3775029a448fdb2ac3a80748ed2f1b92f2b1f5f1ddb5dbf29c08001a3e2a0"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_mlp_seed7_fullgrid_sigma_raw.npz",
+          "bytes": 683256,
+          "sha256": "518ec11cd42a76e8714e91db8934dec71d0825a66695354ebd8e32e803858dd3"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_fourier_seed0",
+      "pde": "burgers",
+      "architecture": "fourier",
+      "seed": 0,
+      "input_dir": "analysis/n5/input/burgers_fourier_seed0",
+      "baseline_sigma": "analysis/round2/baseline/burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_fourier_seed0\\burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "original full-grid raw-sigma artifact",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_params.pkl",
+          "bytes": 2212748,
+          "sha256": "06229dd8c3aa589a9115dd8f03d21173d2cfe100d24067ef1e0fa33adee4da73"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_map.json",
+          "bytes": 10684,
+          "sha256": "9063bf1f39342fbc18e6e8cf6802cd598b2a12e5c04127578305e9bea2ab1522"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_fields.npz",
+          "bytes": 2227493,
+          "sha256": "ea142827a4ad612557570b5b7a5f2a9914072164bb242d60aa924447dab201e9"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed0/burgers_fourier_seed0_fourier_B.npz",
+          "bytes": 754,
+          "sha256": "eaeafbbf1b2dfefa22df063631fdfb863c1c21c5a03bccbb46028b160be52dc3"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_fourier_seed0_fullgrid_sigma_raw.npz",
+          "bytes": 689214,
+          "sha256": "1b5bfc3402cd71714daf17b95bd00a90c498af0e44d52eeeaed7a3f556501cbf"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_fourier_seed2",
+      "pde": "burgers",
+      "architecture": "fourier",
+      "seed": 2,
+      "input_dir": "analysis/n5/input/burgers_fourier_seed2",
+      "baseline_sigma": "analysis/round2/baseline/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_params.pkl",
+          "bytes": 2212748,
+          "sha256": "ce48d0ec2ff67b42abca299c6fb2e7dba39589f1bd4542831b41273f8e6d04cf"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_map.json",
+          "bytes": 10171,
+          "sha256": "c48714269fa0fa45ce4cae40f5cc817ee83a0cf06ef570772d86f39f708f5f60"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_fields.npz",
+          "bytes": 2226324,
+          "sha256": "3e2568cca0cb6ad31d2e981ed40da03a8d20345685e9de45a96beb96d0d520d0"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed2/burgers_fourier_seed2_fourier_B.npz",
+          "bytes": 754,
+          "sha256": "bb4afc6b5f4d8e67d607e544bc4419ce5fdaa8596c58ebb750322565462663b2"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_fourier_seed2_fullgrid_sigma_raw.npz",
+          "bytes": 688462,
+          "sha256": "945b183d032807c54d930d6c7370b090c7704e8a4efd88f6af87c33103639ae2"
+        }
+      ]
+    },
+    {
+      "tag": "burgers_fourier_seed6",
+      "pde": "burgers",
+      "architecture": "fourier",
+      "seed": 6,
+      "input_dir": "analysis/n5/input/burgers_fourier_seed6",
+      "baseline_sigma": "analysis/round2/baseline/burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\pinn-uq-jmlr-ready\\results\\burgers_fourier_seed6\\burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "original full-grid raw-sigma artifact",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_params.pkl",
+          "bytes": 2212748,
+          "sha256": "ebd746ab791e079068f9f46c6b01e5f2d86118b9487229ca997d7cd01df56e83"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_map.json",
+          "bytes": 10141,
+          "sha256": "61bdf78c4acba9bc0e06e03334cac375e635ecdfc76cad90cbd99365ce242a0b"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_fields.npz",
+          "bytes": 2226885,
+          "sha256": "4a5c804a34b1888e7b0ea9eb70128da053f5c8ad938b79d5b1ae30723aafe564"
+        },
+        {
+          "path": "analysis/n5/input/burgers_fourier_seed6/burgers_fourier_seed6_fourier_B.npz",
+          "bytes": 754,
+          "sha256": "a95183dd4d36d290658c7f5e26468a8ada2498ce1c31dc78d60549524ea73588"
+        },
+        {
+          "path": "analysis/round2/baseline/burgers_fourier_seed6_fullgrid_sigma_raw.npz",
+          "bytes": 688504,
+          "sha256": "8fac15108553287dc57372d7c4a2d13434516f8c16201718953dbb0ba38d0adc"
+        }
+      ]
+    },
+    {
+      "tag": "allen_cahn_mlp_seed0",
+      "pde": "allen_cahn",
+      "architecture": "mlp",
+      "seed": 0,
+      "input_dir": "analysis/n5/input/allen_cahn_mlp_seed0",
+      "baseline_sigma": "analysis/round2/baseline/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_params.pkl",
+          "bytes": 1577814,
+          "sha256": "c2f6e01cdabdf42acef0609f6662e1b769026378c04b363905da69978ec3ff0a"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_map.json",
+          "bytes": 10670,
+          "sha256": "58ce55c004ddae7a745e80d938ac2e7b6eef1edce8238c4cb906cde20b6eb321"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed0/allen_cahn_mlp_seed0_fields.npz",
+          "bytes": 2284892,
+          "sha256": "baf3a8d95b9c220ce4732ded0d114690ee63cedd625d06da0baccbd30e9acd7a"
+        },
+        {
+          "path": "analysis/round2/baseline/allen_cahn_mlp_seed0_fullgrid_sigma_raw.npz",
+          "bytes": 696942,
+          "sha256": "020b9b1fce70ee577129a3f39eb204fdd2907a9052a1bff89fdaaf438176c2e1"
+        }
+      ]
+    },
+    {
+      "tag": "allen_cahn_mlp_seed1",
+      "pde": "allen_cahn",
+      "architecture": "mlp",
+      "seed": 1,
+      "input_dir": "analysis/n5/input/allen_cahn_mlp_seed1",
+      "baseline_sigma": "analysis/round2/baseline/allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_mlp_seed1\\allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "original full-grid raw-sigma artifact",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_params.pkl",
+          "bytes": 1577814,
+          "sha256": "b0d1e016972e1f54a44e19532ad2470de6b12ffde57f89c8a544b897de6fded6"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_map.json",
+          "bytes": 10143,
+          "sha256": "096c0bb7913e0c63e047d4edb0aa6357f51be2276748b3475a4e2481d687242b"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed1/allen_cahn_mlp_seed1_fields.npz",
+          "bytes": 2287814,
+          "sha256": "8463f7eb091ea29cb629cf42dad6beef778fb2ec1ee3adb9200d1bbf0625af0f"
+        },
+        {
+          "path": "analysis/round2/baseline/allen_cahn_mlp_seed1_fullgrid_sigma_raw.npz",
+          "bytes": 697224,
+          "sha256": "87789027ca757d3ddec9da5052f587a8daf2d4a89cd523a25b83e6dbe2562fd2"
+        }
+      ]
+    },
+    {
+      "tag": "allen_cahn_mlp_seed3",
+      "pde": "allen_cahn",
+      "architecture": "mlp",
+      "seed": 3,
+      "input_dir": "analysis/n5/input/allen_cahn_mlp_seed3",
+      "baseline_sigma": "analysis/round2/baseline/allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_mlp_seed3\\allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "original full-grid raw-sigma artifact",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_params.pkl",
+          "bytes": 1577814,
+          "sha256": "76afe8317f4eee7dc26abade5d90c09f6f4e490af068a78fe7ce3ebf7344c6a4"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_map.json",
+          "bytes": 10170,
+          "sha256": "e7e6ac2775e38fb119dcb238579762eefcd46dc62a9e7ed78efeca60d58f120a"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_mlp_seed3/allen_cahn_mlp_seed3_fields.npz",
+          "bytes": 2279129,
+          "sha256": "cf1f41ebfc05be4eddec04d42cb06f7bc2d2813cad71a651d06550996a4247eb"
+        },
+        {
+          "path": "analysis/round2/baseline/allen_cahn_mlp_seed3_fullgrid_sigma_raw.npz",
+          "bytes": 697127,
+          "sha256": "032bc3ac1cdbbdc3c2cf7e402688e34fcdacf1cd4a93e3f2c78e106ddb5a848d"
+        }
+      ]
+    },
+    {
+      "tag": "allen_cahn_fourier_seed0",
+      "pde": "allen_cahn",
+      "architecture": "fourier",
+      "seed": 0,
+      "input_dir": "analysis/n5/input/allen_cahn_fourier_seed0",
+      "baseline_sigma": "analysis/round2/baseline/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\myshortened\\pinn_uq\\analysis\\n1\\baseline\\allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "existing N1 raw-sigma bundle",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_params.pkl",
+          "bytes": 2212748,
+          "sha256": "ff21fe841feb70a8cf4af5a183a96221b494bef8d7f8a8de9f8cfa80c508c39a"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_map.json",
+          "bytes": 10255,
+          "sha256": "396ee17ebaa3e2bb8f7d4bdfef52593782c36e223e41d9f86546911d1580815c"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fields.npz",
+          "bytes": 2292379,
+          "sha256": "b5f1609a640c4e69707dee148f80daee8b74fccbef03fbc023ad1b1f8312ad64"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed0/allen_cahn_fourier_seed0_fourier_B.npz",
+          "bytes": 754,
+          "sha256": "17eba3996c62def2d829c391cbb16d9cb9ea8efec3726ea9d22b9884b92f45fa"
+        },
+        {
+          "path": "analysis/round2/baseline/allen_cahn_fourier_seed0_fullgrid_sigma_raw.npz",
+          "bytes": 697287,
+          "sha256": "6fecaafcf001d0a8bf1c4fd42c7b2150edaf465236b3b2135d36e15f7cf64fa1"
+        }
+      ]
+    },
+    {
+      "tag": "allen_cahn_fourier_seed1",
+      "pde": "allen_cahn",
+      "architecture": "fourier",
+      "seed": 1,
+      "input_dir": "analysis/n5/input/allen_cahn_fourier_seed1",
+      "baseline_sigma": "analysis/round2/baseline/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_fourier_seed1\\allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "original full-grid raw-sigma artifact",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_params.pkl",
+          "bytes": 2212748,
+          "sha256": "48bf03806f97fce33a0948117a7a87d23c1c6294dd700e7e6dd12b119fd13c3f"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_map.json",
+          "bytes": 10282,
+          "sha256": "a66ad051407bcad447054231195893996e5da730f358f3894b4fe983e61f56ee"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fields.npz",
+          "bytes": 2295198,
+          "sha256": "5f2f196a8a881e318e5ab12c7808d5bb5da5ab2687770f97c6b44f87edc99765"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed1/allen_cahn_fourier_seed1_fourier_B.npz",
+          "bytes": 754,
+          "sha256": "cb1a718d4f3043e48659be2e810ac6a6e53dc4eb33006ea4cbf4335c8ad9eeba"
+        },
+        {
+          "path": "analysis/round2/baseline/allen_cahn_fourier_seed1_fullgrid_sigma_raw.npz",
+          "bytes": 698379,
+          "sha256": "ab725dddc0c4ffe35bcce2336770cdd89a47e6cc5482a04447edcaa3848bc324"
+        }
+      ]
+    },
+    {
+      "tag": "allen_cahn_fourier_seed3",
+      "pde": "allen_cahn",
+      "architecture": "fourier",
+      "seed": 3,
+      "input_dir": "analysis/n5/input/allen_cahn_fourier_seed3",
+      "baseline_sigma": "analysis/round2/baseline/allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+      "baseline_source": "C:\\dev\\pinn-uq-jmlr-ready\\results\\allen_cahn_fourier_seed3\\allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+      "baseline_provenance": "original full-grid raw-sigma artifact",
+      "grid_shape": [
+        200,
+        400
+      ],
+      "files": [
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_params.pkl",
+          "bytes": 2212748,
+          "sha256": "f0e75b3097eeed3f6a80810692172689bbb744b56bc17721495895e1166473fa"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_map.json",
+          "bytes": 10163,
+          "sha256": "6dcb37b84e54e96695ad709f276e8cbdc8c7bbfd0ef512ef9c71908fcd750129"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fields.npz",
+          "bytes": 2293519,
+          "sha256": "9b5c34bb433ae0e5f751e58068374d129ce901134da8b26fc5dbdfaa1c1475d3"
+        },
+        {
+          "path": "analysis/n5/input/allen_cahn_fourier_seed3/allen_cahn_fourier_seed3_fourier_B.npz",
+          "bytes": 754,
+          "sha256": "d84293f0c1897d073e4a161a972a1ca56c65dc92763e7aae02e0e1dfe2e28dc6"
+        },
+        {
+          "path": "analysis/round2/baseline/allen_cahn_fourier_seed3_fullgrid_sigma_raw.npz",
+          "bytes": 697512,
+          "sha256": "73fa2a0dbe13013fbd050ae341e8d51c426b9b589354f40457e450c640a67b42"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    [
+      "burgers_mlp_seed2",
+      "burgers_mlp_seed0",
+      "burgers_mlp_seed3",
+      "burgers_fourier_seed0",
+      "allen_cahn_fourier_seed0",
+      "allen_cahn_mlp_seed0"
+    ],
+    [
+      "burgers_mlp_seed1",
+      "burgers_mlp_seed4",
+      "burgers_mlp_seed6",
+      "burgers_fourier_seed2",
+      "allen_cahn_fourier_seed1",
+      "allen_cahn_mlp_seed1"
+    ],
+    [
+      "burgers_mlp_seed5",
+      "burgers_mlp_seed7",
+      "burgers_fourier_seed6",
+      "allen_cahn_fourier_seed3",
+      "allen_cahn_mlp_seed3"
+    ]
+  ],
+  "input_file_count": 57,
+  "baseline_file_count": 17,
+  "scope": "17 admitted checkpoints; fixed raw training metric; no new training"
+}

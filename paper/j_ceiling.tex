@@ -43,7 +43,7 @@ $\meanZ\approx0.8$ and one-standard-deviation coverage $\approx0.68$.}
 \label{tab:ceiling}\label{tab:absolute}
 \end{table}
 
-For the reference run, $(\Rrms,\Rtar,\ratiogap)=(6.47,118.58,18.3)$.
+For canonical Burgers--MLP seed $2$, $(\Rrms,\Rtar,\ratiogap)=(6.47,118.58,18.3)$.
 Across Burgers--MLP seeds, $\Rrms$ varies by $6\%$ (coefficient of variation), over
 $[6.00,7.25]$, whereas $\Rtar\in[10.0,238.2]$. All eight attempted seeds pass admission,
 so this family's deficit is not an admission-selection effect. Small bulk-error denominators
@@ -74,7 +74,7 @@ $[0.02,2.43]$, while $\Rrms\in[9.93,12.37]$: similar contrasts can accompany ver
 different calibration. Allen--Cahn has no sharp points before $t\approx0.4$ under the
 same global-percentile rule.
 
-The baseline contrast also changes by at most $1.1\%$ between the two finest tested grids
+The baseline contrast also changes by at most $1.1\%$ between the two finest evaluation subsamples
 (Appendix~\ref{app:grid}); Gaussian and Student-$t$ distributions with matched covariance
 have identical RMS and mean-width contrasts.
 
@@ -89,11 +89,13 @@ Five trained-centre Burgers--MLP seeds cross $\ratiogap=1$ in the observed brack
 (Figure~\ref{fig:n1-scales}). Saved modal sums refine the crossings to a range from
 $2.05\times10^{-5}$ (seed $5$) to $0.736$ (seed $4$), more than four orders of
 magnitude apart in effective precision (Table~\ref{tab:r3-roots}). The original sampled
-brackets are retained in Appendix~\ref{app:n1}. Seeds $1$--$3$ remain above one, with minimum
-sampled gaps $1.84$, $2.59$ and $1.99$ (Appendix~\ref{app:n1}). Seed dependence lies in
-both quantities: baseline uncertainty contrast varies by $6\%$, while each seed's
-largest sampled contrast ranges from $45.83$ to $517.34$. The QR-complement ratios span $[42.71,509.9]$ (Table~\ref{tab:r2-limits}),
-so weak-precision geometry also varies; they identify the whole-kernel limit only
+brackets are listed in Appendix~\ref{app:n1}. Seeds $1$--$3$ remain above one, with minimum
+sampled gaps $1.84$, $2.59$ and $1.99$ (Appendix~\ref{app:n1}). Seeds vary in both
+error target and weak-precision geometry: baseline uncertainty contrast varies by $6\%$,
+while each seed's largest sampled contrast ranges from $45.83$ to $517.34$.
+The QR-complement RMS ratios span $[42.71,509.9]$ (Table~\ref{tab:r2-limits}).
+This complement is orthogonal to the retained $N$-column QR factor for $J^\top$
+(Appendix~\ref{app:r2:numerics}); its ratios identify the whole-kernel limit only
 under the rank condition in Section~\ref{sec:theory}.
 
 \begin{figure}[t]
@@ -147,8 +149,8 @@ establish that attribution.
 
 For the $\theta$-centred prediction, the pointwise baseline shift bound ranges from
 $0.00749$ to $0.0908$ standard deviations. Bounds establish $\rho>1$ in $16/17$;
-direct evaluation gives $\rho>1$ in all $17$, resolving seed $4$ with gap $1.582$.
-Both regions over-cover at one standard deviation. At the same conditional-MLE
+direct evaluation gives $\rho>1$ in all $17$, resolving Burgers--MLP seed $4$ with gap $1.582$.
+Both regions over-cover at one standard deviation. At the conditional-MLE
 scales, $\rho^\theta\in[2.18,10.01]$. The affine mean improves full-grid RMS error
 in $15/17$ runs (Table~\ref{tab:r2-centres}), with median error ratio $0.7953$.
 At one standard deviation, all $17$ bulk regions over-cover and $12/17$ sharp regions
@@ -160,7 +162,7 @@ $\rho>1$ in all $17$, with regional RMS affine remainder below $6.4\times10^{-4}
 of RMS $\sigma$. At the MLE, however, the bulk remainder is $2.495$--$386.16$ times
 RMS $\sigma$, despite $\|\delta_L\|/\|\theta\|\in[0.00782,0.03867]$.
 Full-grid error worsens in $11/17$ and bulk error in all $17$.
-The nonlinear gaps fall below one through bulk deterioration, not repaired allocation.
+Observed nonlinear gaps below one reflect bulk deterioration, not repaired allocation.
 These are forward diagnostics with covariance frozen at $\theta$.
 
 \emph{Oracle: contrast agreement and coverage.}
@@ -196,7 +198,7 @@ sharp median $|Z|$ ranges
 over $[0.725,1.273]$, compared with $[0.655,0.701]$ in bulk; sharp $99$th percentiles
 are $3.60$--$8.70$, versus $3.05$--$4.66$ in bulk. Sharp signed means include
 $-1.96$ (seed $5$) and $0.85$ (seed $7$). The top $1\%$ of sharp points carry $15.3$--$23.8\%$ of error
-energy, and width--absolute-error rank associations are $0.693$--$0.936$.
+energy, and width--absolute-error Spearman rank correlations are $0.693$--$0.936$.
 Larger sharp medians show that the difference extends beyond extreme tails;
 regional sign bias and substantial width--error ordering coexist with undercoverage.
 

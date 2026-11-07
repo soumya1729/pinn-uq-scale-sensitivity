@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "occurrence_rows": 1934,
+  "worksheets": [
+    "Numerical ledger",
+    "Tables and figures",
+    "Guide"
+  ],
+  "matched_columns": [
+    "id",
+    "page",
+    "printed value",
+    "status"
+  ],
+  "cached_summary_counts": {
+    "CHECKED": 11,
+    "PROVENANCE_MAPPED": 1923
+  },
+  "scope": "CSV/Excel export consistency, not independent verification of paper calculations."
+}

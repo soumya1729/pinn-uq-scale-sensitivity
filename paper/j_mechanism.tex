@@ -1,14 +1,15 @@
 \emph{Measured spectrum and loadings.}
-The canonical Gram eigensolves return positive eigenvalues spanning $19.6$--$21.2$
-decades, but values below $\varepsilon_{64}\lambda_{\max}$ are not individually
-resolved. Their inverse lifts $J^\top w_i/\sqrt{\lambda_i}$ are unstable near that
-scale. We instead resolve the separated strong subspace and compute
+With float64 machine epsilon $\varepsilon_{64}=2^{-52}$, the canonical Gram eigensolves
+return positive eigenvalues spanning $19.6$--$21.2$ decades, but values below
+$\varepsilon_{64}\lambda_{\max}$ are not individually resolved.
+The inverse lifts $J^\top w_i/\sqrt{\lambda_i}$, where $w_i$ is a unit eigenvector
+of $JJ^\top$, are unstable near that scale. We instead resolve the separated strong subspace and compute
 \begin{equation*}
  \|\Pisl g\|^2=\|g\|^2-\|\Pist g\|^2.
 \end{equation*}
 This includes Fisher-null directions without division by small eigenvalues.
 Orthonormality, cutoff separation, eigenpair error and independent variance checks
-are recorded in Appendix~\ref{app:spectralchecks}.
+are described in Appendix~\ref{app:spectralchecks}.
 
 \input{generated/loading_table_values.tex}
 \input{generated/rms_bounds_macros.tex}
@@ -38,8 +39,8 @@ outward from recorded energies. Only Burgers--MLP has replicated baseline loadin
 \end{table}
 
 Sharp-to-bulk tangent-energy ratios are close to one on Burgers: bulk/transition/sharp
-means are $134/136/141$ for MLP and $114/119/120$ for Fourier. The canonical strong-
-precision RMS limits are $1.02,1.03,1.46,1.09$, whereas baseline configuration-mean
+means are $134/136/141$ for MLP and $114/119/120$ for Fourier. The canonical
+strong-precision RMS limits are $1.02,1.03,1.46,1.09$, whereas baseline configuration-mean
 contrasts are $3.92$--$7.30$; covariance weighting supplies the amplification.
 At $\epsilon=\alpha$, the sharp field loads the weak subspace
 $\LoadingCanonicalPerPointMin$--$\LoadingCanonicalPerPointMax$ times more strongly

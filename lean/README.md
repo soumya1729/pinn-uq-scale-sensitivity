@@ -1,6 +1,6 @@
 # PaperReliability
 
-PaperReliability formalises the finite-model analytic arguments in *Scale Sensitivity of Regional Uncertainty in Physics-Informed Neural Networks: A Full-Network Gauss–Newton Study*. The development covers spectral covariance representation, two-subspace contrast bounds and sharpness witnesses, predictive-centre bounds, variance and empirical coverage envelopes, and the strong- and weak-precision limits.
+PaperReliability formalises the finite-model analytic arguments in *Scale Sensitivity and Regional Calibration of Full-Network Gauss–Newton Uncertainty in Physics-Informed Neural Networks*. The development covers spectral covariance representation, two-subspace contrast bounds and sharpness witnesses, predictive-centre bounds, variance and empirical coverage envelopes, and the strong- and weak-precision limits.
 
 The default Lake target imports all seven mathematical modules. There are 15 principal theorems; [THEOREM_MAP.md](THEOREM_MAP.md) records their paper anchors and exact scope. Routine matrix identities, inequalities and order-statistic steps are private dependencies.
 

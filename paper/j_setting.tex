@@ -23,18 +23,23 @@ it is outside the nonlinear scale study.
 The independent-feature MLP has $20$ spatial and $20$ temporal sub-networks feeding
 a fusion head, with $P=196{,}009$ parameters. Replacing its input layer by random
 Fourier features gives $P=275{,}369$ at bandwidth $\mathrm{FS}$
-\citep{tancik2020fourier}. Both are trained in float64 by Adam
+\citep{tancik2020fourier}. The parameter vector $\theta\in\mathbb R^P$ contains
+all trainable network weights and biases. The sampled Fourier frequencies are
+held fixed throughout training and uncertainty analysis and are excluded from
+$\theta$. Both networks are trained in float64 by Adam
 \citep{kingma2015adam} followed by Levenberg--Marquardt
 \citep{levenberg1944,marquardt1963}. Evaluation uses a uniform $400\times200$ grid ($80{,}000$
 points); the residual Jacobian has $N=6400$ rows: $5000$ collocation, $1000$
-initial-condition and $400$ boundary rows. The Burgers reference uses the Cole--Hopf
+initial-condition and $400$ boundary rows. Training locations are sampled uniformly
+once per seed and held fixed; seeds jointly vary these locations, network
+initialisation and, for Fourier models, embedding frequencies. The Burgers reference uses the Cole--Hopf
 solution with $80$-node Gauss--Hermite quadrature, agreeing with independent
 log-space quadrature to $4.5\times10^{-14}$. The Allen--Cahn reference uses
 fourth-order exponential time differencing with $512$ modes and $1000$ steps
 \citep{kassam2005etdrk4}; refinement to $2048$ modes changes the canonical contrast
 by less than $0.1\%$. Appendix~\ref{app:training} records the training details.
-Unless a seed count is stated, numerical illustrations use Burgers--MLP seed $2$
-or Allen--Cahn seed $0$.
+Unless a seed count is stated, numerical illustrations use Burgers--MLP seed~$2$
+or Allen--Cahn seed~$0$.
 
 \begin{samepage}
 \begin{definition}[Region partition]\label{def:regions}
@@ -48,7 +53,9 @@ whole evaluation grid. Define
 These are the sharp, bulk and transitional regions.
 \end{definition}
 \end{samepage}
-The reference partition is used only for evaluation. It follows moving and narrowing
+The reference partition enters admission (Definition~\ref{def:gate}), evaluation and
+reference-informed diagnostics; it is absent from training and covariance construction.
+It follows moving and narrowing
 features: the Allen--Cahn interface moves by $58$ grid cells, and sharp Burgers cells
 per slice fall from $58$ at $t=0.13$ to $8$ at $t=0.5$. No sampled reference-gradient
 magnitude equals either threshold. The top-$5\%$ definition alone does not establish resolution
@@ -76,7 +83,6 @@ saved-output comparison on that subset.
 \begin{table}[t]
 \centering\small
 
-
 \begin{tabular}{@{}lrrrr@{}}
 \toprule
 configuration & admitted/attempted & error range & median & $\tau$\\
@@ -98,17 +104,14 @@ Rejected rows include every attempted run; admitted rows include admitted runs o
 Nagumo pools five seeds for each of two initial conditions. The control varies paired
 pulse width and diffusivity at one seed. Its narrowest MLP run is rejected at
 $62.2\%$; a separate Fourier attempt is rejected at $63.3\%$. All Kuramoto--Sivashinsky
-attempts also fail a relaxed $5\%$ gate.}
+attempts also fail a relaxed $5\%$ gate. Allen--Cahn MLP has median $2.330\%$
+and maximum $2.331\%$; both round to $2.33\%$.}
 \label{tab:rejected}
-\par\smallskip
-\begin{minipage}{\textwidth}\footnotesize
-Allen--Cahn MLP has median $2.330\%$ and maximum $2.331\%$; both round to $2.33\%$.
-\end{minipage}
 \end{table}
 
 Table~\ref{tab:rejected} includes every attempted setting. A small training residual
 does not ensure an accurate field: one Kuramoto--Sivashinsky run has loss
-$4.4\times10^{-5}$ at $103.8\%$ non-feature error. The rejected settings therefore
+$4.4\times10^{-5}$ at $103.8\%$ relative error on $\mathcal B\cup\mathcal T$. The rejected settings therefore
 measure failure of this training-and-collocation protocol, consistent with known
 stiff-problem difficulties \citep{krishnapriyan2021failure,wang2022ntk}.
 
@@ -128,11 +131,17 @@ The weights specify the likelihood as well as the training loss: the unweighted
 block noise standard deviations are $\sqrt v/w_{\rm blk}$.
 All analyses retain this raw weighted metric, with $J=\partial r/\partial\theta$
 and $F=J^\top J$. For $\alpha,v>0$, the isotropic prior is $\vartheta\sim\mathcal N(0,\alpha^{-1}I)$.
-The baseline uses $v=1$ and $\alpha_0=1/\langle\theta^2\rangle$ over the parameters
-carrying variance; this plug-in rule is not evidence maximisation.
+
+\begin{samepage}
+The baseline uses $v=1$ and $\alpha_0=1/\langle\theta^2\rangle$, where
+$\langle\theta^2\rangle=P^{-1}\|\theta\|^2$ averages over all trainable weights
+and biases; this plug-in rule is not evidence maximisation.
+\end{samepage}
 
 Freeze the affine residual $r(\theta)+J(\vartheta-\theta)$ and affine output
 $u_\theta(x)+g(x)^\top(\vartheta-\theta)$, where $g=\nabla_\theta u_\theta$.
+In predictive expressions, $x$ denotes the full space--time input $z$ of
+Section~\ref{sec:intro}; in the PDEs it denotes the spatial coordinate.
 Conditioning on zero residual gives
 \[
  \Sigma(\alpha,v)=v(F+\gamma I)^{-1},\qquad
@@ -165,7 +174,7 @@ Baseline variances use the Woodbury identity
  \sigma^2(x)=\alpha^{-1}\left[\|g\|^2-(Jg)^\top
  (JJ^\top+\alpha I)^{-1}Jg\right].
 \end{equation*}
-None of the $94$ baseline solves required added diagonal regularisation. Weak-precision
+The recorded baseline solves required no added diagonal regularisation. Weak-precision
 calculations instead factor $J$ directly by QR/SVD to avoid cancellation
 (Appendix~\ref{app:n1}).
 
@@ -193,8 +202,10 @@ or absolute width. We also report
  \meanZ_r=\langle|e|/\sigma\rangle_r,
  \qquad \mathrm{cov}@k_r=\langle\mathbf1\{|e|/\sigma\le z_k\}\rangle_r,
 \end{equation*}
-with $z_{68}=1$, $z_{95}=1.96$. Under a correctly specified centred Gaussian error
-model their expectations are $\sqrt{2/\pi}\approx0.8$ and approximately $0.68,0.95$.
+with $z_{68}=1$, $z_{95}=1.96$. Coverage is the fraction of grid points whose intervals contain the deterministic
+reference, not a repeated-data coverage estimate;
+grid points are not independent replicates. Under a correctly specified centred
+Gaussian error model the expectations are $\sqrt{2/\pi}\approx0.8$ and approximately $0.68,0.95$.
 Throughout, sampled curves describe evaluated settings; refined roots locate the
 observed trained-centre crossings within retained numerical brackets. Direct root
 fields are compared with the coverage envelopes.

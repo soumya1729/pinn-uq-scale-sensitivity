@@ -1,8 +1,10 @@
 # Public release provenance
 
 This release preserves the scientific sources and frozen records used for the
-paper, including the completed 17-checkpoint theta-centred comparison. The final
-author and disclosure details bring the manuscript to 35 pages.
+paper, including the completed 17-checkpoint theta-centred comparison. The
+29 October final manuscript compiles to 35 pages after prose and layout consolidation;
+the underlying scientific
+calculations and frozen data are unchanged.
 The paper's numerical producers are documented in `PAPER_OUTPUT_MAP.md`.
 
 The public candidate was collected on 22 October 2026 from the completed

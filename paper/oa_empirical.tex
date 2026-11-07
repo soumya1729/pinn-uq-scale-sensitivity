@@ -14,7 +14,6 @@ extension has lower edge $10^{-8}\widehat v$. The six perturbation cases are spe
 are finite-grid candidates and displayed ranges are descriptive.
 % Derived only from frozen production/review archives; no new grid or checkpoint evaluation.
 
-
 \emph{Changed-scale spectral partition.}
 Let $q_{r,i}=\langle(U^\top Q_1^\top g)_i^2\rangle_r$ and
 $d_r=\langle\|Q_c^\top g\|^2\rangle_r$, using the factorisation in Appendix~\ref{app:r2:numerics}.
@@ -29,12 +28,12 @@ energy ratios. Neither certifies weak-mode forward accuracy.
 
 % Derived from existing saved archives only.
 
-
 \subsection{Displacement under the Zero-Mean Prior}
 Table~\ref{tab:oa-relative-shift} extends Table~\ref{tab:r2-relative-shift} to transition
 regions and evidence settings.
-For the shift $c+b_\gamma$, the scale-independent component
-$c(x)=-g(x)^\top Q_cQ_c^\top\theta$ gives $\langle(c+b_\gamma)^2\rangle_r=\langle c^2\rangle_r+
+For the shift $c+b_\gamma$, define $c(x)=-g(x)^\top Q_cQ_c^\top\theta$ and
+$b_\gamma(x)=g(x)^\top Q_1Q_1^\top\delta_\gamma$. The scale-independent $c$ gives
+$\langle(c+b_\gamma)^2\rangle_r=\langle c^2\rangle_r+
 \langle b_\gamma^2\rangle_r+2\langle cb_\gamma\rangle_r$.
 Every full-grid sharp complement field contains both signs. For Burgers--MLP, its
 RMS is $0.001999$--$0.06048$ and signed mean $-0.02154$--$0.004895$; $4/8$ baseline
@@ -42,9 +41,9 @@ sharp cross terms are destructive. For Burgers--Fourier seed $0$, complement sha
 RMS $0.04236$ exceeds total MLE shift RMS $0.04102$. Component RMS values are nonadditive.
 % Derived from existing saved archives only.
 
-\begin{table}[!tbp]
-\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{table}[p]
 
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
 
 \begin{tabular}{@{}lrrrrrr@{}}
 \toprule
@@ -76,9 +75,10 @@ and unchanged. The $1\times$ envelope $\delta s$ gives the quadratic term,
 not a uniform eigenvalue error bound.}
 \label{tab:r2-evidence}
 
-\par\medskip
-\centering\small\setlength{\tabcolsep}{4pt}
+\par\smallskip
 
+
+\centering\small\setlength{\tabcolsep}{4pt}
 
 \begin{tabular}{@{}lrr@{}}
 \toprule
@@ -94,35 +94,61 @@ Allen--Cahn--Fourier & $[0.0161,\,1.15\!\times\!10^{3}]$ & $[0.0124,\,1.97\!\tim
 regional energies, in $\sigma$-ratio units. Intervals enclose the union of run-specific returned-spectrum brackets, rounded outward. Weak-mode forward accuracy remains
 uncertified, and the broad brackets cannot establish the realised-error deficit.}
 \label{tab:r2-changed-bounds}
-\end{table}
-\begin{table}[p]
-\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\par\smallskip
 
-
-\begin{tabular}{@{}llrr@{}}
+\centering\footnotesize\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lrrrr@{}}
 \toprule
-family & setting & $Q_{\mathcal S,\mathrm{sl}}/Q_{\mathcal B,\mathrm{sl}}$ & $Q_{\mathcal S,\mathrm{st}}/Q_{\mathcal B,\mathrm{st}}$ \\
+ & \multicolumn{3}{c}{$Q_{\mathcal S,\mathrm{sl}}/Q_{\mathcal B,\mathrm{sl}}$}
+ & $Q_{\mathcal S,\mathrm{st}}/Q_{\mathcal B,\mathrm{st}}$\\
+\cmidrule(lr){2-4}
+family & MLE & original evidence & extended evidence & all three settings\\
 \midrule
-Burgers--MLP & MLE & $[2.15\times10^{3},\,1.94\times10^{5}]$ & $[0.896,\,1.05]$ \\
- & original evidence & $[1.95\times10^{3},\,2.67\times10^{5}]$ & $[0.896,\,1.05]$ \\
- & extended evidence & $[1.91\times10^{3},\,2.67\times10^{5}]$ & $[0.896,\,1.05]$ \\
-Burgers--Fourier & MLE & $[150,\,832]$ & $[0.999,\,1.05]$ \\
- & original evidence & $[150,\,998]$ & $[0.999,\,1.05]$ \\
- & extended evidence & $[145,\,996]$ & $[0.999,\,1.05]$ \\
-Allen--Cahn--MLP & MLE & $[14,\,20.5]$ & $[2.12,\,2.17]$ \\
- & original evidence & $[4.59,\,9.76]$ & $[2.12,\,2.17]$ \\
- & extended evidence & $[2.14,\,7.02]$ & $[2.12,\,2.17]$ \\
-Allen--Cahn--Fourier & MLE & $[291,\,693]$ & $[1.19,\,1.29]$ \\
- & original evidence & $[476,\,988]$ & $[1.19,\,1.29]$ \\
- & extended evidence & $[476,\,988]$ & $[1.19,\,1.29]$ \\
+Burgers--MLP & $[2.15\times10^{3},\,1.94\times10^{5}]$ & $[1.95\times10^{3},\,2.67\times10^{5}]$ & $[1.91\times10^{3},\,2.67\times10^{5}]$ & $[0.896,\,1.05]$ \\
+Burgers--Fourier & $[150,\,832]$ & $[150,\,998]$ & $[145,\,996]$ & $[0.999,\,1.05]$ \\
+Allen--Cahn--MLP & $[14,\,20.5]$ & $[4.59,\,9.76]$ & $[2.14,\,7.02]$ & $[2.12,\,2.17]$ \\
+Allen--Cahn--Fourier & $[291,\,693]$ & $[476,\,988]$ & $[476,\,988]$ & $[1.19,\,1.29]$ \\
 \bottomrule
 \end{tabular}
-\caption{Changed-scale sharp-to-bulk mean-square tangent loading ratios on the full-time regions. Entries give across-run ranges. At each saved setting, weak loading sums returned modes with $\lambda_i\le\gamma$ and the QR complement; stiff loading sums the remaining modes. Thus the partition uses $\epsilon=\gamma$, as in Table~\ref{tab:r2-changed-bounds}. These are energy ratios, without a square root or covariance weights, and are not uncertainty contrasts. The returned weak-mode split does not certify exact rank or weak-mode forward accuracy. Evidence settings are best tested zero-mean-prior grid selections.}
+\caption{Changed-scale sharp-to-bulk tangent-energy ratios on the full grid, as
+across-run ranges. At $\epsilon=\gamma$, weak energy includes returned modes with
+$\lambda_i\le\gamma$ and the QR complement; stiff energy uses the remaining modes.
+The stiff ranges coincide across the three settings. These unweighted ratios are
+not uncertainty contrasts or weak-mode accuracy certificates. Evidence settings
+are best tested zero-mean-prior grid selections.}
 \label{tab:r2-scale-loadings}
 
-\par\medskip
-\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\end{table}
 
+\FloatBarrier
+\begin{figure}[p]
+\centering
+\includegraphics[width=.95\textwidth]{figures/round2_burgers_families_merged.pdf}
+\caption{Burgers: eight admitted MLP and three admitted Fourier runs. Rows show MLP
+full-grid/post-formation, then Fourier full-grid/post-formation; post-formation
+intersects unchanged global masks with $t\ge1/\pi$. Columns show RMS covariance
+contrast, trained gap and zero-mean affine gap; each gap uses its centre's error target.
+Coloured dashed lines give trained error targets; grey lines mark $\rho=1$.
+Every distinct saved $\gamma$, including extensions and sensitivity aliases, uses the
+original Jacobian. Lines join samples without establishing monotonicity or a weak limit.}
+\label{fig:r2-full-burgers}\label{fig:r2-full-bf}
+\label{fig:r2-post-bm}\label{fig:r2-post}
+\end{figure}
+
+\clearpage
+\begin{figure}[p]
+\centering
+\includegraphics[width=.98\textwidth]{figures/round2_allen_cahn_families_merged.pdf}
+\caption{Allen--Cahn full-grid scale and centre curves for three admitted MLP (top)
+and three admitted Fourier (bottom) checkpoints. Columns and dashed lines follow
+Figure~\ref{fig:r2-full-burgers}; each gap uses its centre's error target. Evidence
+settings for both families are in Table~\ref{tab:r2-evidence}. All panels use the
+original Jacobian; lines connect saved settings.}
+\label{fig:r2-full-ac}\label{fig:r2-full-af}
+\end{figure}
+
+\begin{table}[p]
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
 
 \begin{tabular}{@{}llrrrr@{}}
 \toprule
@@ -142,33 +168,11 @@ Allen--Cahn--Fourier & bulk & $[8.94,\,9.95]$ & $[0.97,\,1.09]$ & $[0.748,\,0.96
  & sharp & $[4.38,\,6.25]$ & $[0.36,\,2.26]$ & $[0.331,\,1.45]$ & $[0.331,\,1.45]$ \\
 \bottomrule
 \end{tabular}
-\caption{Regional RMS zero-mean-prior affine posterior-mean shift divided by trained-prediction RMS error, with both quantities evaluated on the same full-time region. Entries give across-run ranges ($8$ Burgers--MLP runs and $3$ in each other family). Baseline is $(\alpha_0,1)$; MLE is $(\alpha_0,\widehat v)$. Original and extended evidence columns use best tested grid settings, not certified continuous optima. A ratio above one means that the displacement exceeds the trained error in regional RMS; it does not determine whether the displaced prediction is more accurate.}
+\caption{Regional RMS zero-mean-prior affine displacement divided by trained error
+RMS on the same full-time region. Entries are across-run ranges. Baseline and MLE
+use $(\alpha_0,1)$ and $(\alpha_0,\widehat v)$; evidence columns use best tested grid
+pairs. Ratios above one indicate larger displacement than trained error, without
+determining accuracy.}
 \label{tab:oa-relative-shift}
 \end{table}
-
-\FloatBarrier
-\begin{figure}[p]
-\centering
-\includegraphics[width=.95\textwidth]{figures/round2_burgers_families_merged.pdf}
-\caption{Burgers: eight admitted MLP and three admitted Fourier runs. Rows show MLP
-full-grid/post-formation, then Fourier full-grid/post-formation; post-formation
-intersects unchanged global masks with $t\ge1/\pi$. Columns show RMS covariance
-contrast, trained gap and zero-mean affine gap; each gap uses its centre's error target.
-Coloured dashed lines give trained error targets; grey lines mark $\rho=1$.
-Every distinct saved $\gamma$, including extensions and sensitivity aliases, uses the
-original Jacobian. Lines join samples without establishing monotonicity or a weak limit.}
-\label{fig:r2-full-burgers}\label{fig:r2-full-bf}
-\label{fig:r2-post-bm}\label{fig:r2-post}
-\end{figure}
-
 \clearpage
-\begin{figure}[!tbp]
-\centering
-\includegraphics[width=.98\textwidth]{figures/round2_allen_cahn_families_merged.pdf}
-\caption{Allen--Cahn full-grid scale and centre curves for three admitted MLP (top)
-and three admitted Fourier (bottom) checkpoints. Columns and dashed lines follow
-Figure~\ref{fig:r2-full-burgers}; each gap uses its centre's error target. Evidence
-settings for both families are in Table~\ref{tab:r2-evidence}. All panels use the
-original Jacobian; lines connect saved settings.}
-\label{fig:r2-full-ac}\label{fig:r2-full-af}
-\end{figure}

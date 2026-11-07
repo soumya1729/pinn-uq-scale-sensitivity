@@ -35,9 +35,9 @@ the stated bulk calibration, rather than optimal joint calibration.
 The $\theta$-centred prior is conditional on fitted parameters. Nonlinear forward
 checks retain covariance at the original checkpoint; they do not establish a nonlinear
 posterior approximation. Spectral calculations do not certify weak-mode forward accuracy
-or exact rank. The synthetic
-stress test exceeds its whole-grid evidence tolerance, despite agreement at selected
-settings (Appendix~\ref{app:r2}). Held-out expressivity is last-layer and within-grid;
+or exact rank. The synthetic evidence stress test in Appendix~\ref{app:evidence-toys}
+exceeds its whole-grid evidence tolerance, despite agreement at selected
+settings. Held-out expressivity is last-layer and within-grid;
 it does not establish off-grid or full-network held-out approximation. Transfer to
 higher dimensions, other architectures and training objectives is untested.
 
@@ -45,7 +45,7 @@ higher dimensions, other architectures and training objectives is untested.
 Assess accuracy, regional contrast and coverage for each predictive centre;
 ensemble sensitivity likewise warrants assessment of the particular ensemble.
 The trained-centre Gaussian is a covariance diagnostic.
-An archived random half-grid split-conformal illustration \citep{lei2018conformal} on the reference run,
+An archived random half-grid split-conformal illustration \citep{lei2018conformal} on canonical Burgers--MLP seed $2$,
 using absolute-error scores at target $0.95$, gives marginal coverage $0.950$ but
 bulk, transition and sharp coverage $0.98$, $0.99$ and $0.31$. This descriptive
 finite-grid example shows how marginal coverage can conceal regional imbalance.
@@ -56,7 +56,14 @@ Code, trained parameters, saved results and the Lean development are available a
 The tagged reproduction release supplies the saved-data archive and its checksum.
 
 \emph{Conclusion.}
-Under the specified likelihood, sharp intervals under-cover at all five trained-centre
-roots despite bulk calibration and regional RMS contrast agreement. Allocation
-and coverage therefore require separate regional checks for each run and
+Under the specified training-weighted likelihood, regional covariance allocation
+is scale-sensitive and distinct from absolute interval calibration. The tested
+training-only scale rules and predictive-centre changes do not consistently
+calibrate sharp and bulk regions together, even when an affine mean improves
+accuracy. At the five identified trained-centre Burgers--MLP roots, sharp
+intervals under-cover despite bulk calibration and regional RMS contrast
+agreement. Reference-based readout refits show substantial sharp-feature
+expressivity, while spectral analysis explains how covariance weighting
+redistributes uncertainty. These findings support separate regional checks of
+prediction accuracy, uncertainty allocation and coverage for each run and
 predictive centre.

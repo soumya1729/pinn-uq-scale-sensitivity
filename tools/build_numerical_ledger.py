@@ -349,7 +349,7 @@ def section_events(text, labels):
 def metadata_ranges(text):
     result = []
     names = (r"(?:label|(?:page|eq)?ref|cite\w*|tag|url|path|includegraphics|bibliography|bibliographystyle|"
-             r"author|title|thanks|jmlrheading|ShortHeadings|setcounter|setlength|fontsize|"
+             r"author|title|thanks|acks|jmlrheading|ShortHeadings|setcounter|setlength|fontsize|"
              r"hspace|vspace|rule|texttt)")
     for match in re.finditer(r"\\" + names + r"\*?\b(?:\s*\[[^]]*\])*\s*\{", text):
         _, end = group(text, match.end() - 1)

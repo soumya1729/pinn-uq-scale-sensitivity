@@ -25,7 +25,7 @@ the package index; no author environment or `PYTHONPATH` was inherited.
   openpyxl 3.1.5. The complete tested Windows dependency freeze is in `envs/`.
 
 Full evidence is in `verification/reproduction_report.json`,
-`verification/headline_results.json` and `verification/replay_logs/`.
+`verification/historical_20261023/headline_results.json` and `verification/replay_logs/`.
 The final task builds the occurrence inventory. Its PASS means that the inventory
 was produced; the 1983 provenance-only occurrences are not individual scalar checks.
 
@@ -34,6 +34,12 @@ Figure 1's 400-point CSV was rebuilt from saved prediction/raw-covariance fields
 all 2000 numeric fields match exactly. See `verification/figure_replay.json`.
 The manuscript compiled from the extracted source archive to 35 pages, with no
 unresolved references in the final compilation log.
+
+The current 29 October manuscript is 35 pages. Its selected-claim bindings were
+refreshed and all 16 quantities checked against saved summaries in
+`verification/headline_results.json`; the source/page ledger was regenerated.
+These current checks are separate from the historical full replay above, whose
+original timing, comparison counts and verification levels are preserved.
 
 These are frozen-checkpoint and saved-field reproduction checks. They do not
 repeat PINN training, the residual-Jacobian/covariance pass, the independent PDE

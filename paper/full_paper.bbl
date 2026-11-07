@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -61,6 +61,13 @@ K.~M. Graczyk and K.~Witkowski.
 \newblock \emph{Physical Review E}, 113:\penalty0 055307, 2026.
 \newblock \doi{10.1103/29bd-jfhz}.
 
+\bibitem[Graf et~al.(2022)Graf, Flores, Protopapas, and
+  Pichara]{graf2022erroraware}
+O.~Graf, P.~Flores, P.~Protopapas, and K.~Pichara.
+\newblock Error-aware {B-PINNs}: Improving uncertainty quantification in
+  {Bayesian} physics-informed neural networks.
+\newblock \emph{arXiv preprint arXiv:2212.06965}, 2022.
+
 \bibitem[Immer et~al.(2021{\natexlab{a}})Immer, Bauer, Fortuin, R{\"a}tsch, and
   Khan]{immer2021evidence}
 A.~Immer, M.~Bauer, V.~Fortuin, G.~R{\"a}tsch, and M.~E. Khan.
@@ -109,13 +116,21 @@ A.~S. Krishnapriyan, A.~Gholami, S.~Zhe, R.~M. Kirby, and M.~W. Mahoney.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}, volume~34, pages 26548--26560, 2021.
 
+\bibitem[Kristiadi et~al.(2021)Kristiadi, Hein, and
+  Hennig]{kristiadi2021learnable}
+A.~Kristiadi, M.~Hein, and P.~Hennig.
+\newblock Learnable uncertainty under {Laplace} approximations.
+\newblock In \emph{Conference on Uncertainty in Artificial Intelligence (UAI)},
+  volume 161 of \emph{Proceedings of Machine Learning Research}, pages
+  344--353, 2021.
+
 \bibitem[Lakshminarayanan et~al.(2017)Lakshminarayanan, Pritzel, and
   Blundell]{lakshminarayanan2017ensembles}
 B.~Lakshminarayanan, A.~Pritzel, and C.~Blundell.
 \newblock Simple and scalable predictive uncertainty estimation using deep
   ensembles.
 \newblock In \emph{Advances in Neural Information Processing Systems
-  (NeurIPS)}, volume~30, 2017.
+  (NeurIPS)}, volume~30, pages 6402--6413, 2017.
 \newblock URL
   \url{https://proceedings.neurips.cc/paper/2017/hash/9ef2ed4b7fd2c810847ffa5fa85bce38-Abstract.html}.
 
@@ -140,6 +155,15 @@ D.~J.~C. MacKay.
 \newblock {Bayesian} interpolation.
 \newblock \emph{Neural Computation}, 4\penalty0 (3):\penalty0 415--447, 1992.
 \newblock \doi{10.1162/neco.1992.4.3.415}.
+
+\bibitem[Magnani et~al.(2025)Magnani, Pf{\"o}rtner, Weber, and
+  Hennig]{magnani2025linearization}
+E.~Magnani, M.~Pf{\"o}rtner, T.~Weber, and P.~Hennig.
+\newblock Linearization turns neural operators into function-valued {Gaussian}
+  processes.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  267 of \emph{Proceedings of Machine Learning Research}, pages 42421--42452,
+  2025.
 
 \bibitem[Marquardt(1963)]{marquardt1963}
 D.~W. Marquardt.

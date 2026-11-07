@@ -1,6 +1,6 @@
 {
   "schema": "headline_claim_registry/1",
-  "scope": "Numerical assertions in the current abstract and contribution bullets, with two supporting consistency checks. Does not certify all numerical occurrences in the manuscript or the qualitative/Lean claims. Expectations are explicit reported claims; computed values are independently aggregated from identified records. Fresh field-derived records are preferred when supplied, while N5 remains labelled as a frozen-summary check unless a fresh N5 CSV is supplied.",
+  "scope": "Selected numerical manuscript claims with explicit current source bindings, plus two supporting consistency checks. Does not certify all numerical occurrences in the manuscript or the qualitative/Lean claims. Expectations are explicit reported claims; computed values are independently aggregated from identified records. Fresh field-derived records are preferred when supplied, while N5 remains labelled as a frozen-summary check unless a fresh N5 CSV is supplied.",
   "quantities": [
     {
       "id": "H01_admitted_cohort",
@@ -17,7 +17,7 @@
         {
           "source": "j_abstract.tex",
           "location": "Cohort",
-          "pattern": "using \\$17\\$\\s+admitted"
+          "pattern": "covariances for \\$17\\$\\s+Burgers and Allen--Cahn runs with two\\s+architectures"
         }
       ]
     },
@@ -36,7 +36,7 @@
         {
           "source": "j_abstract.tex",
           "location": "Cohort",
-          "pattern": "runs with two architectures"
+          "pattern": "runs with two\\s+architectures"
         }
       ]
     },
@@ -53,9 +53,14 @@
       },
       "occurrences": [
         {
+          "source": "j_intro.tex",
+          "location": "Empirical scope",
+          "pattern": "All eight attempted Burgers--MLP seeds are admitted"
+        },
+        {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "Across eight Burgers--MLP seeds"
+          "location": "Abstract matching cohort",
+          "pattern": "For the trained prediction, five of eight Burgers--MLP\\s+runs have identified precisions"
         }
       ]
     },
@@ -73,13 +78,8 @@
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "five\\s+refined contrast-matching crossings"
-        },
-        {
-          "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "At the five trained-centre contrast-matching roots"
+          "location": "Oracle matching cases",
+          "pattern": "For the trained prediction, five of eight Burgers--MLP\\s+runs have identified precisions"
         }
       ]
     },
@@ -96,9 +96,14 @@
       },
       "occurrences": [
         {
+          "source": "j_intro.tex",
+          "location": "Scale findings",
+          "pattern": "precisions spanning more\\s+than four orders of magnitude"
+        },
+        {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "span more than four orders of magnitude"
+          "location": "Abstract matching range",
+          "pattern": "more than four orders of magnitude"
         }
       ]
     },
@@ -116,9 +121,14 @@
       },
       "occurrences": [
         {
+          "source": "j_intro.tex",
+          "location": "Scale findings",
+          "pattern": "three retain the deficit throughout the sampled\\s+range"
+        },
+        {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "three other seeds retain a deficit at every sampled setting"
+          "location": "Abstract sampled nonmatching cases",
+          "pattern": "No match is found for three\\s+runs in the tested range"
         }
       ]
     },
@@ -136,9 +146,9 @@
       },
       "occurrences": [
         {
-          "source": "j_abstract.tex",
-          "location": "Noise MLE",
-          "pattern": "under-covers both regions\\s+around all eight trained predictions"
+          "source": "j_intro.tex",
+          "location": "Trained-centre conditional MLE",
+          "pattern": "with trained centres, the conditional noise maximum-likelihood estimate\\s+under-covers both regions in all eight Burgers--MLP seeds"
         }
       ]
     },
@@ -154,7 +164,13 @@
         "operator": "eq",
         "value": 8
       },
-      "occurrences": []
+      "occurrences": [
+        {
+          "source": "j_ceiling.tex",
+          "location": "Training-based scale choices",
+          "pattern": "all eight seeds under-cover both regions:\\s+one-standard-deviation coverage is[\\s\\S]*?at \\$1\\.96\\$ standard deviations"
+        }
+      ]
     },
     {
       "id": "H09_theta_baseline_deficits",
@@ -170,9 +186,9 @@
       },
       "occurrences": [
         {
-          "source": "j_abstract.tex",
-          "location": "Prior centre",
-          "pattern": "preserves the baseline deficit in all \\$17\\$ runs"
+          "source": "j_intro.tex",
+          "location": "Checkpoint-centred prior",
+          "pattern": "Centring the prior at the checkpoint retains the baseline deficit in all \\$17\\$\\s+runs"
         }
       ]
     },
@@ -190,8 +206,8 @@
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "targeting \\$68\\\\%\\$ bulk coverage"
+          "location": "Bulk oracle calibration",
+          "pattern": "calibrating bulk coverage to \\$68\\\\%\\$"
         }
       ]
     },
@@ -211,8 +227,8 @@
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp"
+          "location": "Trained-centre root coverage",
+          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp coverage for the trained prediction"
         }
       ]
     },
@@ -232,8 +248,8 @@
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp"
+          "location": "Trained-centre root coverage",
+          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp coverage for the trained prediction"
         }
       ]
     },
@@ -249,11 +265,6 @@
         "value": 16
       },
       "occurrences": [
-        {
-          "source": "j_abstract.tex",
-          "location": "Feature expressivity",
-          "pattern": "below \\$4\\\\%\\$.*?sharp-region\\s+error energy.*?\\$16/17\\$"
-        },
         {
           "source": "j_intro.tex",
           "location": "Contribution 2",
@@ -274,11 +285,6 @@
         "value": 17
       },
       "occurrences": [
-        {
-          "source": "j_abstract.tex",
-          "location": "Feature expressivity",
-          "pattern": "held-out time blocks in \\$16/17\\$ runs"
-        },
         {
           "source": "j_intro.tex",
           "location": "Contribution 2",

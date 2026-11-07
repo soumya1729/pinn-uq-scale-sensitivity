@@ -3,12 +3,12 @@
 The following details supplement the model and admission rule in Section~\ref{sec:setting}.
 Training uses float64 throughout. Each architecture has $20$ spatial and $20$ temporal
 sub-networks of widths $[\,\cdot\,,64,64,1]$ feeding a $[40,128,128,1]$ fusion head.
-Activations are $\tanh$, biases are zero and weights are drawn from
+Activations are $\tanh$, biases are initialised to zero and weights are drawn from
 $\mathcal N(0,2/d_{\rm in})$. Fourier models use $16$ random features per axis, with
 bandwidth $2$ for Burgers and $1$ for Allen--Cahn. Adam has learning rate $10^{-3}$,
 with $5000$ Burgers steps and $15{,}000$ Allen--Cahn steps, followed by $50$ and $200$
 Levenberg--Marquardt steps. Each LM step uses at most $100$ CG iterations, initial
-damping $10^{-4}$ and minimum $10^{-12}$; it accepts at $\rho_{\rm LM}>0.25$, decreases
+damping $10^{-4}$ and minimum $10^{-12}$; it accepts at $\rho_{\rm LM}>0.25$, divides
 damping by $3$ at $\rho_{\rm LM}>0.75$ and multiplies it by $4$ on rejection, allowing
 at most $5$ consecutive rejections. Residual row counts and weights are given in
 Section~\ref{sec:setting}; complete implementation settings are preserved with the code.
@@ -47,17 +47,18 @@ slice, the discrete integral width in cells is
 \[
  W_{\rm cells}=\frac{\sum_j|\partial_xu^\ast(x_j,t)|}{\max_j|\partial_xu^\ast(x_j,t)|}.
 \]
-This separates a one-cell spike from a resolved layer, whereas half-maximum crossing
-counts have a discrete floor. The width exceeds one cell at the tested finest grids;
-primary RMS and secondary mean-width contrasts change by at most $1.1\%$ between
-$n_x=400$ and $200$. The canonical Gram spectral projectors were checked for
+This effective discrete width avoids the crossing-count floor of the half-maximum
+statistic; exceeding one cell does not establish continuum resolution. On nested
+spatial subsamples with recomputed masks, primary RMS and secondary mean-width
+contrasts change by at most $1.1\%$ between $n_x=400$ and $200$. This sampling-density
+check concerns baseline contrasts, not convergence of oracle coverage. The canonical Gram spectral projectors were checked for
 orthonormality, separation at the cutoff and eigenpair backward error; independent
 Woodbury evaluations checked variances. The all-17 direct-$J$ checks are summarised
 in Appendix~\ref{app:r2:numerics}, with numerical protocols in Appendix~\ref{oa:numerics}.
 
 \section{Spectral Bounds and Aggregation}\label{app:aggregation}
 
-The following statements retain the proofs supporting the two-subspace summaries
+We give the proofs supporting the two-subspace summaries
 in Section~\ref{sec:theory} and their aggregation to regional statistics.
 
 \begin{theorem}[Two-sided spectral sandwich]\label{thm:ceiling}

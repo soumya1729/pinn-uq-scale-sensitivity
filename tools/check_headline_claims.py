@@ -1,4 +1,4 @@
-"""Check the registered numerical claims in the abstract/contribution bullets.
+"""Check the registered selected numerical claims in the manuscript.
 
 This is deliberately a bounded claim audit, not a claim to verify every number
 in the paper. It aggregates records; --reproduced prefers the fresh outputs of

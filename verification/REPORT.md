@@ -1,5 +1,13 @@
 # Reproduction run
 
+This is the historical saved-data replay of 23 October 2026. Its task results
+below have not been relabelled as a new full replay after manuscript editing.
+The 7 November manuscript text corrections refreshed the selected manuscript-claim
+bindings and checked all 16 registered quantities against saved summaries
+(`headline_results.json`), then regenerated the current source/page indexes and
+numerical occurrence ledger. That refresh did not rerun training, Jacobians,
+pointwise fields or the full numerical pipeline.
+
 Mode: **saved**. Result: **PASS**.
 
 | Task | Status | Verification level |

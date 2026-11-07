@@ -1,6 +1,6 @@
-# Scale Sensitivity of Regional PINN Uncertainty
+# Scale Sensitivity and Regional Calibration of PINN Uncertainty
 
-Reproduction sources for **Scale Sensitivity of Regional Uncertainty in Physics-Informed Neural Networks: A Full-Network Gauss–Newton Study**, by Soumyadip Mal and Nagaiah Chamakuri.
+Reproduction sources for **Scale Sensitivity and Regional Calibration of Full-Network Gauss–Newton Uncertainty in Physics-Informed Neural Networks**, by Soumyadip Mal and Nagaiah Chamakuri.
 
 Start with the saved-data route below. It runs the existing numerical consumers through one entry point. It does not train networks, construct Jacobians or submit cluster jobs.
 
@@ -71,7 +71,7 @@ See `lean/BUILD_REPORT.md` for the tested build and the ordinary Lake alternativ
 
 Original code is MIT-licensed to Soumyadip Mal and Nagaiah Chamakuri. Existing third-party terms are retained in `THIRD_PARTY_NOTICES.md`; the manuscript and externally authored components retain their own terms.
 
-The production computations used the Padmanabha high-performance computing facility at IISER Thiruvananthapuram. No additional external grant funding supported this work.
+The production computations used the Padmanabha high-performance computing facility at IISER Thiruvananthapuram. The authors acknowledge ANRF, Department of Science and Technology, India (ANRF/ARGM/2025/000954/MTR), for their financial support.
 
 Repository: https://github.com/soumya1729/pinn-uq-scale-sensitivity
 

@@ -5,7 +5,7 @@ Burgers--Fourier seeds $0,2,6$, and Allen--Cahn MLP/Fourier seeds $0,1,3$.
 Trained parameters, raw weighted residuals, reference fields, $400\times200$ grids and
 global percentile masks remain fixed. Recentring does not change admission. Affine means
 use the frozen output; $u_{\theta+\delta_L}$ is a separate nonlinear diagnostic with
-covariance still at $\theta$. The three-run families are exploratory. Appendix~\ref{app:n1} retains per-seed
+covariance still at $\theta$. The three-run families are exploratory. This appendix reports per-seed
 Burgers--MLP results; Appendix~\ref{oa:empirical} gives extended curves and tables.
 
 \input{short_seed_table}
@@ -86,7 +86,6 @@ ranging from $0.00275$ to $0.90175$.
 \begin{table}[t]
 \centering\small\setlength{\tabcolsep}{4pt}
 
-
 \begin{tabular}{@{}lrrr@{}}
 \toprule
 family & runs & extended noise edge & selected $\gamma/\gamma_{\rm ext}$ \\
@@ -142,19 +141,11 @@ groups favours lower noise in \eqref{eq:r2-evidence-slope}; the grouping is desc
 \end{figure}
 
 \emph{Synthetic validation.}
-Dense tests give posterior mean/covariance relative discrepancies at most
-$4.90\times10^{-12}$ and $3.01\times10^{-12}$, and log-evidence discrepancy
-$1.42\times10^{-13}$. Across $1000$ correctly specified draws, posterior-centred
-coverage is $0.6870$ (SE $0.00544$) at one sigma and $0.9534$ (SE $0.00249$) at
-$1.96$ sigma. A full-column-rank fit with $N=40,P=12,v=0.2$ gives mean residual-noise
-MLE $0.140411$ (SE $0.001198$), consistent with $(N-P)v/N=0.14$ rather than $v$.
-In each $100$-draw evidence toy, including a $21.2$-decade spectrum with $79/96$
-eigenvalues below $\varepsilon_{64}\lambda_{\max}$, all selected pairs are interior and
-agree with the prescribed-spectrum reference. The stressed toy nevertheless fails its
-whole-grid $10^{-7}$ scaled tolerance, with maximum discrepancy
-$4.55\times10^{-5}$, despite selected log-evidence discrepancies at most
-$9.40\times10^{-8}$. Appendix~\ref{oa:numerics} gives scale-estimation distributions and
-the failed check; these controls do not establish PINN evidence stability.
+Appendix~\ref{oa:numerics} reports dense posterior comparisons, correctly specified
+coverage draws, fitted-residual noise bias and evidence scale-recovery controls.
+The stressed $21.2$-decade toy keeps the prescribed tolerance unchanged: selected pairs
+agree with its reference, but the whole-grid evidence discrepancy exceeds it. These controls
+do not establish PINN evidence stability.
 
 \emph{Centre and regional displacement.}\label{app:r2:centres}
 Table~\ref{tab:r2-centres} compares the prior centres and nonlinear diagnostic at fixed
@@ -170,7 +161,6 @@ bulk undercoverage therefore do not transfer to this centre.
 
 \begin{table}[t]
 \centering\small\setlength{\tabcolsep}{4pt}
-
 
 \begin{tabular}{@{}llrr@{}}
 \toprule
@@ -195,23 +185,20 @@ regions and evidence settings.}
 \end{table}
 
 \emph{Sampled oracle and post-formation coverage.}
-At every saved $\gamma$, centre and subset, a higher empirical bulk-$0.68$ quantile of
-$|e_c|/\sigma$ supplies a width multiplier. Selection minimises $|\log\rho|$ across
-distinct saved precisions, with lowest $\gamma$ breaking ties. This reference-error
-oracle uses sampled settings. Trained Burgers--MLP
-seeds $0,4,5,6,7$ have full-time sampled crossing brackets; six zero-mean affine full-time
-and six post-formation curves have brackets. Full-time zero-mean affine seeds $1,7$ and
-post-formation seeds $1,3$ stay above one at every saved point.
+At every saved $\gamma$, each centre/subset uses the higher empirical bulk-$0.68$
+quantile of $|e_c|/\sigma$ as a width multiplier. The closest setting minimises
+$|\log\rho|$, with lowest $\gamma$ breaking ties (Table~\ref{tab:r2-oracle}).
+Trained Burgers--MLP seeds $0,4,5,6,7$ have full-time crossing brackets.
+Six zero-mean affine curves cross in each time subset; full-time seeds $1,7$ and
+post-formation seeds $1,3$ remain above one at every saved point.
 
 \input{generated/round2_oracle_table}
 
-For Burgers, post-formation masks intersect unchanged global masks with
-$t\ge1/\pi$, yielding $48{,}246$ bulk, $4928$ transition and $1226$ sharp points.
-Table~\ref{tab:r2-oracle} includes all runs, including those without crossings; the
-closest sample need not have $\rho\approx1$. Its coverage ranges distinguish regional
-contrast from calibration. Saved modal sums refine the five trained-centre crossings;
-direct root fields confirm their coverage envelopes (Table~\ref{tab:r3-roots}).
-These precisions are not contrast-matching roots for the other centres.
+Post-formation masks intersect the global masks with $t\ge1/\pi$, giving
+$48{,}246$ bulk, $4928$ transition and $1226$ sharp points. Table~\ref{tab:r2-oracle}
+includes noncrossing runs; the closest sample need not have $\rho\approx1$.
+Table~\ref{tab:r3-roots} instead gives direct evaluations at the five refined
+trained-centre roots, which do not match the other centres' error contrasts.
 Appendix~\ref{oa:empirical} gives per-run curves.
 
 \input{round3_math}
@@ -222,34 +209,31 @@ $k_{\mathcal B}=Q_{\mathcal B}(|e|/\sigma;0.68)$ or
 $k_{\mathcal S}=Q_{\mathcal S}(|e|/\sigma;0.68)$, with the higher empirical quantile.
 Write $C^r_{\mathcal S}(z)=\langle\mathbf1\{|e|\le z k_r\sigma\}\rangle_{\mathcal S}$
 and $Z^r=e/(k_r\sigma)$ for the resulting coverage and standardised errors.
+\input{generated/round4_oracle_table}
+
 Table~\ref{tab:r4-oracles} gives full-grid per-seed results and family ranges,
 including the Burgers post-formation subsets. Sharp calibration fixes its
 one-standard-deviation coverage by construction: $0.68025$ on $4000$ full-grid
 sharp points and $0.68108$ on $1226$ post-formation points here. The informative
 outputs are coverage at $1.96$ standard deviations and the absolute and signed
 standardised means. These are finite-grid descriptions, not repeated-draw guarantees.
-Inclusive quantile comparisons can differ by one point from older multiplied-width
-arithmetic; all continuous summaries reproduce to relative tolerance $10^{-12}$.
+Coverage counts use inclusive comparisons $|e|/\sigma\le z k_r$.
+Using the algebraically equivalent multiplied-width form can change a count by one
+grid point through floating-point rounding; all continuous summaries reproduce to
+relative tolerance $10^{-12}$.
 
-The band inventory retains every distinct saved precision with $0.9\le\rho\le1.1$:
-$28$ run/subset settings across the full grids and Burgers post-formation masks.
-For Burgers--MLP seed $7$, the seven full-grid samples give sharp coverage
-$0.44725$--$0.986$ at one standard deviation and $0.78375$--$1$ at $1.96$ after
-bulk calibration. Their $\rho$ values span $0.90635$--$1.06370$; nearby contrast
-values need not correspond to nearby precisions on a nonmonotone curve.
-The other four crossing seeds each have one saved full-grid point in the band,
-with one-standard-deviation coverages $0.34275$, $0.437$, $0.35925$ and $0.5165$
-for seeds $0,4,5,6$. The archived per-run inventory is sampled rather than a
-continuous-band enclosure; Table~\ref{tab:r3-roots} retains the separate refined-root bounds.
-
-\input{generated/round4_oracle_table}
+The band inventory contains all $28$ run/subset settings with $0.9\le\rho\le1.1$
+on full grids and Burgers post-formation masks. For Burgers--MLP seed $7$,
+seven full-grid samples have $\rho\in[0.90635,1.06370]$, with sharp bulk-calibrated
+coverage $0.44725$--$0.986$ at one standard deviation and $0.78375$--$1$ at $1.96$.
+The other four crossing seeds each contribute one full-grid sample. This is a
+sampled inventory, not a continuous-band enclosure.
 
 \emph{Width versus allocation.}
-At $v=1$, changing $\gamma$ changes modal weights. At fixed $\gamma=\alpha_0$,
-varying $v$ with $\alpha=\alpha_0/v$ multiplies widths by $\sqrt v$ without changing
-contrast: $\meanZ$ scales as $v^{-1/2}$ and coverage is the empirical CDF of fixed
-standardised errors at $\sqrt v$. Figure~\ref{fig:r2-coverage-scale} shows both effects;
-the fixed-$\gamma$ curves are rescalings of saved fields, not fitted scales.
+Changing $\gamma$ reweights modes; changing $v$ at fixed $\gamma=\alpha_0$ only
+rescales widths. Thus $\meanZ\propto v^{-1/2}$ and coverage is the empirical CDF
+of fixed standardised errors at $\sqrt v$. Figure~\ref{fig:r2-coverage-scale}
+contrasts these operations; its fixed-$\gamma$ curves are rescaled saved fields.
 
 \begin{figure}[!t]
 \centering

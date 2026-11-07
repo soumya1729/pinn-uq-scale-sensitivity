@@ -1,6 +1,6 @@
 # Numerical occurrence ledger: scope and status
 
-This ledger inventories **1996 scientific numerical occurrences** in **26 active TeX sources**, with repeated occurrences retained. It includes digit tokens and relevant spelled-out count patterns. It maps all **18 tables and six figures** to their documented producers and data. It does not assert that every value has been recomputed.
+This ledger inventories **1944 scientific numerical occurrences** in **26 active TeX sources**, with repeated occurrences retained. It includes digit tokens and relevant spelled-out count patterns. It maps all **18 tables and six figures** to their documented producers and data. It does not assert that every value has been recomputed.
 
 ## How to rebuild
 
@@ -33,8 +33,8 @@ The public interface should distinguish a completed numerical check from this pr
 
 ## Current inventory totals
 
-- Classifications: `{"numerical-result": 1576, "configuration": 212, "analytic": 208}`.
-- Statuses: `{"CHECKED": 13, "PROVENANCE_MAPPED": 1983}`.
-- Occurrences with resolved source-line or float/equation page anchors: 1979.
-- Excluded document/reference/layout tokens: 28.
+- Classifications: `{"numerical-result": 1533, "analytic": 210, "configuration": 201}`.
+- Statuses: `{"CHECKED": 14, "PROVENANCE_MAPPED": 1930}`.
+- Occurrences with resolved source-line or float/equation page anchors: 1933.
+- Excluded document/reference/layout tokens: 30.
 - Unmatched documented outputs: `[]`.

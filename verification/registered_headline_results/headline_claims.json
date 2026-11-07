@@ -1,7 +1,7 @@
 {
   "schema": "headline_claims/1",
   "status": "PASS",
-  "scope": "Numerical assertions in the current abstract and contribution bullets, with two supporting consistency checks. Does not certify all numerical occurrences in the manuscript or the qualitative/Lean claims. Expectations are explicit reported claims; computed values are independently aggregated from identified records. Fresh field-derived records are preferred when supplied, while N5 remains labelled as a frozen-summary check unless a fresh N5 CSV is supplied.",
+  "scope": "Selected numerical manuscript claims with explicit current source bindings, plus two supporting consistency checks. Does not certify all numerical occurrences in the manuscript or the qualitative/Lean claims. Expectations are explicit reported claims; computed values are independently aggregated from identified records. Fresh field-derived records are preferred when supplied, while N5 remains labelled as a frozen-summary check unless a fresh N5 CSV is supplied.",
   "quantities": [
     {
       "id": "H01_admitted_cohort",
@@ -18,7 +18,7 @@
       "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         }
@@ -27,7 +27,7 @@
         {
           "source": "j_abstract.tex",
           "location": "Cohort",
-          "pattern": "using \\$17\\$\\s+admitted",
+          "pattern": "covariances for \\$17\\$\\s+Burgers and Allen--Cahn runs with two\\s+architectures",
           "matches_current_paper": true
         }
       ]
@@ -47,7 +47,7 @@
       "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         }
@@ -56,7 +56,7 @@
         {
           "source": "j_abstract.tex",
           "location": "Cohort",
-          "pattern": "runs with two architectures",
+          "pattern": "runs with two\\s+architectures",
           "matches_current_paper": true
         }
       ]
@@ -76,16 +76,22 @@
       "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
+          "source": "j_intro.tex",
+          "location": "Empirical scope",
+          "pattern": "All eight attempted Burgers--MLP seeds are admitted",
+          "matches_current_paper": true
+        },
+        {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "Across eight Burgers--MLP seeds",
+          "location": "Abstract matching cohort",
+          "pattern": "For the trained prediction, five of eight Burgers--MLP\\s+runs have identified precisions",
           "matches_current_paper": true
         }
       ]
@@ -102,25 +108,19 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round3\\refined_roots.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round3_local\\outputs\\refined_roots.csv",
           "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "five\\s+refined contrast-matching crossings",
-          "matches_current_paper": true
-        },
-        {
-          "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "At the five trained-centre contrast-matching roots",
+          "location": "Oracle matching cases",
+          "pattern": "For the trained prediction, five of eight Burgers--MLP\\s+runs have identified precisions",
           "matches_current_paper": true
         }
       ]
@@ -137,19 +137,25 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round3\\refined_roots.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round3_local\\outputs\\refined_roots.csv",
           "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
+          "source": "j_intro.tex",
+          "location": "Scale findings",
+          "pattern": "precisions spanning more\\s+than four orders of magnitude",
+          "matches_current_paper": true
+        },
+        {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "span more than four orders of magnitude",
+          "location": "Abstract matching range",
+          "pattern": "more than four orders of magnitude",
           "matches_current_paper": true
         }
       ]
@@ -166,24 +172,30 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         },
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round2\\review\\regional_scale_metrics.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\outputs\\production_review\\regional_scale_metrics.csv",
           "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
+          "source": "j_intro.tex",
+          "location": "Scale findings",
+          "pattern": "three retain the deficit throughout the sampled\\s+range",
+          "matches_current_paper": true
+        },
+        {
           "source": "j_abstract.tex",
-          "location": "Scale sensitivity",
-          "pattern": "three other seeds retain a deficit at every sampled setting",
+          "location": "Abstract sampled nonmatching cases",
+          "pattern": "No match is found for three\\s+runs in the tested range",
           "matches_current_paper": true
         }
       ]
@@ -200,24 +212,24 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         },
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round2\\review\\regional_scale_metrics.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\outputs\\production_review\\regional_scale_metrics.csv",
           "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
-          "source": "j_abstract.tex",
-          "location": "Noise MLE",
-          "pattern": "under-covers both regions\\s+around all eight trained predictions",
+          "source": "j_intro.tex",
+          "location": "Trained-centre conditional MLE",
+          "pattern": "with trained centres, the conditional noise maximum-likelihood estimate\\s+under-covers both regions in all eight Burgers--MLP seeds",
           "matches_current_paper": true
         }
       ]
@@ -234,20 +246,27 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         },
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round2\\review\\regional_scale_metrics.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\outputs\\production_review\\regional_scale_metrics.csv",
           "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
-      "occurrences": []
+      "occurrences": [
+        {
+          "source": "j_ceiling.tex",
+          "location": "Training-based scale choices",
+          "pattern": "all eight seeds under-cover both regions:\\s+one-standard-deviation coverage is[\\s\\S]*?at \\$1\\.96\\$ standard deviations",
+          "matches_current_paper": true
+        }
+      ]
     },
     {
       "id": "H09_theta_baseline_deficits",
@@ -261,24 +280,24 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "FRESH_RECOMPUTED_RECORDS_WITH_FROZEN_METADATA",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         },
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\paired_centres.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\paired_centres.csv",
           "sha256": "dc6ba408bd88088e4fbdd3f590138f4194e403e83e1b47d510998b243a90ed73",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
-          "source": "j_abstract.tex",
-          "location": "Prior centre",
-          "pattern": "preserves the baseline deficit in all \\$17\\$ runs",
+          "source": "j_intro.tex",
+          "location": "Checkpoint-centred prior",
+          "pattern": "Centring the prior at the checkpoint retains the baseline deficit in all \\$17\\$\\s+runs",
           "matches_current_paper": true
         }
       ]
@@ -295,19 +314,19 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round3\\summary.json",
-          "sha256": "ebb55ea6445c5025799542969198030625863ab007f8e2ce915b4ce2e278b628",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round3_local\\outputs\\summary.json",
+          "sha256": "f7d3d4d309155531f5a2e2588fd1a8439076227ef36d3ae633ec5d8c7bea230b",
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "targeting \\$68\\\\%\\$ bulk coverage",
+          "location": "Bulk oracle calibration",
+          "pattern": "calibrating bulk coverage to \\$68\\\\%\\$",
           "matches_current_paper": true
         }
       ]
@@ -326,19 +345,19 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\root_comparisons.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\root_comparisons.csv",
           "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp",
+          "location": "Trained-centre root coverage",
+          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp coverage for the trained prediction",
           "matches_current_paper": true
         }
       ]
@@ -357,19 +376,19 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\root_comparisons.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\root_comparisons.csv",
           "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
         {
           "source": "j_abstract.tex",
-          "location": "Oracle",
-          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp",
+          "location": "Trained-centre root coverage",
+          "pattern": "\\$30\\.3\\$--\\$55\\.7\\\\%\\$ sharp coverage for the trained prediction",
           "matches_current_paper": true
         }
       ]
@@ -389,18 +408,12 @@
       "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\n5\\outputs\\n5_all17.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\n5\\outputs\\n5_all17.csv",
           "sha256": "97fbbbe3aaaa057ee6baf3efbb10ca6e3bf10342265a0fd3af5a282f2018175b",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
-        {
-          "source": "j_abstract.tex",
-          "location": "Feature expressivity",
-          "pattern": "below \\$4\\\\%\\$.*?sharp-region\\s+error energy.*?\\$16/17\\$",
-          "matches_current_paper": true
-        },
         {
           "source": "j_intro.tex",
           "location": "Contribution 2",
@@ -424,23 +437,17 @@
       "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
           "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         },
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\n5\\outputs\\n5_all17.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\n5\\outputs\\n5_all17.csv",
           "sha256": "97fbbbe3aaaa057ee6baf3efbb10ca6e3bf10342265a0fd3af5a282f2018175b",
           "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": [
-        {
-          "source": "j_abstract.tex",
-          "location": "Feature expressivity",
-          "pattern": "held-out time blocks in \\$16/17\\$ runs",
-          "matches_current_paper": true
-        },
         {
           "source": "j_intro.tex",
           "location": "Contribution 2",
@@ -461,12 +468,12 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\root_comparisons.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\root_comparisons.csv",
           "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": []
@@ -483,12 +490,12 @@
       "status": "PASS",
       "numeric_check": true,
       "paper_check": true,
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS",
+      "verification_level": "CHECKED_SAVED_SUMMARY",
       "records": [
         {
-          "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\root_comparisons.csv",
+          "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\root_comparisons.csv",
           "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
-          "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+          "verification_level": "CHECKED_SAVED_SUMMARY"
         }
       ],
       "occurrences": []
@@ -639,37 +646,37 @@
   },
   "source_records": {
     "cohort": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\round2\\cohort.json",
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\cohort.json",
       "sha256": "c2f5a024d622cd7715d3682ed2bc02600243a8a42ba0fcd15ab6599c8729c66a",
       "verification_level": "CHECKED_SAVED_SUMMARY"
     },
     "roots": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round3\\refined_roots.csv",
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round3_local\\outputs\\refined_roots.csv",
       "sha256": "de691e6bfa21a79282953ae554e3f997788b611bcaa6f29057ff22d973cd5110",
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+      "verification_level": "CHECKED_SAVED_SUMMARY"
     },
     "root_protocol": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round3\\summary.json",
-      "sha256": "ebb55ea6445c5025799542969198030625863ab007f8e2ce915b4ce2e278b628",
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round3_local\\outputs\\summary.json",
+      "sha256": "f7d3d4d309155531f5a2e2588fd1a8439076227ef36d3ae633ec5d8c7bea230b",
+      "verification_level": "CHECKED_SAVED_SUMMARY"
     },
     "scale_metrics": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\round2\\review\\regional_scale_metrics.csv",
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\round2\\outputs\\production_review\\regional_scale_metrics.csv",
       "sha256": "a158c3ff78aec152bee4edfa3f6a6f6864cba040e9d8d6d81ffac9f9e3f5b5df",
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+      "verification_level": "CHECKED_SAVED_SUMMARY"
     },
     "theta_metrics": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\paired_centres.csv",
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\paired_centres.csv",
       "sha256": "dc6ba408bd88088e4fbdd3f590138f4194e403e83e1b47d510998b243a90ed73",
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+      "verification_level": "CHECKED_SAVED_SUMMARY"
     },
     "direct_roots": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\verification_release_final\\theta\\root_comparisons.csv",
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\theta_centred\\outputs\\review\\root_comparisons.csv",
       "sha256": "5598ac0060db0bdb3f86c5f728998b8ac43629153217951565a6351541b1a28c",
-      "verification_level": "AGGREGATED_FRESH_RECOMPUTED_RECORDS"
+      "verification_level": "CHECKED_SAVED_SUMMARY"
     },
     "n5": {
-      "path": "C:\\dev\\shortened_astra\\submission_release_20261022\\repository\\analysis\\n5\\outputs\\n5_all17.csv",
+      "path": "C:\\dev\\shortened_astra\\github_release_20261023\\repository\\analysis\\n5\\outputs\\n5_all17.csv",
       "sha256": "97fbbbe3aaaa057ee6baf3efbb10ca6e3bf10342265a0fd3af5a282f2018175b",
       "verification_level": "CHECKED_SAVED_SUMMARY"
     }

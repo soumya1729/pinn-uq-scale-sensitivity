@@ -3,10 +3,12 @@
 \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
 \usepackage[abbrvbib]{jmlr2e}
 \usepackage{times}
-\hypersetup{hidelinks,
-  pdftitle={Scale Sensitivity of Regional Uncertainty in Physics-Informed Neural Networks:
-    A Full-Network Gauss--Newton Study},
-  pdfauthor={Soumyadip Mal and Nagaiah Chamakuri}}
+\hypersetup{hidelinks,unicode=true,
+  pdftitle={Scale Sensitivity and Regional Calibration of Full-Network
+    Gauss--Newton Uncertainty in Physics-Informed Neural Networks},
+  pdfauthor={Soumyadip Mal and Nagaiah Chamakuri},
+  pdfkeywords={physics-informed neural networks, uncertainty quantification,
+    Gauss--Newton covariance, calibration, spectral analysis}}
 % Packages jmlr2e does not provide.
 \usepackage{amsmath, mathtools}
 \usepackage{booktabs, multirow, array}
@@ -41,8 +43,8 @@
 
 \begin{document}
 
-\title{Scale Sensitivity of Regional Uncertainty in Physics-Informed Neural Networks:
-       A Full-Network Gauss--Newton Study}
+\title{Scale Sensitivity and Regional Calibration of Full-Network
+       Gauss--Newton Uncertainty in Physics-Informed Neural Networks}
 
 \author{\name Soumyadip Mal \email soumya24@iisertvm.ac.in \\
         \name Nagaiah Chamakuri\thanks{Corresponding author.} \email nagaiah.chamakuri@iisertvm.ac.in \\
@@ -70,7 +72,9 @@
 \acks{%.
 Computations were performed on the Padmanabha high-performance computing facility at
 the Indian Institute of Science Education and Research Thiruvananthapuram.
-\emph{Funding in direct support of this work:} None.
+\emph{Funding in direct support of this work:} The authors acknowledge ANRF,
+Department of Science and Technology, India (ANRF/ARGM/2025/000954/MTR),
+for their financial support.
 \emph{Additional revenues related to this work:} None.
 The authors declare no competing financial interests.}
 \end{samepage}
@@ -88,6 +92,7 @@ The authors declare no competing financial interests.}
 \input{oa_lean}
 
 \FloatBarrier
+\setlength{\bibsep}{2pt}
 \bibliography{references}
 
 \end{document}

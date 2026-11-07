@@ -9,8 +9,17 @@ are supplied as vector PDF files.
 
 The paper is one self-contained manuscript, including its appendices. There is
 no separate online appendix. Author and disclosure details were completed on
-22 October 2026; the introduction and corresponding-author designation were
-updated on 23 October. Nagaiah Chamakuri is the corresponding author.
+22 October 2026; Nagaiah Chamakuri is the corresponding author. The abstract,
+introduction and conclusion were revised on 28--29 October, with a subsequent
+whole-paper consistency review and refreshed source/page provenance indexes.
+The 7 November title and abstract update retains the readout-refit finding in a
+197-word abstract. The current build has 35 pages, 18 tables and six figures. Its fifth
+keyword is spectral analysis. Appendix repetition and float spacing were
+consolidated; no new scientific calculations were performed for this finalization.
+The funding disclosure names ANRF, Department of Science and Technology, India
+(ANRF/ARGM/2025/000954/MTR); the Padmanabha facility acknowledgment is retained.
+Localized text corrections clarify admission, input notation and numerical terms;
+the title, abstract, figures, tables, reported results and Lean proofs are unchanged.
 
 Public code repository: https://github.com/soumya1729/pinn-uq-scale-sensitivity
 

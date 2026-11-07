@@ -1,27 +1,27 @@
 \begin{abstract}%
-Regional uncertainty should identify where a physics-informed neural network is
-inaccurate. We assess full-network Gauss--Newton covariances
-under a homoscedastic working likelihood on training-weighted residuals, using $17$
-admitted Burgers and Allen--Cahn runs with two architectures. Uncertainty allocation
-depends strongly on prior and noise scales. Across eight Burgers--MLP seeds, five
-refined contrast-matching crossings span more than four orders of magnitude in
-effective precision; three other seeds retain a deficit at every sampled setting.
-The conditional residual-noise maximum-likelihood setting under-covers both regions
-around all eight trained predictions. A prior centred on the fitted checkpoint
-preserves the baseline deficit in all $17$ runs; affine accuracy improvements at
-the noise-MLE setting do not reliably calibrate both regions.
-At the five trained-centre contrast-matching roots, a reference-informed oracle
-targeting $68\%$ bulk coverage gives only $30.3$--$55.7\%$ sharp
-one-standard-deviation coverage.
-Reference-informed last-layer fits leave below $4\%$ of the original sharp-region
-error energy on held-out time blocks in $16/17$ runs, demonstrating feature expressivity.
-Spectral weighting explains scale-dependent allocation; Lean verifies conditional
-limits and bounds on contrast, changes of predictive mean and coverage. Regional
-RMS agreement is insufficient for calibrated intervals: allocation and coverage
-require separate assessment.
+Physics-informed neural networks (PINNs) can be accurate on average yet inaccurate
+in thin layers and at moving interfaces. Useful uncertainty estimates should
+reflect these regional differences. We ask whether post-hoc Gaussian uncertainty
+from Gauss--Newton curvature, a linearised Laplace approach, places uncertainty
+where numerical errors occur. Its covariance depends on a prior scale and a
+common residual-noise scale. We evaluate full-network covariances for $17$
+Burgers and Allen--Cahn runs with two
+architectures, comparing reference-defined sharp and bulk regions. Allocation is
+strongly scale-dependent. For the trained prediction, five of eight Burgers--MLP
+runs have identified precisions matching sharp-to-bulk uncertainty and error
+ratios; these span more than four orders of magnitude. No match is found for three
+runs in the tested range. Neither training-based scale choices nor the tested
+predictive centres reliably calibrate both regions. Even at the matching points,
+a reference-informed oracle calibrating bulk coverage to $68\%$ yields only
+$30.3$--$55.7\%$ sharp coverage for the trained prediction. Reference-based readout
+refits reveal features capable of representing sharp structures. Spectral analysis
+explains how the scales redistribute uncertainty across curvature modes, with key
+bounds machine-checked in Lean~4. Matching regional uncertainty ratios therefore
+does not ensure calibrated intervals: allocation and coverage must be assessed
+separately.
 \end{abstract}
 
 \begin{keywords}
 physics-informed neural networks, uncertainty quantification, Gauss--Newton covariance,
-calibration, formal verification
+calibration, spectral analysis
 \end{keywords}

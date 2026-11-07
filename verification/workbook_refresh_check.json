@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "all_18_ledger_columns_match": 1944,
+  "all_7_output_columns_match": 24,
+  "tabs_widths_panes_headers_styles_preserved": true,
+  "historical_guide_data_unchanged": true,
+  "native_table_extended": "A6:R1950",
+  "conditional_format_range": "F7:F1950",
+  "no_formula_errors": true,
+  "statuses": {
+    "CHECKED": 14,
+    "PROVENANCE_MAPPED": 1930
+  },
+  "full_unicode_text_match": true,
+  "scope": "CSV/Excel export and layout consistency, not new numerical verification."
+}

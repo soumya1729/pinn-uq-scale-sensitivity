@@ -1,0 +1,39 @@
+{
+  "review_date": "2026-11-07",
+  "scope": "Final authorized copyedits; current compilation and cross-reference checks; scientific results unchanged",
+  "pages": 35,
+  "pdf_bytes": 702344,
+  "pdf_sha256": "875ebb217cc19b5df957850cb5eb5f1acba48dcd0c3faa7df391783217e8eca9",
+  "abstract_words": 197,
+  "keyword_count": 5,
+  "running_title_characters": 46,
+  "official_style_matches": true,
+  "all_fonts_embedded": true,
+  "no_type3_fonts": true,
+  "table_figure_equation_references": "PASS",
+  "margins": "PASS",
+  "natbib_and_captions": "PASS",
+  "author_and_disclosure_details": "PASS",
+  "cover_letter_required_categories": "PASS",
+  "final_publication_metadata": "leave unknown editor/volume/publication fields blank until assigned",
+  "github": "author will make public on submission day",
+  "material_violations_found": [],
+  "scientific_calculations_rerun": false,
+  "only_changed_tex": [
+    "j_appendix.tex",
+    "j_ceiling.tex",
+    "j_offmanifold.tex",
+    "j_round2_appendix.tex",
+    "short_seed_table.tex"
+  ],
+  "rules": [
+    "https://www.jmlr.org/author-info.html",
+    "https://www.jmlr.org/format/format.html",
+    "https://www.jmlr.org/format/formatting-errors.html",
+    "https://www.jmlr.org/format/authors-guide.html"
+  ],
+  "readout_refit_retained": true,
+  "pdf_title": "Scale Sensitivity and Regional Calibration of Full-Network Gauss–Newton Uncertainty in Physics-Informed Neural Networks",
+  "funding_grant": "ANRF/ARGM/2025/000954/MTR",
+  "cover_letter_pages": 1
+}

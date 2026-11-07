@@ -64,7 +64,7 @@ The numerical producers and the final typesetting are separate steps. Several ta
 
 The 17-checkpoint study is at `analysis/theta_centred`. Its shared producer,
 `scripts/theta_pass.py`, supplies covariance, theta-centred affine prediction,
-zero-prior affine prediction, actual nonlinear `u(theta + delta_L)` and direct
+zero-mean-prior affine prediction, actual nonlinear `u(theta + delta_L)` and direct
 trained-root fields. `theta_linalg.py` and `model_residual.py` define the algebra,
 model and raw training residuals; `theta_archive.py` saves reusable factors/grid
 modes. `select_theta_evidence.py` selects the fixed evidence points first.

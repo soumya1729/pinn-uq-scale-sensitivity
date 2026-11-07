@@ -2,6 +2,8 @@
 
 Reproduction sources for **Scale Sensitivity and Regional Calibration of Full-Network Gauss–Newton Uncertainty in Physics-Informed Neural Networks**, by Soumyadip Mal and Nagaiah Chamakuri.
 
+[Read the paper](paper/full_paper.pdf) · [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Versioned sources](https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.1) · [Saved data](https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.0)
+
 Start with the saved-data route below. It runs the existing numerical consumers through one entry point. It does not train networks, construct Jacobians or submit cluster jobs.
 
 **Reviewer starting point:** [section-by-section guide](docs/REVIEWER_GUIDE.md).
@@ -10,11 +12,22 @@ producers, data and formal proofs.
 
 ## Check the reported results
 
-1. Use Python 3.12 in a virtual environment and install the tested review dependencies:
+1. Obtain the versioned sources and create a Python 3.12 virtual environment:
+
+   ```bash
+   git clone --branch v1.0.1 --depth 1 https://github.com/soumya1729/pinn-uq-scale-sensitivity.git
+   cd pinn-uq-scale-sensitivity
+   python -m venv .venv
+   ```
+
+   Activate it with `source .venv/bin/activate` on Linux, macOS or WSL, or
+   `.\.venv\Scripts\Activate.ps1` in Windows PowerShell. Then install the tested
+   review dependencies:
 
    ```bash
    python -m pip install -r envs/reviewer_requirements.txt
    ```
+
 2. From this repository's **Releases → v1.0.0 → Assets**, download
    `pinn_uq_saved_data_20261022.zip`, then restore it:
 
@@ -27,6 +40,11 @@ producers, data and formal proofs.
    ```bash
    python reproduce.py --mode saved --out reproduced
    ```
+
+This route is CPU-only. The data download is about 1.65 GB and the restored
+files occupy about 2.38 GB; allow additional space for the Python environment
+and regenerated outputs. A historical tested replay took about five minutes;
+this is not a runtime guarantee. See [execution evidence](docs/REVIEWER_EXECUTION.md).
 
 The command writes a task report, fresh numerical summaries and logs. `--mode records` is the smaller route using included records; it is **not** an independent field-based verification. Read `docs/REVIEWER_COMMAND.md` for the exact tasks and comparison tolerances.
 
@@ -75,6 +93,6 @@ The production computations used the Padmanabha high-performance computing facil
 
 Repository: https://github.com/soumya1729/pinn-uq-scale-sensitivity
 
-The saved-data asset and its checksum accompany release `v1.0.0`. The manuscript
-includes the repository URL. Make the repository and release accessible to
-reviewers before submitting the manuscript.
+The finalized manuscript and reproduction sources are versioned as `v1.0.1`.
+The unchanged saved-data asset and its checksum remain in `v1.0.0`; the source
+version and data version are intentionally separate. See [release notes](docs/RELEASE_NOTES.md).

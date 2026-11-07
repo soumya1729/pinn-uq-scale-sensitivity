@@ -1,26 +1,66 @@
-# Paper reproduction release v1.0.0
+# Reproduction release v1.0.1
 
-Sources, recorded inputs and reviewer tools for *Scale Sensitivity of Regional
-Uncertainty in Physics-Informed Neural Networks: A Full-Network Gauss–Newton Study*,
-by Soumyadip Mal and Nagaiah Chamakuri.
+Versioned sources for *Scale Sensitivity and Regional Calibration of Full-Network
+Gauss–Newton Uncertainty in Physics-Informed Neural Networks*, by Soumyadip Mal
+and Nagaiah Chamakuri.
 
-Start with `README.md` and `docs/REVIEWER_GUIDE.md`. The latter maps the paper's
-sections, 18 tables and six figures to code and data.
+## Sources and data
 
-Download `pinn_uq_saved_data_20261022.zip` from this release's Assets and restore it
-with `python tools/restore_data.py --archive /path/to/the.zip`. The restore tool
-checks the asset hash and every restored file. `data/ASSET_SHA256.txt` records
-the expected checksum. GitHub's automatically generated source archives contain
-the code; they deliberately omit this larger saved-data asset.
+Use **v1.0.1** for the finalized 35-page manuscript, reproduction scripts,
+numerical ledger and focused Lean library. GitHub's source archives for this
+release contain the code and compact reference records. `SOURCE_SHA256.json`
+records the individual source-file hashes; `CITATION.cff` records this version.
 
-The reviewer command is `python reproduce.py --mode saved --out reproduced`.
-It replays saved-field/modal analyses and repeats the all-17 frozen-checkpoint
-readout fits. It never starts PINN training, a residual-Jacobian/covariance pass or a cluster job.
-Verification levels and comparisons are recorded in its report.
+The unchanged data ZIP and its checksum remain in the **v1.0.0** release:
 
-The focused Lean project is in `lean/`, with its pinned toolchain, dependency
-manifest, theorem map, audit and build report. It verifies the analytic statements
-under their stated assumptions, separately from numerical data.
+https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.0
 
-`docs/REPRODUCTION_STATUS.md` records the release checks and their limits.
+Download `pinn_uq_saved_data_20261022.zip` and restore it with
+`python tools/restore_data.py --archive /path/to/pinn_uq_saved_data_20261022.zip`.
+The restoration command verifies the ZIP checksum and all restored files. The
+large data asset is not duplicated in Git or in the v1.0.1 release.
+
+## Reviewer route
+
+Start with the repository README and `docs/REVIEWER_GUIDE.md`. The saved-data
+command is `python reproduce.py --mode saved --out reproduced`. It replays
+saved-field/modal analyses and repeats the all-17 frozen-checkpoint readout fits.
+It does not start PINN training, a residual-Jacobian/covariance pass or a cluster
+job. The report records verification levels and comparison tolerances.
+
+`docs/REVIEWER_EXECUTION.md` preserves the historical full replay and its limits.
+No new scientific computations were performed for this presentation update.
+The manuscript's numerical results, figure assets and Lean proofs are unchanged.
+The current occurrence inventory contains 1944 entries: 14 linked to executed
+registered checks and 1930 provenance mappings. A mapping is not an independently
+verified numerical assertion.
+
+The Lean project includes the pinned toolchain, dependency manifest, theorem map,
+audit and build report. Its analytic verification is separate from numerical
+data replay.
+
+## Presentation and provenance
+
+This release replaces stale author-facing instructions, repairs text encoding,
+adds checkout/environment guidance and aligns the release and citation metadata.
+Two current producer headers were shortened to describe their inputs, conventions
+and optional checks. Their executable calculations are unchanged. The two lines
+of manuscript-source commentary updated in this pass do not affect the PDF.
+
+`docs/SCRIPT_INVENTORY.csv` retains hashes and locations from the original source
+collection. Use `SOURCE_SHA256.json` for the current released source hashes.
+Executed source snapshots, loading-runtime sources and their recorded hashes
+remain byte-for-byte intact. Some retain historical comments and machine paths;
+`provenance/baseline_release/LOADING_MIGRATION_NOTE.md` explains superseded loading
+calculations and the current numerical targets. Those limitations and corrections
+are preserved rather than silently rewriting historical records.
+
 Original code is MIT-licensed; third-party and manuscript terms are preserved.
+Exact historical retraining is not claimed: the frozen checkpoints are the
+authoritative starting point for reproducing the reported analyses.
+
+## Earlier release
+
+The v1.0.0 source tag predates the finalized manuscript. It and its saved-data
+assets are retained unchanged. Use v1.0.1 sources with the v1.0.0 data asset for
+the current paper.

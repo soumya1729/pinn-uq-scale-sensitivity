@@ -2,8 +2,8 @@
 
 The table below records the full saved-data replay checked locally on 23 October
 2026, before GitHub publication. The manuscript is one self-contained PDF; these
-files are its code/data accompaniment. The later 29 October text/provenance review
-is distinguished below from that historical numerical replay.
+files are its code/data accompaniment. Later manuscript and documentation checks
+are distinguished below from that historical numerical replay.
 
 | Route | Result | Evidence |
 |---|---|---|
@@ -22,17 +22,19 @@ The full Lean recompile used the tested sequential direct-compiler helper with
 an existing matching dependency cache. Complete Lake attempts were stopped for
 resource/performance reasons; fresh dependency downloading was not retested.
 
-On 29 October the finalized manuscript compiled to 35 pages, with all tables,
+On 7 November the current manuscript compiled to 35 pages, with all tables,
 figures and numbered equations referenced and no unresolved references or
-overfull boxes. The selected numerical-claim checker passes 16/16 against saved
-summaries with current prose bindings (`verification/headline_results.json`).
+overfull boxes. The selected numerical-claim report records 16/16 saved-summary
+checks (`verification/headline_results.json`). Its source bindings were checked
+against the current prose without rerunning those numerical aggregations.
 The source/page indexes and Excel accompaniment were refreshed. This update did
 not repeat the full saved-field replay or the Lean build.
 
-The numerical ledger is a transparent index, not an all-numeral theorem: 1934
-scientific occurrences are recorded, with 11 occurrence spans linked to executed
-registered checks and the remainder mapped to their producers. It distinguishes
-fresh field/fit calculations from metadata and scalar-summary checks.
+The current numerical ledger records 1944 scientific occurrences: 14 occurrence
+spans link to executed registered checks and 1930 map to their producers. It is
+an index, not verification of every numerical occurrence. Its statuses distinguish
+fresh field/fit calculations from metadata and scalar-summary checks; see
+`numerical_ledger/summary.json` and `docs/NUMERICAL_LEDGER.md`.
 
 The authoritative reproduction starting point is the frozen checkpoints and
 saved arrays. Exact historical retraining is not claimed because no training-time

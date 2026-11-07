@@ -1,37 +1,24 @@
-"""temporal_per_seed.py -- persist the PER-SEED pre/post shock-formation table.
+"""Compute the eight-seed Burgers--MLP pre/post-formation summary.
 
-WHY THIS FILE EXISTS. `temporal_calibration.py` disaggregates ONE run and prints its report to
-stdout; `_paper_scripts/check_paper_consistency.py` recomputes all 8 seeds but only compares
-against the .tex and keeps nothing. So the per-seed table behind Table `tab:temporal` and behind
-the two ranges quoted in section 5.4 -- post-formation cov@68 in [0.37, 1.00] and meanZ in
-[0.02, 2.43] -- existed in NO artifact. Both ranges, and the "four seeds at 1.00" claim, were
-hand-typed into a docstring from a shell session that was not saved.
+The saved fields and raw full-grid covariance widths supply the per-seed
+statistics and the aggregate Table 3 record. Regions use global reference-gradient
+percentiles over the complete 80,000-point grid: sharp is the top 5% and bulk
+is the bottom 70%. These masks are intersected with the time windows before and
+after t = 1/pi; percentiles are not recomputed within each window.
 
-That is precisely the defect that produced the fabricated 1-D loading overlaps earlier in this
-project (a range unpacked from memory into four per-config values, three of them wrong, one
-inverted). A number that lives only in prose has no producer and cannot be re-derived after the
-shell scrollback is gone. This script gives those numbers a producer.
+Dispersions are population standard deviations (ddof=0). The primary contrast
+averages variances before taking square roots; the aggregate gap is the mean
+of per-seed RMS-matched gaps. Mean-width contrasts remain explicitly named
+secondary fields. The optional --check compares computed values with rounded
+manuscript reference values; producing the JSON alone is not that comparison.
 
-WHAT IT DOES NOT DO. It does not replace the consistency gate. The gate reads its comparison
-values from the .tex and would catch an edit to the paper; this script reads nothing from the
-paper and would not. They are complementary: this one makes the table reproducible, that one
-makes it agree with what is printed. Running this does not discharge the gate.
+Run from the repository root:
+    python training/analysis/temporal_per_seed.py
+    python training/analysis/temporal_per_seed.py --check
 
-CONVENTIONS. Partition is the paper's: global percentiles over all 80,000 (x,t) points, sharp =
-top 5% of |d_x u*|, smooth = bottom 70%, computed once per seed over all t and then masked by
-the time window (NOT re-derived per window -- the point is to disaggregate the published
-partition, not to replace it). Split at the classical breaking time t = 1/pi. Dispersions are
-POPULATION standard deviations, divisor n, matching `app:conventions`. Aggregate ratio-gap is
-the mean of the per-seed RMS-matched gaps, matching the reference row of Table `tab:ceiling`.
-The old mean-width contrast and its mismatched gap remain in the artifact as explicitly named
-secondary fields.
-
-    python analysis/temporal_per_seed.py           # table + calibration_figures/temporal_per_seed.json
-    python analysis/temporal_per_seed.py --check   # additionally assert the paper's printed values
-
-Pure numpy, no GPU, ~15 s. Reads only shipped artifacts:
-    results/{TAG}/{TAG}_fields.npz
-    results/{TAG}/{TAG}_fullgrid_sigma_raw.npz
+Inputs are training/results/{TAG}/{TAG}_fields.npz and
+training/results/{TAG}/{TAG}_fullgrid_sigma_raw.npz. Outputs are written under
+training/calibration_figures/. NumPy only; no training or GPU is required.
 """
 import hashlib
 import json
@@ -49,20 +36,14 @@ TSH = 1.0 / np.pi          # classical breaking time for u0 = -sin(pi x), nu -> 
 P_SHARP, P_SMOOTH = 95.0, 70.0
 SCHEMA = "temporal_per_seed/2"
 
-# Table `tab:temporal` as printed, for --check. Kept here deliberately: this script is a
-# PRODUCER, and a producer asserting its own output against the paper is the right direction of
-# dependence. The gate that must not hard-code these is check_paper_consistency.py, which reads
-# them from the .tex instead.
+# Rounded manuscript reference values used only by the optional --check.
+# The summaries themselves are computed independently from the saved arrays.
 PAPER = {
     "pre":  {"R_rms": 2.65, "gap": 16.9, "meanZ": 0.10, "cov68": 0.99, "cov95": 1.00},
     "post": {"R_rms": 10.75, "gap": 20.6, "meanZ": 0.81, "cov68": 0.76, "cov95": 0.87},
     "all":  {"R_rms": 6.37, "gap": 20.5, "meanZ": 0.32, "cov68": 0.92, "cov95": 0.96},
 }
-# Population sds, ALL five columns. Until 2026-08-19 the table printed a dispersion on
-# R_sigma alone and bare means elsewhere -- showing it on the one column that replicates
-# (CV 6%) and hiding it on the four that do not (meanZ 100%, gap 63%, cov@68 35%, cov@95
-# 19%). Section 5.4 argues that absolute calibration does not survive a seed change while
-# the contrast does; the table was its evidence and implied the opposite.
+# Population standard deviations (ddof=0), reported for every metric.
 PAPER_SD = {
     "pre":  {"R_rms": 0.23, "gap": 14.5, "meanZ": 0.07, "cov68": 0.01, "cov95": 0.00},
     "post": {"R_rms": 0.71, "gap": 13.1, "meanZ": 0.81, "cov68": 0.27, "cov95": 0.17},

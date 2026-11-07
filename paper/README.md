@@ -1,30 +1,25 @@
 # JMLR manuscript source
 
-Main document: `full_paper.tex`.
+Main document: `full_paper.tex`. The compiled paper is `full_paper.pdf`.
 
 Upload this folder's source archive to Overleaf and select `full_paper.tex` as the
 main document. Use pdfLaTeX and BibTeX, or run `latexmk -pdf full_paper.tex` locally.
-The included bibliography output is provided for portability. All six figures
-are supplied as vector PDF files.
+The bibliography output is included for portability. All six figures are vector
+PDF files.
 
-The paper is one self-contained manuscript, including its appendices. There is
-no separate online appendix. Author and disclosure details were completed on
-22 October 2026; Nagaiah Chamakuri is the corresponding author. The abstract,
-introduction and conclusion were revised on 28--29 October, with a subsequent
-whole-paper consistency review and refreshed source/page provenance indexes.
-The 7 November title and abstract update retains the readout-refit finding in a
-197-word abstract. The current build has 35 pages, 18 tables and six figures. Its fifth
-keyword is spectral analysis. Appendix repetition and float spacing were
-consolidated; no new scientific calculations were performed for this finalization.
-The funding disclosure names ANRF, Department of Science and Technology, India
-(ANRF/ARGM/2025/000954/MTR); the Padmanabha facility acknowledgment is retained.
-Localized text corrections clarify admission, input notation and numerical terms;
-the title, abstract, figures, tables, reported results and Lean proofs are unchanged.
+The manuscript is self-contained, including its appendices: 35 pages, 18 tables
+and six figures. There is no separate online appendix. Nagaiah Chamakuri is the
+corresponding author. Author, funding and disclosure information is in the paper.
 
-Public code repository: https://github.com/soumya1729/pinn-uq-scale-sensitivity
+The versioned reproduction sources and focused Lean library are in release
+**v1.0.1**:
 
-Tagged code and saved-data release:
+https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.1
+
+The unchanged saved-data ZIP and checksum are in **v1.0.0**:
+
 https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.0
 
-Numerical producers, saved data and the focused Lean library are distributed in
-the accompanying replication release rather than embedded in the Overleaf ZIP.
+Start with the repository README and `docs/REVIEWER_GUIDE.md` for the numerical
+replay. The data and mathematical library are distributed with the reproduction
+release rather than embedded in the Overleaf archive.

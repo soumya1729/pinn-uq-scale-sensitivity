@@ -1,50 +1,29 @@
-"""solve_gate_table.py -- persist the complete solve-acceptance inventory behind Table
-`tab:rejected` for EVERY configuration attempted: admitted, rejected, and the
-convection-diffusion control.
+"""Aggregate the complete recorded solve-admission inventory for Table 1.
 
-WHY THIS FILE EXISTS. The per-run verdicts have a producer (`train_map.py` writes each run's
-`solve_gate` block at admission time). The TABLE did not: its min/max/median and tau-multiples
-were recomputed inside `submissions/jmlr_ceiling/tools/gate_numbers.py` at gate time and
-persisted nowhere, so there was no artifact a referee could be handed and no way to see the
-inventory without reading the gate. This is the same gap that `temporal_per_seed.py` closes for
-Table `tab:temporal`.
+The inventory includes admitted and rejected configurations, the nested Nagumo
+bump runs, and the convection--diffusion controls. It reads recorded solve_gate
+metadata; it does not recompute a PDE reference solution or uncertainty fields.
 
-Building it surfaced two things the gate could not, because a checker only inspects what it is
-pointed at:
+Bulk-error thresholds are 2% for Burgers, Fisher--KPP, Nagumo, Kuramoto--Sivashinsky
+and the convection--diffusion control, and 3% for Allen--Cahn. The KS records used
+5% at production time; 2% is the retrospective common comparison threshold, and
+both KS runs are rejected under either threshold. Family ranges and medians use
+all attempted runs for rejected families and admitted runs for admitted families,
+as specified by the inventory's runs column.
 
-  1. The Nagumo bump arm lives at results/_nagumo_round1_gauss/nagumo_mlp_seed*/, one level
-     deeper than the gate's results/*/*_map.json glob, so five rejected runs sat outside every
-     check while the prose named two Nagumo initial conditions. A glob is a silent filter.
-  2. The convection-diffusion control varies pulse width and diffusivity together at ONE seed,
-     not as a seed sweep or one-factor diffusivity sweep. Three of four MLP attempts are admitted;
-     a separate Fourier attempt at the narrowest setting is also rejected and is retained as an
-     auxiliary inventory row rather than pooled into the MLP denominator.
+The convection--diffusion MLP control varies pulse width and diffusivity together
+at one seed. It is not a seed or one-factor sweep. Its separate rejected Fourier
+attempt is retained as an auxiliary row, outside the MLP denominator. Comparisons
+with this control are descriptive and do not isolate nonlinearity as a cause.
 
-WHAT THE CONTROL SHOWS, and why it belongs beside the four sharp configurations. CD has no
-nonlinear self-organised shock. Across its three admitted paired MLP operating points at one seed, the primary
-field-derived RMS uncertainty contrast is 1.09--1.33 against R_tar 0.78--1.00, i.e. an RMS-matched
-gap of 0.65--0.90. The secondary mean-width contrast is 1.11--1.36. Thus the large allocation
-deficit studied in the nonlinear sharp-feature rows is absent in this control under the same
-evaluation and partition protocol. This is a descriptive control comparison, not proof that
-nonlinearity alone causes the deficit.
+Run from the repository root:
+    python training/analysis/solve_gate_table.py
+    python training/analysis/solve_gate_table.py --check
 
-CONVENTIONS. The reported tau_bulk is 2% for Burgers, Fisher-KPP, Nagumo, Kuramoto-Sivashinsky
-and the CD control; 3% for Allen-Cahn (`j_setting.tex`, eq:gate). The KS records used 5% at
-production time; 2% is the common retrospective comparison threshold for those two rows, and
-every KS run is rejected at either threshold. Ranges and medians are over the runs
-stated in the `runs` column -- ALL runs attempted for a rejected family, ADMITTED runs only for
-an admitted configuration, which is the convention Table `tab:rejected` prints. Dispersions
-elsewhere in the paper are population (ddof=0); no dispersion is quoted here.
-
-    python analysis/solve_gate_table.py           # table + calibration_figures/solve_gate_table.json
-    python analysis/solve_gate_table.py --check   # read-only: assert every cell + stored JSON
-
-Pure numpy/json, no GPU, ~5 s. Reads only shipped MAP records:
-    results/**/{TAG}_map.json -> solve_gate.bulk_rel_l2, solve_gate.passed
-
-No uncertainty contrast is copied into this artifact.  Table `tab:ceiling` is rebuilt from
-pointwise fields by `ceiling_table.py`; keeping that separate prevents historical mean-width or
-cross-metric records from being mistaken for the primary RMS statistic.
+Inputs are training/results/**/{TAG}_map.json; outputs are written under
+training/calibration_figures/. The optional --check compares generated cells and
+the stored JSON with the recorded reference values. Uncertainty contrasts are
+computed separately from pointwise fields by ceiling_table.py.
 """
 import glob
 import json

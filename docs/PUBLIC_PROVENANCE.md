@@ -2,16 +2,15 @@
 
 This release preserves the scientific sources and frozen records used for the
 paper, including the completed 17-checkpoint theta-centred comparison. The
-29 October final manuscript compiles to 35 pages after prose and layout consolidation;
-the underlying scientific
-calculations and frozen data are unchanged.
+current manuscript compiles to 35 pages after prose and layout consolidation.
+The 7 November documentation and copyediting updates did not change the
+scientific calculations or frozen data.
 The paper's numerical producers are documented in `PAPER_OUTPUT_MAP.md`.
 
-The public candidate was collected on 22 October 2026 from the completed
-16 October replication collection. Internal manuscript reviews, friend/referee
-discussions, future-study planning, dependency caches and the old manuscript ZIP
-were omitted. Their private originals remain unchanged. The public manuscript
-source is packaged separately from the scientific collection.
+The original release was collected on 22 October 2026 from the completed
+16 October replication collection. Private correspondence, manuscript backups,
+future-study files and dependency caches are excluded from the public package.
+The manuscript source is also available as a separate Overleaf archive.
 
 Scientific records are preserved byte-for-byte where they form the input or
 execution hash chain. Thus some immutable JSON and Slurm records contain

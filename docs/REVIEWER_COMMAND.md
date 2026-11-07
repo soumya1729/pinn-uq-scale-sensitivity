@@ -32,7 +32,7 @@ Choose an output directory that does not already exist. The optional `--root` ar
 | Ensemble | Eight member prediction fields; `analysis/round2/ensemble_loo.py` | Mean, population spread and all eight leave-one-out subsets |
 | Reporting summaries | Fresh round-two review records, saved spectra and `analysis/round2/report_saved_summaries.py` | Relative displacements, changed-scale loadings and nonlinear baseline ranges; the separate linear-control extract is frozen metadata |
 | Feature refits | All 17 frozen checkpoints; `analysis/n5/n5_heldout.py` | Rebuilt 129 features and trained predictions, repeated regional same-grid/random/time-block fits and both recorded rank cutoffs; no PINN training |
-| Headline claims | `verification/headline_claims.json`; `tools/check_headline_claims.py` | Explicit abstract/contribution numerical quantities, compared with current paper text, using fresh records when available and visibly labelled frozen summaries otherwise |
+| Headline claims | `verification/headline_claims.json`; `tools/check_headline_claims.py` | Selected registered numerical quantities, compared with current paper text, using fresh records when available and visibly labelled frozen summaries otherwise |
 | Numerical tables | The freshly recomputed review outputs | Table records, including the completed theta-centred comparison and direct-root table; final manuscript layout may use manual merges/captions |
 | Occurrence inventory | Active manuscript source, supplied page indexes and the headline-check report | Repeated source occurrences and producer mappings; only registered checks receive a checked status |
 

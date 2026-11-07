@@ -2,7 +2,10 @@ cff-version: 1.2.0
 message: "Please cite the associated manuscript when using these reproduction sources."
 type: software
 title: "Scale Sensitivity and Regional Calibration of PINN Uncertainty: Reproduction Sources"
-version: 1.0.0
+version: 1.0.1
+date-released: 2026-11-07
+repository-code: "https://github.com/soumya1729/pinn-uq-scale-sensitivity"
+url: "https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.1"
 authors:
   - family-names: Mal
     given-names: Soumyadip

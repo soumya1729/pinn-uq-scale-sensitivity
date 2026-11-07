@@ -165,8 +165,8 @@ python tools/restore_data.py --archive /path/to/pinn_uq_saved_data_20261022.zip 
 ```
 
 The portable data asset restores these manifest destinations on any machine.
-A download URL will be added after publication of the release. The restore tool
-never launches computation; see `../data/README.md`.
+Download it from the [v1.0.0 data release](https://github.com/soumya1729/pinn-uq-scale-sensitivity/releases/tag/v1.0.0).
+The restore tool never launches computation; see `../data/README.md`.
 
 Run saved-output reviews after restoration, using NumPy and the recorded core
 versions in `analysis/theta_centred/requirements-cpu.txt`:

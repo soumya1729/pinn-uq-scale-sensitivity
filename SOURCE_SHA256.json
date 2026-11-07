@@ -11,8 +11,8 @@
   },
   {
     "path": "CITATION.cff",
-    "bytes": 355,
-    "sha256": "163053259e90b2124bf26084cca94d90a70e0390d3837c230bb0cd8fb46482b9"
+    "bytes": 539,
+    "sha256": "43e8e7c96c6b980ce6b070e7f45f69f26587669a0d0436089d902535b71cdb8a"
   },
   {
     "path": "DATA_MANIFEST.json",
@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 4957,
-    "sha256": "d266572c92cc19142d2c6ba9e194dd7e4fe55f86c371bd6e8d8348f2fe1538ec"
+    "bytes": 5952,
+    "sha256": "c976487056401e9cc13a11f8606ce81ed65f5619401a3e58ae55855f7814c07c"
   },
   {
     "path": "THIRD_PARTY_NOTICES.md",
@@ -2366,8 +2366,8 @@
   },
   {
     "path": "docs/GITHUB_RELEASE.md",
-    "bytes": 1783,
-    "sha256": "c204c9e01e6c0d86aeac6497ce59c1275a2eb64e088b763b40df4266ceee73f0"
+    "bytes": 1663,
+    "sha256": "ffa8a03ef4936b5f9dd69062ab48dca50097817e126ead8cac7cacc02269dc31"
   },
   {
     "path": "docs/NUMERICAL_LEDGER.md",
@@ -2376,43 +2376,43 @@
   },
   {
     "path": "docs/PAPER_OUTPUT_MAP.md",
-    "bytes": 15390,
-    "sha256": "3b1d7bdea0587975372da7880947083dfdf5ef9051b57e6fcc6030434a449c94"
+    "bytes": 15395,
+    "sha256": "beafa9371c800ce5ea9d49bc91dd6f66426faa4c012331bb762c354105bf7146"
   },
   {
     "path": "docs/PUBLIC_PROVENANCE.md",
-    "bytes": 2601,
-    "sha256": "c25f75767398463a25e87da514acb4d10801b0e51ebcd841a679e0e08fed2ce8"
+    "bytes": 2563,
+    "sha256": "f93341b13e000bcade2878bccecd46081ef69b63d9838bf2d6d71c8a4b32a9d7"
   },
   {
     "path": "docs/RELEASE_NOTES.md",
-    "bytes": 1469,
-    "sha256": "ca0187f969bce1f6d5f6a5beb05d9af909651e7dab6003afa0720729584d4b41"
+    "bytes": 3407,
+    "sha256": "bae39ad8486b958d3e58e47c8ef9cf8a4f5fb5adab0009e86c1ede10eb553dca"
   },
   {
     "path": "docs/REPRODUCTION_STATUS.md",
-    "bytes": 3413,
-    "sha256": "6955468b4b76790e2fbe3e875e370f07cc7d300781b6490897d03935a9dac87e"
+    "bytes": 3560,
+    "sha256": "75d70f59f546d0f47524c8204190ec3e17caa4d0922482de9d8937cf36235ccf"
   },
   {
     "path": "docs/REVIEWER_COMMAND.md",
-    "bytes": 6238,
-    "sha256": "b17d4c0b32cc0fe656527fb6e0fe9b7080d92f67bc154ccc8157145074670444"
+    "bytes": 6227,
+    "sha256": "860eab95bf05ac76442e3faefcb8744e934839943c872e0990225a8acd192d9b"
   },
   {
     "path": "docs/REVIEWER_EXECUTION.md",
-    "bytes": 3281,
-    "sha256": "191e562e559fdbcc11dc7a458972971ceee1bca8245e7037f26fd96fb6828de5"
+    "bytes": 3580,
+    "sha256": "74bf961b3bcd64a764a70900dc927e6f70123b8d78c5b33a44b0f16919904ced"
   },
   {
     "path": "docs/REVIEWER_GUIDE.md",
-    "bytes": 9001,
-    "sha256": "e566f2b25c47e22d952dd102619593d90ab7318093d2e48130c486d883d7b2dd"
+    "bytes": 9249,
+    "sha256": "5c1cdafeeab625319c986569599fd252d7f7ee4b02f06974f3069b19c35f4c65"
   },
   {
     "path": "docs/RUN_ORDER.md",
-    "bytes": 14229,
-    "sha256": "525fd87ad6f1e9f244bf23462f7ccb799d421643d0bdc858423f6ba34356b369"
+    "bytes": 14287,
+    "sha256": "28c4ceb02e199b54eeefb51ac1331c14c695d1ce2a4bc6fbed06e703745cbcf3"
   },
   {
     "path": "docs/SCRIPT_INVENTORY.csv",
@@ -2666,8 +2666,8 @@
   },
   {
     "path": "paper/README.md",
-    "bytes": 1767,
-    "sha256": "5a007472ca6e80e7dbbcfab40b6a15af66e73d8e29e4c37bf5c130918031ede1"
+    "bytes": 1122,
+    "sha256": "ac6f1d744f66f18ce75de4f3450abb56ee0db03db97033dda2beaa33ff1707ad"
   },
   {
     "path": "paper/figures/burgers_error_uncertainty_slice.pdf",
@@ -2781,8 +2781,8 @@
   },
   {
     "path": "paper/j_robustness.tex",
-    "bytes": 167,
-    "sha256": "d5df00430666639f02bbc9d29295b2dbb7863792016a4a00bf4f16dc3bed6062"
+    "bytes": 120,
+    "sha256": "b4419990c6601f0b1e0888c516b345e3680892167a07d3e4ff43374c9d83bc84"
   },
   {
     "path": "paper/j_round2_appendix.tex",
@@ -3431,8 +3431,8 @@
   },
   {
     "path": "training/analysis/solve_gate_table.py",
-    "bytes": 17023,
-    "sha256": "5470129026e9fcc20a7ce0c2cba7012cb663830d273aa43ccf8c0eceac06090d"
+    "bytes": 15269,
+    "sha256": "aa261ef5acaf31133617bf5a07e3d9f40d4b83a4a538e03be6ec56797367eb73"
   },
   {
     "path": "training/analysis/sweep_results/allen_cahn/EPS2_5e-05/mlp_seed0/allen_cahn_mlp_seed0_full_laplace_metrics.json",
@@ -3456,8 +3456,8 @@
   },
   {
     "path": "training/analysis/temporal_per_seed.py",
-    "bytes": 16328,
-    "sha256": "c2bdaff843ff9556f56ade145270ddaf14d5b1b397a32b4022b48645735bcf90"
+    "bytes": 14639,
+    "sha256": "1d70bb2c8545901ed0426681d091ed912369f8fb82bc6ecdb5e541c285d187cf"
   },
   {
     "path": "training/calibration_figures/ceiling_table.json",

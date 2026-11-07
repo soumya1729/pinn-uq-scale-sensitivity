@@ -35,11 +35,15 @@ all 2000 numeric fields match exactly. See `verification/figure_replay.json`.
 The manuscript compiled from the extracted source archive to 35 pages, with no
 unresolved references in the final compilation log.
 
-The current 29 October manuscript is 35 pages. Its selected-claim bindings were
-refreshed and all 16 quantities checked against saved summaries in
-`verification/headline_results.json`; the source/page ledger was regenerated.
-These current checks are separate from the historical full replay above, whose
-original timing, comparison counts and verification levels are preserved.
+On 29 October, the 35-page manuscript's selected-claim bindings were refreshed
+and all 16 quantities checked against saved summaries in
+`verification/headline_results.json`. The 7 November manuscript copyedits left
+those bindings and numerical summaries unchanged; the checked report was reused
+after binding validation, and the source/page ledger was refreshed. It contains
+1944 occurrences, with 14 linked to executed registered checks and 1930 mapped
+to their provenance. These occurrence counts differ from the 16 distinct checked
+quantities. The historical full replay above was not rerun: its original timing,
+comparison counts and verification levels are preserved.
 
 These are frozen-checkpoint and saved-field reproduction checks. They do not
 repeat PINN training, the residual-Jacobian/covariance pass, the independent PDE
